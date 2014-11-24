@@ -1,0 +1,2714 @@
+GAS LISTING /tmp/ccclyeDw.s 			page 1
+
+
+   1               		.file	"libRobot.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/usagers/damaib/Documents/Session3/inf1995/inf1995-20/equipe/inf1995-1620/codeCommun/Tp/pr
+   8               		.stabs	"libRobot.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"void:t(0,4)",128,0,0,0
+  38               		.stabs	"wchar_t:t(0,23)=r(0,23);-32768;32767;",128,0,0,0
+  39               		.stabs	"bool:t(0,24)=@s8;-16;",128,0,0,0
+  40               		.stabs	"__vtbl_ptr_type:t(0,25)=*(0,26)=f(0,9)",128,0,0,0
+  41               		.stabs	"decltype(nullptr):t(0,27)=(0,27)",128,0,0,0
+  42               		.stabs	"int8_t:t(0,28)=(0,16)",128,0,121,0
+  43               		.stabs	"uint8_t:t(0,29)=(0,13)",128,0,122,0
+  44               		.stabs	"int16_t:t(0,30)=(0,9)",128,0,123,0
+  45               		.stabs	"uint16_t:t(0,31)=(0,12)",128,0,124,0
+  46               		.stabs	"int32_t:t(0,32)=(0,15)",128,0,125,0
+  47               		.stabs	"uint32_t:t(0,33)=(0,11)",128,0,126,0
+  48               		.stabs	"int64_t:t(0,34)=(0,14)",128,0,128,0
+  49               		.stabs	"uint64_t:t(0,35)=(0,10)",128,0,129,0
+  50               		.stabs	"intptr_t:t(0,36)=(0,30)",128,0,142,0
+  51               		.stabs	"uintptr_t:t(0,37)=(0,31)",128,0,147,0
+  52               		.stabs	"int_least8_t:t(0,38)=(0,28)",128,0,159,0
+  53               		.stabs	"uint_least8_t:t(0,39)=(0,29)",128,0,164,0
+  54               		.stabs	"int_least16_t:t(0,40)=(0,30)",128,0,169,0
+  55               		.stabs	"uint_least16_t:t(0,41)=(0,31)",128,0,174,0
+  56               		.stabs	"int_least32_t:t(0,42)=(0,32)",128,0,179,0
+  57               		.stabs	"uint_least32_t:t(0,43)=(0,33)",128,0,184,0
+GAS LISTING /tmp/ccclyeDw.s 			page 2
+
+
+  58               		.stabs	"int_least64_t:t(0,44)=(0,34)",128,0,192,0
+  59               		.stabs	"uint_least64_t:t(0,45)=(0,35)",128,0,199,0
+  60               		.stabs	"int_fast8_t:t(0,46)=(0,28)",128,0,213,0
+  61               		.stabs	"uint_fast8_t:t(0,47)=(0,29)",128,0,218,0
+  62               		.stabs	"int_fast16_t:t(0,48)=(0,30)",128,0,223,0
+  63               		.stabs	"uint_fast16_t:t(0,49)=(0,31)",128,0,228,0
+  64               		.stabs	"int_fast32_t:t(0,50)=(0,32)",128,0,233,0
+  65               		.stabs	"uint_fast32_t:t(0,51)=(0,33)",128,0,238,0
+  66               		.stabs	"int_fast64_t:t(0,52)=(0,34)",128,0,246,0
+  67               		.stabs	"uint_fast64_t:t(0,53)=(0,35)",128,0,253,0
+  68               		.stabs	"intmax_t:t(0,54)=(0,34)",128,0,273,0
+  69               		.stabs	"uintmax_t:t(0,55)=(0,35)",128,0,278,0
+  70               		.stabs	"int_farptr_t:t(0,56)=(0,32)",128,0,77,0
+  71               		.stabs	"uint_farptr_t:t(0,57)=(0,33)",128,0,81,0
+  72               		.stabs	"._0:Tt(0,58)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+  73               		.stabs	"__fuse_t:t(0,58)",128,0,244,0
+  74               		.stabs	"LibRobot:Tt(0,59)=s1debut_:/2(0,24):_ZN8LibRobot6debut_E;fin_:/2(0,24):_ZN8LibRobot4fin_E;
+  75               		.stabs	"_ZN8LibRobotC2Ev:F(0,4)",36,0,26,_ZN8LibRobotC2Ev
+  76               		.stabs	"this:P(0,77)=k(0,63)",64,0,26,24
+  77               	.global	_ZN8LibRobotC2Ev
+  78               		.type	_ZN8LibRobotC2Ev, @function
+  79               	_ZN8LibRobotC2Ev:
+  80               		.stabd	46,0,0
+   1:libRobot.cpp  **** /****************************************************************************
+   2:libRobot.cpp  ****  * Fichier: libRobot.cpp
+   3:libRobot.cpp  ****  * Auteur: Yannick Ouellet, David Mainville, Mario Saliby, Youssef ZEMMAHI
+   4:libRobot.cpp  ****  * Date: 24 Ocotbre 2013
+   5:libRobot.cpp  ****  * DESCRIPTION : Lib pour le robot
+   6:libRobot.cpp  ****  ****************************************************************************/
+   7:libRobot.cpp  **** 
+   8:libRobot.cpp  **** #define F_CPU 8000000UL
+   9:libRobot.cpp  **** #include <avr/io.h>
+  10:libRobot.cpp  **** #include <util/delay.h>
+  11:libRobot.cpp  **** #include <avr/interrupt.h>
+  12:libRobot.cpp  **** #include "libRobot.h"
+  13:libRobot.cpp  **** 
+  14:libRobot.cpp  **** #define BOUTON_ENFONCE (PIND & _BV(2))
+  15:libRobot.cpp  **** 
+  16:libRobot.cpp  **** bool LibRobot::debut_;
+  17:libRobot.cpp  **** bool LibRobot::fin_;
+  18:libRobot.cpp  **** 
+  19:libRobot.cpp  **** uint8_t LibRobot::nbBoucle;
+  20:libRobot.cpp  **** 
+  21:libRobot.cpp  **** //Son
+  22:libRobot.cpp  **** volatile bool LibRobot::a_son;
+  23:libRobot.cpp  **** volatile uint8_t LibRobot::valeur_son;
+  24:libRobot.cpp  **** volatile bool LibRobot::enabledSon;
+  25:libRobot.cpp  **** 
+  26:libRobot.cpp  **** LibRobot::LibRobot(){}
+  81               		.stabn	68,0,26,.LM0-.LFBB1
+  82               	.LM0:
+  83               	.LFBB1:
+  84               	/* prologue: function */
+  85               	/* frame size = 0 */
+  86               	/* stack size = 0 */
+  87               	.L__stack_usage = 0
+  88 0000 0895      		ret
+GAS LISTING /tmp/ccclyeDw.s 			page 3
+
+
+  89               		.size	_ZN8LibRobotC2Ev, .-_ZN8LibRobotC2Ev
+  90               	.Lscope1:
+  91               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+  92               		.stabd	78,0,0
+  93               	.global	_ZN8LibRobotC1Ev
+  94               		.set	_ZN8LibRobotC1Ev,_ZN8LibRobotC2Ev
+  95               		.stabs	"_ZN8LibRobotD2Ev:F(0,4)",36,0,27,_ZN8LibRobotD2Ev
+  96               		.stabs	"this:P(0,77)",64,0,27,24
+  97               	.global	_ZN8LibRobotD2Ev
+  98               		.type	_ZN8LibRobotD2Ev, @function
+  99               	_ZN8LibRobotD2Ev:
+ 100               		.stabd	46,0,0
+  27:libRobot.cpp  **** LibRobot::~LibRobot(){}
+ 101               		.stabn	68,0,27,.LM1-.LFBB2
+ 102               	.LM1:
+ 103               	.LFBB2:
+ 104               	/* prologue: function */
+ 105               	/* frame size = 0 */
+ 106               	/* stack size = 0 */
+ 107               	.L__stack_usage = 0
+ 108 0002 0895      		ret
+ 109               		.size	_ZN8LibRobotD2Ev, .-_ZN8LibRobotD2Ev
+ 110               	.Lscope2:
+ 111               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 112               		.stabd	78,0,0
+ 113               	.global	_ZN8LibRobotD1Ev
+ 114               		.set	_ZN8LibRobotD1Ev,_ZN8LibRobotD2Ev
+ 115               		.stabs	"_ZN8LibRobot16BoutonEstEnfonceEv:F(0,29)",36,0,30,_ZN8LibRobot16BoutonEstEnfonceEv
+ 116               	.global	_ZN8LibRobot16BoutonEstEnfonceEv
+ 117               		.type	_ZN8LibRobot16BoutonEstEnfonceEv, @function
+ 118               	_ZN8LibRobot16BoutonEstEnfonceEv:
+ 119               		.stabd	46,0,0
+  28:libRobot.cpp  **** 
+  29:libRobot.cpp  **** // Fonction pour vérifier l'état du bouton en prenant compte du rebond
+  30:libRobot.cpp  **** uint8_t LibRobot::BoutonEstEnfonce()
+  31:libRobot.cpp  **** { 
+ 120               		.stabn	68,0,31,.LM2-.LFBB3
+ 121               	.LM2:
+ 122               	.LFBB3:
+ 123               	/* prologue: function */
+ 124               	/* frame size = 0 */
+ 125               	/* stack size = 0 */
+ 126               	.L__stack_usage = 0
+  32:libRobot.cpp  ****   //Require -- DDRB = 0xff; // PORT B est en mode sortie.
+  33:libRobot.cpp  ****   
+  34:libRobot.cpp  ****     if(BOUTON_ENFONCE)
+ 127               		.stabn	68,0,34,.LM3-.LFBB3
+ 128               	.LM3:
+ 129 0004 4A9B      		sbis 0x9,2
+ 130 0006 00C0      		rjmp .L6
+ 131               	.LBB21:
+ 132               	.LBB22:
+ 133               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h",132,0,0,.Ltext1
+ 134               	.Ltext1:
+   1:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   2:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
+   3:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
+GAS LISTING /tmp/ccclyeDw.s 			page 4
+
+
+   4:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    All rights reserved.
+   5:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+   6:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Redistribution and use in source and binary forms, with or without
+   7:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    modification, are permitted provided that the following conditions are met:
+   8:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+   9:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    * Redistributions of source code must retain the above copyright
+  10:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer.
+  11:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  12:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    * Redistributions in binary form must reproduce the above copyright
+  13:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer in
+  14:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      the documentation and/or other materials provided with the
+  15:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      distribution.
+  16:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  17:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    * Neither the name of the copyright holders nor the names of
+  18:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      contributors may be used to endorse or promote products derived
+  19:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      from this software without specific prior written permission.
+  20:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  21:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  22:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  23:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  24:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  25:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  26:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  27:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  28:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  29:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  30:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  31:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  32:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  33:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /* $Id: delay.h.in 2251 2011-09-14 08:20:33Z joerg_wunsch $ */
+  34:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  35:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #ifndef _UTIL_DELAY_H_
+  36:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #define _UTIL_DELAY_H_ 1
+  37:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  38:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #ifndef __HAS_DELAY_CYCLES
+  39:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #define __HAS_DELAY_CYCLES 1
+  40:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+  41:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  42:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #include <inttypes.h>
+  43:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #include <util/delay_basic.h>
+  44:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #include <math.h>
+  45:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  46:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /** \file */
+  47:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /** \defgroup util_delay <util/delay.h>: Convenience functions for busy-wait delay loops
+  48:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     \code
+  49:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     #define F_CPU 1000000UL  // 1 MHz
+  50:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     //#define F_CPU 14.7456E6
+  51:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     #include <util/delay.h>
+  52:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     \endcode
+  53:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  54:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     \note As an alternative method, it is possible to pass the
+  55:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     F_CPU macro down to the compiler from the Makefile.
+  56:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     Obviously, in that case, no \c \#define statement should be
+  57:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     used.
+  58:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  59:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     The functions in this header file are wrappers around the basic
+  60:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     busy-wait functions from <util/delay_basic.h>.  They are meant as
+GAS LISTING /tmp/ccclyeDw.s 			page 5
+
+
+  61:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     convenience functions where actual time values can be specified
+  62:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     rather than a number of cycles to wait for.  The idea behind is
+  63:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     that compile-time constant expressions will be eliminated by
+  64:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     compiler optimization so floating-point expressions can be used
+  65:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     to calculate the number of delay cycles needed based on the CPU
+  66:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     frequency passed by the macro F_CPU.
+  67:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  68:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     \note In order for these functions to work as intended, compiler
+  69:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     optimizations <em>must</em> be enabled, and the delay time
+  70:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     <em>must</em> be an expression that is a known constant at
+  71:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     compile-time.  If these requirements are not met, the resulting
+  72:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     delay will be much longer (and basically unpredictable), and
+  73:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     applications that otherwise do not use floating-point calculations
+  74:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     will experience severe code bloat by the floating-point library
+  75:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     routines linked into the application.
+  76:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  77:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     The functions available allow the specification of microsecond, and
+  78:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     millisecond delays directly, using the application-supplied macro
+  79:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
+  80:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  81:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** */
+  82:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  83:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #if !defined(__DOXYGEN__)
+  84:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** static inline void _delay_us(double __us) __attribute__((always_inline));
+  85:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** static inline void _delay_ms(double __ms) __attribute__((always_inline));
+  86:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+  87:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  88:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #ifndef F_CPU
+  89:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /* prevent compiler error by supplying a default */
+  90:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** # warning "F_CPU not defined for <util/delay.h>"
+  91:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** # define F_CPU 1000000UL
+  92:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+  93:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  94:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #ifndef __OPTIMIZE__
+  95:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+  96:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+  97:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  98:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+  99:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 100:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   __STDC_HOSTED__
+ 101:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #  include <math.h>
+ 102:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+ 103:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 104:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /**
+ 105:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    \ingroup util_delay
+ 106:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 107:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Perform a delay of \c __ms milliseconds, using _delay_loop_2().
+ 108:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 109:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    The macro F_CPU is supposed to be defined to a
+ 110:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    constant defining the CPU clock frequency (in Hertz).
+ 111:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 112:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
+ 113:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 114:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    When the user request delay which exceed the maximum possible one,
+ 115:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
+ 116:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
+ 117:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
+GAS LISTING /tmp/ccclyeDw.s 			page 6
+
+
+ 118:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    user will not be informed about decreased resolution.
+ 119:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 120:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles(unsigned long)
+ 121:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
+ 122:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    values greater than the maximal possible delay, overflows results in
+ 123:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    no delay i.e., 0ms.
+ 124:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 125:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Conversion of __us into clock cycles may not always result in integer.
+ 126:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    By default, the clock cycles rounded up to next integer. This ensures that
+ 127:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    the user gets atleast __us microseconds of delay.
+ 128:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 129:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Alternatively, user can define __DELAY_ROUND_DOWN__ and __DELAY_ROUND_CLOSEST__
+ 130:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    to round down and round to closest integer.
+ 131:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 132:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Note: The new implementation of _delay_ms(double __ms) with 
+ 133:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     __builtin_avr_delay_cycles(unsigned long) support is not backward compatible. 
+ 134:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    User can define __DELAY_BACKWARD_COMPATIBLE__ to get a backward compatible delay.
+ 135:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Also, the backward compatible
+ 136:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    algorithm will be chosen if the code is compiled in a <em>freestanding
+ 137:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    environment</em> (GCC option \c -ffreestanding), as the math functions
+ 138:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    required for rounding are not available to the compiler then.
+ 139:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 140:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****  */
+ 141:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** void
+ 142:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** _delay_ms(double __ms)
+ 143:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** {
+ 144:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	uint16_t __ticks;
+ 145:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	double __tmp ; 
+ 146:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 147:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 148:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   __STDC_HOSTED__
+ 149:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	uint32_t __ticks_dc;
+ 150:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+ 151:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
+ 152:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 153:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
+ 154:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
+ 155:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 156:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
+ 157:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
+ 158:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 159:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	#else
+ 160:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 		//round up by default
+ 161:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+ 162:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	#endif
+ 163:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 164:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 135               		.stabn	68,0,164,.LM4-.LFBB3
+ 136               	.LM4:
+ 137 0008 8FE1      		ldi r24,lo8(19999)
+ 138 000a 9EE4      		ldi r25,hi8(19999)
+ 139 000c 0197      		1: sbiw r24,1
+ 140 000e 01F4      		brne 1b
+ 141 0010 00C0      		rjmp .
+ 142 0012 0000      		nop
+ 143               	.LBE22:
+ 144               	.LBE21:
+GAS LISTING /tmp/ccclyeDw.s 			page 7
+
+
+ 145               		.stabs	"libRobot.cpp",132,0,0,.Ltext2
+ 146               	.Ltext2:
+  35:libRobot.cpp  ****     {
+  36:libRobot.cpp  ****         // Anti-Rebond
+  37:libRobot.cpp  ****         _delay_ms(10);
+  38:libRobot.cpp  ****         // Revérification du bouton suite au delais pour s'assurer de sa valeur
+  39:libRobot.cpp  **** 
+  40:libRobot.cpp  ****         // l'operateur !! permet de transformer une valeur quelconque en 0 ou 1.
+  41:libRobot.cpp  ****         // ie: BOUTON_ENFONCE renvoit 2, !!2 = 1.
+  42:libRobot.cpp  ****         return !!BOUTON_ENFONCE;
+ 147               		.stabn	68,0,42,.LM5-.LFBB3
+ 148               	.LM5:
+ 149 0014 89B1      		in r24,0x9
+ 150 0016 82FB      		bst r24,2
+ 151 0018 8827      		clr r24
+ 152 001a 80F9      		bld r24,0
+ 153 001c 0895      		ret
+ 154               	.L6:
+  43:libRobot.cpp  ****     }
+  44:libRobot.cpp  ****     // Le bouton n'est pas enfoncé
+  45:libRobot.cpp  ****     return 0;
+ 155               		.stabn	68,0,45,.LM6-.LFBB3
+ 156               	.LM6:
+ 157 001e 80E0      		ldi r24,0
+  46:libRobot.cpp  **** }
+ 158               		.stabn	68,0,46,.LM7-.LFBB3
+ 159               	.LM7:
+ 160 0020 0895      		ret
+ 161               		.size	_ZN8LibRobot16BoutonEstEnfonceEv, .-_ZN8LibRobot16BoutonEstEnfonceEv
+ 162               	.Lscope3:
+ 163               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 164               		.stabd	78,0,0
+ 165               		.stabs	"_ZN8LibRobot14initialisationEv:F(0,4)",36,0,48,_ZN8LibRobot14initialisationEv
+ 166               	.global	_ZN8LibRobot14initialisationEv
+ 167               		.type	_ZN8LibRobot14initialisationEv, @function
+ 168               	_ZN8LibRobot14initialisationEv:
+ 169               		.stabd	46,0,0
+  47:libRobot.cpp  **** 
+  48:libRobot.cpp  **** void LibRobot::initialisation()
+  49:libRobot.cpp  **** {
+ 170               		.stabn	68,0,49,.LM8-.LFBB4
+ 171               	.LM8:
+ 172               	.LFBB4:
+ 173               	/* prologue: function */
+ 174               	/* frame size = 0 */
+ 175               	/* stack size = 0 */
+ 176               	.L__stack_usage = 0
+  50:libRobot.cpp  **** 	debut_ = false;
+ 177               		.stabn	68,0,50,.LM9-.LFBB4
+ 178               	.LM9:
+ 179 0022 1092 0000 		sts _ZN8LibRobot6debut_E,__zero_reg__
+  51:libRobot.cpp  **** 	fin_ = false;
+ 180               		.stabn	68,0,51,.LM10-.LFBB4
+ 181               	.LM10:
+ 182 0026 1092 0000 		sts _ZN8LibRobot4fin_E,__zero_reg__
+  52:libRobot.cpp  **** 
+  53:libRobot.cpp  **** 	a_son = false;
+GAS LISTING /tmp/ccclyeDw.s 			page 8
+
+
+ 183               		.stabn	68,0,53,.LM11-.LFBB4
+ 184               	.LM11:
+ 185 002a 1092 0000 		sts _ZN8LibRobot5a_sonE,__zero_reg__
+  54:libRobot.cpp  **** 	valeur_son = 0;
+ 186               		.stabn	68,0,54,.LM12-.LFBB4
+ 187               	.LM12:
+ 188 002e 1092 0000 		sts _ZN8LibRobot10valeur_sonE,__zero_reg__
+  55:libRobot.cpp  **** 	enabledSon = false;
+ 189               		.stabn	68,0,55,.LM13-.LFBB4
+ 190               	.LM13:
+ 191 0032 1092 0000 		sts _ZN8LibRobot10enabledSonE,__zero_reg__
+  56:libRobot.cpp  **** 	nbBoucle = 0;
+ 192               		.stabn	68,0,56,.LM14-.LFBB4
+ 193               	.LM14:
+ 194 0036 1092 0000 		sts _ZN8LibRobot8nbBoucleE,__zero_reg__
+ 195 003a 0895      		ret
+ 196               		.size	_ZN8LibRobot14initialisationEv, .-_ZN8LibRobot14initialisationEv
+ 197               	.Lscope4:
+ 198               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 199               		.stabd	78,0,0
+ 200               		.stabs	"_ZN8LibRobot5debutEv:F(0,4)",36,0,62,_ZN8LibRobot5debutEv
+ 201               	.global	_ZN8LibRobot5debutEv
+ 202               		.type	_ZN8LibRobot5debutEv, @function
+ 203               	_ZN8LibRobot5debutEv:
+ 204               		.stabd	46,0,0
+  57:libRobot.cpp  **** }
+  58:libRobot.cpp  **** 
+  59:libRobot.cpp  **** //---------------
+  60:libRobot.cpp  **** //Commandes robot
+  61:libRobot.cpp  **** //---------------
+  62:libRobot.cpp  **** 	void LibRobot::debut()
+  63:libRobot.cpp  **** 	{
+ 205               		.stabn	68,0,63,.LM15-.LFBB5
+ 206               	.LM15:
+ 207               	.LFBB5:
+ 208               	/* prologue: function */
+ 209               	/* frame size = 0 */
+ 210               	/* stack size = 0 */
+ 211               	.L__stack_usage = 0
+  64:libRobot.cpp  **** 		debut_ = true;
+ 212               		.stabn	68,0,64,.LM16-.LFBB5
+ 213               	.LM16:
+ 214 003c 81E0      		ldi r24,lo8(1)
+ 215 003e 8093 0000 		sts _ZN8LibRobot6debut_E,r24
+ 216 0042 0895      		ret
+ 217               		.size	_ZN8LibRobot5debutEv, .-_ZN8LibRobot5debutEv
+ 218               	.Lscope5:
+ 219               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 220               		.stabd	78,0,0
+ 221               		.stabs	"_ZN8LibRobot8attendreEa:F(0,4)",36,0,67,_ZN8LibRobot8attendreEa
+ 222               		.stabs	"duree25:P(0,28)",64,0,67,24
+ 223               	.global	_ZN8LibRobot8attendreEa
+ 224               		.type	_ZN8LibRobot8attendreEa, @function
+ 225               	_ZN8LibRobot8attendreEa:
+ 226               		.stabd	46,0,0
+  65:libRobot.cpp  **** 	}
+  66:libRobot.cpp  **** 
+GAS LISTING /tmp/ccclyeDw.s 			page 9
+
+
+  67:libRobot.cpp  **** 	void LibRobot::attendre(int8_t duree25)
+  68:libRobot.cpp  **** 	{
+ 227               		.stabn	68,0,68,.LM17-.LFBB6
+ 228               	.LM17:
+ 229               	.LFBB6:
+ 230               	/* prologue: function */
+ 231               	/* frame size = 0 */
+ 232               	/* stack size = 0 */
+ 233               	.L__stack_usage = 0
+ 234               	.LBB23:
+  69:libRobot.cpp  **** 		if(!debut_)
+ 235               		.stabn	68,0,69,.LM18-.LFBB6
+ 236               	.LM18:
+ 237 0044 9091 0000 		lds r25,_ZN8LibRobot6debut_E
+ 238 0048 9111      		cpse r25,__zero_reg__
+ 239 004a 00C0      		rjmp .L13
+ 240 004c 0895      		ret
+ 241               	.L11:
+ 242               	.LBB24:
+ 243               	.LBB25:
+ 244               	.LBB26:
+ 245               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h",132,0,0,.Ltext3
+ 246               	.Ltext3:
+ 247               		.stabn	68,0,164,.LM19-.LFBB6
+ 248               	.LM19:
+ 249 004e EFE4      		ldi r30,lo8(-15537)
+ 250 0050 F3EC      		ldi r31,hi8(-15537)
+ 251 0052 3197      		1: sbiw r30,1
+ 252 0054 01F4      		brne 1b
+ 253 0056 00C0      		rjmp .
+ 254 0058 0000      		nop
+ 255               	.LBE26:
+ 256               	.LBE25:
+ 257               		.stabs	"libRobot.cpp",132,0,0,.Ltext4
+ 258               	.Ltext4:
+  70:libRobot.cpp  **** 			return;
+  71:libRobot.cpp  **** 		//Le calcul du temps d attente doit etre ajuste en fonction de b
+  72:libRobot.cpp  **** 		for(int i =0; i< duree25; i++)
+ 259               		.stabn	68,0,72,.LM20-.LFBB6
+ 260               	.LM20:
+ 261 005a 2F5F      		subi r18,-1
+ 262 005c 3F4F      		sbci r19,-1
+ 263 005e 00C0      		rjmp .L10
+ 264               	.L13:
+ 265               	.LBE24:
+  69:libRobot.cpp  **** 		if(!debut_)
+ 266               		.stabn	68,0,69,.LM21-.LFBB6
+ 267               	.LM21:
+ 268 0060 20E0      		ldi r18,0
+ 269 0062 30E0      		ldi r19,0
+ 270               	.LBB27:
+ 271               		.stabn	68,0,72,.LM22-.LFBB6
+ 272               	.LM22:
+ 273 0064 9927      		clr r25
+ 274 0066 87FD      		sbrc r24,7
+ 275 0068 9095      		com r25
+ 276               	.L10:
+GAS LISTING /tmp/ccclyeDw.s 			page 10
+
+
+ 277               		.stabn	68,0,72,.LM23-.LFBB6
+ 278               	.LM23:
+ 279 006a 2817      		cp r18,r24
+ 280 006c 3907      		cpc r19,r25
+ 281 006e 04F0      		brlt .L11
+ 282 0070 0895      		ret
+ 283               	.LBE27:
+ 284               	.LBE23:
+ 285               		.size	_ZN8LibRobot8attendreEa, .-_ZN8LibRobot8attendreEa
+ 286               		.stabs	"i:r(0,9)",64,0,72,18
+ 287               		.stabn	192,0,0,.LBB24-.LFBB6
+ 288               		.stabn	224,0,0,.LBE24-.LFBB6
+ 289               		.stabs	"i:r(0,9)",64,0,72,18
+ 290               		.stabn	192,0,0,.LBB27-.LFBB6
+ 291               		.stabn	224,0,0,.LBE27-.LFBB6
+ 292               	.Lscope6:
+ 293               		.stabs	"",36,0,0,.Lscope6-.LFBB6
+ 294               		.stabd	78,0,0
+ 295               		.stabs	"_ZN8LibRobot10allumerDELERVhh:F(0,4)",36,0,78,_ZN8LibRobot10allumerDELERVhh
+ 296               		.stabs	"port:P(0,78)=&(0,61)",64,0,78,24
+ 297               		.stabs	"pinCouleur:P(0,29)",64,0,78,22
+ 298               	.global	_ZN8LibRobot10allumerDELERVhh
+ 299               		.type	_ZN8LibRobot10allumerDELERVhh, @function
+ 300               	_ZN8LibRobot10allumerDELERVhh:
+ 301               		.stabd	46,0,0
+  73:libRobot.cpp  **** 		{
+  74:libRobot.cpp  **** 			_delay_ms(25);
+  75:libRobot.cpp  **** 		}
+  76:libRobot.cpp  **** 	}
+  77:libRobot.cpp  **** 
+  78:libRobot.cpp  **** 	void LibRobot::allumerDEL(volatile uint8_t &port, uint8_t pinCouleur)
+  79:libRobot.cpp  **** 	{
+ 302               		.stabn	68,0,79,.LM24-.LFBB7
+ 303               	.LM24:
+ 304               	.LFBB7:
+ 305               	/* prologue: function */
+ 306               	/* frame size = 0 */
+ 307               	/* stack size = 0 */
+ 308               	.L__stack_usage = 0
+  80:libRobot.cpp  **** 		if(!debut_)
+ 309               		.stabn	68,0,80,.LM25-.LFBB7
+ 310               	.LM25:
+ 311 0072 2091 0000 		lds r18,_ZN8LibRobot6debut_E
+ 312 0076 2223      		tst r18
+ 313 0078 01F0      		breq .L14
+  81:libRobot.cpp  **** 			return;
+  82:libRobot.cpp  **** 		port |= pinCouleur;
+ 314               		.stabn	68,0,82,.LM26-.LFBB7
+ 315               	.LM26:
+ 316 007a FC01      		movw r30,r24
+ 317 007c 2081      		ld r18,Z
+ 318 007e 262B      		or r18,r22
+ 319 0080 2083      		st Z,r18
+ 320               	.L14:
+ 321 0082 0895      		ret
+ 322               		.size	_ZN8LibRobot10allumerDELERVhh, .-_ZN8LibRobot10allumerDELERVhh
+ 323               	.Lscope7:
+GAS LISTING /tmp/ccclyeDw.s 			page 11
+
+
+ 324               		.stabs	"",36,0,0,.Lscope7-.LFBB7
+ 325               		.stabd	78,0,0
+ 326               		.stabs	"_ZN8LibRobot11eteindreDELERVhhh:F(0,4)",36,0,85,_ZN8LibRobot11eteindreDELERVhhh
+ 327               		.stabs	"port:P(0,78)",64,0,85,30
+ 328               		.stabs	"pinCouleur:P(0,29)",64,0,85,22
+ 329               		.stabs	"pinCouleur2:P(0,29)",64,0,85,20
+ 330               	.global	_ZN8LibRobot11eteindreDELERVhhh
+ 331               		.type	_ZN8LibRobot11eteindreDELERVhhh, @function
+ 332               	_ZN8LibRobot11eteindreDELERVhhh:
+ 333               		.stabd	46,0,0
+  83:libRobot.cpp  **** 	}
+  84:libRobot.cpp  **** 
+  85:libRobot.cpp  **** 	void LibRobot::eteindreDEL(volatile uint8_t &port, uint8_t pinCouleur, uint8_t pinCouleur2)
+  86:libRobot.cpp  **** 	{
+ 334               		.stabn	68,0,86,.LM27-.LFBB8
+ 335               	.LM27:
+ 336               	.LFBB8:
+ 337               	/* prologue: function */
+ 338               	/* frame size = 0 */
+ 339               	/* stack size = 0 */
+ 340               	.L__stack_usage = 0
+ 341 0084 FC01      		movw r30,r24
+  87:libRobot.cpp  **** 		if(!debut_)
+ 342               		.stabn	68,0,87,.LM28-.LFBB8
+ 343               	.LM28:
+ 344 0086 8091 0000 		lds r24,_ZN8LibRobot6debut_E
+ 345 008a 8823      		tst r24
+ 346 008c 01F0      		breq .L19
+  88:libRobot.cpp  **** 			return;
+  89:libRobot.cpp  **** 		port &= ~(pinCouleur);
+ 347               		.stabn	68,0,89,.LM29-.LFBB8
+ 348               	.LM29:
+ 349 008e 8081      		ld r24,Z
+ 350 0090 6095      		com r22
+ 351 0092 6823      		and r22,r24
+ 352 0094 6083      		st Z,r22
+  90:libRobot.cpp  **** 		port &= ~(pinCouleur2);
+ 353               		.stabn	68,0,90,.LM30-.LFBB8
+ 354               	.LM30:
+ 355 0096 8081      		ld r24,Z
+ 356 0098 4095      		com r20
+ 357 009a 4823      		and r20,r24
+ 358 009c 4083      		st Z,r20
+ 359               	.L19:
+ 360 009e 0895      		ret
+ 361               		.size	_ZN8LibRobot11eteindreDELERVhhh, .-_ZN8LibRobot11eteindreDELERVhhh
+ 362               	.Lscope8:
+ 363               		.stabs	"",36,0,0,.Lscope8-.LFBB8
+ 364               		.stabd	78,0,0
+ 365               		.stabs	"_ZN8LibRobot10arreterSonEv:F(0,4)",36,0,151,_ZN8LibRobot10arreterSonEv
+ 366               	.global	_ZN8LibRobot10arreterSonEv
+ 367               		.type	_ZN8LibRobot10arreterSonEv, @function
+ 368               	_ZN8LibRobot10arreterSonEv:
+ 369               		.stabd	46,0,0
+  91:libRobot.cpp  **** 	}
+  92:libRobot.cpp  **** 
+  93:libRobot.cpp  **** 	void LibRobot::jouerSon(uint8_t son)
+GAS LISTING /tmp/ccclyeDw.s 			page 12
+
+
+  94:libRobot.cpp  **** 	{
+  95:libRobot.cpp  **** 		if(!debut_)
+  96:libRobot.cpp  **** 			return;
+  97:libRobot.cpp  **** 
+  98:libRobot.cpp  **** 		if(son == valeur_son) //Meme son que le son courrant
+  99:libRobot.cpp  **** 			return;
+ 100:libRobot.cpp  **** 
+ 101:libRobot.cpp  **** 		if(son < 45 && son > 81)
+ 102:libRobot.cpp  **** 			return;
+ 103:libRobot.cpp  **** 
+ 104:libRobot.cpp  **** 		valeur_son = son;
+ 105:libRobot.cpp  **** 		enabledSon = true;
+ 106:libRobot.cpp  **** 		a_son = true;
+ 107:libRobot.cpp  **** 		
+ 108:libRobot.cpp  **** 		//8Mh --> 8 million operation seconde --> 0.000 000 125 seconde par operation * 256 prescaler = 0
+ 109:libRobot.cpp  **** 		switch (son)
+ 110:libRobot.cpp  **** 		{
+ 111:libRobot.cpp  **** 			case 45:{partirMinuterieSon(142);break;} //142 * 0.000 032s -> 0.00454545454545455
+ 112:libRobot.cpp  **** 			case 46:{partirMinuterieSon(134);break;}
+ 113:libRobot.cpp  **** 			case 47:{partirMinuterieSon(127);break;}
+ 114:libRobot.cpp  **** 			case 48:{partirMinuterieSon(119);break;}
+ 115:libRobot.cpp  **** 			case 49:{partirMinuterieSon(113);break;}
+ 116:libRobot.cpp  **** 			case 50:{partirMinuterieSon(106);break;}
+ 117:libRobot.cpp  **** 			case 51:{partirMinuterieSon(100);break;}
+ 118:libRobot.cpp  **** 			case 52:{partirMinuterieSon(95);break;}
+ 119:libRobot.cpp  **** 			case 53:{partirMinuterieSon(89);break;}
+ 120:libRobot.cpp  **** 			case 54:{partirMinuterieSon(84);break;}
+ 121:libRobot.cpp  **** 			case 55:{partirMinuterieSon(80);break;}
+ 122:libRobot.cpp  **** 			case 56:{partirMinuterieSon(75);break;}
+ 123:libRobot.cpp  **** 			case 57:{partirMinuterieSon(71);break;}
+ 124:libRobot.cpp  **** 			case 58:{partirMinuterieSon(67);break;}
+ 125:libRobot.cpp  **** 			case 59:{partirMinuterieSon(63);break;}
+ 126:libRobot.cpp  **** 			case 60:{partirMinuterieSon(60);break;}
+ 127:libRobot.cpp  **** 			case 61:{partirMinuterieSon(56);break;}
+ 128:libRobot.cpp  **** 			case 62:{partirMinuterieSon(53);break;}
+ 129:libRobot.cpp  **** 			case 63:{partirMinuterieSon(50);break;}
+ 130:libRobot.cpp  **** 			case 64:{partirMinuterieSon(47);break;}
+ 131:libRobot.cpp  **** 			case 65:{partirMinuterieSon(45);break;}
+ 132:libRobot.cpp  **** 			case 66:{partirMinuterieSon(42);break;}
+ 133:libRobot.cpp  **** 			case 67:{partirMinuterieSon(40);break;}
+ 134:libRobot.cpp  **** 			case 68:{partirMinuterieSon(38);break;}
+ 135:libRobot.cpp  **** 			case 69:{partirMinuterieSon(36);break;}
+ 136:libRobot.cpp  **** 			case 70:{partirMinuterieSon(34);break;}
+ 137:libRobot.cpp  **** 			case 71:{partirMinuterieSon(32);break;}
+ 138:libRobot.cpp  **** 			case 72:{partirMinuterieSon(30);break;}
+ 139:libRobot.cpp  **** 			case 73:{partirMinuterieSon(28);break;}
+ 140:libRobot.cpp  **** 			case 74:{partirMinuterieSon(27);break;}
+ 141:libRobot.cpp  **** 			case 75:{partirMinuterieSon(25);break;}
+ 142:libRobot.cpp  **** 			case 76:{partirMinuterieSon(24);break;}
+ 143:libRobot.cpp  **** 			case 77:{partirMinuterieSon(22);break;}
+ 144:libRobot.cpp  **** 			case 78:{partirMinuterieSon(21);break;}
+ 145:libRobot.cpp  **** 			case 79:{partirMinuterieSon(20);break;}
+ 146:libRobot.cpp  **** 			case 80:{partirMinuterieSon(19);break;}
+ 147:libRobot.cpp  **** 			case 81:{partirMinuterieSon(18);break;}
+ 148:libRobot.cpp  **** 		}
+ 149:libRobot.cpp  **** 	}
+ 150:libRobot.cpp  **** 
+GAS LISTING /tmp/ccclyeDw.s 			page 13
+
+
+ 151:libRobot.cpp  **** 	void LibRobot::arreterSon()
+ 152:libRobot.cpp  **** 	{
+ 370               		.stabn	68,0,152,.LM31-.LFBB9
+ 371               	.LM31:
+ 372               	.LFBB9:
+ 373               	/* prologue: function */
+ 374               	/* frame size = 0 */
+ 375               	/* stack size = 0 */
+ 376               	.L__stack_usage = 0
+ 153:libRobot.cpp  **** 		if(!debut_)
+ 377               		.stabn	68,0,153,.LM32-.LFBB9
+ 378               	.LM32:
+ 379 00a0 8091 0000 		lds r24,_ZN8LibRobot6debut_E
+ 380 00a4 8823      		tst r24
+ 381 00a6 01F0      		breq .L24
+ 154:libRobot.cpp  **** 			return;
+ 155:libRobot.cpp  **** 		enabledSon = false;
+ 382               		.stabn	68,0,155,.LM33-.LFBB9
+ 383               	.LM33:
+ 384 00a8 1092 0000 		sts _ZN8LibRobot10enabledSonE,__zero_reg__
+ 156:libRobot.cpp  **** 		valeur_son = 0;		
+ 385               		.stabn	68,0,156,.LM34-.LFBB9
+ 386               	.LM34:
+ 387 00ac 1092 0000 		sts _ZN8LibRobot10valeur_sonE,__zero_reg__
+ 388               	.L24:
+ 389 00b0 0895      		ret
+ 390               		.size	_ZN8LibRobot10arreterSonEv, .-_ZN8LibRobot10arreterSonEv
+ 391               	.Lscope9:
+ 392               		.stabs	"",36,0,0,.Lscope9-.LFBB9
+ 393               		.stabd	78,0,0
+ 394               		.stabs	"_ZN8LibRobot11debutBoucleEj:F(0,4)",36,0,312,_ZN8LibRobot11debutBoucleEj
+ 395               	.global	_ZN8LibRobot11debutBoucleEj
+ 396               		.type	_ZN8LibRobot11debutBoucleEj, @function
+ 397               	_ZN8LibRobot11debutBoucleEj:
+ 398               		.stabd	46,0,0
+ 157:libRobot.cpp  **** 	}
+ 158:libRobot.cpp  **** 
+ 159:libRobot.cpp  **** 	void LibRobot::arreterMoteurs()
+ 160:libRobot.cpp  **** 	{
+ 161:libRobot.cpp  **** 		if(!debut_)
+ 162:libRobot.cpp  **** 			return;
+ 163:libRobot.cpp  **** 		ajustementPWM_Moteurs(0,0);
+ 164:libRobot.cpp  **** 	}
+ 165:libRobot.cpp  **** 
+ 166:libRobot.cpp  **** 	void LibRobot::avancer(uint8_t frequence255)
+ 167:libRobot.cpp  **** 	{
+ 168:libRobot.cpp  **** 		if(!debut_)
+ 169:libRobot.cpp  **** 			return;
+ 170:libRobot.cpp  **** 
+ 171:libRobot.cpp  **** 		ajusterSens(true, true);
+ 172:libRobot.cpp  **** 		ajustementPWM_Moteurs(frequence255,frequence255);
+ 173:libRobot.cpp  **** 	}
+ 174:libRobot.cpp  **** 	void LibRobot::avancer(uint8_t frequence255G, uint8_t frequence255D, int8_t ajustementG, int8_t aj
+ 175:libRobot.cpp  **** 	{
+ 176:libRobot.cpp  **** 		if(!debut_)
+ 177:libRobot.cpp  **** 			return;
+ 178:libRobot.cpp  **** 
+GAS LISTING /tmp/ccclyeDw.s 			page 14
+
+
+ 179:libRobot.cpp  **** 		ajusterSens(true, true);
+ 180:libRobot.cpp  **** 
+ 181:libRobot.cpp  **** 		uint8_t fG, fD;
+ 182:libRobot.cpp  **** 		int16_t tempAdd = frequence255D+ajustementD;
+ 183:libRobot.cpp  **** 
+ 184:libRobot.cpp  **** 		if(tempAdd > 255)
+ 185:libRobot.cpp  **** 			fD = 255;
+ 186:libRobot.cpp  **** 		else if(tempAdd < 0)
+ 187:libRobot.cpp  **** 			fD = 0;
+ 188:libRobot.cpp  **** 		else
+ 189:libRobot.cpp  **** 			fD = tempAdd;
+ 190:libRobot.cpp  **** 
+ 191:libRobot.cpp  **** 		tempAdd = frequence255G+ajustementG;
+ 192:libRobot.cpp  **** 		if(tempAdd > 255)
+ 193:libRobot.cpp  **** 			fG = 255;
+ 194:libRobot.cpp  **** 		else if(tempAdd < 0)
+ 195:libRobot.cpp  **** 			fG = 0;
+ 196:libRobot.cpp  **** 		else
+ 197:libRobot.cpp  **** 			fG = tempAdd;
+ 198:libRobot.cpp  **** 
+ 199:libRobot.cpp  **** 		ajustementPWM_Moteurs(fD, fG);
+ 200:libRobot.cpp  **** 	}
+ 201:libRobot.cpp  **** 
+ 202:libRobot.cpp  **** 	void LibRobot::virer(uint8_t frequence255, int8_t ajustementG, int8_t ajustementD, bool sens )
+ 203:libRobot.cpp  **** 	{
+ 204:libRobot.cpp  **** 		if(!debut_)
+ 205:libRobot.cpp  **** 			return;
+ 206:libRobot.cpp  **** 
+ 207:libRobot.cpp  **** 		ajusterSens(true, true);	
+ 208:libRobot.cpp  **** 
+ 209:libRobot.cpp  **** 		uint8_t fG, fD;
+ 210:libRobot.cpp  **** 		if(sens)
+ 211:libRobot.cpp  **** 		{
+ 212:libRobot.cpp  **** 			int16_t tempAdd = frequence255+ajustementG;
+ 213:libRobot.cpp  **** 			if(tempAdd > 255)
+ 214:libRobot.cpp  **** 				fG = 255;
+ 215:libRobot.cpp  **** 			else if(tempAdd < 0)
+ 216:libRobot.cpp  **** 				fG = 0;
+ 217:libRobot.cpp  **** 			else
+ 218:libRobot.cpp  **** 				fG = tempAdd;
+ 219:libRobot.cpp  **** 			fD = 0;
+ 220:libRobot.cpp  **** 		}
+ 221:libRobot.cpp  **** 		else
+ 222:libRobot.cpp  **** 		{
+ 223:libRobot.cpp  **** 			fG = 0;
+ 224:libRobot.cpp  **** 			int16_t tempAdd = frequence255+ajustementD;
+ 225:libRobot.cpp  **** 
+ 226:libRobot.cpp  **** 			if(tempAdd > 255)
+ 227:libRobot.cpp  **** 				fD = 255;
+ 228:libRobot.cpp  **** 			else if(tempAdd < 0)
+ 229:libRobot.cpp  **** 				fD = 0;
+ 230:libRobot.cpp  **** 			else
+ 231:libRobot.cpp  **** 				fD = tempAdd;
+ 232:libRobot.cpp  **** 		}
+ 233:libRobot.cpp  **** 
+ 234:libRobot.cpp  **** 		ajustementPWM_Moteurs(fD, fG);
+ 235:libRobot.cpp  **** 	}
+GAS LISTING /tmp/ccclyeDw.s 			page 15
+
+
+ 236:libRobot.cpp  **** 
+ 237:libRobot.cpp  **** 	void LibRobot::reculer(uint8_t frequence255)
+ 238:libRobot.cpp  **** 	{
+ 239:libRobot.cpp  **** 		if(!debut_)
+ 240:libRobot.cpp  **** 			return;
+ 241:libRobot.cpp  **** 
+ 242:libRobot.cpp  **** 		ajusterSens(false, false);
+ 243:libRobot.cpp  **** 		ajustementPWM_Moteurs(frequence255,frequence255);
+ 244:libRobot.cpp  **** 	}
+ 245:libRobot.cpp  **** 
+ 246:libRobot.cpp  **** 	void LibRobot::reculer(uint8_t frequence255G, uint8_t frequence255D, int8_t ajustementG, int8_t aj
+ 247:libRobot.cpp  **** 	{
+ 248:libRobot.cpp  **** 		if(!debut_)
+ 249:libRobot.cpp  **** 			return;
+ 250:libRobot.cpp  **** 
+ 251:libRobot.cpp  **** 		ajusterSens(false, false);
+ 252:libRobot.cpp  **** 
+ 253:libRobot.cpp  **** 		uint8_t fG, fD;
+ 254:libRobot.cpp  **** 		int16_t tempAdd = frequence255D+ajustementD;
+ 255:libRobot.cpp  **** 
+ 256:libRobot.cpp  **** 		if(tempAdd > 255)
+ 257:libRobot.cpp  **** 			fD = 255;
+ 258:libRobot.cpp  **** 		else if(tempAdd < 0)
+ 259:libRobot.cpp  **** 			fD = 0;
+ 260:libRobot.cpp  **** 		else
+ 261:libRobot.cpp  **** 			fD = tempAdd;
+ 262:libRobot.cpp  **** 
+ 263:libRobot.cpp  **** 		tempAdd = frequence255G+ajustementG;
+ 264:libRobot.cpp  **** 		if(tempAdd > 255)
+ 265:libRobot.cpp  **** 			fG = 255;
+ 266:libRobot.cpp  **** 		else if(tempAdd < 0)
+ 267:libRobot.cpp  **** 			fG = 0;
+ 268:libRobot.cpp  **** 		else
+ 269:libRobot.cpp  **** 			fG = tempAdd;
+ 270:libRobot.cpp  **** 
+ 271:libRobot.cpp  **** 		ajustementPWM_Moteurs(fD, fG);
+ 272:libRobot.cpp  **** 	}
+ 273:libRobot.cpp  **** 
+ 274:libRobot.cpp  **** 	void LibRobot::decoincer(bool gauche, bool droite, bool sens)
+ 275:libRobot.cpp  **** 	{
+ 276:libRobot.cpp  **** 		ajusterSens(sens, sens);
+ 277:libRobot.cpp  **** 
+ 278:libRobot.cpp  **** 		if(gauche && droite)
+ 279:libRobot.cpp  **** 			ajustementPWM_Moteurs(255, 255);
+ 280:libRobot.cpp  **** 		else if(gauche)
+ 281:libRobot.cpp  **** 			ajustementPWM_Moteurs(0, 255);
+ 282:libRobot.cpp  **** 		else if(droite)
+ 283:libRobot.cpp  **** 			ajustementPWM_Moteurs(255, 0);
+ 284:libRobot.cpp  **** 	}
+ 285:libRobot.cpp  **** 
+ 286:libRobot.cpp  **** 	void LibRobot::tournerDroite90()
+ 287:libRobot.cpp  **** 	{
+ 288:libRobot.cpp  **** 		if(!debut_)
+ 289:libRobot.cpp  **** 			return;
+ 290:libRobot.cpp  **** 
+ 291:libRobot.cpp  **** 		ajusterSens(false, true);
+ 292:libRobot.cpp  **** 		ajustementPWM_Moteurs(255,255);
+GAS LISTING /tmp/ccclyeDw.s 			page 16
+
+
+ 293:libRobot.cpp  **** 
+ 294:libRobot.cpp  **** 		_delay_ms(250);//attendre 1.25 seconde
+ 295:libRobot.cpp  **** 
+ 296:libRobot.cpp  **** 		ajustementPWM_Moteurs(0,0);	
+ 297:libRobot.cpp  **** 	}
+ 298:libRobot.cpp  **** 
+ 299:libRobot.cpp  **** 	void LibRobot::tournerGauche90()
+ 300:libRobot.cpp  **** 	{
+ 301:libRobot.cpp  **** 		if(!debut_)
+ 302:libRobot.cpp  **** 			return;
+ 303:libRobot.cpp  **** 
+ 304:libRobot.cpp  **** 		ajusterSens(true, false);
+ 305:libRobot.cpp  **** 		ajustementPWM_Moteurs(255,255);
+ 306:libRobot.cpp  **** 
+ 307:libRobot.cpp  **** 		_delay_ms(250);//attendre 1.25 seconde
+ 308:libRobot.cpp  **** 
+ 309:libRobot.cpp  **** 		ajustementPWM_Moteurs(0,0);	
+ 310:libRobot.cpp  **** 	}
+ 311:libRobot.cpp  **** 
+ 312:libRobot.cpp  **** 	void LibRobot::debutBoucle(uint16_t nbRepetition)
+ 313:libRobot.cpp  **** 	{
+ 399               		.stabn	68,0,313,.LM35-.LFBB10
+ 400               	.LM35:
+ 401               	.LFBB10:
+ 402               	/* prologue: function */
+ 403               	/* frame size = 0 */
+ 404               	/* stack size = 0 */
+ 405               	.L__stack_usage = 0
+ 314:libRobot.cpp  **** 		if(!debut_)
+ 406               		.stabn	68,0,314,.LM36-.LFBB10
+ 407               	.LM36:
+ 408 00b2 9091 0000 		lds r25,_ZN8LibRobot6debut_E
+ 409 00b6 9111      		cpse r25,__zero_reg__
+ 315:libRobot.cpp  **** 			return;
+ 316:libRobot.cpp  **** 		nbBoucle = nbRepetition;
+ 410               		.stabn	68,0,316,.LM37-.LFBB10
+ 411               	.LM37:
+ 412 00b8 8093 0000 		sts _ZN8LibRobot8nbBoucleE,r24
+ 413               	.L29:
+ 414 00bc 0895      		ret
+ 415               		.size	_ZN8LibRobot11debutBoucleEj, .-_ZN8LibRobot11debutBoucleEj
+ 416               	.Lscope10:
+ 417               		.stabs	"",36,0,0,.Lscope10-.LFBB10
+ 418               		.stabd	78,0,0
+ 419               		.stabs	"_ZN8LibRobot11finDeBoucleEv:F(0,24)",36,0,319,_ZN8LibRobot11finDeBoucleEv
+ 420               	.global	_ZN8LibRobot11finDeBoucleEv
+ 421               		.type	_ZN8LibRobot11finDeBoucleEv, @function
+ 422               	_ZN8LibRobot11finDeBoucleEv:
+ 423               		.stabd	46,0,0
+ 317:libRobot.cpp  **** 	}
+ 318:libRobot.cpp  **** 
+ 319:libRobot.cpp  **** 	bool LibRobot::finDeBoucle()
+ 320:libRobot.cpp  **** 	{
+ 424               		.stabn	68,0,320,.LM38-.LFBB11
+ 425               	.LM38:
+ 426               	.LFBB11:
+ 427               	/* prologue: function */
+GAS LISTING /tmp/ccclyeDw.s 			page 17
+
+
+ 428               	/* frame size = 0 */
+ 429               	/* stack size = 0 */
+ 430               	.L__stack_usage = 0
+ 321:libRobot.cpp  **** 		if(!debut_)
+ 431               		.stabn	68,0,321,.LM39-.LFBB11
+ 432               	.LM39:
+ 433 00be 8091 0000 		lds r24,_ZN8LibRobot6debut_E
+ 434 00c2 8823      		tst r24
+ 435 00c4 01F0      		breq .L37
+ 322:libRobot.cpp  **** 			return false;
+ 323:libRobot.cpp  **** 
+ 324:libRobot.cpp  **** 		nbBoucle--;
+ 436               		.stabn	68,0,324,.LM40-.LFBB11
+ 437               	.LM40:
+ 438 00c6 9091 0000 		lds r25,_ZN8LibRobot8nbBoucleE
+ 439 00ca 9150      		subi r25,lo8(-(-1))
+ 440 00cc 9093 0000 		sts _ZN8LibRobot8nbBoucleE,r25
+ 325:libRobot.cpp  **** 		return(nbBoucle > 0);
+ 441               		.stabn	68,0,325,.LM41-.LFBB11
+ 442               	.LM41:
+ 443 00d0 81E0      		ldi r24,lo8(1)
+ 444 00d2 9111      		cpse r25,__zero_reg__
+ 445 00d4 00C0      		rjmp .L35
+ 446               	.L37:
+ 322:libRobot.cpp  **** 			return false;
+ 447               		.stabn	68,0,322,.LM42-.LFBB11
+ 448               	.LM42:
+ 449 00d6 80E0      		ldi r24,0
+ 450               	.L35:
+ 326:libRobot.cpp  **** 	}
+ 451               		.stabn	68,0,326,.LM43-.LFBB11
+ 452               	.LM43:
+ 453 00d8 0895      		ret
+ 454               		.size	_ZN8LibRobot11finDeBoucleEv, .-_ZN8LibRobot11finDeBoucleEv
+ 455               	.Lscope11:
+ 456               		.stabs	"",36,0,0,.Lscope11-.LFBB11
+ 457               		.stabd	78,0,0
+ 458               		.stabs	"_ZN8LibRobot3finEv:F(0,4)",36,0,328,_ZN8LibRobot3finEv
+ 459               	.global	_ZN8LibRobot3finEv
+ 460               		.type	_ZN8LibRobot3finEv, @function
+ 461               	_ZN8LibRobot3finEv:
+ 462               		.stabd	46,0,0
+ 327:libRobot.cpp  **** 
+ 328:libRobot.cpp  **** 	void LibRobot::fin()
+ 329:libRobot.cpp  **** 	{
+ 463               		.stabn	68,0,329,.LM44-.LFBB12
+ 464               	.LM44:
+ 465               	.LFBB12:
+ 466               	/* prologue: function */
+ 467               	/* frame size = 0 */
+ 468               	/* stack size = 0 */
+ 469               	.L__stack_usage = 0
+ 330:libRobot.cpp  **** 		if(!debut_)
+ 470               		.stabn	68,0,330,.LM45-.LFBB12
+ 471               	.LM45:
+ 472 00da 8091 0000 		lds r24,_ZN8LibRobot6debut_E
+ 473 00de 8823      		tst r24
+GAS LISTING /tmp/ccclyeDw.s 			page 18
+
+
+ 474 00e0 01F0      		breq .L38
+ 331:libRobot.cpp  **** 			return;
+ 332:libRobot.cpp  **** 		fin_ = true;
+ 475               		.stabn	68,0,332,.LM46-.LFBB12
+ 476               	.LM46:
+ 477 00e2 81E0      		ldi r24,lo8(1)
+ 478 00e4 8093 0000 		sts _ZN8LibRobot4fin_E,r24
+ 479               	.L38:
+ 480 00e8 0895      		ret
+ 481               		.size	_ZN8LibRobot3finEv, .-_ZN8LibRobot3finEv
+ 482               	.Lscope12:
+ 483               		.stabs	"",36,0,0,.Lscope12-.LFBB12
+ 484               		.stabd	78,0,0
+ 485               		.stabs	"_ZN8LibRobot21ajustementPWM_MoteursEhh:F(0,4)",36,0,339,_ZN8LibRobot21ajustementPWM_Moteur
+ 486               		.stabs	"vitesseD:P(0,29)",64,0,339,24
+ 487               		.stabs	"vitesseG:P(0,29)",64,0,339,22
+ 488               	.global	_ZN8LibRobot21ajustementPWM_MoteursEhh
+ 489               		.type	_ZN8LibRobot21ajustementPWM_MoteursEhh, @function
+ 490               	_ZN8LibRobot21ajustementPWM_MoteursEhh:
+ 491               		.stabd	46,0,0
+ 333:libRobot.cpp  **** 	}
+ 334:libRobot.cpp  **** 
+ 335:libRobot.cpp  **** //---------------
+ 336:libRobot.cpp  **** //Gestion Moteurs
+ 337:libRobot.cpp  **** //---------------
+ 338:libRobot.cpp  **** 
+ 339:libRobot.cpp  **** 	void LibRobot::ajustementPWM_Moteurs( uint8_t vitesseD, uint8_t vitesseG )
+ 340:libRobot.cpp  **** 	{
+ 492               		.stabn	68,0,340,.LM47-.LFBB13
+ 493               	.LM47:
+ 494               	.LFBB13:
+ 495               	/* prologue: function */
+ 496               	/* frame size = 0 */
+ 497               	/* stack size = 0 */
+ 498               	.L__stack_usage = 0
+ 341:libRobot.cpp  **** 		//droite sur D5
+ 342:libRobot.cpp  **** 		//gauche sur D4
+ 343:libRobot.cpp  **** 
+ 344:libRobot.cpp  **** 		// mise a un des etat sortie OC1A et OC1B sur comparaison
+ 345:libRobot.cpp  **** 		// reussie en mode PWM 8 bits, phase correcte
+ 346:libRobot.cpp  **** 		// et valeur de TOP fixe a 0xFF (mode #1 de la table 15-5
+ 347:libRobot.cpp  **** 		// page 136 de la description technique du ATmega324PA)
+ 348:libRobot.cpp  **** 		//TCCR1A = (1 << COM1A1) | (1 << COM1B1);
+ 349:libRobot.cpp  **** 		TCCR1A |= 1 <<WGM10 |1 <<COM1A1 |1 <<COM1B1;
+ 499               		.stabn	68,0,349,.LM48-.LFBB13
+ 500               	.LM48:
+ 501 00ea E0E8      		ldi r30,lo8(-128)
+ 502 00ec F0E0      		ldi r31,0
+ 503 00ee 9081      		ld r25,Z
+ 504 00f0 916A      		ori r25,lo8(-95)
+ 505 00f2 9083      		st Z,r25
+ 350:libRobot.cpp  **** 		//TCCR1A |= 1 <<WGM10 |1 <<COM1A0 |1 <<COM1B0;
+ 351:libRobot.cpp  **** 		//TCCR1A |= 1 <<WGM10;//Set timer 1 in mode 1 (Phase Correct PWM TOP = 255 ) en comparaison sur A
+ 352:libRobot.cpp  **** 		OCR1A = vitesseD; //ratio frequence
+ 506               		.stabn	68,0,352,.LM49-.LFBB13
+ 507               	.LM49:
+ 508 00f4 90E0      		ldi r25,0
+GAS LISTING /tmp/ccclyeDw.s 			page 19
+
+
+ 509 00f6 9093 8900 		sts 136+1,r25
+ 510 00fa 8093 8800 		sts 136,r24
+ 353:libRobot.cpp  **** 		OCR1B = vitesseG;
+ 511               		.stabn	68,0,353,.LM50-.LFBB13
+ 512               	.LM50:
+ 513 00fe 70E0      		ldi r23,0
+ 514 0100 7093 8B00 		sts 138+1,r23
+ 515 0104 6093 8A00 		sts 138,r22
+ 354:libRobot.cpp  **** 
+ 355:libRobot.cpp  **** 		// division d'horloge par 8 - implique une frequence de PWM fixe
+ 356:libRobot.cpp  **** 		TCCR1B = (1 << CS11); //prescale
+ 516               		.stabn	68,0,356,.LM51-.LFBB13
+ 517               	.LM51:
+ 518 0108 82E0      		ldi r24,lo8(2)
+ 519 010a 8093 8100 		sts 129,r24
+ 520 010e 0895      		ret
+ 521               		.size	_ZN8LibRobot21ajustementPWM_MoteursEhh, .-_ZN8LibRobot21ajustementPWM_MoteursEhh
+ 522               	.Lscope13:
+ 523               		.stabs	"",36,0,0,.Lscope13-.LFBB13
+ 524               		.stabd	78,0,0
+ 525               		.stabs	"_ZN8LibRobot14arreterMoteursEv:F(0,4)",36,0,159,_ZN8LibRobot14arreterMoteursEv
+ 526               	.global	_ZN8LibRobot14arreterMoteursEv
+ 527               		.type	_ZN8LibRobot14arreterMoteursEv, @function
+ 528               	_ZN8LibRobot14arreterMoteursEv:
+ 529               		.stabd	46,0,0
+ 160:libRobot.cpp  **** 	{
+ 530               		.stabn	68,0,160,.LM52-.LFBB14
+ 531               	.LM52:
+ 532               	.LFBB14:
+ 533               	/* prologue: function */
+ 534               	/* frame size = 0 */
+ 535               	/* stack size = 0 */
+ 536               	.L__stack_usage = 0
+ 161:libRobot.cpp  **** 		if(!debut_)
+ 537               		.stabn	68,0,161,.LM53-.LFBB14
+ 538               	.LM53:
+ 539 0110 8091 0000 		lds r24,_ZN8LibRobot6debut_E
+ 540 0114 8823      		tst r24
+ 541 0116 01F0      		breq .L44
+ 163:libRobot.cpp  **** 		ajustementPWM_Moteurs(0,0);
+ 542               		.stabn	68,0,163,.LM54-.LFBB14
+ 543               	.LM54:
+ 544 0118 60E0      		ldi r22,0
+ 545 011a 80E0      		ldi r24,0
+ 546 011c 0C94 0000 		jmp _ZN8LibRobot21ajustementPWM_MoteursEhh
+ 547               	.L44:
+ 548 0120 0895      		ret
+ 549               		.size	_ZN8LibRobot14arreterMoteursEv, .-_ZN8LibRobot14arreterMoteursEv
+ 550               	.Lscope14:
+ 551               		.stabs	"",36,0,0,.Lscope14-.LFBB14
+ 552               		.stabd	78,0,0
+ 553               		.stabs	"_ZN8LibRobot11ajusterSensEbb:F(0,4)",36,0,360,_ZN8LibRobot11ajusterSensEbb
+ 554               		.stabs	"sensD:P(0,24)",64,0,360,24
+ 555               		.stabs	"sensG:P(0,24)",64,0,360,22
+ 556               	.global	_ZN8LibRobot11ajusterSensEbb
+ 557               		.type	_ZN8LibRobot11ajusterSensEbb, @function
+ 558               	_ZN8LibRobot11ajusterSensEbb:
+GAS LISTING /tmp/ccclyeDw.s 			page 20
+
+
+ 559               		.stabd	46,0,0
+ 357:libRobot.cpp  **** 		//START_TIMER;
+ 358:libRobot.cpp  **** 	}
+ 359:libRobot.cpp  **** 
+ 360:libRobot.cpp  **** 	void LibRobot::ajusterSens(bool sensD, bool sensG)
+ 361:libRobot.cpp  **** 	{
+ 560               		.stabn	68,0,361,.LM55-.LFBB15
+ 561               	.LM55:
+ 562               	.LFBB15:
+ 563               	/* prologue: function */
+ 564               	/* frame size = 0 */
+ 565               	/* stack size = 0 */
+ 566               	.L__stack_usage = 0
+ 362:libRobot.cpp  **** 		//droite sur D7
+ 363:libRobot.cpp  **** 		//gauche sur D6
+ 364:libRobot.cpp  **** 
+ 365:libRobot.cpp  **** 		if(sensD) //0 si on avance
+ 567               		.stabn	68,0,365,.LM56-.LFBB15
+ 568               	.LM56:
+ 569 0122 8823      		tst r24
+ 570 0124 01F0      		breq .L47
+ 366:libRobot.cpp  **** 			PORTD &= ~(_BV(PORTD7));
+ 571               		.stabn	68,0,366,.LM57-.LFBB15
+ 572               	.LM57:
+ 573 0126 5F98      		cbi 0xb,7
+ 574 0128 00C0      		rjmp .L48
+ 575               	.L47:
+ 367:libRobot.cpp  **** 		else
+ 368:libRobot.cpp  **** 			PORTD |= _BV(PORTD7); 
+ 576               		.stabn	68,0,368,.LM58-.LFBB15
+ 577               	.LM58:
+ 578 012a 5F9A      		sbi 0xb,7
+ 579               	.L48:
+ 369:libRobot.cpp  **** 
+ 370:libRobot.cpp  **** 		if(sensG) //0 si on avance
+ 580               		.stabn	68,0,370,.LM59-.LFBB15
+ 581               	.LM59:
+ 582 012c 6623      		tst r22
+ 583 012e 01F0      		breq .L49
+ 584               	.LBB30:
+ 585               	.LBB31:
+ 371:libRobot.cpp  **** 			PORTD &= ~(_BV(PORTD6));
+ 586               		.stabn	68,0,371,.LM60-.LFBB15
+ 587               	.LM60:
+ 588 0130 5E98      		cbi 0xb,6
+ 589 0132 0895      		ret
+ 590               	.L49:
+ 591               	.LBE31:
+ 592               	.LBE30:
+ 372:libRobot.cpp  **** 		else
+ 373:libRobot.cpp  **** 			PORTD |= _BV(PORTD6);
+ 593               		.stabn	68,0,373,.LM61-.LFBB15
+ 594               	.LM61:
+ 595 0134 5E9A      		sbi 0xb,6
+ 596 0136 0895      		ret
+ 597               		.size	_ZN8LibRobot11ajusterSensEbb, .-_ZN8LibRobot11ajusterSensEbb
+ 598               	.Lscope15:
+GAS LISTING /tmp/ccclyeDw.s 			page 21
+
+
+ 599               		.stabs	"",36,0,0,.Lscope15-.LFBB15
+ 600               		.stabd	78,0,0
+ 601               		.stabs	"_ZN8LibRobot15tournerGauche90Ev:F(0,4)",36,0,299,_ZN8LibRobot15tournerGauche90Ev
+ 602               	.global	_ZN8LibRobot15tournerGauche90Ev
+ 603               		.type	_ZN8LibRobot15tournerGauche90Ev, @function
+ 604               	_ZN8LibRobot15tournerGauche90Ev:
+ 605               		.stabd	46,0,0
+ 300:libRobot.cpp  **** 	{
+ 606               		.stabn	68,0,300,.LM62-.LFBB16
+ 607               	.LM62:
+ 608               	.LFBB16:
+ 609               	/* prologue: function */
+ 610               	/* frame size = 0 */
+ 611               	/* stack size = 0 */
+ 612               	.L__stack_usage = 0
+ 301:libRobot.cpp  **** 		if(!debut_)
+ 613               		.stabn	68,0,301,.LM63-.LFBB16
+ 614               	.LM63:
+ 615 0138 8091 0000 		lds r24,_ZN8LibRobot6debut_E
+ 616 013c 8823      		tst r24
+ 617 013e 01F0      		breq .L51
+ 304:libRobot.cpp  **** 		ajusterSens(true, false);
+ 618               		.stabn	68,0,304,.LM64-.LFBB16
+ 619               	.LM64:
+ 620 0140 60E0      		ldi r22,0
+ 621 0142 81E0      		ldi r24,lo8(1)
+ 622 0144 0E94 0000 		call _ZN8LibRobot11ajusterSensEbb
+ 305:libRobot.cpp  **** 		ajustementPWM_Moteurs(255,255);
+ 623               		.stabn	68,0,305,.LM65-.LFBB16
+ 624               	.LM65:
+ 625 0148 6FEF      		ldi r22,lo8(-1)
+ 626 014a 8FEF      		ldi r24,lo8(-1)
+ 627 014c 0E94 0000 		call _ZN8LibRobot21ajustementPWM_MoteursEhh
+ 628               	.LBB32:
+ 629               	.LBB33:
+ 630               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h",132,0,0,.Ltext5
+ 631               	.Ltext5:
+ 632               		.stabn	68,0,164,.LM66-.LFBB16
+ 633               	.LM66:
+ 634 0150 2FE7      		ldi r18,lo8(399999)
+ 635 0152 8AE1      		ldi r24,hi8(399999)
+ 636 0154 96E0      		ldi r25,hlo8(399999)
+ 637 0156 2150      		1: subi r18,1
+ 638 0158 8040      		sbci r24,0
+ 639 015a 9040      		sbci r25,0
+ 640 015c 01F4      		brne 1b
+ 641 015e 00C0      		rjmp .
+ 642 0160 0000      		nop
+ 643               	.LBE33:
+ 644               	.LBE32:
+ 645               		.stabs	"libRobot.cpp",132,0,0,.Ltext6
+ 646               	.Ltext6:
+ 309:libRobot.cpp  **** 		ajustementPWM_Moteurs(0,0);	
+ 647               		.stabn	68,0,309,.LM67-.LFBB16
+ 648               	.LM67:
+ 649 0162 60E0      		ldi r22,0
+ 650 0164 80E0      		ldi r24,0
+GAS LISTING /tmp/ccclyeDw.s 			page 22
+
+
+ 651 0166 0C94 0000 		jmp _ZN8LibRobot21ajustementPWM_MoteursEhh
+ 652               	.L51:
+ 653 016a 0895      		ret
+ 654               		.size	_ZN8LibRobot15tournerGauche90Ev, .-_ZN8LibRobot15tournerGauche90Ev
+ 655               	.Lscope16:
+ 656               		.stabs	"",36,0,0,.Lscope16-.LFBB16
+ 657               		.stabd	78,0,0
+ 658               		.stabs	"_ZN8LibRobot15tournerDroite90Ev:F(0,4)",36,0,286,_ZN8LibRobot15tournerDroite90Ev
+ 659               	.global	_ZN8LibRobot15tournerDroite90Ev
+ 660               		.type	_ZN8LibRobot15tournerDroite90Ev, @function
+ 661               	_ZN8LibRobot15tournerDroite90Ev:
+ 662               		.stabd	46,0,0
+ 287:libRobot.cpp  **** 	{
+ 663               		.stabn	68,0,287,.LM68-.LFBB17
+ 664               	.LM68:
+ 665               	.LFBB17:
+ 666               	/* prologue: function */
+ 667               	/* frame size = 0 */
+ 668               	/* stack size = 0 */
+ 669               	.L__stack_usage = 0
+ 288:libRobot.cpp  **** 		if(!debut_)
+ 670               		.stabn	68,0,288,.LM69-.LFBB17
+ 671               	.LM69:
+ 672 016c 8091 0000 		lds r24,_ZN8LibRobot6debut_E
+ 673 0170 8823      		tst r24
+ 674 0172 01F0      		breq .L53
+ 291:libRobot.cpp  **** 		ajusterSens(false, true);
+ 675               		.stabn	68,0,291,.LM70-.LFBB17
+ 676               	.LM70:
+ 677 0174 61E0      		ldi r22,lo8(1)
+ 678 0176 80E0      		ldi r24,0
+ 679 0178 0E94 0000 		call _ZN8LibRobot11ajusterSensEbb
+ 292:libRobot.cpp  **** 		ajustementPWM_Moteurs(255,255);
+ 680               		.stabn	68,0,292,.LM71-.LFBB17
+ 681               	.LM71:
+ 682 017c 6FEF      		ldi r22,lo8(-1)
+ 683 017e 8FEF      		ldi r24,lo8(-1)
+ 684 0180 0E94 0000 		call _ZN8LibRobot21ajustementPWM_MoteursEhh
+ 685               	.LBB34:
+ 686               	.LBB35:
+ 687               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h",132,0,0,.Ltext7
+ 688               	.Ltext7:
+ 689               		.stabn	68,0,164,.LM72-.LFBB17
+ 690               	.LM72:
+ 691 0184 2FE7      		ldi r18,lo8(399999)
+ 692 0186 8AE1      		ldi r24,hi8(399999)
+ 693 0188 96E0      		ldi r25,hlo8(399999)
+ 694 018a 2150      		1: subi r18,1
+ 695 018c 8040      		sbci r24,0
+ 696 018e 9040      		sbci r25,0
+ 697 0190 01F4      		brne 1b
+ 698 0192 00C0      		rjmp .
+ 699 0194 0000      		nop
+ 700               	.LBE35:
+ 701               	.LBE34:
+ 702               		.stabs	"libRobot.cpp",132,0,0,.Ltext8
+ 703               	.Ltext8:
+GAS LISTING /tmp/ccclyeDw.s 			page 23
+
+
+ 296:libRobot.cpp  **** 		ajustementPWM_Moteurs(0,0);	
+ 704               		.stabn	68,0,296,.LM73-.LFBB17
+ 705               	.LM73:
+ 706 0196 60E0      		ldi r22,0
+ 707 0198 80E0      		ldi r24,0
+ 708 019a 0C94 0000 		jmp _ZN8LibRobot21ajustementPWM_MoteursEhh
+ 709               	.L53:
+ 710 019e 0895      		ret
+ 711               		.size	_ZN8LibRobot15tournerDroite90Ev, .-_ZN8LibRobot15tournerDroite90Ev
+ 712               	.Lscope17:
+ 713               		.stabs	"",36,0,0,.Lscope17-.LFBB17
+ 714               		.stabd	78,0,0
+ 715               		.stabs	"_ZN8LibRobot9decoincerEbbb:F(0,4)",36,0,274,_ZN8LibRobot9decoincerEbbb
+ 716               		.stabs	"gauche:P(0,24)",64,0,274,29
+ 717               		.stabs	"droite:P(0,24)",64,0,274,28
+ 718               		.stabs	"sens:P(0,24)",64,0,274,20
+ 719               	.global	_ZN8LibRobot9decoincerEbbb
+ 720               		.type	_ZN8LibRobot9decoincerEbbb, @function
+ 721               	_ZN8LibRobot9decoincerEbbb:
+ 722               		.stabd	46,0,0
+ 275:libRobot.cpp  **** 	{
+ 723               		.stabn	68,0,275,.LM74-.LFBB18
+ 724               	.LM74:
+ 725               	.LFBB18:
+ 726 01a0 CF93      		push r28
+ 727 01a2 DF93      		push r29
+ 728               	/* prologue: function */
+ 729               	/* frame size = 0 */
+ 730               	/* stack size = 2 */
+ 731               	.L__stack_usage = 2
+ 732 01a4 D82F      		mov r29,r24
+ 733 01a6 C62F      		mov r28,r22
+ 276:libRobot.cpp  **** 		ajusterSens(sens, sens);
+ 734               		.stabn	68,0,276,.LM75-.LFBB18
+ 735               	.LM75:
+ 736 01a8 642F      		mov r22,r20
+ 737 01aa 842F      		mov r24,r20
+ 738 01ac 0E94 0000 		call _ZN8LibRobot11ajusterSensEbb
+ 278:libRobot.cpp  **** 		if(gauche && droite)
+ 739               		.stabn	68,0,278,.LM76-.LFBB18
+ 740               	.LM76:
+ 741 01b0 DD23      		tst r29
+ 742 01b2 01F0      		breq .L56
+ 279:libRobot.cpp  **** 			ajustementPWM_Moteurs(255, 255);
+ 743               		.stabn	68,0,279,.LM77-.LFBB18
+ 744               	.LM77:
+ 745 01b4 6FEF      		ldi r22,lo8(-1)
+ 278:libRobot.cpp  **** 		if(gauche && droite)
+ 746               		.stabn	68,0,278,.LM78-.LFBB18
+ 747               	.LM78:
+ 748 01b6 C111      		cpse r28,__zero_reg__
+ 749 01b8 00C0      		rjmp .L59
+ 750               	.L57:
+ 281:libRobot.cpp  **** 			ajustementPWM_Moteurs(0, 255);
+ 751               		.stabn	68,0,281,.LM79-.LFBB18
+ 752               	.LM79:
+ 753 01ba 80E0      		ldi r24,0
+GAS LISTING /tmp/ccclyeDw.s 			page 24
+
+
+ 754 01bc 00C0      		rjmp .L60
+ 755               	.L56:
+ 282:libRobot.cpp  **** 		else if(droite)
+ 756               		.stabn	68,0,282,.LM80-.LFBB18
+ 757               	.LM80:
+ 758 01be CC23      		tst r28
+ 759 01c0 01F0      		breq .L55
+ 283:libRobot.cpp  **** 			ajustementPWM_Moteurs(255, 0);
+ 760               		.stabn	68,0,283,.LM81-.LFBB18
+ 761               	.LM81:
+ 762 01c2 60E0      		ldi r22,0
+ 763               	.L59:
+ 764 01c4 8FEF      		ldi r24,lo8(-1)
+ 765               	.L60:
+ 766               	/* epilogue start */
+ 284:libRobot.cpp  **** 	}
+ 767               		.stabn	68,0,284,.LM82-.LFBB18
+ 768               	.LM82:
+ 769 01c6 DF91      		pop r29
+ 770 01c8 CF91      		pop r28
+ 283:libRobot.cpp  **** 			ajustementPWM_Moteurs(255, 0);
+ 771               		.stabn	68,0,283,.LM83-.LFBB18
+ 772               	.LM83:
+ 773 01ca 0C94 0000 		jmp _ZN8LibRobot21ajustementPWM_MoteursEhh
+ 774               	.L55:
+ 775               	/* epilogue start */
+ 284:libRobot.cpp  **** 	}
+ 776               		.stabn	68,0,284,.LM84-.LFBB18
+ 777               	.LM84:
+ 778 01ce DF91      		pop r29
+ 779 01d0 CF91      		pop r28
+ 780 01d2 0895      		ret
+ 781               		.size	_ZN8LibRobot9decoincerEbbb, .-_ZN8LibRobot9decoincerEbbb
+ 782               	.Lscope18:
+ 783               		.stabs	"",36,0,0,.Lscope18-.LFBB18
+ 784               		.stabd	78,0,0
+ 785               		.stabs	"_ZN8LibRobot7reculerEhhaa:F(0,4)",36,0,246,_ZN8LibRobot7reculerEhhaa
+ 786               		.stabs	"frequence255G:P(0,29)",64,0,246,17
+ 787               		.stabs	"frequence255D:P(0,29)",64,0,246,16
+ 788               		.stabs	"ajustementG:P(0,28)",64,0,246,20
+ 789               		.stabs	"ajustementD:P(0,28)",64,0,246,18
+ 790               	.global	_ZN8LibRobot7reculerEhhaa
+ 791               		.type	_ZN8LibRobot7reculerEhhaa, @function
+ 792               	_ZN8LibRobot7reculerEhhaa:
+ 793               		.stabd	46,0,0
+ 247:libRobot.cpp  **** 	{
+ 794               		.stabn	68,0,247,.LM85-.LFBB19
+ 795               	.LM85:
+ 796               	.LFBB19:
+ 797 01d4 0F93      		push r16
+ 798 01d6 1F93      		push r17
+ 799 01d8 CF93      		push r28
+ 800 01da DF93      		push r29
+ 801 01dc 00D0      		rcall .
+ 802 01de CDB7      		in r28,__SP_L__
+ 803 01e0 DEB7      		in r29,__SP_H__
+ 804               	/* prologue: function */
+GAS LISTING /tmp/ccclyeDw.s 			page 25
+
+
+ 805               	/* frame size = 2 */
+ 806               	/* stack size = 6 */
+ 807               	.L__stack_usage = 6
+ 808 01e2 182F      		mov r17,r24
+ 809 01e4 062F      		mov r16,r22
+ 810               	.LBB36:
+ 248:libRobot.cpp  **** 		if(!debut_)
+ 811               		.stabn	68,0,248,.LM86-.LFBB19
+ 812               	.LM86:
+ 813 01e6 8091 0000 		lds r24,_ZN8LibRobot6debut_E
+ 814 01ea 8823      		tst r24
+ 815 01ec 01F0      		breq .L61
+ 251:libRobot.cpp  **** 		ajusterSens(false, false);
+ 816               		.stabn	68,0,251,.LM87-.LFBB19
+ 817               	.LM87:
+ 818 01ee 60E0      		ldi r22,0
+ 819 01f0 80E0      		ldi r24,0
+ 820 01f2 2A83      		std Y+2,r18
+ 821 01f4 4983      		std Y+1,r20
+ 822 01f6 0E94 0000 		call _ZN8LibRobot11ajusterSensEbb
+ 254:libRobot.cpp  **** 		int16_t tempAdd = frequence255D+ajustementD;
+ 823               		.stabn	68,0,254,.LM88-.LFBB19
+ 824               	.LM88:
+ 825 01fa 2A81      		ldd r18,Y+2
+ 826 01fc 3327      		clr r19
+ 827 01fe 27FD      		sbrc r18,7
+ 828 0200 3095      		com r19
+ 829 0202 200F      		add r18,r16
+ 830 0204 311D      		adc r19,__zero_reg__
+ 256:libRobot.cpp  **** 		if(tempAdd > 255)
+ 831               		.stabn	68,0,256,.LM89-.LFBB19
+ 832               	.LM89:
+ 833 0206 4981      		ldd r20,Y+1
+ 834 0208 2F3F      		cpi r18,-1
+ 835 020a 3105      		cpc r19,__zero_reg__
+ 836 020c 01F0      		breq .+2
+ 837 020e 04F4      		brge .L65
+ 258:libRobot.cpp  **** 		else if(tempAdd < 0)
+ 838               		.stabn	68,0,258,.LM90-.LFBB19
+ 839               	.LM90:
+ 840 0210 37FD      		sbrc r19,7
+ 841 0212 00C0      		rjmp .L66
+ 261:libRobot.cpp  **** 			fD = tempAdd;
+ 842               		.stabn	68,0,261,.LM91-.LFBB19
+ 843               	.LM91:
+ 844 0214 822F      		mov r24,r18
+ 845 0216 00C0      		rjmp .L63
+ 846               	.L65:
+ 257:libRobot.cpp  **** 			fD = 255;
+ 847               		.stabn	68,0,257,.LM92-.LFBB19
+ 848               	.LM92:
+ 849 0218 8FEF      		ldi r24,lo8(-1)
+ 850 021a 00C0      		rjmp .L63
+ 851               	.L66:
+ 259:libRobot.cpp  **** 			fD = 0;
+ 852               		.stabn	68,0,259,.LM93-.LFBB19
+ 853               	.LM93:
+GAS LISTING /tmp/ccclyeDw.s 			page 26
+
+
+ 854 021c 80E0      		ldi r24,0
+ 855               	.L63:
+ 263:libRobot.cpp  **** 		tempAdd = frequence255G+ajustementG;
+ 856               		.stabn	68,0,263,.LM94-.LFBB19
+ 857               	.LM94:
+ 858 021e 642F      		mov r22,r20
+ 859 0220 7727      		clr r23
+ 860 0222 67FD      		sbrc r22,7
+ 861 0224 7095      		com r23
+ 862 0226 610F      		add r22,r17
+ 863 0228 711D      		adc r23,__zero_reg__
+ 264:libRobot.cpp  **** 		if(tempAdd > 255)
+ 864               		.stabn	68,0,264,.LM95-.LFBB19
+ 865               	.LM95:
+ 866 022a 6F3F      		cpi r22,-1
+ 867 022c 7105      		cpc r23,__zero_reg__
+ 868 022e 01F0      		breq .+2
+ 869 0230 04F4      		brge .L67
+ 266:libRobot.cpp  **** 		else if(tempAdd < 0)
+ 870               		.stabn	68,0,266,.LM96-.LFBB19
+ 871               	.LM96:
+ 872 0232 77FD      		sbrc r23,7
+ 873 0234 00C0      		rjmp .L68
+ 874 0236 00C0      		rjmp .L64
+ 875               	.L67:
+ 265:libRobot.cpp  **** 			fG = 255;
+ 876               		.stabn	68,0,265,.LM97-.LFBB19
+ 877               	.LM97:
+ 878 0238 6FEF      		ldi r22,lo8(-1)
+ 879 023a 00C0      		rjmp .L64
+ 880               	.L68:
+ 267:libRobot.cpp  **** 			fG = 0;
+ 881               		.stabn	68,0,267,.LM98-.LFBB19
+ 882               	.LM98:
+ 883 023c 60E0      		ldi r22,0
+ 884               	.L64:
+ 885               	/* epilogue start */
+ 886               	.LBE36:
+ 272:libRobot.cpp  **** 	}
+ 887               		.stabn	68,0,272,.LM99-.LFBB19
+ 888               	.LM99:
+ 889 023e 0F90      		pop __tmp_reg__
+ 890 0240 0F90      		pop __tmp_reg__
+ 891 0242 DF91      		pop r29
+ 892 0244 CF91      		pop r28
+ 893 0246 1F91      		pop r17
+ 894 0248 0F91      		pop r16
+ 895               	.LBB37:
+ 271:libRobot.cpp  **** 		ajustementPWM_Moteurs(fD, fG);
+ 896               		.stabn	68,0,271,.LM100-.LFBB19
+ 897               	.LM100:
+ 898 024a 0C94 0000 		jmp _ZN8LibRobot21ajustementPWM_MoteursEhh
+ 899               	.L61:
+ 900               	/* epilogue start */
+ 901               	.LBE37:
+ 272:libRobot.cpp  **** 	}
+ 902               		.stabn	68,0,272,.LM101-.LFBB19
+GAS LISTING /tmp/ccclyeDw.s 			page 27
+
+
+ 903               	.LM101:
+ 904 024e 0F90      		pop __tmp_reg__
+ 905 0250 0F90      		pop __tmp_reg__
+ 906 0252 DF91      		pop r29
+ 907 0254 CF91      		pop r28
+ 908 0256 1F91      		pop r17
+ 909 0258 0F91      		pop r16
+ 910 025a 0895      		ret
+ 911               		.size	_ZN8LibRobot7reculerEhhaa, .-_ZN8LibRobot7reculerEhhaa
+ 912               		.stabs	"fG:r(0,29)",64,0,253,22
+ 913               		.stabs	"fD:r(0,29)",64,0,253,24
+ 914               		.stabn	192,0,0,.LBB36-.LFBB19
+ 915               		.stabn	224,0,0,.LBE36-.LFBB19
+ 916               		.stabs	"fG:r(0,29)",64,0,253,22
+ 917               		.stabs	"fD:r(0,29)",64,0,253,24
+ 918               		.stabn	192,0,0,.LBB37-.LFBB19
+ 919               		.stabn	224,0,0,.LBE37-.LFBB19
+ 920               	.Lscope19:
+ 921               		.stabs	"",36,0,0,.Lscope19-.LFBB19
+ 922               		.stabd	78,0,0
+ 923               		.stabs	"_ZN8LibRobot7reculerEh:F(0,4)",36,0,237,_ZN8LibRobot7reculerEh
+ 924               		.stabs	"frequence255:P(0,29)",64,0,237,28
+ 925               	.global	_ZN8LibRobot7reculerEh
+ 926               		.type	_ZN8LibRobot7reculerEh, @function
+ 927               	_ZN8LibRobot7reculerEh:
+ 928               		.stabd	46,0,0
+ 238:libRobot.cpp  **** 	{
+ 929               		.stabn	68,0,238,.LM102-.LFBB20
+ 930               	.LM102:
+ 931               	.LFBB20:
+ 932 025c CF93      		push r28
+ 933               	/* prologue: function */
+ 934               	/* frame size = 0 */
+ 935               	/* stack size = 1 */
+ 936               	.L__stack_usage = 1
+ 937 025e C82F      		mov r28,r24
+ 239:libRobot.cpp  **** 		if(!debut_)
+ 938               		.stabn	68,0,239,.LM103-.LFBB20
+ 939               	.LM103:
+ 940 0260 8091 0000 		lds r24,_ZN8LibRobot6debut_E
+ 941 0264 8823      		tst r24
+ 942 0266 01F0      		breq .L69
+ 242:libRobot.cpp  **** 		ajusterSens(false, false);
+ 943               		.stabn	68,0,242,.LM104-.LFBB20
+ 944               	.LM104:
+ 945 0268 60E0      		ldi r22,0
+ 946 026a 80E0      		ldi r24,0
+ 947 026c 0E94 0000 		call _ZN8LibRobot11ajusterSensEbb
+ 243:libRobot.cpp  **** 		ajustementPWM_Moteurs(frequence255,frequence255);
+ 948               		.stabn	68,0,243,.LM105-.LFBB20
+ 949               	.LM105:
+ 950 0270 6C2F      		mov r22,r28
+ 951 0272 8C2F      		mov r24,r28
+ 952               	/* epilogue start */
+ 244:libRobot.cpp  **** 	}
+ 953               		.stabn	68,0,244,.LM106-.LFBB20
+ 954               	.LM106:
+GAS LISTING /tmp/ccclyeDw.s 			page 28
+
+
+ 955 0274 CF91      		pop r28
+ 243:libRobot.cpp  **** 		ajustementPWM_Moteurs(frequence255,frequence255);
+ 956               		.stabn	68,0,243,.LM107-.LFBB20
+ 957               	.LM107:
+ 958 0276 0C94 0000 		jmp _ZN8LibRobot21ajustementPWM_MoteursEhh
+ 959               	.L69:
+ 960               	/* epilogue start */
+ 244:libRobot.cpp  **** 	}
+ 961               		.stabn	68,0,244,.LM108-.LFBB20
+ 962               	.LM108:
+ 963 027a CF91      		pop r28
+ 964 027c 0895      		ret
+ 965               		.size	_ZN8LibRobot7reculerEh, .-_ZN8LibRobot7reculerEh
+ 966               	.Lscope20:
+ 967               		.stabs	"",36,0,0,.Lscope20-.LFBB20
+ 968               		.stabd	78,0,0
+ 969               		.stabs	"_ZN8LibRobot5virerEhaab:F(0,4)",36,0,202,_ZN8LibRobot5virerEhaab
+ 970               		.stabs	"frequence255:P(0,29)",64,0,202,16
+ 971               		.stabs	"ajustementG:P(0,28)",64,0,202,17
+ 972               		.stabs	"ajustementD:P(0,28)",64,0,202,20
+ 973               		.stabs	"sens:P(0,24)",64,0,202,18
+ 974               	.global	_ZN8LibRobot5virerEhaab
+ 975               		.type	_ZN8LibRobot5virerEhaab, @function
+ 976               	_ZN8LibRobot5virerEhaab:
+ 977               		.stabd	46,0,0
+ 203:libRobot.cpp  **** 	{
+ 978               		.stabn	68,0,203,.LM109-.LFBB21
+ 979               	.LM109:
+ 980               	.LFBB21:
+ 981 027e 0F93      		push r16
+ 982 0280 1F93      		push r17
+ 983 0282 CF93      		push r28
+ 984 0284 DF93      		push r29
+ 985 0286 00D0      		rcall .
+ 986 0288 CDB7      		in r28,__SP_L__
+ 987 028a DEB7      		in r29,__SP_H__
+ 988               	/* prologue: function */
+ 989               	/* frame size = 2 */
+ 990               	/* stack size = 6 */
+ 991               	.L__stack_usage = 6
+ 992 028c 082F      		mov r16,r24
+ 993 028e 162F      		mov r17,r22
+ 994               	.LBB38:
+ 204:libRobot.cpp  **** 		if(!debut_)
+ 995               		.stabn	68,0,204,.LM110-.LFBB21
+ 996               	.LM110:
+ 997 0290 8091 0000 		lds r24,_ZN8LibRobot6debut_E
+ 998 0294 8823      		tst r24
+ 999 0296 01F0      		breq .L71
+ 207:libRobot.cpp  **** 		ajusterSens(true, true);	
+ 1000               		.stabn	68,0,207,.LM111-.LFBB21
+ 1001               	.LM111:
+ 1002 0298 61E0      		ldi r22,lo8(1)
+ 1003 029a 81E0      		ldi r24,lo8(1)
+ 1004 029c 2A83      		std Y+2,r18
+ 1005 029e 4983      		std Y+1,r20
+ 1006 02a0 0E94 0000 		call _ZN8LibRobot11ajusterSensEbb
+GAS LISTING /tmp/ccclyeDw.s 			page 29
+
+
+ 1007 02a4 802F      		mov r24,r16
+ 1008 02a6 90E0      		ldi r25,0
+ 1009               	.LBB39:
+ 210:libRobot.cpp  **** 		if(sens)
+ 1010               		.stabn	68,0,210,.LM112-.LFBB21
+ 1011               	.LM112:
+ 1012 02a8 2A81      		ldd r18,Y+2
+ 1013 02aa 4981      		ldd r20,Y+1
+ 1014 02ac 2223      		tst r18
+ 1015 02ae 01F0      		breq .L73
+ 1016               	.LBB40:
+ 212:libRobot.cpp  **** 			int16_t tempAdd = frequence255+ajustementG;
+ 1017               		.stabn	68,0,212,.LM113-.LFBB21
+ 1018               	.LM113:
+ 1019 02b0 810F      		add r24,r17
+ 1020 02b2 911D      		adc r25,__zero_reg__
+ 1021 02b4 17FD      		sbrc r17,7
+ 1022 02b6 9A95      		dec r25
+ 213:libRobot.cpp  **** 			if(tempAdd > 255)
+ 1023               		.stabn	68,0,213,.LM114-.LFBB21
+ 1024               	.LM114:
+ 1025 02b8 8F3F      		cpi r24,-1
+ 1026 02ba 9105      		cpc r25,__zero_reg__
+ 1027 02bc 01F0      		breq .+2
+ 1028 02be 04F4      		brge .L75
+ 215:libRobot.cpp  **** 			else if(tempAdd < 0)
+ 1029               		.stabn	68,0,215,.LM115-.LFBB21
+ 1030               	.LM115:
+ 1031 02c0 97FD      		sbrc r25,7
+ 1032 02c2 00C0      		rjmp .L78
+ 218:libRobot.cpp  **** 				fG = tempAdd;
+ 1033               		.stabn	68,0,218,.LM116-.LFBB21
+ 1034               	.LM116:
+ 1035 02c4 682F      		mov r22,r24
+ 219:libRobot.cpp  **** 			fD = 0;
+ 1036               		.stabn	68,0,219,.LM117-.LFBB21
+ 1037               	.LM117:
+ 1038 02c6 80E0      		ldi r24,0
+ 1039 02c8 00C0      		rjmp .L74
+ 1040               	.L73:
+ 1041               	.LBE40:
+ 1042               	.LBB41:
+ 224:libRobot.cpp  **** 			int16_t tempAdd = frequence255+ajustementD;
+ 1043               		.stabn	68,0,224,.LM118-.LFBB21
+ 1044               	.LM118:
+ 1045 02ca 840F      		add r24,r20
+ 1046 02cc 911D      		adc r25,__zero_reg__
+ 1047 02ce 47FD      		sbrc r20,7
+ 1048 02d0 9A95      		dec r25
+ 226:libRobot.cpp  **** 			if(tempAdd > 255)
+ 1049               		.stabn	68,0,226,.LM119-.LFBB21
+ 1050               	.LM119:
+ 1051 02d2 8F3F      		cpi r24,-1
+ 1052 02d4 9105      		cpc r25,__zero_reg__
+ 1053 02d6 01F0      		breq .+2
+ 1054 02d8 04F4      		brge .L77
+ 228:libRobot.cpp  **** 			else if(tempAdd < 0)
+GAS LISTING /tmp/ccclyeDw.s 			page 30
+
+
+ 1055               		.stabn	68,0,228,.LM120-.LFBB21
+ 1056               	.LM120:
+ 1057 02da 97FD      		sbrc r25,7
+ 1058 02dc 00C0      		rjmp .L78
+ 1059 02de 00C0      		rjmp .L79
+ 1060               	.L75:
+ 1061               	.LBE41:
+ 1062               	.LBB42:
+ 219:libRobot.cpp  **** 			fD = 0;
+ 1063               		.stabn	68,0,219,.LM121-.LFBB21
+ 1064               	.LM121:
+ 1065 02e0 80E0      		ldi r24,0
+ 214:libRobot.cpp  **** 				fG = 255;
+ 1066               		.stabn	68,0,214,.LM122-.LFBB21
+ 1067               	.LM122:
+ 1068 02e2 6FEF      		ldi r22,lo8(-1)
+ 1069 02e4 00C0      		rjmp .L74
+ 1070               	.L77:
+ 1071               	.LBE42:
+ 1072               	.LBB43:
+ 227:libRobot.cpp  **** 				fD = 255;
+ 1073               		.stabn	68,0,227,.LM123-.LFBB21
+ 1074               	.LM123:
+ 1075 02e6 8FEF      		ldi r24,lo8(-1)
+ 1076 02e8 00C0      		rjmp .L79
+ 1077               	.L78:
+ 219:libRobot.cpp  **** 			fD = 0;
+ 1078               		.stabn	68,0,219,.LM124-.LFBB21
+ 1079               	.LM124:
+ 1080 02ea 80E0      		ldi r24,0
+ 1081               	.L79:
+ 216:libRobot.cpp  **** 				fG = 0;
+ 1082               		.stabn	68,0,216,.LM125-.LFBB21
+ 1083               	.LM125:
+ 1084 02ec 60E0      		ldi r22,0
+ 1085               	.L74:
+ 1086               	/* epilogue start */
+ 1087               	.LBE43:
+ 1088               	.LBE39:
+ 1089               	.LBE38:
+ 235:libRobot.cpp  **** 	}
+ 1090               		.stabn	68,0,235,.LM126-.LFBB21
+ 1091               	.LM126:
+ 1092 02ee 0F90      		pop __tmp_reg__
+ 1093 02f0 0F90      		pop __tmp_reg__
+ 1094 02f2 DF91      		pop r29
+ 1095 02f4 CF91      		pop r28
+ 1096 02f6 1F91      		pop r17
+ 1097 02f8 0F91      		pop r16
+ 1098               	.LBB44:
+ 234:libRobot.cpp  **** 		ajustementPWM_Moteurs(fD, fG);
+ 1099               		.stabn	68,0,234,.LM127-.LFBB21
+ 1100               	.LM127:
+ 1101 02fa 0C94 0000 		jmp _ZN8LibRobot21ajustementPWM_MoteursEhh
+ 1102               	.L71:
+ 1103               	/* epilogue start */
+ 1104               	.LBE44:
+GAS LISTING /tmp/ccclyeDw.s 			page 31
+
+
+ 235:libRobot.cpp  **** 	}
+ 1105               		.stabn	68,0,235,.LM128-.LFBB21
+ 1106               	.LM128:
+ 1107 02fe 0F90      		pop __tmp_reg__
+ 1108 0300 0F90      		pop __tmp_reg__
+ 1109 0302 DF91      		pop r29
+ 1110 0304 CF91      		pop r28
+ 1111 0306 1F91      		pop r17
+ 1112 0308 0F91      		pop r16
+ 1113 030a 0895      		ret
+ 1114               		.size	_ZN8LibRobot5virerEhaab, .-_ZN8LibRobot5virerEhaab
+ 1115               		.stabs	"fG:r(0,29)",64,0,209,22
+ 1116               		.stabs	"fD:r(0,29)",64,0,209,24
+ 1117               		.stabn	192,0,0,.LBB38-.LFBB21
+ 1118               		.stabs	"tempAdd:r(0,30)",64,0,212,24
+ 1119               		.stabn	192,0,0,.LBB40-.LFBB21
+ 1120               		.stabn	224,0,0,.LBE40-.LFBB21
+ 1121               		.stabs	"tempAdd:r(0,30)",64,0,224,24
+ 1122               		.stabn	192,0,0,.LBB41-.LFBB21
+ 1123               		.stabn	224,0,0,.LBE41-.LFBB21
+ 1124               		.stabs	"tempAdd:r(0,30)",64,0,212,24
+ 1125               		.stabn	192,0,0,.LBB42-.LFBB21
+ 1126               		.stabn	224,0,0,.LBE42-.LFBB21
+ 1127               		.stabs	"tempAdd:r(0,30)",64,0,224,24
+ 1128               		.stabn	192,0,0,.LBB43-.LFBB21
+ 1129               		.stabn	224,0,0,.LBE43-.LFBB21
+ 1130               		.stabn	224,0,0,.LBE38-.LFBB21
+ 1131               		.stabs	"fG:r(0,29)",64,0,209,22
+ 1132               		.stabs	"fD:r(0,29)",64,0,209,24
+ 1133               		.stabn	192,0,0,.LBB44-.LFBB21
+ 1134               		.stabn	224,0,0,.LBE44-.LFBB21
+ 1135               	.Lscope21:
+ 1136               		.stabs	"",36,0,0,.Lscope21-.LFBB21
+ 1137               		.stabd	78,0,0
+ 1138               		.stabs	"_ZN8LibRobot7avancerEhhaa:F(0,4)",36,0,174,_ZN8LibRobot7avancerEhhaa
+ 1139               		.stabs	"frequence255G:P(0,29)",64,0,174,17
+ 1140               		.stabs	"frequence255D:P(0,29)",64,0,174,16
+ 1141               		.stabs	"ajustementG:P(0,28)",64,0,174,20
+ 1142               		.stabs	"ajustementD:P(0,28)",64,0,174,18
+ 1143               	.global	_ZN8LibRobot7avancerEhhaa
+ 1144               		.type	_ZN8LibRobot7avancerEhhaa, @function
+ 1145               	_ZN8LibRobot7avancerEhhaa:
+ 1146               		.stabd	46,0,0
+ 175:libRobot.cpp  **** 	{
+ 1147               		.stabn	68,0,175,.LM129-.LFBB22
+ 1148               	.LM129:
+ 1149               	.LFBB22:
+ 1150 030c 0F93      		push r16
+ 1151 030e 1F93      		push r17
+ 1152 0310 CF93      		push r28
+ 1153 0312 DF93      		push r29
+ 1154 0314 00D0      		rcall .
+ 1155 0316 CDB7      		in r28,__SP_L__
+ 1156 0318 DEB7      		in r29,__SP_H__
+ 1157               	/* prologue: function */
+ 1158               	/* frame size = 2 */
+ 1159               	/* stack size = 6 */
+GAS LISTING /tmp/ccclyeDw.s 			page 32
+
+
+ 1160               	.L__stack_usage = 6
+ 1161 031a 182F      		mov r17,r24
+ 1162 031c 062F      		mov r16,r22
+ 1163               	.LBB45:
+ 176:libRobot.cpp  **** 		if(!debut_)
+ 1164               		.stabn	68,0,176,.LM130-.LFBB22
+ 1165               	.LM130:
+ 1166 031e 8091 0000 		lds r24,_ZN8LibRobot6debut_E
+ 1167 0322 8823      		tst r24
+ 1168 0324 01F0      		breq .L80
+ 179:libRobot.cpp  **** 		ajusterSens(true, true);
+ 1169               		.stabn	68,0,179,.LM131-.LFBB22
+ 1170               	.LM131:
+ 1171 0326 61E0      		ldi r22,lo8(1)
+ 1172 0328 81E0      		ldi r24,lo8(1)
+ 1173 032a 2A83      		std Y+2,r18
+ 1174 032c 4983      		std Y+1,r20
+ 1175 032e 0E94 0000 		call _ZN8LibRobot11ajusterSensEbb
+ 182:libRobot.cpp  **** 		int16_t tempAdd = frequence255D+ajustementD;
+ 1176               		.stabn	68,0,182,.LM132-.LFBB22
+ 1177               	.LM132:
+ 1178 0332 2A81      		ldd r18,Y+2
+ 1179 0334 3327      		clr r19
+ 1180 0336 27FD      		sbrc r18,7
+ 1181 0338 3095      		com r19
+ 1182 033a 200F      		add r18,r16
+ 1183 033c 311D      		adc r19,__zero_reg__
+ 184:libRobot.cpp  **** 		if(tempAdd > 255)
+ 1184               		.stabn	68,0,184,.LM133-.LFBB22
+ 1185               	.LM133:
+ 1186 033e 4981      		ldd r20,Y+1
+ 1187 0340 2F3F      		cpi r18,-1
+ 1188 0342 3105      		cpc r19,__zero_reg__
+ 1189 0344 01F0      		breq .+2
+ 1190 0346 04F4      		brge .L84
+ 186:libRobot.cpp  **** 		else if(tempAdd < 0)
+ 1191               		.stabn	68,0,186,.LM134-.LFBB22
+ 1192               	.LM134:
+ 1193 0348 37FD      		sbrc r19,7
+ 1194 034a 00C0      		rjmp .L85
+ 189:libRobot.cpp  **** 			fD = tempAdd;
+ 1195               		.stabn	68,0,189,.LM135-.LFBB22
+ 1196               	.LM135:
+ 1197 034c 822F      		mov r24,r18
+ 1198 034e 00C0      		rjmp .L82
+ 1199               	.L84:
+ 185:libRobot.cpp  **** 			fD = 255;
+ 1200               		.stabn	68,0,185,.LM136-.LFBB22
+ 1201               	.LM136:
+ 1202 0350 8FEF      		ldi r24,lo8(-1)
+ 1203 0352 00C0      		rjmp .L82
+ 1204               	.L85:
+ 187:libRobot.cpp  **** 			fD = 0;
+ 1205               		.stabn	68,0,187,.LM137-.LFBB22
+ 1206               	.LM137:
+ 1207 0354 80E0      		ldi r24,0
+ 1208               	.L82:
+GAS LISTING /tmp/ccclyeDw.s 			page 33
+
+
+ 191:libRobot.cpp  **** 		tempAdd = frequence255G+ajustementG;
+ 1209               		.stabn	68,0,191,.LM138-.LFBB22
+ 1210               	.LM138:
+ 1211 0356 642F      		mov r22,r20
+ 1212 0358 7727      		clr r23
+ 1213 035a 67FD      		sbrc r22,7
+ 1214 035c 7095      		com r23
+ 1215 035e 610F      		add r22,r17
+ 1216 0360 711D      		adc r23,__zero_reg__
+ 192:libRobot.cpp  **** 		if(tempAdd > 255)
+ 1217               		.stabn	68,0,192,.LM139-.LFBB22
+ 1218               	.LM139:
+ 1219 0362 6F3F      		cpi r22,-1
+ 1220 0364 7105      		cpc r23,__zero_reg__
+ 1221 0366 01F0      		breq .+2
+ 1222 0368 04F4      		brge .L86
+ 194:libRobot.cpp  **** 		else if(tempAdd < 0)
+ 1223               		.stabn	68,0,194,.LM140-.LFBB22
+ 1224               	.LM140:
+ 1225 036a 77FD      		sbrc r23,7
+ 1226 036c 00C0      		rjmp .L87
+ 1227 036e 00C0      		rjmp .L83
+ 1228               	.L86:
+ 193:libRobot.cpp  **** 			fG = 255;
+ 1229               		.stabn	68,0,193,.LM141-.LFBB22
+ 1230               	.LM141:
+ 1231 0370 6FEF      		ldi r22,lo8(-1)
+ 1232 0372 00C0      		rjmp .L83
+ 1233               	.L87:
+ 195:libRobot.cpp  **** 			fG = 0;
+ 1234               		.stabn	68,0,195,.LM142-.LFBB22
+ 1235               	.LM142:
+ 1236 0374 60E0      		ldi r22,0
+ 1237               	.L83:
+ 1238               	/* epilogue start */
+ 1239               	.LBE45:
+ 200:libRobot.cpp  **** 	}
+ 1240               		.stabn	68,0,200,.LM143-.LFBB22
+ 1241               	.LM143:
+ 1242 0376 0F90      		pop __tmp_reg__
+ 1243 0378 0F90      		pop __tmp_reg__
+ 1244 037a DF91      		pop r29
+ 1245 037c CF91      		pop r28
+ 1246 037e 1F91      		pop r17
+ 1247 0380 0F91      		pop r16
+ 1248               	.LBB46:
+ 199:libRobot.cpp  **** 		ajustementPWM_Moteurs(fD, fG);
+ 1249               		.stabn	68,0,199,.LM144-.LFBB22
+ 1250               	.LM144:
+ 1251 0382 0C94 0000 		jmp _ZN8LibRobot21ajustementPWM_MoteursEhh
+ 1252               	.L80:
+ 1253               	/* epilogue start */
+ 1254               	.LBE46:
+ 200:libRobot.cpp  **** 	}
+ 1255               		.stabn	68,0,200,.LM145-.LFBB22
+ 1256               	.LM145:
+ 1257 0386 0F90      		pop __tmp_reg__
+GAS LISTING /tmp/ccclyeDw.s 			page 34
+
+
+ 1258 0388 0F90      		pop __tmp_reg__
+ 1259 038a DF91      		pop r29
+ 1260 038c CF91      		pop r28
+ 1261 038e 1F91      		pop r17
+ 1262 0390 0F91      		pop r16
+ 1263 0392 0895      		ret
+ 1264               		.size	_ZN8LibRobot7avancerEhhaa, .-_ZN8LibRobot7avancerEhhaa
+ 1265               		.stabs	"fG:r(0,29)",64,0,181,22
+ 1266               		.stabs	"fD:r(0,29)",64,0,181,24
+ 1267               		.stabn	192,0,0,.LBB45-.LFBB22
+ 1268               		.stabn	224,0,0,.LBE45-.LFBB22
+ 1269               		.stabs	"fG:r(0,29)",64,0,181,22
+ 1270               		.stabs	"fD:r(0,29)",64,0,181,24
+ 1271               		.stabn	192,0,0,.LBB46-.LFBB22
+ 1272               		.stabn	224,0,0,.LBE46-.LFBB22
+ 1273               	.Lscope22:
+ 1274               		.stabs	"",36,0,0,.Lscope22-.LFBB22
+ 1275               		.stabd	78,0,0
+ 1276               		.stabs	"_ZN8LibRobot7avancerEh:F(0,4)",36,0,166,_ZN8LibRobot7avancerEh
+ 1277               		.stabs	"frequence255:P(0,29)",64,0,166,28
+ 1278               	.global	_ZN8LibRobot7avancerEh
+ 1279               		.type	_ZN8LibRobot7avancerEh, @function
+ 1280               	_ZN8LibRobot7avancerEh:
+ 1281               		.stabd	46,0,0
+ 167:libRobot.cpp  **** 	{
+ 1282               		.stabn	68,0,167,.LM146-.LFBB23
+ 1283               	.LM146:
+ 1284               	.LFBB23:
+ 1285 0394 CF93      		push r28
+ 1286               	/* prologue: function */
+ 1287               	/* frame size = 0 */
+ 1288               	/* stack size = 1 */
+ 1289               	.L__stack_usage = 1
+ 1290 0396 C82F      		mov r28,r24
+ 168:libRobot.cpp  **** 		if(!debut_)
+ 1291               		.stabn	68,0,168,.LM147-.LFBB23
+ 1292               	.LM147:
+ 1293 0398 8091 0000 		lds r24,_ZN8LibRobot6debut_E
+ 1294 039c 8823      		tst r24
+ 1295 039e 01F0      		breq .L88
+ 171:libRobot.cpp  **** 		ajusterSens(true, true);
+ 1296               		.stabn	68,0,171,.LM148-.LFBB23
+ 1297               	.LM148:
+ 1298 03a0 61E0      		ldi r22,lo8(1)
+ 1299 03a2 81E0      		ldi r24,lo8(1)
+ 1300 03a4 0E94 0000 		call _ZN8LibRobot11ajusterSensEbb
+ 172:libRobot.cpp  **** 		ajustementPWM_Moteurs(frequence255,frequence255);
+ 1301               		.stabn	68,0,172,.LM149-.LFBB23
+ 1302               	.LM149:
+ 1303 03a8 6C2F      		mov r22,r28
+ 1304 03aa 8C2F      		mov r24,r28
+ 1305               	/* epilogue start */
+ 173:libRobot.cpp  **** 	}
+ 1306               		.stabn	68,0,173,.LM150-.LFBB23
+ 1307               	.LM150:
+ 1308 03ac CF91      		pop r28
+ 172:libRobot.cpp  **** 		ajustementPWM_Moteurs(frequence255,frequence255);
+GAS LISTING /tmp/ccclyeDw.s 			page 35
+
+
+ 1309               		.stabn	68,0,172,.LM151-.LFBB23
+ 1310               	.LM151:
+ 1311 03ae 0C94 0000 		jmp _ZN8LibRobot21ajustementPWM_MoteursEhh
+ 1312               	.L88:
+ 1313               	/* epilogue start */
+ 173:libRobot.cpp  **** 	}
+ 1314               		.stabn	68,0,173,.LM152-.LFBB23
+ 1315               	.LM152:
+ 1316 03b2 CF91      		pop r28
+ 1317 03b4 0895      		ret
+ 1318               		.size	_ZN8LibRobot7avancerEh, .-_ZN8LibRobot7avancerEh
+ 1319               	.Lscope23:
+ 1320               		.stabs	"",36,0,0,.Lscope23-.LFBB23
+ 1321               		.stabd	78,0,0
+ 1322               		.stabs	"__vector_13:F(0,4)",36,0,382,__vector_13
+ 1323               	.global	__vector_13
+ 1324               		.type	__vector_13, @function
+ 1325               	__vector_13:
+ 1326               		.stabd	46,0,0
+ 374:libRobot.cpp  **** 	}
+ 375:libRobot.cpp  **** 
+ 376:libRobot.cpp  **** //---------------
+ 377:libRobot.cpp  **** //Gestion Sons
+ 378:libRobot.cpp  **** //---------------
+ 379:libRobot.cpp  **** 
+ 380:libRobot.cpp  **** 	//Interuption son
+ 381:libRobot.cpp  **** 	//PORTB2
+ 382:libRobot.cpp  **** 	ISR ( TIMER1_COMPA_vect )
+ 383:libRobot.cpp  **** 	{
+ 1327               		.stabn	68,0,383,.LM153-.LFBB24
+ 1328               	.LM153:
+ 1329               	.LFBB24:
+ 1330 03b6 1F92      		push r1
+ 1331 03b8 0F92      		push r0
+ 1332 03ba 0FB6      		in r0,__SREG__
+ 1333 03bc 0F92      		push r0
+ 1334 03be 1124      		clr __zero_reg__
+ 1335 03c0 8F93      		push r24
+ 1336 03c2 9F93      		push r25
+ 1337               	/* prologue: Signal */
+ 1338               	/* frame size = 0 */
+ 1339               	/* stack size = 5 */
+ 1340               	.L__stack_usage = 5
+ 1341               	.LBB47:
+ 384:libRobot.cpp  **** 	
+ 385:libRobot.cpp  **** 		LibRobot r;
+ 386:libRobot.cpp  **** 		if(r.enabledSon)
+ 1342               		.stabn	68,0,386,.LM154-.LFBB24
+ 1343               	.LM154:
+ 1344 03c4 8091 0000 		lds r24,_ZN8LibRobot10enabledSonE
+ 1345 03c8 8823      		tst r24
+ 1346 03ca 01F0      		breq .L91
+ 387:libRobot.cpp  **** 		{
+ 388:libRobot.cpp  **** 			if(r.a_son)
+ 1347               		.stabn	68,0,388,.LM155-.LFBB24
+ 1348               	.LM155:
+ 1349 03cc 8091 0000 		lds r24,_ZN8LibRobot5a_sonE
+GAS LISTING /tmp/ccclyeDw.s 			page 36
+
+
+ 1350 03d0 8823      		tst r24
+ 1351 03d2 01F0      		breq .L92
+ 389:libRobot.cpp  **** 				PORTB |= _BV(PORTB2);
+ 1352               		.stabn	68,0,389,.LM156-.LFBB24
+ 1353               	.LM156:
+ 1354 03d4 2A9A      		sbi 0x5,2
+ 1355 03d6 00C0      		rjmp .L93
+ 1356               	.L92:
+ 390:libRobot.cpp  **** 			else
+ 391:libRobot.cpp  **** 				PORTB &= ~(_BV(PORTB2));
+ 1357               		.stabn	68,0,391,.LM157-.LFBB24
+ 1358               	.LM157:
+ 1359 03d8 2A98      		cbi 0x5,2
+ 1360               	.L93:
+ 392:libRobot.cpp  **** 			r.a_son = !r.a_son;
+ 1361               		.stabn	68,0,392,.LM158-.LFBB24
+ 1362               	.LM158:
+ 1363 03da 8091 0000 		lds r24,_ZN8LibRobot5a_sonE
+ 1364 03de 91E0      		ldi r25,lo8(1)
+ 1365 03e0 8927      		eor r24,r25
+ 1366 03e2 8093 0000 		sts _ZN8LibRobot5a_sonE,r24
+ 1367 03e6 00C0      		rjmp .L90
+ 1368               	.L91:
+ 393:libRobot.cpp  **** 		}
+ 394:libRobot.cpp  **** 		else
+ 395:libRobot.cpp  **** 		{
+ 396:libRobot.cpp  **** 			PORTB &= ~(_BV(PORTB2));
+ 1369               		.stabn	68,0,396,.LM159-.LFBB24
+ 1370               	.LM159:
+ 1371 03e8 2A98      		cbi 0x5,2
+ 1372               	.L90:
+ 1373               	/* epilogue start */
+ 1374               	.LBE47:
+ 397:libRobot.cpp  **** 		}
+ 398:libRobot.cpp  **** 	}
+ 1375               		.stabn	68,0,398,.LM160-.LFBB24
+ 1376               	.LM160:
+ 1377 03ea 9F91      		pop r25
+ 1378 03ec 8F91      		pop r24
+ 1379 03ee 0F90      		pop r0
+ 1380 03f0 0FBE      		out __SREG__,r0
+ 1381 03f2 0F90      		pop r0
+ 1382 03f4 1F90      		pop r1
+ 1383 03f6 1895      		reti
+ 1384               		.size	__vector_13, .-__vector_13
+ 1385               	.Lscope24:
+ 1386               		.stabs	"",36,0,0,.Lscope24-.LFBB24
+ 1387               		.stabd	78,0,0
+ 1388               		.stabs	"_ZN8LibRobot18partirMinuterieSonEj:F(0,4)",36,0,400,_ZN8LibRobot18partirMinuterieSonEj
+ 1389               		.stabs	"duree:P(0,31)",64,0,400,24
+ 1390               	.global	_ZN8LibRobot18partirMinuterieSonEj
+ 1391               		.type	_ZN8LibRobot18partirMinuterieSonEj, @function
+ 1392               	_ZN8LibRobot18partirMinuterieSonEj:
+ 1393               		.stabd	46,0,0
+ 399:libRobot.cpp  **** 
+ 400:libRobot.cpp  **** 	void LibRobot::partirMinuterieSon ( uint16_t duree ) {
+ 1394               		.stabn	68,0,400,.LM161-.LFBB25
+GAS LISTING /tmp/ccclyeDw.s 			page 37
+
+
+ 1395               	.LM161:
+ 1396               	.LFBB25:
+ 1397               	/* prologue: function */
+ 1398               	/* frame size = 0 */
+ 1399               	/* stack size = 0 */
+ 1400               	.L__stack_usage = 0
+ 401:libRobot.cpp  **** 	    	// mode CTC du timer 1 avec horloge divisee par 1024
+ 402:libRobot.cpp  **** 	    	// interruption après la duree specifiee
+ 403:libRobot.cpp  **** 		//8Mh --> 8 million operation seconde --> 0.000 000 125 seconde par operation * 1024 prescaler = 
+ 404:libRobot.cpp  **** 		//8Mh --> 8 million operation seconde --> 0.000 000 125 seconde par operation * 256 prescaler = 0
+ 405:libRobot.cpp  **** 
+ 406:libRobot.cpp  **** 	    	cli();           // disable all interrupts
+ 1401               		.stabn	68,0,406,.LM162-.LFBB25
+ 1402               	.LM162:
+ 1403               	/* #APP */
+ 1404               	 ;  406 "libRobot.cpp" 1
+ 1405 03f8 F894      		cli
+ 1406               	 ;  0 "" 2
+ 407:libRobot.cpp  **** 
+ 408:libRobot.cpp  **** 		TCCR1A = 0;
+ 1407               		.stabn	68,0,408,.LM163-.LFBB25
+ 1408               	.LM163:
+ 1409               	/* #NOAPP */
+ 1410 03fa 1092 8000 		sts 128,__zero_reg__
+ 409:libRobot.cpp  **** 		TCCR1B = 0;
+ 1411               		.stabn	68,0,409,.LM164-.LFBB25
+ 1412               	.LM164:
+ 1413 03fe E1E8      		ldi r30,lo8(-127)
+ 1414 0400 F0E0      		ldi r31,0
+ 1415 0402 1082      		st Z,__zero_reg__
+ 410:libRobot.cpp  **** 		TCNT1  = 0;// initialize counter
+ 1416               		.stabn	68,0,410,.LM165-.LFBB25
+ 1417               	.LM165:
+ 1418 0404 1092 8500 		sts 132+1,__zero_reg__
+ 1419 0408 1092 8400 		sts 132,__zero_reg__
+ 411:libRobot.cpp  **** 
+ 412:libRobot.cpp  **** 		OCR1A = duree;
+ 1420               		.stabn	68,0,412,.LM166-.LFBB25
+ 1421               	.LM166:
+ 1422 040c 9093 8900 		sts 136+1,r25
+ 1423 0410 8093 8800 		sts 136,r24
+ 413:libRobot.cpp  **** 		TCCR1B |= (1 << WGM12);   // CTC mode
+ 1424               		.stabn	68,0,413,.LM167-.LFBB25
+ 1425               	.LM167:
+ 1426 0414 8081      		ld r24,Z
+ 1427 0416 8860      		ori r24,lo8(8)
+ 1428 0418 8083      		st Z,r24
+ 414:libRobot.cpp  **** 		//TCCR1B |= (1 << CS10) | (1 << CS12);   // 1024 prescaler 
+ 415:libRobot.cpp  **** 		TCCR1B |= (1 << CS12);   // 256 prescaler 
+ 1429               		.stabn	68,0,415,.LM168-.LFBB25
+ 1430               	.LM168:
+ 1431 041a 8081      		ld r24,Z
+ 1432 041c 8460      		ori r24,lo8(4)
+ 1433 041e 8083      		st Z,r24
+ 416:libRobot.cpp  **** 		TIMSK1 |= (1 << OCIE1A);  // enable timer compare interrupt
+ 1434               		.stabn	68,0,416,.LM169-.LFBB25
+ 1435               	.LM169:
+GAS LISTING /tmp/ccclyeDw.s 			page 38
+
+
+ 1436 0420 EFE6      		ldi r30,lo8(111)
+ 1437 0422 F0E0      		ldi r31,0
+ 1438 0424 8081      		ld r24,Z
+ 1439 0426 8260      		ori r24,lo8(2)
+ 1440 0428 8083      		st Z,r24
+ 417:libRobot.cpp  **** 
+ 418:libRobot.cpp  **** 		sei();             // enable all interrupts   
+ 1441               		.stabn	68,0,418,.LM170-.LFBB25
+ 1442               	.LM170:
+ 1443               	/* #APP */
+ 1444               	 ;  418 "libRobot.cpp" 1
+ 1445 042a 7894      		sei
+ 1446               	 ;  0 "" 2
+ 1447               	/* #NOAPP */
+ 1448 042c 0895      		ret
+ 1449               		.size	_ZN8LibRobot18partirMinuterieSonEj, .-_ZN8LibRobot18partirMinuterieSonEj
+ 1450               	.Lscope25:
+ 1451               		.stabs	"",36,0,0,.Lscope25-.LFBB25
+ 1452               		.stabd	78,0,0
+ 1453               		.stabs	"_ZN8LibRobot8jouerSonEh:F(0,4)",36,0,93,_ZN8LibRobot8jouerSonEh
+ 1454               		.stabs	"son:P(0,29)",64,0,93,24
+ 1455               	.global	_ZN8LibRobot8jouerSonEh
+ 1456               		.type	_ZN8LibRobot8jouerSonEh, @function
+ 1457               	_ZN8LibRobot8jouerSonEh:
+ 1458               		.stabd	46,0,0
+  94:libRobot.cpp  **** 	{
+ 1459               		.stabn	68,0,94,.LM171-.LFBB26
+ 1460               	.LM171:
+ 1461               	.LFBB26:
+ 1462               	/* prologue: function */
+ 1463               	/* frame size = 0 */
+ 1464               	/* stack size = 0 */
+ 1465               	.L__stack_usage = 0
+  95:libRobot.cpp  **** 		if(!debut_)
+ 1466               		.stabn	68,0,95,.LM172-.LFBB26
+ 1467               	.LM172:
+ 1468 042e 9091 0000 		lds r25,_ZN8LibRobot6debut_E
+ 1469 0432 9923      		tst r25
+ 1470 0434 01F4      		brne .+2
+ 1471 0436 00C0      		rjmp .L96
+  98:libRobot.cpp  **** 		if(son == valeur_son) //Meme son que le son courrant
+ 1472               		.stabn	68,0,98,.LM173-.LFBB26
+ 1473               	.LM173:
+ 1474 0438 9091 0000 		lds r25,_ZN8LibRobot10valeur_sonE
+ 1475 043c 8917      		cp r24,r25
+ 1476 043e 01F4      		brne .+2
+ 1477 0440 00C0      		rjmp .L96
+ 104:libRobot.cpp  **** 		valeur_son = son;
+ 1478               		.stabn	68,0,104,.LM174-.LFBB26
+ 1479               	.LM174:
+ 1480 0442 8093 0000 		sts _ZN8LibRobot10valeur_sonE,r24
+ 105:libRobot.cpp  **** 		enabledSon = true;
+ 1481               		.stabn	68,0,105,.LM175-.LFBB26
+ 1482               	.LM175:
+ 1483 0446 91E0      		ldi r25,lo8(1)
+ 1484 0448 9093 0000 		sts _ZN8LibRobot10enabledSonE,r25
+ 106:libRobot.cpp  **** 		a_son = true;
+GAS LISTING /tmp/ccclyeDw.s 			page 39
+
+
+ 1485               		.stabn	68,0,106,.LM176-.LFBB26
+ 1486               	.LM176:
+ 1487 044c 9093 0000 		sts _ZN8LibRobot5a_sonE,r25
+ 109:libRobot.cpp  **** 		switch (son)
+ 1488               		.stabn	68,0,109,.LM177-.LFBB26
+ 1489               	.LM177:
+ 1490 0450 90E0      		ldi r25,0
+ 1491 0452 FC01      		movw r30,r24
+ 1492 0454 BD97      		sbiw r30,45
+ 1493 0456 E532      		cpi r30,37
+ 1494 0458 F105      		cpc r31,__zero_reg__
+ 1495 045a 00F0      		brlo .+2
+ 1496 045c 00C0      		rjmp .L96
+ 1497 045e E050      		subi r30,lo8(-(gs(.L135)))
+ 1498 0460 F040      		sbci r31,hi8(-(gs(.L135)))
+ 1499 0462 0C94 0000 		jmp __tablejump2__
+ 1500               		.section	.progmem.gcc_sw_table,"a",@progbits
+ 1501               		.p2align	1
+ 1502               	.L135:
+ 1503 0000 0000      		.word gs(.L98)
+ 1504 0002 0000      		.word gs(.L99)
+ 1505 0004 0000      		.word gs(.L100)
+ 1506 0006 0000      		.word gs(.L101)
+ 1507 0008 0000      		.word gs(.L102)
+ 1508 000a 0000      		.word gs(.L103)
+ 1509 000c 0000      		.word gs(.L104)
+ 1510 000e 0000      		.word gs(.L105)
+ 1511 0010 0000      		.word gs(.L106)
+ 1512 0012 0000      		.word gs(.L107)
+ 1513 0014 0000      		.word gs(.L108)
+ 1514 0016 0000      		.word gs(.L109)
+ 1515 0018 0000      		.word gs(.L110)
+ 1516 001a 0000      		.word gs(.L111)
+ 1517 001c 0000      		.word gs(.L112)
+ 1518 001e 0000      		.word gs(.L113)
+ 1519 0020 0000      		.word gs(.L114)
+ 1520 0022 0000      		.word gs(.L115)
+ 1521 0024 0000      		.word gs(.L116)
+ 1522 0026 0000      		.word gs(.L117)
+ 1523 0028 0000      		.word gs(.L118)
+ 1524 002a 0000      		.word gs(.L119)
+ 1525 002c 0000      		.word gs(.L120)
+ 1526 002e 0000      		.word gs(.L121)
+ 1527 0030 0000      		.word gs(.L122)
+ 1528 0032 0000      		.word gs(.L123)
+ 1529 0034 0000      		.word gs(.L124)
+ 1530 0036 0000      		.word gs(.L125)
+ 1531 0038 0000      		.word gs(.L126)
+ 1532 003a 0000      		.word gs(.L127)
+ 1533 003c 0000      		.word gs(.L128)
+ 1534 003e 0000      		.word gs(.L129)
+ 1535 0040 0000      		.word gs(.L130)
+ 1536 0042 0000      		.word gs(.L131)
+ 1537 0044 0000      		.word gs(.L132)
+ 1538 0046 0000      		.word gs(.L133)
+ 1539 0048 0000      		.word gs(.L134)
+ 1540               		.text
+GAS LISTING /tmp/ccclyeDw.s 			page 40
+
+
+ 1541               	.L98:
+ 111:libRobot.cpp  **** 			case 45:{partirMinuterieSon(142);break;} //142 * 0.000 032s -> 0.00454545454545455
+ 1542               		.stabn	68,0,111,.LM178-.LFBB26
+ 1543               	.LM178:
+ 1544 0466 8EE8      		ldi r24,lo8(-114)
+ 1545 0468 90E0      		ldi r25,0
+ 1546 046a 00C0      		rjmp .L139
+ 1547               	.L99:
+ 112:libRobot.cpp  **** 			case 46:{partirMinuterieSon(134);break;}
+ 1548               		.stabn	68,0,112,.LM179-.LFBB26
+ 1549               	.LM179:
+ 1550 046c 86E8      		ldi r24,lo8(-122)
+ 1551 046e 90E0      		ldi r25,0
+ 1552 0470 00C0      		rjmp .L139
+ 1553               	.L100:
+ 113:libRobot.cpp  **** 			case 47:{partirMinuterieSon(127);break;}
+ 1554               		.stabn	68,0,113,.LM180-.LFBB26
+ 1555               	.LM180:
+ 1556 0472 8FE7      		ldi r24,lo8(127)
+ 1557 0474 90E0      		ldi r25,0
+ 1558 0476 00C0      		rjmp .L139
+ 1559               	.L101:
+ 114:libRobot.cpp  **** 			case 48:{partirMinuterieSon(119);break;}
+ 1560               		.stabn	68,0,114,.LM181-.LFBB26
+ 1561               	.LM181:
+ 1562 0478 87E7      		ldi r24,lo8(119)
+ 1563 047a 90E0      		ldi r25,0
+ 1564 047c 00C0      		rjmp .L139
+ 1565               	.L102:
+ 115:libRobot.cpp  **** 			case 49:{partirMinuterieSon(113);break;}
+ 1566               		.stabn	68,0,115,.LM182-.LFBB26
+ 1567               	.LM182:
+ 1568 047e 81E7      		ldi r24,lo8(113)
+ 1569 0480 90E0      		ldi r25,0
+ 1570 0482 00C0      		rjmp .L139
+ 1571               	.L103:
+ 116:libRobot.cpp  **** 			case 50:{partirMinuterieSon(106);break;}
+ 1572               		.stabn	68,0,116,.LM183-.LFBB26
+ 1573               	.LM183:
+ 1574 0484 8AE6      		ldi r24,lo8(106)
+ 1575 0486 90E0      		ldi r25,0
+ 1576 0488 00C0      		rjmp .L139
+ 1577               	.L104:
+ 117:libRobot.cpp  **** 			case 51:{partirMinuterieSon(100);break;}
+ 1578               		.stabn	68,0,117,.LM184-.LFBB26
+ 1579               	.LM184:
+ 1580 048a 84E6      		ldi r24,lo8(100)
+ 1581 048c 90E0      		ldi r25,0
+ 1582 048e 00C0      		rjmp .L139
+ 1583               	.L105:
+ 118:libRobot.cpp  **** 			case 52:{partirMinuterieSon(95);break;}
+ 1584               		.stabn	68,0,118,.LM185-.LFBB26
+ 1585               	.LM185:
+ 1586 0490 8FE5      		ldi r24,lo8(95)
+ 1587 0492 90E0      		ldi r25,0
+ 1588 0494 00C0      		rjmp .L139
+ 1589               	.L106:
+GAS LISTING /tmp/ccclyeDw.s 			page 41
+
+
+ 119:libRobot.cpp  **** 			case 53:{partirMinuterieSon(89);break;}
+ 1590               		.stabn	68,0,119,.LM186-.LFBB26
+ 1591               	.LM186:
+ 1592 0496 89E5      		ldi r24,lo8(89)
+ 1593 0498 90E0      		ldi r25,0
+ 1594 049a 00C0      		rjmp .L139
+ 1595               	.L107:
+ 120:libRobot.cpp  **** 			case 54:{partirMinuterieSon(84);break;}
+ 1596               		.stabn	68,0,120,.LM187-.LFBB26
+ 1597               	.LM187:
+ 1598 049c 84E5      		ldi r24,lo8(84)
+ 1599 049e 90E0      		ldi r25,0
+ 1600 04a0 00C0      		rjmp .L139
+ 1601               	.L108:
+ 121:libRobot.cpp  **** 			case 55:{partirMinuterieSon(80);break;}
+ 1602               		.stabn	68,0,121,.LM188-.LFBB26
+ 1603               	.LM188:
+ 1604 04a2 80E5      		ldi r24,lo8(80)
+ 1605 04a4 90E0      		ldi r25,0
+ 1606 04a6 00C0      		rjmp .L139
+ 1607               	.L109:
+ 122:libRobot.cpp  **** 			case 56:{partirMinuterieSon(75);break;}
+ 1608               		.stabn	68,0,122,.LM189-.LFBB26
+ 1609               	.LM189:
+ 1610 04a8 8BE4      		ldi r24,lo8(75)
+ 1611 04aa 90E0      		ldi r25,0
+ 1612 04ac 00C0      		rjmp .L139
+ 1613               	.L110:
+ 123:libRobot.cpp  **** 			case 57:{partirMinuterieSon(71);break;}
+ 1614               		.stabn	68,0,123,.LM190-.LFBB26
+ 1615               	.LM190:
+ 1616 04ae 87E4      		ldi r24,lo8(71)
+ 1617 04b0 90E0      		ldi r25,0
+ 1618 04b2 00C0      		rjmp .L139
+ 1619               	.L111:
+ 124:libRobot.cpp  **** 			case 58:{partirMinuterieSon(67);break;}
+ 1620               		.stabn	68,0,124,.LM191-.LFBB26
+ 1621               	.LM191:
+ 1622 04b4 83E4      		ldi r24,lo8(67)
+ 1623 04b6 90E0      		ldi r25,0
+ 1624 04b8 00C0      		rjmp .L139
+ 1625               	.L112:
+ 125:libRobot.cpp  **** 			case 59:{partirMinuterieSon(63);break;}
+ 1626               		.stabn	68,0,125,.LM192-.LFBB26
+ 1627               	.LM192:
+ 1628 04ba 8FE3      		ldi r24,lo8(63)
+ 1629 04bc 90E0      		ldi r25,0
+ 1630 04be 00C0      		rjmp .L139
+ 1631               	.L113:
+ 126:libRobot.cpp  **** 			case 60:{partirMinuterieSon(60);break;}
+ 1632               		.stabn	68,0,126,.LM193-.LFBB26
+ 1633               	.LM193:
+ 1634 04c0 8CE3      		ldi r24,lo8(60)
+ 1635 04c2 90E0      		ldi r25,0
+ 1636 04c4 00C0      		rjmp .L139
+ 1637               	.L114:
+ 127:libRobot.cpp  **** 			case 61:{partirMinuterieSon(56);break;}
+GAS LISTING /tmp/ccclyeDw.s 			page 42
+
+
+ 1638               		.stabn	68,0,127,.LM194-.LFBB26
+ 1639               	.LM194:
+ 1640 04c6 88E3      		ldi r24,lo8(56)
+ 1641 04c8 90E0      		ldi r25,0
+ 1642 04ca 00C0      		rjmp .L139
+ 1643               	.L115:
+ 128:libRobot.cpp  **** 			case 62:{partirMinuterieSon(53);break;}
+ 1644               		.stabn	68,0,128,.LM195-.LFBB26
+ 1645               	.LM195:
+ 1646 04cc 85E3      		ldi r24,lo8(53)
+ 1647 04ce 90E0      		ldi r25,0
+ 1648 04d0 00C0      		rjmp .L139
+ 1649               	.L116:
+ 129:libRobot.cpp  **** 			case 63:{partirMinuterieSon(50);break;}
+ 1650               		.stabn	68,0,129,.LM196-.LFBB26
+ 1651               	.LM196:
+ 1652 04d2 82E3      		ldi r24,lo8(50)
+ 1653 04d4 90E0      		ldi r25,0
+ 1654 04d6 00C0      		rjmp .L139
+ 1655               	.L117:
+ 130:libRobot.cpp  **** 			case 64:{partirMinuterieSon(47);break;}
+ 1656               		.stabn	68,0,130,.LM197-.LFBB26
+ 1657               	.LM197:
+ 1658 04d8 8FE2      		ldi r24,lo8(47)
+ 1659 04da 90E0      		ldi r25,0
+ 1660 04dc 00C0      		rjmp .L139
+ 1661               	.L118:
+ 131:libRobot.cpp  **** 			case 65:{partirMinuterieSon(45);break;}
+ 1662               		.stabn	68,0,131,.LM198-.LFBB26
+ 1663               	.LM198:
+ 1664 04de 8DE2      		ldi r24,lo8(45)
+ 1665 04e0 90E0      		ldi r25,0
+ 1666 04e2 00C0      		rjmp .L139
+ 1667               	.L119:
+ 132:libRobot.cpp  **** 			case 66:{partirMinuterieSon(42);break;}
+ 1668               		.stabn	68,0,132,.LM199-.LFBB26
+ 1669               	.LM199:
+ 1670 04e4 8AE2      		ldi r24,lo8(42)
+ 1671 04e6 90E0      		ldi r25,0
+ 1672 04e8 00C0      		rjmp .L139
+ 1673               	.L120:
+ 133:libRobot.cpp  **** 			case 67:{partirMinuterieSon(40);break;}
+ 1674               		.stabn	68,0,133,.LM200-.LFBB26
+ 1675               	.LM200:
+ 1676 04ea 88E2      		ldi r24,lo8(40)
+ 1677 04ec 90E0      		ldi r25,0
+ 1678 04ee 00C0      		rjmp .L139
+ 1679               	.L121:
+ 134:libRobot.cpp  **** 			case 68:{partirMinuterieSon(38);break;}
+ 1680               		.stabn	68,0,134,.LM201-.LFBB26
+ 1681               	.LM201:
+ 1682 04f0 86E2      		ldi r24,lo8(38)
+ 1683 04f2 90E0      		ldi r25,0
+ 1684 04f4 00C0      		rjmp .L139
+ 1685               	.L122:
+ 135:libRobot.cpp  **** 			case 69:{partirMinuterieSon(36);break;}
+ 1686               		.stabn	68,0,135,.LM202-.LFBB26
+GAS LISTING /tmp/ccclyeDw.s 			page 43
+
+
+ 1687               	.LM202:
+ 1688 04f6 84E2      		ldi r24,lo8(36)
+ 1689 04f8 90E0      		ldi r25,0
+ 1690 04fa 00C0      		rjmp .L139
+ 1691               	.L123:
+ 136:libRobot.cpp  **** 			case 70:{partirMinuterieSon(34);break;}
+ 1692               		.stabn	68,0,136,.LM203-.LFBB26
+ 1693               	.LM203:
+ 1694 04fc 82E2      		ldi r24,lo8(34)
+ 1695 04fe 90E0      		ldi r25,0
+ 1696 0500 00C0      		rjmp .L139
+ 1697               	.L124:
+ 137:libRobot.cpp  **** 			case 71:{partirMinuterieSon(32);break;}
+ 1698               		.stabn	68,0,137,.LM204-.LFBB26
+ 1699               	.LM204:
+ 1700 0502 80E2      		ldi r24,lo8(32)
+ 1701 0504 90E0      		ldi r25,0
+ 1702 0506 00C0      		rjmp .L139
+ 1703               	.L125:
+ 138:libRobot.cpp  **** 			case 72:{partirMinuterieSon(30);break;}
+ 1704               		.stabn	68,0,138,.LM205-.LFBB26
+ 1705               	.LM205:
+ 1706 0508 8EE1      		ldi r24,lo8(30)
+ 1707 050a 90E0      		ldi r25,0
+ 1708 050c 00C0      		rjmp .L139
+ 1709               	.L126:
+ 139:libRobot.cpp  **** 			case 73:{partirMinuterieSon(28);break;}
+ 1710               		.stabn	68,0,139,.LM206-.LFBB26
+ 1711               	.LM206:
+ 1712 050e 8CE1      		ldi r24,lo8(28)
+ 1713 0510 90E0      		ldi r25,0
+ 1714 0512 00C0      		rjmp .L139
+ 1715               	.L127:
+ 140:libRobot.cpp  **** 			case 74:{partirMinuterieSon(27);break;}
+ 1716               		.stabn	68,0,140,.LM207-.LFBB26
+ 1717               	.LM207:
+ 1718 0514 8BE1      		ldi r24,lo8(27)
+ 1719 0516 90E0      		ldi r25,0
+ 1720 0518 00C0      		rjmp .L139
+ 1721               	.L128:
+ 141:libRobot.cpp  **** 			case 75:{partirMinuterieSon(25);break;}
+ 1722               		.stabn	68,0,141,.LM208-.LFBB26
+ 1723               	.LM208:
+ 1724 051a 89E1      		ldi r24,lo8(25)
+ 1725 051c 90E0      		ldi r25,0
+ 1726 051e 00C0      		rjmp .L139
+ 1727               	.L129:
+ 142:libRobot.cpp  **** 			case 76:{partirMinuterieSon(24);break;}
+ 1728               		.stabn	68,0,142,.LM209-.LFBB26
+ 1729               	.LM209:
+ 1730 0520 88E1      		ldi r24,lo8(24)
+ 1731 0522 90E0      		ldi r25,0
+ 1732 0524 00C0      		rjmp .L139
+ 1733               	.L130:
+ 143:libRobot.cpp  **** 			case 77:{partirMinuterieSon(22);break;}
+ 1734               		.stabn	68,0,143,.LM210-.LFBB26
+ 1735               	.LM210:
+GAS LISTING /tmp/ccclyeDw.s 			page 44
+
+
+ 1736 0526 86E1      		ldi r24,lo8(22)
+ 1737 0528 90E0      		ldi r25,0
+ 1738 052a 00C0      		rjmp .L139
+ 1739               	.L131:
+ 144:libRobot.cpp  **** 			case 78:{partirMinuterieSon(21);break;}
+ 1740               		.stabn	68,0,144,.LM211-.LFBB26
+ 1741               	.LM211:
+ 1742 052c 85E1      		ldi r24,lo8(21)
+ 1743 052e 90E0      		ldi r25,0
+ 1744 0530 00C0      		rjmp .L139
+ 1745               	.L132:
+ 145:libRobot.cpp  **** 			case 79:{partirMinuterieSon(20);break;}
+ 1746               		.stabn	68,0,145,.LM212-.LFBB26
+ 1747               	.LM212:
+ 1748 0532 84E1      		ldi r24,lo8(20)
+ 1749 0534 90E0      		ldi r25,0
+ 1750 0536 00C0      		rjmp .L139
+ 1751               	.L133:
+ 146:libRobot.cpp  **** 			case 80:{partirMinuterieSon(19);break;}
+ 1752               		.stabn	68,0,146,.LM213-.LFBB26
+ 1753               	.LM213:
+ 1754 0538 83E1      		ldi r24,lo8(19)
+ 1755 053a 90E0      		ldi r25,0
+ 1756 053c 00C0      		rjmp .L139
+ 1757               	.L134:
+ 147:libRobot.cpp  **** 			case 81:{partirMinuterieSon(18);break;}
+ 1758               		.stabn	68,0,147,.LM214-.LFBB26
+ 1759               	.LM214:
+ 1760 053e 82E1      		ldi r24,lo8(18)
+ 1761 0540 90E0      		ldi r25,0
+ 1762               	.L139:
+ 1763 0542 0C94 0000 		jmp _ZN8LibRobot18partirMinuterieSonEj
+ 1764               	.L96:
+ 1765 0546 0895      		ret
+ 1766               		.size	_ZN8LibRobot8jouerSonEh, .-_ZN8LibRobot8jouerSonEh
+ 1767               	.Lscope26:
+ 1768               		.stabs	"",36,0,0,.Lscope26-.LFBB26
+ 1769               		.stabd	78,0,0
+ 1770               	.global	_ZN8LibRobot10enabledSonE
+ 1771               		.section .bss
+ 1772               		.type	_ZN8LibRobot10enabledSonE, @object
+ 1773               		.size	_ZN8LibRobot10enabledSonE, 1
+ 1774               	_ZN8LibRobot10enabledSonE:
+ 1775 0000 00        		.zero	1
+ 1776               	.global	_ZN8LibRobot10valeur_sonE
+ 1777               		.type	_ZN8LibRobot10valeur_sonE, @object
+ 1778               		.size	_ZN8LibRobot10valeur_sonE, 1
+ 1779               	_ZN8LibRobot10valeur_sonE:
+ 1780 0001 00        		.zero	1
+ 1781               	.global	_ZN8LibRobot5a_sonE
+ 1782               		.type	_ZN8LibRobot5a_sonE, @object
+ 1783               		.size	_ZN8LibRobot5a_sonE, 1
+ 1784               	_ZN8LibRobot5a_sonE:
+ 1785 0002 00        		.zero	1
+ 1786               	.global	_ZN8LibRobot8nbBoucleE
+ 1787               		.type	_ZN8LibRobot8nbBoucleE, @object
+ 1788               		.size	_ZN8LibRobot8nbBoucleE, 1
+GAS LISTING /tmp/ccclyeDw.s 			page 45
+
+
+ 1789               	_ZN8LibRobot8nbBoucleE:
+ 1790 0003 00        		.zero	1
+ 1791               	.global	_ZN8LibRobot4fin_E
+ 1792               		.type	_ZN8LibRobot4fin_E, @object
+ 1793               		.size	_ZN8LibRobot4fin_E, 1
+ 1794               	_ZN8LibRobot4fin_E:
+ 1795 0004 00        		.zero	1
+ 1796               	.global	_ZN8LibRobot6debut_E
+ 1797               		.type	_ZN8LibRobot6debut_E, @object
+ 1798               		.size	_ZN8LibRobot6debut_E, 1
+ 1799               	_ZN8LibRobot6debut_E:
+ 1800 0005 00        		.zero	1
+ 1801               		.stabs	"_ZN8LibRobot6debut_E:G(0,24)",32,0,16,0
+ 1802               		.stabs	"_ZN8LibRobot4fin_E:G(0,24)",32,0,17,0
+ 1803               		.stabs	"_ZN8LibRobot8nbBoucleE:G(0,29)",32,0,19,0
+ 1804               		.stabs	"_ZN8LibRobot5a_sonE:G(0,60)",32,0,22,0
+ 1805               		.stabs	"_ZN8LibRobot10valeur_sonE:G(0,61)",32,0,23,0
+ 1806               		.stabs	"_ZN8LibRobot10enabledSonE:G(0,60)",32,0,24,0
+ 1807               		.text
+ 1808               		.stabs	"",100,0,0,.Letext0
+ 1809               	.Letext0:
+ 1810               		.ident	"GCC: (Fedora 4.7.3-0.1.fc19) 4.7.3 20130216 (prerelease)"
+ 1811               	.global __do_clear_bss
+GAS LISTING /tmp/ccclyeDw.s 			page 46
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 libRobot.cpp
+     /tmp/ccclyeDw.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccclyeDw.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccclyeDw.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccclyeDw.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccclyeDw.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccclyeDw.s:79     .text:0000000000000000 _ZN8LibRobotC2Ev
+     /tmp/ccclyeDw.s:79     .text:0000000000000000 _ZN8LibRobotC1Ev
+     /tmp/ccclyeDw.s:99     .text:0000000000000002 _ZN8LibRobotD2Ev
+     /tmp/ccclyeDw.s:99     .text:0000000000000002 _ZN8LibRobotD1Ev
+     /tmp/ccclyeDw.s:118    .text:0000000000000004 _ZN8LibRobot16BoutonEstEnfonceEv
+     /tmp/ccclyeDw.s:168    .text:0000000000000022 _ZN8LibRobot14initialisationEv
+     /tmp/ccclyeDw.s:1799   .bss:0000000000000005 _ZN8LibRobot6debut_E
+     /tmp/ccclyeDw.s:1794   .bss:0000000000000004 _ZN8LibRobot4fin_E
+     /tmp/ccclyeDw.s:1784   .bss:0000000000000002 _ZN8LibRobot5a_sonE
+     /tmp/ccclyeDw.s:1779   .bss:0000000000000001 _ZN8LibRobot10valeur_sonE
+     /tmp/ccclyeDw.s:1774   .bss:0000000000000000 _ZN8LibRobot10enabledSonE
+     /tmp/ccclyeDw.s:1789   .bss:0000000000000003 _ZN8LibRobot8nbBoucleE
+     /tmp/ccclyeDw.s:203    .text:000000000000003c _ZN8LibRobot5debutEv
+     /tmp/ccclyeDw.s:225    .text:0000000000000044 _ZN8LibRobot8attendreEa
+     /tmp/ccclyeDw.s:300    .text:0000000000000072 _ZN8LibRobot10allumerDELERVhh
+     /tmp/ccclyeDw.s:332    .text:0000000000000084 _ZN8LibRobot11eteindreDELERVhhh
+     /tmp/ccclyeDw.s:368    .text:00000000000000a0 _ZN8LibRobot10arreterSonEv
+     /tmp/ccclyeDw.s:397    .text:00000000000000b2 _ZN8LibRobot11debutBoucleEj
+     /tmp/ccclyeDw.s:422    .text:00000000000000be _ZN8LibRobot11finDeBoucleEv
+     /tmp/ccclyeDw.s:461    .text:00000000000000da _ZN8LibRobot3finEv
+     /tmp/ccclyeDw.s:490    .text:00000000000000ea _ZN8LibRobot21ajustementPWM_MoteursEhh
+     /tmp/ccclyeDw.s:528    .text:0000000000000110 _ZN8LibRobot14arreterMoteursEv
+     /tmp/ccclyeDw.s:558    .text:0000000000000122 _ZN8LibRobot11ajusterSensEbb
+     /tmp/ccclyeDw.s:604    .text:0000000000000138 _ZN8LibRobot15tournerGauche90Ev
+     /tmp/ccclyeDw.s:661    .text:000000000000016c _ZN8LibRobot15tournerDroite90Ev
+     /tmp/ccclyeDw.s:721    .text:00000000000001a0 _ZN8LibRobot9decoincerEbbb
+     /tmp/ccclyeDw.s:792    .text:00000000000001d4 _ZN8LibRobot7reculerEhhaa
+     /tmp/ccclyeDw.s:927    .text:000000000000025c _ZN8LibRobot7reculerEh
+     /tmp/ccclyeDw.s:976    .text:000000000000027e _ZN8LibRobot5virerEhaab
+     /tmp/ccclyeDw.s:1145   .text:000000000000030c _ZN8LibRobot7avancerEhhaa
+     /tmp/ccclyeDw.s:1280   .text:0000000000000394 _ZN8LibRobot7avancerEh
+     /tmp/ccclyeDw.s:1325   .text:00000000000003b6 __vector_13
+     /tmp/ccclyeDw.s:1392   .text:00000000000003f8 _ZN8LibRobot18partirMinuterieSonEj
+     /tmp/ccclyeDw.s:1457   .text:000000000000042e _ZN8LibRobot8jouerSonEh
+
+UNDEFINED SYMBOLS
+__tablejump2__
+__do_clear_bss

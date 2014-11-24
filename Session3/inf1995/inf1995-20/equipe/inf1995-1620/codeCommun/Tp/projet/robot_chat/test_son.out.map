@@ -1,0 +1,659 @@
+Archive member included because of file (symbol)
+
+./lib//libRobot.a(libRobot.o)
+                              robot_chat.o (_ZN8LibRobotC1Ev)
+/usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.7.3/../../../../avr/lib/avr5/crtm324pa.o (exit)
+/usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_tablejump.o)
+                              ./lib//libRobot.a(libRobot.o) (__tablejump2__)
+/usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_copy_data.o)
+                              robot_chat.o (__do_copy_data)
+/usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_clear_bss.o)
+                              robot_chat.o (__do_clear_bss)
+/usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_ctors.o)
+                              robot_chat.o (__do_global_ctors)
+/usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_dtors.o)
+                              robot_chat.o (__do_global_dtors)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000800060 0x000000000000ffa0 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/lib/gcc/avr/4.7.3/../../../../avr/lib/avr5/crtm324pa.o
+LOAD robot_chat.o
+LOAD can.o
+LOAD /usr/lib/gcc/avr/4.7.3/../../../../avr/lib/avr5/libm.a
+LOAD ./lib//libRobot.a
+LOAD /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/4.7.3/../../../../avr/lib/avr5/libc.a
+LOAD /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000     0x19c4
+ *(.vectors)
+ .vectors       0x0000000000000000       0x7c /usr/lib/gcc/avr/4.7.3/../../../../avr/lib/avr5/crtm324pa.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table
+                0x000000000000007c       0x4a ./lib//libRobot.a(libRobot.o)
+ *(.progmem*)
+                0x00000000000000c6                . = ALIGN (0x2)
+                0x00000000000000c6                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000000000000c6        0x0 linker stubs
+ *(.trampolines*)
+                0x00000000000000c6                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000000000000c6                __ctors_start = .
+ *(.ctors)
+ .ctors         0x00000000000000c6        0x2 robot_chat.o
+                0x00000000000000c8                __ctors_end = .
+                0x00000000000000c8                __dtors_start = .
+ *(.dtors)
+ .dtors         0x00000000000000c8        0x2 robot_chat.o
+                0x00000000000000ca                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000000000000ca        0x0 /usr/lib/gcc/avr/4.7.3/../../../../avr/lib/avr5/crtm324pa.o
+                0x00000000000000ca                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000000000000ca        0xc /usr/lib/gcc/avr/4.7.3/../../../../avr/lib/avr5/crtm324pa.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000000000000d6       0x16 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_copy_data.o)
+                0x00000000000000d6                __do_copy_data
+ .init4         0x00000000000000ec       0x10 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_clear_bss.o)
+                0x00000000000000ec                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x00000000000000fc       0x16 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_ctors.o)
+                0x00000000000000fc                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000000000000112        0x8 /usr/lib/gcc/avr/4.7.3/../../../../avr/lib/avr5/crtm324pa.o
+ *(.init9)
+ *(.text)
+ .text          0x000000000000011a        0x4 /usr/lib/gcc/avr/4.7.3/../../../../avr/lib/avr5/crtm324pa.o
+                0x000000000000011a                __vector_22
+                0x000000000000011a                __vector_28
+                0x000000000000011a                __vector_1
+                0x000000000000011a                __vector_24
+                0x000000000000011a                __vector_12
+                0x000000000000011a                __bad_interrupt
+                0x000000000000011a                __vector_6
+                0x000000000000011a                __vector_3
+                0x000000000000011a                __vector_23
+                0x000000000000011a                __vector_30
+                0x000000000000011a                __vector_25
+                0x000000000000011a                __vector_11
+                0x000000000000011a                __vector_17
+                0x000000000000011a                __vector_19
+                0x000000000000011a                __vector_7
+                0x000000000000011a                __vector_27
+                0x000000000000011a                __vector_5
+                0x000000000000011a                __vector_4
+                0x000000000000011a                __vector_9
+                0x000000000000011a                __vector_2
+                0x000000000000011a                __vector_21
+                0x000000000000011a                __vector_15
+                0x000000000000011a                __vector_29
+                0x000000000000011a                __vector_8
+                0x000000000000011a                __vector_26
+                0x000000000000011a                __vector_14
+                0x000000000000011a                __vector_10
+                0x000000000000011a                __vector_16
+                0x000000000000011a                __vector_18
+                0x000000000000011a                __vector_20
+ .text          0x000000000000011e     0x10b8 robot_chat.o
+                0x0000000000000130                _Z12capteurDroitv
+                0x000000000000013e                _Z13capteurMilieuv
+                0x000000000000014a                _Z13capteurGauchev
+                0x0000000000000158                _Z16jouerSonDistancej
+                0x0000000000000254                _Z17getDistanceSourisv
+                0x000000000000026c                _Z23ajusterPositionRelativeh
+                0x0000000000000368                _Z18ajusterOrientationb
+                0x0000000000000382                _Z15ajusterFranchiev
+                0x00000000000003ae                _Z30ajusterPossibiliteIntersectionv
+                0x000000000000040e                _Z20detecterIntersectionv
+                0x000000000000042a                _Z6perduev
+                0x000000000000044a                _Z21tomberEnModeDetectionv
+                0x0000000000000462                _Z37tomberEnModerDetecterTypeIntersectionb
+                0x00000000000004c6                _Z26determinerTypeIntersectionv
+                0x00000000000005e0                _Z21ajusterDernierCapteurv
+                0x000000000000060c                _Z17limiterAjustementv
+                0x0000000000000646                _Z17ajustementVitesseb
+                0x0000000000000698                _Z21avancerAvecAjustementii
+                0x00000000000006c8                _Z21reculerAvecAjustementii
+                0x00000000000006e4                _Z21viragePourLigneDroiteba
+                0x0000000000000746                _Z19tomberEnModeReculerv
+                0x0000000000000760                _Z17directionConvienth
+                0x00000000000007ea                _Z27nullifierDistanceAParcourirv
+                0x00000000000007f6                _Z14decisionViragebb
+                0x000000000000095c                _Z33garderEnMemoirePositionsRelativesv
+                0x000000000000097c                _Z16calculerDistancev
+                0x00000000000009b2                _Z15ajusterDistancev
+                0x00000000000009d0                _Z25ajusterDistanceAParcourirv
+                0x0000000000000a0c                _Z20ajusterVitesseViragev
+                0x0000000000000a2c                _Z29ajusterVitesseVirageDetectionv
+                0x0000000000000a4c                _Z32ajusterDelaiAjustementTemporairev
+                0x0000000000000a66                _Z5virerb
+                0x0000000000000b1a                _Z16gestionDetectionv
+                0x0000000000000be0                _Z18avancerLigneDroitev
+                0x0000000000000cb8                _Z7reculerv
+                0x0000000000000d20                _Z23ajusterTempsActifRecentv
+                0x0000000000000db6                _Z28ajusterTempsActifSansCapteurv
+                0x0000000000000e06                _Z16verifierVictoirev
+                0x0000000000000e2c                _Z19gestionModeVictoirev
+                0x0000000000000ea2                _Z25verifierPossibiliteFoncerv
+                0x0000000000000ee8                _Z22gestionDeplacementChatv
+                0x00000000000010dc                _Z16BoutonEstEnfoncev
+                0x00000000000010ee                _Z8modeTestv
+                0x000000000000115e                _Z23tomberEnEtatTransitoirev
+ .text          0x00000000000011d6       0x5a can.o
+                0x00000000000011d6                _ZN3canC2Ev
+                0x00000000000011d6                _ZN3canC1Ev
+                0x00000000000011e2                _ZN3canD1Ev
+                0x00000000000011e2                _ZN3canD2Ev
+                0x00000000000011e8                _ZN3can7lectureEh
+ .text          0x0000000000001230      0x548 ./lib//libRobot.a(libRobot.o)
+                0x0000000000001230                _ZN8LibRobotC1Ev
+                0x0000000000001230                _ZN8LibRobotC2Ev
+                0x0000000000001232                _ZN8LibRobotD1Ev
+                0x0000000000001232                _ZN8LibRobotD2Ev
+                0x0000000000001234                _ZN8LibRobot16BoutonEstEnfonceEv
+                0x0000000000001252                _ZN8LibRobot14initialisationEv
+                0x000000000000126c                _ZN8LibRobot5debutEv
+                0x0000000000001274                _ZN8LibRobot8attendreEa
+                0x00000000000012a2                _ZN8LibRobot10allumerDELERVhh
+                0x00000000000012b4                _ZN8LibRobot11eteindreDELERVhhh
+                0x00000000000012d0                _ZN8LibRobot10arreterSonEv
+                0x00000000000012e2                _ZN8LibRobot11debutBoucleEj
+                0x00000000000012ee                _ZN8LibRobot11finDeBoucleEv
+                0x000000000000130a                _ZN8LibRobot3finEv
+                0x000000000000131a                _ZN8LibRobot21ajustementPWM_MoteursEhh
+                0x0000000000001340                _ZN8LibRobot14arreterMoteursEv
+                0x0000000000001352                _ZN8LibRobot11ajusterSensEbb
+                0x0000000000001368                _ZN8LibRobot15tournerGauche90Ev
+                0x000000000000139c                _ZN8LibRobot15tournerDroite90Ev
+                0x00000000000013d0                _ZN8LibRobot9decoincerEbbb
+                0x0000000000001404                _ZN8LibRobot7reculerEhhaa
+                0x000000000000148c                _ZN8LibRobot7reculerEh
+                0x00000000000014ae                _ZN8LibRobot5virerEhaab
+                0x000000000000153c                _ZN8LibRobot7avancerEhhaa
+                0x00000000000015c4                _ZN8LibRobot7avancerEh
+                0x00000000000015e6                __vector_13
+                0x0000000000001628                _ZN8LibRobot18partirMinuterieSonEj
+                0x000000000000165e                _ZN8LibRobot8jouerSonEh
+ .text          0x0000000000001778        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_exit.o)
+ .text          0x0000000000001778        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_tablejump.o)
+ .text          0x0000000000001778        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_copy_data.o)
+ .text          0x0000000000001778        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_clear_bss.o)
+ .text          0x0000000000001778        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_ctors.o)
+ .text          0x0000000000001778        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_dtors.o)
+                0x0000000000001778                . = ALIGN (0x2)
+ *(.text.*)
+ .text.startup  0x0000000000001778      0x21e robot_chat.o
+                0x0000000000001778                main
+ .text.exit     0x0000000000001996        0x8 robot_chat.o
+ .text.libgcc.mul
+                0x000000000000199e        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x000000000000199e        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x000000000000199e        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x000000000000199e        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x000000000000199e        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x000000000000199e        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x000000000000199e        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_tablejump.o)
+ .text.libgcc.div
+                0x000000000000199e        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_tablejump.o)
+ .text.libgcc   0x000000000000199e        0xc /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_tablejump.o)
+                0x000000000000199e                __tablejump2__
+                0x00000000000019a2                __tablejump__
+ .text.libgcc.prologue
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_tablejump.o)
+ .text.libgcc.builtins
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_tablejump.o)
+ .text.libgcc.fmul
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_tablejump.o)
+ .text.libgcc.mul
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_ctors.o)
+ .text.libgcc.div
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_ctors.o)
+ .text.libgcc   0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_ctors.o)
+ .text.libgcc.prologue
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_ctors.o)
+ .text.libgcc.builtins
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_ctors.o)
+ .text.libgcc.fmul
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_ctors.o)
+ .text.libgcc.mul
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_dtors.o)
+ .text.libgcc.div
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_dtors.o)
+ .text.libgcc   0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_dtors.o)
+ .text.libgcc.prologue
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_dtors.o)
+ .text.libgcc.builtins
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_dtors.o)
+ .text.libgcc.fmul
+                0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_dtors.o)
+                0x00000000000019aa                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000000000019aa        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_exit.o)
+                0x00000000000019aa                exit
+                0x00000000000019aa                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ .fini6         0x00000000000019aa       0x16 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_dtors.o)
+                0x00000000000019aa                __do_global_dtors
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000000000019c0        0x4 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000000000019c4                _etext = .
+
+.data           0x0000000000800100        0x4 load address 0x00000000000019c4
+                0x0000000000800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.7.3/../../../../avr/lib/avr5/crtm324pa.o
+ .data          0x0000000000800100        0x2 robot_chat.o
+                0x0000000000800100                pinCouleur2
+                0x0000000000800101                pinCouleur
+ .data          0x0000000000800102        0x0 can.o
+ .data          0x0000000000800102        0x0 ./lib//libRobot.a(libRobot.o)
+ .data          0x0000000000800102        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_exit.o)
+ .data          0x0000000000800102        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_tablejump.o)
+ .data          0x0000000000800102        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_copy_data.o)
+ .data          0x0000000000800102        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_clear_bss.o)
+ .data          0x0000000000800102        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_ctors.o)
+ .data          0x0000000000800102        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_dtors.o)
+ *(.data*)
+ *(.rodata)
+ .rodata        0x0000000000800102        0x2 robot_chat.o
+                0x0000000000800102                portDEL
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0000000000800104                . = ALIGN (0x2)
+                0x0000000000800104                _edata = .
+                0x0000000000800104                PROVIDE (__data_end, .)
+
+.bss            0x0000000000800104       0x69
+                0x0000000000800104                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0000000000800104        0x0 /usr/lib/gcc/avr/4.7.3/../../../../avr/lib/avr5/crtm324pa.o
+ .bss           0x0000000000800104       0x63 robot_chat.o
+                0x0000000000800104                debug
+                0x0000000000800105                tempsActifSansCapteurMax
+                0x0000000000800107                tempsActifSansCapteur
+                0x0000000000800109                tempsLigneDroiteActiveSeuil
+                0x000000000080010b                tempsLigneDroiteActiveMax
+                0x000000000080010d                tempsLigneDroiteDepuisIntersection
+                0x000000000080010f                tempsLigneDroiteActive
+                0x0000000000800111                tempsReculExtraMax
+                0x0000000000800112                tempsReculExtra
+                0x0000000000800113                finRecul
+                0x0000000000800114                tempsReculActifMax
+                0x0000000000800115                tempsReculActif
+                0x0000000000800116                vitesseReculer
+                0x0000000000800117                tempsAttenteMaxIntersection
+                0x0000000000800119                tempsDepuisIntersection
+                0x000000000080011b                dureeAjustementLigneDroite
+                0x000000000080011c                dureeAjustementTournant
+                0x000000000080011d                ajustementLigneDroite
+                0x000000000080011e                ajustementTournant
+                0x000000000080011f                ajustementTemporaireD
+                0x0000000000800120                ajustementTemporaireG
+                0x0000000000800121                delaisAjustementTemporaire
+                0x0000000000800123                delaisMaxLigneDroite
+                0x0000000000800125                delaisLigneDroite
+                0x0000000000800127                ajustementVirageMoyen
+                0x0000000000800128                ajustementVirageLeger
+                0x0000000000800129                ajustementRetour
+                0x000000000080012a                ajustementMin
+                0x000000000080012b                ajustementMax
+                0x000000000080012c                ajustementDroit
+                0x000000000080012d                ajustementGauche
+                0x000000000080012e                vitesseBase
+                0x000000000080012f                dernierCapteur
+                0x0000000000800130                dernierCapteurIntersection
+                0x0000000000800131                seuilTempsActifToutDroit
+                0x0000000000800133                tempsActif
+                0x0000000000800135                tempsIntersectionMax
+                0x0000000000800137                tempsIntersection
+                0x0000000000800139                milieuExiste
+                0x000000000080013a                droiteExiste
+                0x000000000080013b                gaucheExiste
+                0x000000000080013c                franchieDroite
+                0x000000000080013d                franchieMilieu
+                0x000000000080013e                franchieGauche
+                0x000000000080013f                varianceVitesseVirageMin
+                0x0000000000800140                varianceVitesseVirageMax
+                0x0000000000800141                varianceVitesseVirageDeceleration
+                0x0000000000800142                varianceVitesseVirage
+                0x0000000000800143                detecteurEnabled
+                0x0000000000800144                virageForce
+                0x0000000000800145                vitesseVirage
+                0x0000000000800146                nbIntersectionMax
+                0x0000000000800147                nbIntersection
+                0x0000000000800148                delaiMemeOrientationMax
+                0x000000000080014a                delaiMemeOrientation
+                0x000000000080014c                directionInitialeDetection
+                0x000000000080014d                varianceVitesseVirageDetectionMin
+                0x000000000080014e                varianceVitesseVirageDetectionMax
+                0x000000000080014f                varianceVitesseVirageDetectionDeceleration
+                0x0000000000800150                varianceVitesseVirageDetection
+                0x0000000000800151                vitesseVirageDetection
+                0x0000000000800152                modeFoncerConsecutifMax
+                0x0000000000800153                modeFoncerConsecutif
+                0x0000000000800154                vitesseFoncer
+                0x0000000000800155                modeDetection
+                0x0000000000800156                modeVictoire
+                0x0000000000800157                modeFoncer
+                0x0000000000800158                modeRecherche
+                0x0000000000800159                distance8
+                0x000000000080015a                distance16
+                0x000000000080015c                distanceAParcourirY
+                0x000000000080015d                distanceAParcourirX
+                0x000000000080015e                positionRalativeY
+                0x000000000080015f                positionRalativeX
+                0x0000000000800160                directionCourrante
+                0x0000000000800161                modeReculer
+                0x0000000000800162                modeVirageDroite
+                0x0000000000800163                modeVirageGauche
+                0x0000000000800164                modeIntersection
+                0x0000000000800165                modeLigneDroite
+                0x0000000000800166                r
+ .bss           0x0000000000800167        0x0 can.o
+ .bss           0x0000000000800167        0x6 ./lib//libRobot.a(libRobot.o)
+                0x0000000000800167                _ZN8LibRobot10enabledSonE
+                0x0000000000800168                _ZN8LibRobot10valeur_sonE
+                0x0000000000800169                _ZN8LibRobot5a_sonE
+                0x000000000080016a                _ZN8LibRobot8nbBoucleE
+                0x000000000080016b                _ZN8LibRobot4fin_E
+                0x000000000080016c                _ZN8LibRobot6debut_E
+ .bss           0x000000000080016d        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_exit.o)
+ .bss           0x000000000080016d        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_tablejump.o)
+ .bss           0x000000000080016d        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_copy_data.o)
+ .bss           0x000000000080016d        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x000000000080016d        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_ctors.o)
+ .bss           0x000000000080016d        0x0 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_dtors.o)
+ *(.bss*)
+ *(COMMON)
+                0x000000000080016d                PROVIDE (__bss_end, .)
+                0x00000000000019c4                __data_load_start = LOADADDR (.data)
+                0x00000000000019c8                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x000000000080016d        0x0
+                0x000000000080016d                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x000000000080016d                PROVIDE (__noinit_end, .)
+                0x000000000080016d                _end = .
+                0x000000000080016d                PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x0000000000000000     0x582c
+ *(.stab)
+ .stab          0x0000000000000000      0x6cc /usr/lib/gcc/avr/4.7.3/../../../../avr/lib/avr5/crtm324pa.o
+ .stab          0x00000000000006cc     0x3234 robot_chat.o
+                                       0x3240 (size before relaxing)
+ .stab          0x0000000000003900      0x48c can.o
+                                        0x498 (size before relaxing)
+ .stab          0x0000000000003d8c     0x162c ./lib//libRobot.a(libRobot.o)
+                                       0x1638 (size before relaxing)
+ .stab          0x00000000000053b8       0x6c /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_exit.o)
+                                         0x78 (size before relaxing)
+ .stab          0x0000000000005424       0xcc /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_tablejump.o)
+                                         0xd8 (size before relaxing)
+ .stab          0x00000000000054f0       0xd8 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_copy_data.o)
+                                         0xe4 (size before relaxing)
+ .stab          0x00000000000055c8       0xb4 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_clear_bss.o)
+                                         0xc0 (size before relaxing)
+ .stab          0x000000000000567c       0xd8 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_ctors.o)
+                                         0xe4 (size before relaxing)
+ .stab          0x0000000000005754       0xd8 /usr/lib/gcc/avr/4.7.3/avr5/libgcc.a(_dtors.o)
+                                         0xe4 (size before relaxing)
+
+.stabstr        0x0000000000000000     0x295a
+ *(.stabstr)
+ .stabstr       0x0000000000000000     0x295a /usr/lib/gcc/avr/4.7.3/../../../../avr/lib/avr5/crtm324pa.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x39
+ *(.comment)
+ .comment       0x0000000000000000       0x39 robot_chat.o
+                                         0x3a (size before relaxing)
+ .comment       0x0000000000000000       0x3a can.o
+ .comment       0x0000000000000000       0x3a ./lib//libRobot.a(libRobot.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(test_son.out elf32-avr)
+LOAD linker stubs

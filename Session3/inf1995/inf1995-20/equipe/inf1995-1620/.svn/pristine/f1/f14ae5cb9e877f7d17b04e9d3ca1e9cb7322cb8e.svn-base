@@ -1,0 +1,45 @@
+
+
+#ifndef LIB_ROBOT_H
+#define LIB_ROBOT_H
+
+
+class LibRobot
+{
+public:
+
+   LibRobot();
+   ~LibRobot();
+
+   /*static void debut(); //dbt
+   static void attendre(uint16_t duree25); //att (25 milliseconde * duree25)
+   static void allumerDEL(); //dal
+   static void eteindreDEL(); //det
+   static void jouerSon(uint8_t son); //sgo (voir tableau 3 tp 9)
+   static void arreterSon(); //sar
+   static void arreterMoteurs(); //mar
+   static void avancer(frequence255); //mav (opérande / 255 * 100%) --> vitesse max = 100% = 255
+   static void reculer(frequence255); //mre
+   static void tournerDroite90(); //trd
+   static void tournerGauche90(); //trg
+   static void debutBoucle(nbRepetition); //dbc (0 = aucune repetition --> une seule execution)
+   static void finDeBoucle() //fbc
+   static void fin(); //fin*/
+   
+   
+   static void testRoue(uint16_t a, uint16_t b, uint8_t port);
+   
+   //Utils
+   static uint8_t BoutonEstEnfonce();
+   
+//private:
+   static void affectePort(uint8_t port, uint16_t valeur);
+   static void ajoutePort(uint8_t port, uint16_t valeur);
+   static uint16_t getPort(uint8_t port, uint8_t numPort);
+   
+   static void tournerRoueDroite(uint16_t dureeAllumee, uint16_t periode,  int duree, bool sens, uint8_t port );
+   static void tournerRoueGauche(uint16_t dureeAllumee, uint16_t periode,  int duree, bool sens, uint8_t port );
+   static void attenuerDEL(bool rouge);
+};
+
+#endif /* LIB_ROBOT_H */

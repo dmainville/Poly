@@ -1,0 +1,64 @@
+
+
+#ifndef LIB_ROBOT_H
+#define LIB_ROBOT_H
+
+
+class LibRobot
+{
+	public:
+
+	//Constructeur, destructeur
+	LibRobot();
+	~LibRobot();
+	
+	static void initialisation();
+
+	//Commandes robot
+	static void debut(); //dbt
+	static void attendre(int duree25); //att (25 milliseconde * duree25)
+	static void allumerDEL(volatile uint8_t &port, uint8_t pinCouleur); //dal
+	static void eteindreDEL(volatile uint8_t &port, uint8_t pinCouleur); //det
+	static void jouerSon(uint8_t son); //sgo (voir tableau 3 tp 9)
+	static void arreterSon(); //sar
+	static void arreterMoteurs(); //mar
+	static void avancer(uint16_t b, uint8_t frequence255); //mav (opérande / 255 * 100%) --> vitesse max = 100% = 255
+	static void reculer(uint16_t b,uint8_t frequence255); //mre
+	static void tournerDroite90(uint16_t b); //trd
+	static void tournerGauche90(uint16_t b); //trg
+	static void debutBoucle(uint16_t nbRepetition); //dbc (0 = aucune repetition --> une seule execution)
+	static void finDeBoucle(); //fbc
+	static void fin(); //fin
+
+	//Utils
+	static uint8_t BoutonEstEnfonce();
+	static void attenuerDEL(bool rouge);
+
+	//Attente
+	static void gestionAttente(uint16_t b);
+	//Moteurs
+	static void ajusterA(uint16_t b,uint8_t vitesse, bool droite);
+	static void gestionMoteurs(uint16_t b, volatile uint8_t& portMoteurD, volatile uint8_t& portMoteurG );
+	static void allumerMoteur(bool sens, volatile uint8_t &port, uint8_t pinEnable, uint8_t pinSens);
+	static void tournerRoue(uint16_t a, uint16_t b,bool sens, volatile uint8_t &port, uint8_t pinEnable, uint8_t pinSens);
+	static void tournerDeuxRoues(uint16_t b, volatile uint8_t& portMoteurD, volatile uint8_t& portMoteurG );
+
+	//Tests
+	static void testRoue(uint16_t a, uint16_t b, uint8_t port);
+	static void testPort(volatile uint8_t &port, uint8_t valeur);
+
+	//Propriete
+	static bool debut_;
+	static bool fin_;
+	static int attente_us; //nb de micro seconde d'attente
+	static uint16_t aD, aG;
+	static bool sensD, sensG;
+	static bool enabledD, enabledG;
+	static uint8_t pinEnableD;
+	static uint8_t pinEnableG;
+	static uint8_t pinSensD;
+	static uint8_t pinSensG;
+
+};
+
+#endif /* LIB_ROBOT_H */

@@ -1,0 +1,17 @@
+﻿La génération a démarré 2014-03-25 17:32:04.
+     1>Projet "Z:\reseau\Projet_final_Code_Source\Lab3_Code_Source\Lab3Serveur\Lab3Serveur_H2012\Lab3Serveur_H2012.vcxproj" sur le nœud 2 (build cible(s)).
+     1>InitializeBuildStatus:
+         Création de "Release\Lab3Serveur_A2012.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+       ClCompile:
+         Toutes les sorties sont à jour.
+       Link:
+         Toutes les sorties sont à jour.
+         Lab3Serveur_H2012.vcxproj -> Z:\reseau\Projet_final_Code_Source\Lab3_Code_Source\Lab3Serveur\Release\Lab3Serveur_A2012.exe
+       FinalizeBuildStatus:
+         Suppression du fichier "Release\Lab3Serveur_A2012.unsuccessfulbuild".
+         Mise à jour de l'horodatage "Release\Lab3Serveur_A2012.lastbuildstate".
+     1>Génération du projet "Z:\reseau\Projet_final_Code_Source\Lab3_Code_Source\Lab3Serveur\Lab3Serveur_H2012\Lab3Serveur_H2012.vcxproj" terminée (build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:00.04

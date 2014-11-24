@@ -1,0 +1,130 @@
+/****************************************************************************
+ * Fichier: TP3_ex1.cpp
+ * Auteur: Yannick OUellet et David Mainville
+ * Date: 16 Septembre 2013
+ * DESCRIPTION : Activation de LED ambrée avec bouton.
+ ****************************************************************************/
+
+//TODO
+//Modifier le delay quand b change
+//Ajuster la vitesse en fonction d'une valeur de 0 a 255 (probleme avec les vigules)
+
+/* Information sur branchements */
+/* Port B0 branché sur +        */
+/* Port B1 branché sur -        */
+
+// F_CPU permet de définir la vitesse du micro-controleur soit 8MHz
+#define F_CPU 8000000UL
+#include <avr/io.h>
+#include <util/delay.h>
+#include "lib/libRobot.h"
+
+
+int main()
+{
+	LibRobot r;
+	r.initialisation();
+
+	//LED sur le A
+	DDRA = 0xff; // sortie	
+	volatile uint8_t& portDEL = PORTA;
+	uint8_t pinCouleur = _BV(PORTA0);
+	uint8_t pinCouleur2 = _BV(PORTA1);
+
+	//Moteur droit sur le B
+	DDRB = 0xff; // sortie
+	volatile uint8_t& portMoteurD = PORTB;
+	r.pinEnableD = _BV(PORTB0);
+	r.pinSensD = _BV(PORTB1);
+
+	//Moteur gauche sur le C
+	DDRC = 0xff; // sortie
+	volatile uint8_t& portMoteurG = PORTC;
+	r.pinEnableG = _BV(PORTC0);
+	r.pinSensG = _BV(PORTC1);
+
+	//Bouton Poussoir
+	DDRD = 0x00; // entree
+	
+	//Periode
+	uint16_t b = 16667;
+
+	//Test
+	uint16_t operation = 0;
+
+	while(true)
+	{
+		//Lecture de la mémoire
+		
+		if(r.nb_attente <= 0) //Ne pas effectuer d'operation si il y a attente
+		{
+			//PORTA = 0x0;
+
+			if(operation < 1000)
+				operation++;
+
+			if(operation == 1)
+			{
+				r.debut();
+			}
+			else if(operation == 2)
+			{
+				r.allumerDEL(portDEL, pinCouleur);
+				r.attendre(100); //attendre 2.5 sec
+			}
+			else if(operation == 3)
+			{
+				r.eteindreDEL(portDEL, pinCouleur,pinCouleur2);
+				r.allumerDEL(portDEL, pinCouleur2);
+				r.avancer(b, 64);
+				r.attendre(100); //attendre 2.5 sec
+			}
+			else if(operation == 4)
+			{
+				
+				r.avancer(b, 128);
+				r.attendre(100); //attendre 2.5 sec
+			}
+			else if(operation == 5)
+			{
+				r.eteindreDEL(portDEL, pinCouleur,pinCouleur2);
+				r.arreterMoteurs();
+				r.attendre(10); //attendre 0.25 sec
+			}
+			else if(operation == 6)
+			{
+				r.allumerDEL(portDEL, pinCouleur);
+				r.reculer(b, 192);
+				r.attendre(100); //attendre 2.5 sec
+			}
+			else if(operation == 7)
+			{
+				r.tournerDroite90(b);
+				r.attendre(60); //attendre 2.5 sec
+			}
+			else if(operation == 8)
+			{
+				r.eteindreDEL(portDEL, pinCouleur,pinCouleur2);
+				r.avancer(b, 255);
+				r.attendre(200); //attendre 5 sec
+			}
+			else if(operation == 9)
+			{
+				r.tournerGauche90(b);
+			}
+		}
+
+
+		if(r.fin_)
+			return 0;
+		
+		if(r.debut_)
+		{
+			r.gestionMoteurs(b,portMoteurD,portMoteurG);
+			r.gestionDelaiArret(b);
+			r.gestionAttente(b);
+		}
+	}
+
+	return 0;
+}

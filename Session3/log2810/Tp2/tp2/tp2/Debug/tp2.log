@@ -1,0 +1,42 @@
+﻿La génération a démarré 2013-11-30 14:18:16.
+     1>Projet "T:\Documents\Session3\log2810\Tp2\tp2\tp2\tp2.vcxproj" sur le nœud 2 (build cible(s)).
+     1>InitializeBuildStatus:
+         Création de "Debug\tp2.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\log2810_tp2\src\Automate.cpp ..\..\..\log2810_tp2\src\Etat.cpp ..\..\..\log2810_tp2\src\Transition.cpp ..\..\..\log2810_tp2\src\main.cpp
+         Etat.cpp
+         Automate.cpp
+     1>t:\documents\session3\log2810\log2810_tp2\src\automate.cpp(103): warning C4018: '<' : incompatibilité signed/unsigned
+     1>t:\documents\session3\log2810\log2810_tp2\src\automate.cpp(122): warning C4018: '>=' : incompatibilité signed/unsigned
+     1>t:\documents\session3\log2810\log2810_tp2\src\automate.cpp(229): warning C4018: '<' : incompatibilité signed/unsigned
+         Génération de code en cours...
+         Compilation en cours...
+         main.cpp
+         Transition.cpp
+         Génération de code en cours...
+       ManifestResourceCompile:
+         Toutes les sorties sont à jour.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"T:\Documents\Session3\log2810\Tp2\tp2\Debug\tp2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\tp2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"T:\Documents\Session3\log2810\Tp2\tp2\Debug\tp2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"T:\Documents\Session3\log2810\Tp2\tp2\Debug\tp2.lib" /MACHINE:X86 Debug\tp2.exe.embed.manifest.res
+         Debug\Automate.obj
+         Debug\Etat.obj
+         Debug\main.obj
+         Debug\Transition.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\tp2.exe.embed.manifest" /manifest Debug\tp2.exe.intermediate.manifest
+         Toutes les sorties sont à jour.
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"T:\Documents\Session3\log2810\Tp2\tp2\Debug\tp2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\tp2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"T:\Documents\Session3\log2810\Tp2\tp2\Debug\tp2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"T:\Documents\Session3\log2810\Tp2\tp2\Debug\tp2.lib" /MACHINE:X86 Debug\tp2.exe.embed.manifest.res
+         Debug\Automate.obj
+         Debug\Etat.obj
+         Debug\main.obj
+         Debug\Transition.obj
+         tp2.vcxproj -> T:\Documents\Session3\log2810\Tp2\tp2\Debug\tp2.exe
+       FinalizeBuildStatus:
+         Suppression du fichier "Debug\tp2.unsuccessfulbuild".
+         Mise à jour de l'horodatage "Debug\tp2.lastbuildstate".
+     1>Génération du projet "T:\Documents\Session3\log2810\Tp2\tp2\tp2\tp2.vcxproj" terminée (build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:08.63

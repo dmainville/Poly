@@ -1,0 +1,205 @@
+GAS LISTING /tmp/ccrwmQT2.s 			page 1
+
+
+   1               		.file	"compteur32bits.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/usagers/damaib/Documents/Session3/inf1995/lab3/",100,0,4,.Ltext0
+   8               		.stabs	"compteur32bits.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"void:t(0,4)",128,0,0,0
+  38               		.stabs	"wchar_t:t(0,23)=r(0,23);-32768;32767;",128,0,0,0
+  39               		.stabs	"bool:t(0,24)=@s8;-16;",128,0,0,0
+  40               		.stabs	"__vtbl_ptr_type:t(0,25)=*(0,26)=f(0,9)",128,0,0,0
+  41               		.stabs	"decltype(nullptr):t(0,27)=(0,27)",128,0,0,0
+  42               		.stabs	"int8_t:t(0,28)=(0,16)",128,0,121,0
+  43               		.stabs	"uint8_t:t(0,29)=(0,13)",128,0,122,0
+  44               		.stabs	"int16_t:t(0,30)=(0,9)",128,0,123,0
+  45               		.stabs	"uint16_t:t(0,31)=(0,12)",128,0,124,0
+  46               		.stabs	"int32_t:t(0,32)=(0,15)",128,0,125,0
+  47               		.stabs	"uint32_t:t(0,33)=(0,11)",128,0,126,0
+  48               		.stabs	"int64_t:t(0,34)=(0,14)",128,0,128,0
+  49               		.stabs	"uint64_t:t(0,35)=(0,10)",128,0,129,0
+  50               		.stabs	"intptr_t:t(0,36)=(0,30)",128,0,142,0
+  51               		.stabs	"uintptr_t:t(0,37)=(0,31)",128,0,147,0
+  52               		.stabs	"int_least8_t:t(0,38)=(0,28)",128,0,159,0
+  53               		.stabs	"uint_least8_t:t(0,39)=(0,29)",128,0,164,0
+  54               		.stabs	"int_least16_t:t(0,40)=(0,30)",128,0,169,0
+  55               		.stabs	"uint_least16_t:t(0,41)=(0,31)",128,0,174,0
+  56               		.stabs	"int_least32_t:t(0,42)=(0,32)",128,0,179,0
+  57               		.stabs	"uint_least32_t:t(0,43)=(0,33)",128,0,184,0
+GAS LISTING /tmp/ccrwmQT2.s 			page 2
+
+
+  58               		.stabs	"int_least64_t:t(0,44)=(0,34)",128,0,192,0
+  59               		.stabs	"uint_least64_t:t(0,45)=(0,35)",128,0,199,0
+  60               		.stabs	"int_fast8_t:t(0,46)=(0,28)",128,0,213,0
+  61               		.stabs	"uint_fast8_t:t(0,47)=(0,29)",128,0,218,0
+  62               		.stabs	"int_fast16_t:t(0,48)=(0,30)",128,0,223,0
+  63               		.stabs	"uint_fast16_t:t(0,49)=(0,31)",128,0,228,0
+  64               		.stabs	"int_fast32_t:t(0,50)=(0,32)",128,0,233,0
+  65               		.stabs	"uint_fast32_t:t(0,51)=(0,33)",128,0,238,0
+  66               		.stabs	"int_fast64_t:t(0,52)=(0,34)",128,0,246,0
+  67               		.stabs	"uint_fast64_t:t(0,53)=(0,35)",128,0,253,0
+  68               		.stabs	"intmax_t:t(0,54)=(0,34)",128,0,273,0
+  69               		.stabs	"uintmax_t:t(0,55)=(0,35)",128,0,278,0
+  70               		.stabs	"int_farptr_t:t(0,56)=(0,32)",128,0,77,0
+  71               		.stabs	"uint_farptr_t:t(0,57)=(0,33)",128,0,81,0
+  72               		.stabs	"._0:Tt(0,58)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+  73               		.stabs	"__fuse_t:t(0,58)",128,0,244,0
+  74               		.section	.text.startup,"ax",@progbits
+  75               		.stabs	"main:F(0,9)",36,0,12,main
+  76               	.global	main
+  77               		.type	main, @function
+  78               	main:
+  79               		.stabd	46,0,0
+   1:compteur32bits.cpp **** /*
+   2:compteur32bits.cpp ****  * Nom: compteur 32 bits
+   3:compteur32bits.cpp ****  * Copyright (C) 2005 Matthew Khouzam
+   4:compteur32bits.cpp ****  * License http://www.gnu.org/copyleft/gpl.html GNU/GPL
+   5:compteur32bits.cpp ****  * Description: Ceci est un exemple simple de programme 
+   6:compteur32bits.cpp ****  * Version: 1.1
+   7:compteur32bits.cpp ****  */
+   8:compteur32bits.cpp **** 
+   9:compteur32bits.cpp **** 
+  10:compteur32bits.cpp **** #include <avr/io.h> 
+  11:compteur32bits.cpp **** 
+  12:compteur32bits.cpp **** int main()
+  13:compteur32bits.cpp **** {
+  80               		.stabn	68,0,13,.LM0-.LFBB1
+  81               	.LM0:
+  82               	.LFBB1:
+  83               	/* prologue: function */
+  84               	/* frame size = 0 */
+  85               	/* stack size = 0 */
+  86               	.L__stack_usage = 0
+  87               	.LBB2:
+  14:compteur32bits.cpp ****   DDRA = 0xff; // PORT A est en mode sortie
+  88               		.stabn	68,0,14,.LM1-.LFBB1
+  89               	.LM1:
+  90 0000 8FEF      		ldi r24,lo8(-1)
+  91 0002 81B9      		out 0x1,r24
+  15:compteur32bits.cpp ****   DDRB = 0xff; // PORT B est en mode sortie
+  92               		.stabn	68,0,15,.LM2-.LFBB1
+  93               	.LM2:
+  94 0004 84B9      		out 0x4,r24
+  16:compteur32bits.cpp ****   DDRC = 0xff; // PORT C est en mode sortie
+  95               		.stabn	68,0,16,.LM3-.LFBB1
+  96               	.LM3:
+  97 0006 87B9      		out 0x7,r24
+  17:compteur32bits.cpp ****   DDRD = 0xff; // PORT D est en mode sortie
+GAS LISTING /tmp/ccrwmQT2.s 			page 3
+
+
+  98               		.stabn	68,0,17,.LM4-.LFBB1
+  99               	.LM4:
+ 100 0008 8AB9      		out 0xa,r24
+  18:compteur32bits.cpp ****   unsigned long compteur=0; // le compteur est initialise a 0.
+ 101               		.stabn	68,0,18,.LM5-.LFBB1
+ 102               	.LM5:
+ 103 000a 80E0      		ldi r24,0
+ 104 000c 90E0      		ldi r25,0
+ 105 000e DC01      		movw r26,r24
+ 106               	.L2:
+  19:compteur32bits.cpp ****                             // c'est un compteur de 32 bits
+  20:compteur32bits.cpp **** 
+  21:compteur32bits.cpp ****   for(;;)  // boucle sans fin
+  22:compteur32bits.cpp ****   {
+  23:compteur32bits.cpp ****     compteur++;  // incremente le compteur
+ 107               		.stabn	68,0,23,.LM6-.LFBB1
+ 108               	.LM6:
+ 109 0010 0196      		adiw r24,1
+ 110 0012 A11D      		adc r26,__zero_reg__
+ 111 0014 B11D      		adc r27,__zero_reg__
+  24:compteur32bits.cpp ****                  // si le compteur est 0xffff ffff il revient a 0
+  25:compteur32bits.cpp ****     PORTD = compteur;       // PORTD = 8 bits de large,
+ 112               		.stabn	68,0,25,.LM7-.LFBB1
+ 113               	.LM7:
+ 114 0016 8BB9      		out 0xb,r24
+  26:compteur32bits.cpp ****                             // il prend les bits de 0 a 7 du compteur
+  27:compteur32bits.cpp ****     PORTC = compteur >> 8;  // PORTC = 8 bits de large,
+ 115               		.stabn	68,0,27,.LM8-.LFBB1
+ 116               	.LM8:
+ 117 0018 492F      		mov r20,r25
+ 118 001a 5A2F      		mov r21,r26
+ 119 001c 6B2F      		mov r22,r27
+ 120 001e 7727      		clr r23
+ 121 0020 48B9      		out 0x8,r20
+  28:compteur32bits.cpp ****                             // il prend les bits de 8 a 15 du compteur
+  29:compteur32bits.cpp ****                             // en faisant un decallage de 8 bits.
+  30:compteur32bits.cpp ****     PORTB = compteur >> 16; // PORTC = 8 bits de large,
+ 122               		.stabn	68,0,30,.LM9-.LFBB1
+ 123               	.LM9:
+ 124 0022 AD01      		movw r20,r26
+ 125 0024 6627      		clr r22
+ 126 0026 7727      		clr r23
+ 127 0028 45B9      		out 0x5,r20
+  31:compteur32bits.cpp ****                             // il prend les bits de 16 a 23 du compteur
+  32:compteur32bits.cpp ****                             // en faisant un decallage de 16 bits.
+  33:compteur32bits.cpp ****     PORTA = compteur >> 24; // PORTC = 8 bits de large,
+ 128               		.stabn	68,0,33,.LM10-.LFBB1
+ 129               	.LM10:
+ 130 002a 4B2F      		mov r20,r27
+ 131 002c 5527      		clr r21
+ 132 002e 6627      		clr r22
+ 133 0030 7727      		clr r23
+ 134 0032 42B9      		out 0x2,r20
+ 135 0034 00C0      		rjmp .L2
+ 136               	.LBE2:
+ 137               		.size	main, .-main
+ 138               		.stabs	"compteur:r(0,11)",64,0,18,24
+GAS LISTING /tmp/ccrwmQT2.s 			page 4
+
+
+ 139               		.stabn	192,0,0,.LBB2-.LFBB1
+ 140               		.stabn	224,0,0,.LBE2-.LFBB1
+ 141               	.Lscope1:
+ 142               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 143               		.stabd	78,0,0
+ 144               		.text
+ 145               		.stabs	"",100,0,0,.Letext0
+ 146               	.Letext0:
+ 147               		.ident	"GCC: (Fedora 4.7.3-0.1.fc19) 4.7.3 20130216 (prerelease)"
+GAS LISTING /tmp/ccrwmQT2.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 compteur32bits.cpp
+     /tmp/ccrwmQT2.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccrwmQT2.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccrwmQT2.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccrwmQT2.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccrwmQT2.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccrwmQT2.s:78     .text.startup:0000000000000000 main
+
+NO UNDEFINED SYMBOLS

@@ -1,0 +1,230 @@
+GAS LISTING /tmp/ccvb0Q7X.s 			page 1
+
+
+   1               		.file	"capteur.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/usagers/damaib/Documents/Session3/inf1995/inf1995-20/equipe/inf1995-1620/codeCommun/Tp/pr
+   8               		.stabs	"capteur.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"void:t(0,4)",128,0,0,0
+  38               		.stabs	"wchar_t:t(0,23)=r(0,23);-32768;32767;",128,0,0,0
+  39               		.stabs	"bool:t(0,24)=@s8;-16;",128,0,0,0
+  40               		.stabs	"__vtbl_ptr_type:t(0,25)=*(0,26)=f(0,9)",128,0,0,0
+  41               		.stabs	"decltype(nullptr):t(0,27)=(0,27)",128,0,0,0
+  42               		.stabs	"int8_t:t(0,28)=(0,16)",128,0,121,0
+  43               		.stabs	"uint8_t:t(0,29)=(0,13)",128,0,122,0
+  44               		.stabs	"int16_t:t(0,30)=(0,9)",128,0,123,0
+  45               		.stabs	"uint16_t:t(0,31)=(0,12)",128,0,124,0
+  46               		.stabs	"int32_t:t(0,32)=(0,15)",128,0,125,0
+  47               		.stabs	"uint32_t:t(0,33)=(0,11)",128,0,126,0
+  48               		.stabs	"int64_t:t(0,34)=(0,14)",128,0,128,0
+  49               		.stabs	"uint64_t:t(0,35)=(0,10)",128,0,129,0
+  50               		.stabs	"intptr_t:t(0,36)=(0,30)",128,0,142,0
+  51               		.stabs	"uintptr_t:t(0,37)=(0,31)",128,0,147,0
+  52               		.stabs	"int_least8_t:t(0,38)=(0,28)",128,0,159,0
+  53               		.stabs	"uint_least8_t:t(0,39)=(0,29)",128,0,164,0
+  54               		.stabs	"int_least16_t:t(0,40)=(0,30)",128,0,169,0
+  55               		.stabs	"uint_least16_t:t(0,41)=(0,31)",128,0,174,0
+  56               		.stabs	"int_least32_t:t(0,42)=(0,32)",128,0,179,0
+  57               		.stabs	"uint_least32_t:t(0,43)=(0,33)",128,0,184,0
+GAS LISTING /tmp/ccvb0Q7X.s 			page 2
+
+
+  58               		.stabs	"int_least64_t:t(0,44)=(0,34)",128,0,192,0
+  59               		.stabs	"uint_least64_t:t(0,45)=(0,35)",128,0,199,0
+  60               		.stabs	"int_fast8_t:t(0,46)=(0,28)",128,0,213,0
+  61               		.stabs	"uint_fast8_t:t(0,47)=(0,29)",128,0,218,0
+  62               		.stabs	"int_fast16_t:t(0,48)=(0,30)",128,0,223,0
+  63               		.stabs	"uint_fast16_t:t(0,49)=(0,31)",128,0,228,0
+  64               		.stabs	"int_fast32_t:t(0,50)=(0,32)",128,0,233,0
+  65               		.stabs	"uint_fast32_t:t(0,51)=(0,33)",128,0,238,0
+  66               		.stabs	"int_fast64_t:t(0,52)=(0,34)",128,0,246,0
+  67               		.stabs	"uint_fast64_t:t(0,53)=(0,35)",128,0,253,0
+  68               		.stabs	"intmax_t:t(0,54)=(0,34)",128,0,273,0
+  69               		.stabs	"uintmax_t:t(0,55)=(0,35)",128,0,278,0
+  70               		.stabs	"int_farptr_t:t(0,56)=(0,32)",128,0,77,0
+  71               		.stabs	"uint_farptr_t:t(0,57)=(0,33)",128,0,81,0
+  72               		.stabs	"._0:Tt(0,58)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+  73               		.stabs	"__fuse_t:t(0,58)",128,0,244,0
+  74               		.stabs	"_Z12capteurDroitv:F(0,24)",36,0,27,_Z12capteurDroitv
+  75               	.global	_Z12capteurDroitv
+  76               		.type	_Z12capteurDroitv, @function
+  77               	_Z12capteurDroitv:
+  78               		.stabd	46,0,0
+   1:capteur.cpp   **** /****************************************************************************
+   2:capteur.cpp   ****  * Fichier: TP3_ex1.cpp
+   3:capteur.cpp   ****  * Auteur: Yannick OUellet et David Mainville
+   4:capteur.cpp   ****  * Date: 16 Septembre 2013
+   5:capteur.cpp   ****  * DESCRIPTION : Activation de LED ambrée avec bouton.
+   6:capteur.cpp   ****  ****************************************************************************/
+   7:capteur.cpp   **** 
+   8:capteur.cpp   **** /* Information sur branchements */
+   9:capteur.cpp   **** /* Port A0 branché sur +        DEL*/
+  10:capteur.cpp   **** /* Port A1 branché sur -        DEL*/
+  11:capteur.cpp   **** 
+  12:capteur.cpp   **** /* Port B2 branché sur module de son*/
+  13:capteur.cpp   **** /* Port B3 branché sur module de son*/
+  14:capteur.cpp   **** 
+  15:capteur.cpp   **** /* Port D4 branché sur enable moteur gauche*/
+  16:capteur.cpp   **** /* Port D6 branché sur sens moteur gauche*/
+  17:capteur.cpp   **** 
+  18:capteur.cpp   **** /* Port D5 branché sur enable moteur droit*/
+  19:capteur.cpp   **** /* Port D7 branché sur sens moteur droit*/
+  20:capteur.cpp   **** 
+  21:capteur.cpp   **** 
+  22:capteur.cpp   **** // F_CPU permet de définir la vitesse du micro-controleur soit 8MHz
+  23:capteur.cpp   **** #define F_CPU 8000000UL
+  24:capteur.cpp   **** #include <avr/io.h>
+  25:capteur.cpp   **** #include <util/delay.h>
+  26:capteur.cpp   **** 
+  27:capteur.cpp   **** bool capteurDroit()
+  28:capteur.cpp   **** {
+  79               		.stabn	68,0,28,.LM0-.LFBB1
+  80               	.LM0:
+  81               	.LFBB1:
+  82               	/* prologue: function */
+  83               	/* frame size = 0 */
+  84               	/* stack size = 0 */
+  85               	.L__stack_usage = 0
+  29:capteur.cpp   **** 	return (PINA & _BV(PORTA6));
+GAS LISTING /tmp/ccvb0Q7X.s 			page 3
+
+
+  86               		.stabn	68,0,29,.LM1-.LFBB1
+  87               	.LM1:
+  88 0000 80B1      		in r24,0
+  30:capteur.cpp   **** }
+  89               		.stabn	68,0,30,.LM2-.LFBB1
+  90               	.LM2:
+  91 0002 86FB      		bst r24,6
+  92 0004 8827      		clr r24
+  93 0006 80F9      		bld r24,0
+  94 0008 0895      		ret
+  95               		.size	_Z12capteurDroitv, .-_Z12capteurDroitv
+  96               	.Lscope1:
+  97               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+  98               		.stabd	78,0,0
+  99               		.section	.text.startup,"ax",@progbits
+ 100               		.stabs	"main:F(0,9)",36,0,32,main
+ 101               	.global	main
+ 102               		.type	main, @function
+ 103               	main:
+ 104               		.stabd	46,0,0
+  31:capteur.cpp   **** 
+  32:capteur.cpp   **** int main()
+  33:capteur.cpp   **** {
+ 105               		.stabn	68,0,33,.LM3-.LFBB2
+ 106               	.LM3:
+ 107               	.LFBB2:
+ 108               	/* prologue: function */
+ 109               	/* frame size = 0 */
+ 110               	/* stack size = 0 */
+ 111               	.L__stack_usage = 0
+ 112               	.LBB2:
+  34:capteur.cpp   **** 
+  35:capteur.cpp   **** 	DDRB = 0xff; // sortie
+ 113               		.stabn	68,0,35,.LM4-.LFBB2
+ 114               	.LM4:
+ 115 0000 8FEF      		ldi r24,lo8(-1)
+ 116 0002 84B9      		out 0x4,r24
+  36:capteur.cpp   **** 
+  37:capteur.cpp   **** 	DDRA = 0x00; // entree
+ 117               		.stabn	68,0,37,.LM5-.LFBB2
+ 118               	.LM5:
+ 119 0004 11B8      		out 0x1,__zero_reg__
+ 120               	.LBB3:
+  38:capteur.cpp   **** 
+  39:capteur.cpp   **** 	while(true)
+  40:capteur.cpp   **** 	{
+  41:capteur.cpp   **** 		bool ok = false;
+  42:capteur.cpp   **** 
+  43:capteur.cpp   **** 		if(capteurDroit())
+  44:capteur.cpp   **** 			ok = true;
+  45:capteur.cpp   **** 
+  46:capteur.cpp   **** 		/*if(PINA & _BV(PORTA2))
+  47:capteur.cpp   **** 			ok = true;
+  48:capteur.cpp   **** 
+  49:capteur.cpp   **** 		if(PINA & _BV(PORTA4))
+  50:capteur.cpp   **** 			ok = true;*/
+  51:capteur.cpp   **** 
+GAS LISTING /tmp/ccvb0Q7X.s 			page 4
+
+
+  52:capteur.cpp   **** 		if(ok)
+  53:capteur.cpp   **** 			PORTB = _BV(PORTB0);
+ 121               		.stabn	68,0,53,.LM6-.LFBB2
+ 122               	.LM6:
+ 123 0006 C1E0      		ldi r28,lo8(1)
+ 124               	.L6:
+  43:capteur.cpp   **** 		if(capteurDroit())
+ 125               		.stabn	68,0,43,.LM7-.LFBB2
+ 126               	.LM7:
+ 127 0008 0E94 0000 		call _Z12capteurDroitv
+ 128 000c 8823      		tst r24
+ 129 000e 01F0      		breq .L4
+ 130               		.stabn	68,0,53,.LM8-.LFBB2
+ 131               	.LM8:
+ 132 0010 C5B9      		out 0x5,r28
+ 133 0012 00C0      		rjmp .L6
+ 134               	.L4:
+  54:capteur.cpp   **** 		else
+  55:capteur.cpp   **** 			PORTB = 0x0;	
+ 135               		.stabn	68,0,55,.LM9-.LFBB2
+ 136               	.LM9:
+ 137 0014 15B8      		out 0x5,__zero_reg__
+ 138 0016 00C0      		rjmp .L6
+ 139               	.LBE3:
+ 140               	.LBE2:
+ 141               		.size	main, .-main
+ 142               	.Lscope2:
+ 143               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 144               		.stabd	78,0,0
+ 145               		.text
+ 146               		.stabs	"",100,0,0,.Letext0
+ 147               	.Letext0:
+ 148               		.ident	"GCC: (Fedora 4.7.3-0.1.fc19) 4.7.3 20130216 (prerelease)"
+GAS LISTING /tmp/ccvb0Q7X.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 capteur.cpp
+     /tmp/ccvb0Q7X.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccvb0Q7X.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccvb0Q7X.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccvb0Q7X.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccvb0Q7X.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccvb0Q7X.s:77     .text:0000000000000000 _Z12capteurDroitv
+     /tmp/ccvb0Q7X.s:103    .text.startup:0000000000000000 main
+
+NO UNDEFINED SYMBOLS

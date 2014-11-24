@@ -1,0 +1,384 @@
+/****************************************************************************
+ * Fichier: libRobot.cpp
+ * Auteur: Yannick Ouellet, David Mainville, Mario Saliby, Youssef ZEMMAHI
+ * Date: 24 Ocotbre 2013
+ * DESCRIPTION : Lib pour le robot
+ ****************************************************************************/
+
+/* Information sur branchements */
+/* Port B0 branché sur +        */
+/* Port B1 branché sur -        */
+
+#define F_CPU 8000000UL
+#include <avr/io.h>
+#include <util/delay.h>
+#include <avr/interrupt.h>
+#include "libRobot.h"
+
+#define BOUTON_ENFONCE (PIND & _BV(2))
+
+bool LibRobot::debut_;
+bool LibRobot::fin_;
+int LibRobot::attente_us;
+uint16_t LibRobot::aD;
+uint16_t LibRobot::aG;
+bool LibRobot::sensD;
+bool LibRobot::sensG;
+bool LibRobot::enabledD;
+bool LibRobot::enabledG;
+uint8_t LibRobot::pinEnableD;
+uint8_t LibRobot::pinEnableG;
+uint8_t LibRobot::pinSensD;
+uint8_t LibRobot::pinSensG;
+
+LibRobot::LibRobot(){}
+LibRobot::~LibRobot(){}
+
+// Fonction pour vérifier l'état du bouton en prenant compte du rebond
+uint8_t LibRobot::BoutonEstEnfonce()
+{ 
+  //Require -- DDRB = 0xff; // PORT B est en mode sortie.
+  
+    if(BOUTON_ENFONCE)
+    {
+        // Anti-Rebond
+        _delay_ms(10);
+        // Revérification du bouton suite au delais pour s'assurer de sa valeur
+
+        // l'operateur !! permet de transformer une valeur quelconque en 0 ou 1.
+        // ie: BOUTON_ENFONCE renvoit 2, !!2 = 1.
+        return !!BOUTON_ENFONCE;
+    }
+    // Le bouton n'est pas enfoncé
+    return 0;
+}
+
+void LibRobot::initialisation()
+{
+	debut_ = false;
+	fin_ = false;
+	attente_us = 0; //nb de ms d'attente
+	aD = 0;
+	aG = 0;
+	sensD = true;
+	sensG = true;
+	enabledD = false;
+	enabledG = false;
+}
+
+//---------------
+//Commandes robot
+//---------------
+	void LibRobot::debut()
+	{
+		debut_ = true;
+	}
+
+	void LibRobot::attendre(int duree25)
+	{
+		attente_us = 25000*duree25;
+	}
+
+	void LibRobot::allumerDEL(volatile uint8_t &port, uint8_t pinCouleur)
+	{
+		port |= pinCouleur;
+	}
+
+	void LibRobot::eteindreDEL(volatile uint8_t &port, uint8_t pinCouleur)
+	{
+		port &= ~(pinCouleur); 
+	}
+
+	void LibRobot::jouerSon(uint8_t son)
+	{
+
+	}
+
+	void LibRobot::arreterSon()
+	{
+
+	}
+
+	void LibRobot::arreterMoteurs()
+	{
+		enabledD = false;
+		enabledG = false;
+	}
+
+	void LibRobot::avancer(uint16_t b, uint8_t frequence255)
+	{
+		ajusterA(b,frequence255, true);
+		ajusterA(b,frequence255, false);
+
+		sensD = true;
+		sensG = true;
+	
+		enabledD = true;
+		enabledG = true;
+	}
+
+	void LibRobot::reculer(uint16_t b, uint8_t frequence255)
+	{
+		ajusterA(b,frequence255, true);
+		ajusterA(b,frequence255, false);
+
+		sensD = false;
+		sensG = false;
+	
+		enabledD = true;
+		enabledG = true;
+	}
+
+	void LibRobot::tournerDroite90(uint16_t b)
+	{		
+		bool tempEnabledD = enabledD; //ce souvenir des valeurs de enabled pour les remettres a la fin
+		bool tempEnabledG = enabledG;
+		uint16_t tempAD = aD;
+		uint16_t tempAG = aG;
+		
+		ajusterA(b,255, true);
+		ajusterA(b,255, false);
+
+		sensD = false; //Droite recule
+		sensG = true;	//Gauche avance
+
+		enabledD = true;
+		enabledG = true;
+
+		_delay_ms(1500); //attendre 1.5 seconde
+
+		//Revenir a la vitesse d'avant
+		enabledD = tempEnabledD;
+		enabledG = tempEnabledG;
+		aD = tempAD;
+		aG = tempAG;
+	}
+
+	void LibRobot::tournerGauche90(uint16_t b)
+	{
+		bool tempEnabledD = enabledD; //ce souvenir des valeurs de enabled pour les remettres a la fin
+		bool tempEnabledG = enabledG;
+		uint16_t tempAD = aD;
+		uint16_t tempAG = aG;
+		
+		ajusterA(b,255, true);
+		ajusterA(b,255, false);
+
+		sensD = true; //Droite avance
+		sensG = false;	//Gauche recule
+
+		enabledD = true;
+		enabledG = true;
+
+		_delay_ms(1500); //attendre 1.5 seconde
+
+		//Revenir a la vitesse d'avant
+		enabledD = tempEnabledD;
+		enabledG = tempEnabledG;
+		aD = tempAD;
+		aG = tempAG;
+	}
+
+	void LibRobot::debutBoucle(uint16_t nbRepetition)
+	{
+	}
+
+	void LibRobot::finDeBoucle()
+	{
+	}
+
+	void LibRobot::fin()
+	{
+		fin_ = true;
+	}
+
+//---------------
+//Gestion Attente
+//---------------
+	void LibRobot::gestionAttente(uint16_t b)
+	{
+		//Si on attend déja dans la méthode de gestion des moteurs, pas besoin d'attendre ici
+		if(attente_us < 0)
+			return;
+		
+		attente_us = attente_us - b;
+		
+		/*if(enabledD || enabledG)
+			return;*/
+		
+		//_delay_loop_2((b<<1)+1);
+		_delay_ms(16);
+	}
+
+//---------------
+//Gestion Moteurs
+//---------------
+	void LibRobot::ajusterA(uint16_t b,uint8_t vitesse, bool droite)//periode = b, ex: pour une frequence de 1KHz, b = 1ms --­> 1000 micro seconde donc b =1000
+	{
+		uint16_t tempA;
+
+		if(vitesse == 255)
+		{
+			tempA = b;
+		}
+		else if(vitesse == 0)
+		{
+			tempA = 0;
+		}
+		else
+		{
+			tempA = b * (vitesse+1) >> 8;
+		}
+
+		if(droite)
+			aD = tempA;
+		else
+			aG = tempA;
+	}
+
+	void LibRobot::gestionMoteurs(uint16_t b, volatile uint8_t& portMoteurD, volatile uint8_t& portMoteurG )
+	{
+		if(!(enabledD || enabledG))
+			return;
+
+		if(enabledD && enabledG)
+		{
+			tournerDeuxRoues(b, portMoteurD, portMoteurG);
+		}
+		else if(enabledD)
+		{
+			tournerRoue(aD,b,sensD,portMoteurD,pinEnableD,pinSensD);
+		}
+		else
+		{
+			tournerRoue(aG,b,sensG,portMoteurG,pinEnableG,pinSensG);
+		}
+	}
+
+	void LibRobot::tournerDeuxRoues(uint16_t b, volatile uint8_t& portMoteurD, volatile uint8_t& portMoteurG )
+	{
+		uint16_t attenteEteintD = b - aD;
+		uint16_t attenteEteintG = b - aG;
+	
+		//Pour droite
+		allumerMoteur(sensD,portMoteurD,pinEnableD,pinSensD);
+
+		//Pour gauche
+		allumerMoteur(sensG,portMoteurG,pinEnableG,pinSensG);
+
+		if(aD == aG)
+		{
+			_delay_loop_2((aD<<1)+1);
+			portMoteurD &= ~(pinEnableD); 			//PORTX = 0x0
+			portMoteurG &= ~(pinEnableG);
+			_delay_loop_2((attenteEteintD<<1)+1);
+			return;
+		}
+	
+		if(aD < aG)
+		{
+			_delay_loop_2((aD<<1)+1);
+			portMoteurD &= ~(pinEnableD); 			//eteindre moteur droit
+			_delay_loop_2(((aG-aD)<<1)+1);			//attendre le reste
+			portMoteurG &= ~(pinEnableG); 			//eteindre moteur gauche
+			_delay_loop_2((attenteEteintG<<1)+1);
+			return;
+		}
+
+		if(aG < aD)
+		{
+			_delay_loop_2((aG<<1)+1);
+			portMoteurG &= ~(pinEnableG); 			//eteindre moteur gauche
+			_delay_loop_2(((aD-aG)<<1)+1);			//attendre le reste
+			portMoteurD &= ~(pinEnableD); 			//eteindre moteur droit
+			_delay_loop_2((attenteEteintD<<1)+1);
+			return;
+		}		
+	}
+
+	void LibRobot::allumerMoteur(bool sens, volatile uint8_t &port, uint8_t pinEnable, uint8_t pinSens)
+	{
+		if(sens)
+			port |= pinSens;		//PORTX |= _BV(PORTX1), avancer
+		else
+			port &= ~(pinSens); 		//PORTX &= ~(_BV(PORTX1)), reculer
+
+		port |= pinEnable; 			//PORTX |= _BV(PORTX0)
+	}
+
+	void LibRobot::tournerRoue(uint16_t a, uint16_t b,bool sens, volatile uint8_t &port, uint8_t pinEnable, uint8_t pinSens)
+	{
+	    	//ex b = 16667, a = 16667 >> 1 --> un pwm 50% de 1/60 seconde de duree pour un 
+		//port = PORTB, pinEnable = _BV(PORTB0), pinSens = _BV(PORTB1)
+		//sens, if true -> avancer sinon reculer 
+
+	    	uint16_t attenteEteint = b - a;
+	
+		allumerMoteur(sens,port,pinEnable, pinSens);
+		_delay_loop_2((a<<1)+1);
+
+		port &= ~(pinEnable); 			//PORTX = 0x0
+		_delay_loop_2((attenteEteint<<1)+1);
+	}
+
+
+
+
+void LibRobot::attenuerDEL(bool rouge){
+  
+  /* Information sur branchements */
+  /* Port B0 branché sur +        */
+  /* Port B1 branché sur -        */
+  
+  //Require -- DDRB = 0xff; // PORT B est en mode sortie.
+  
+  const uint16_t dureeOperation = 1000; //en us
+  const uint16_t nbOperation = 1000; //1000 operations seconde
+  
+  for(uint16_t j = 0; j< nbOperation; j++)
+  {
+      for(uint8_t i =0; i< 3; i++)
+      {
+	  uint16_t attenteAllumee = dureeOperation-j; //en micro seconde
+	  uint16_t attenteEteint = dureeOperation-attenteAllumee;    
+
+	  if(rouge)
+	      PORTB = _BV(PORTB0); //Rouge
+	  else
+	      PORTB = _BV(PORTB1); //Vert
+	      
+	  _delay_loop_2(attenteAllumee*2+1);
+	  
+	  PORTB = 0x0;
+	  _delay_loop_2(attenteEteint*2+1);
+      }
+    
+  }
+  
+}
+
+void LibRobot::testRoue(uint16_t a, uint16_t b, uint8_t port)
+{
+    //ex b = 16667, a = 16667 >> 1 --> un pwm 50% de 1/60 seconde de duree
+ 
+    uint16_t attenteEteint = b - a;
+
+    PORTC = 0x0;
+    for(uint8_t i =0; i< 2; i++)
+    {
+	PORTC = _BV(PORTC0);
+	_delay_loop_2((a<<1)+1);
+	
+	PORTC = 0x0;
+	_delay_loop_2((attenteEteint<<1)+1);
+    }
+    PORTC = 0x0;
+}
+
+void LibRobot::testPort(volatile uint8_t &port, uint8_t valeur)
+{
+	port = valeur;
+}
+
+
+

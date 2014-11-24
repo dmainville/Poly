@@ -1,0 +1,48 @@
+École Polytechnique de Montréal
+
+Département de génie informatique et génie logiciel
+
+INF1995: Projet initial en ingénierie informatique 
+         et travail en équipe
+
+Grille de correction des programmes:
+
+Identification:
+  Travail Pratique # : tp3
+  Section #  : 01
+  Équipe #   : 20
+  Correcteur : Michael Ferris
+
+Lisibilité/Compréhension:  3.5/5
+  En-têtes en début de programme et de fonctions  (1 point) : 1 
+  Identificateurs significatifs                   (1 point) : 0.5
+  Commentaires aux endroits stratégiques          (1 point) : 1
+  Indentation et facilité de lecture              (1 point) : 0
+  Broches, ressources matérielles bien identif.   (1 point) : 1
+
+Modularité:   5/5
+  Choix des structures de contrôle                (1 point) : 1
+  Choix de fonctions                              (2 points): 2
+  Paramètres de fonctions (mode de transmission)  (2 points): 2
+
+Fonctionnalité:   8/10
+  Respect des requis                              (2 points): 2
+  Soumission réussie sous SVN (bon endroit, 
+                          sans fichiers inutiles) (2 points): 2
+  Compilation sans warnings et sans erreurs       (1 point) : 1
+  Fonctionnement correct                          (5 points): 3
+
+Total:   16.5/20
+
+Commentaires:
+
+-1  Melange de tabulations et espaces de longueur differentes.
+
+-2  Pas d'utilisation d'anti-rebond pour le pb2.
+
+    Le booleen enfoncé alourdi le code dans le cas du pb2.
+
+-0.5  Le nom des états ne sont pas très significatif dans le cas du problème 2. Ce n'est pas clair ce que 0 1 2 représente.
+    Utilisez des enums avec des noms significatifs.
+
+

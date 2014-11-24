@@ -1,0 +1,56 @@
+École Polytechnique de Montréal
+
+Département de génie informatique et génie logiciel
+
+INF1995: Projet initial en ingénierie informatique 
+         et travail en équipe
+
+Grille de correction des programmes:
+
+Identification:
+  Travail Pratique # : tp3
+  Section #  : 01
+  Équipe #   : 16
+  Correcteur : Michael Ferris
+
+Lisibilité/Compréhension:  3/5
+  En-têtes en début de programme et de fonctions  (1 point) : 1
+  Identificateurs significatifs                   (1 point) : 0.5
+  Commentaires aux endroits stratégiques          (1 point) : 1
+  Indentation et facilité de lecture              (1 point) : 0
+  Broches, ressources matérielles bien identif.   (1 point) : 0.5
+
+Modularité:   4.5/5
+  Choix des structures de contrôle                (1 point) : 0.5
+  Choix de fonctions                              (2 points): 2
+  Paramètres de fonctions (mode de transmission)  (2 points): 2
+
+Fonctionnalité:   5.5/10
+  Respect des requis                              (2 points): 1
+  Soumission réussie sous SVN (bon endroit, 
+                          sans fichiers inutiles) (2 points): 1
+  Compilation sans warnings et sans erreurs       (1 point) : 1
+  Fonctionnement correct                          (5 points): 2.5
+
+Total:  13/20
+
+Commentaires:
+-1  Mauvais nom de makefile, compilation impossible
+
+-0.5 Identification de branchement manquant pb2
+
+-1  Melange de tabulations et espaces de longueur differentes.
+
+-2  pb1 : Aucune attente que le bouton soit relaché. Si on laisse enfoncé les 5 coups du compteur sont frappés
+	Je peux voir la tentative de corriger avec le delai augmenter sur l'anti-rebond, mais c'est encore
+	pire comme pratique.
+
+-1.5  pb2 : Aucun anti-rebond effectué. La fonction BoutonEstEnfoncé ne fait pas d'anti-rebond, car le delais à
+	été supprimé. Il arrive fréquemment que des états soit sauté à cause de cela.
+
+-0.5 Le nom des états ne sont pas très significatif dans le cas du problème 2, que font les différentes étapes ?
+
+-0.5 Vérification inutile au début des étapes, c'est évident que le bouton est relaché, de plus il manque la
+    	vérification que le bouton est enfoncé avant la boucle.
+
+     Il n'est pas nécessaire d'assigner le port de sortie à toutes les itérations de la boucle.

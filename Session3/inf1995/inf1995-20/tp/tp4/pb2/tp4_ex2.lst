@@ -1,0 +1,606 @@
+GAS LISTING /tmp/cc8p7KEO.s 			page 1
+
+
+   1               		.file	"tp4_ex2.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/usagers/damaib/Documents/Session3/inf1995/inf1995-20/tp/tp4/pb2/",100,0,4,.Ltext0
+   8               		.stabs	"tp4_ex2.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"void:t(0,4)",128,0,0,0
+  38               		.stabs	"wchar_t:t(0,23)=r(0,23);-32768;32767;",128,0,0,0
+  39               		.stabs	"bool:t(0,24)=@s8;-16;",128,0,0,0
+  40               		.stabs	"__vtbl_ptr_type:t(0,25)=*(0,26)=f(0,9)",128,0,0,0
+  41               		.stabs	"decltype(nullptr):t(0,27)=(0,27)",128,0,0,0
+  42               		.stabs	"int8_t:t(0,28)=(0,16)",128,0,121,0
+  43               		.stabs	"uint8_t:t(0,29)=(0,13)",128,0,122,0
+  44               		.stabs	"int16_t:t(0,30)=(0,9)",128,0,123,0
+  45               		.stabs	"uint16_t:t(0,31)=(0,12)",128,0,124,0
+  46               		.stabs	"int32_t:t(0,32)=(0,15)",128,0,125,0
+  47               		.stabs	"uint32_t:t(0,33)=(0,11)",128,0,126,0
+  48               		.stabs	"int64_t:t(0,34)=(0,14)",128,0,128,0
+  49               		.stabs	"uint64_t:t(0,35)=(0,10)",128,0,129,0
+  50               		.stabs	"intptr_t:t(0,36)=(0,30)",128,0,142,0
+  51               		.stabs	"uintptr_t:t(0,37)=(0,31)",128,0,147,0
+  52               		.stabs	"int_least8_t:t(0,38)=(0,28)",128,0,159,0
+  53               		.stabs	"uint_least8_t:t(0,39)=(0,29)",128,0,164,0
+  54               		.stabs	"int_least16_t:t(0,40)=(0,30)",128,0,169,0
+  55               		.stabs	"uint_least16_t:t(0,41)=(0,31)",128,0,174,0
+  56               		.stabs	"int_least32_t:t(0,42)=(0,32)",128,0,179,0
+  57               		.stabs	"uint_least32_t:t(0,43)=(0,33)",128,0,184,0
+GAS LISTING /tmp/cc8p7KEO.s 			page 2
+
+
+  58               		.stabs	"int_least64_t:t(0,44)=(0,34)",128,0,192,0
+  59               		.stabs	"uint_least64_t:t(0,45)=(0,35)",128,0,199,0
+  60               		.stabs	"int_fast8_t:t(0,46)=(0,28)",128,0,213,0
+  61               		.stabs	"uint_fast8_t:t(0,47)=(0,29)",128,0,218,0
+  62               		.stabs	"int_fast16_t:t(0,48)=(0,30)",128,0,223,0
+  63               		.stabs	"uint_fast16_t:t(0,49)=(0,31)",128,0,228,0
+  64               		.stabs	"int_fast32_t:t(0,50)=(0,32)",128,0,233,0
+  65               		.stabs	"uint_fast32_t:t(0,51)=(0,33)",128,0,238,0
+  66               		.stabs	"int_fast64_t:t(0,52)=(0,34)",128,0,246,0
+  67               		.stabs	"uint_fast64_t:t(0,53)=(0,35)",128,0,253,0
+  68               		.stabs	"intmax_t:t(0,54)=(0,34)",128,0,273,0
+  69               		.stabs	"uintmax_t:t(0,55)=(0,35)",128,0,278,0
+  70               		.stabs	"int_farptr_t:t(0,56)=(0,32)",128,0,77,0
+  71               		.stabs	"uint_farptr_t:t(0,57)=(0,33)",128,0,81,0
+  72               		.stabs	"._0:Tt(0,58)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+  73               		.stabs	"__fuse_t:t(0,58)",128,0,244,0
+  74               		.section	.text.startup,"ax",@progbits
+  75               		.stabs	"main:F(0,9)",36,0,19,main
+  76               	.global	main
+  77               		.type	main, @function
+  78               	main:
+  79               		.stabd	46,0,0
+   1:tp4_ex2.cpp   **** /****************************************************************************
+   2:tp4_ex2.cpp   ****  * Fichier: TP4_ex2.cpp
+   3:tp4_ex2.cpp   ****  * Auteur: Yannick OUellet et David Mainville
+   4:tp4_ex2.cpp   ****  * Date: 17 Septembre 2013
+   5:tp4_ex2.cpp   ****  * DESCRIPTION : Tourner la roue droite avec differentes frequences
+   6:tp4_ex2.cpp   ****  ****************************************************************************/
+   7:tp4_ex2.cpp   **** 
+   8:tp4_ex2.cpp   **** /* Information sur branchements */
+   9:tp4_ex2.cpp   **** /* Port C0 branché sur JM1+        */
+  10:tp4_ex2.cpp   **** /* Port C1 branché sur JM1-        */
+  11:tp4_ex2.cpp   **** 
+  12:tp4_ex2.cpp   **** // F_CPU permet de définir la vitesse du micro-controleur soit 8MHz
+  13:tp4_ex2.cpp   **** #define F_CPU 8000000UL
+  14:tp4_ex2.cpp   **** #include <avr/io.h>
+  15:tp4_ex2.cpp   **** #include <util/delay.h>
+  16:tp4_ex2.cpp   **** 
+  17:tp4_ex2.cpp   **** #define BOUTON_ENFONCE (PIND & _BV(2))
+  18:tp4_ex2.cpp   **** 
+  19:tp4_ex2.cpp   **** int main()
+  20:tp4_ex2.cpp   **** {
+  80               		.stabn	68,0,20,.LM0-.LFBB1
+  81               	.LM0:
+  82               	.LFBB1:
+  83               	/* prologue: function */
+  84               	/* frame size = 0 */
+  85               	/* stack size = 0 */
+  86               	.L__stack_usage = 0
+  87               	.LBB16:
+  21:tp4_ex2.cpp   ****     DDRC = 0xff; // PORT C est en mode sortie.
+  88               		.stabn	68,0,21,.LM1-.LFBB1
+  89               	.LM1:
+  90 0000 8FEF      		ldi r24,lo8(-1)
+  91 0002 87B9      		out 0x7,r24
+  22:tp4_ex2.cpp   ****     DDRD = 0x0; // PORT D est en mode entrée.
+  92               		.stabn	68,0,22,.LM2-.LFBB1
+GAS LISTING /tmp/cc8p7KEO.s 			page 3
+
+
+  93               	.LM2:
+  94 0004 1AB8      		out 0xa,__zero_reg__
+  23:tp4_ex2.cpp   ****     
+  24:tp4_ex2.cpp   ****     bool enfonce = false;
+  25:tp4_ex2.cpp   **** 
+  26:tp4_ex2.cpp   ****     
+  27:tp4_ex2.cpp   ****     PORTC = 0x0;
+  95               		.stabn	68,0,27,.LM3-.LFBB1
+  96               	.LM3:
+  97 0006 18B8      		out 0x8,__zero_reg__
+  98               	.LBB17:
+  99               	.LBB18:
+ 100               	.LBB19:
+ 101               	.LBB20:
+ 102               	.LBB21:
+ 103               	.LBB22:
+ 104               	.LBB23:
+ 105               	.LBB24:
+ 106               	.LBB25:
+  28:tp4_ex2.cpp   ****     
+  29:tp4_ex2.cpp   ****     // Boucle infinie
+  30:tp4_ex2.cpp   ****     for(;;)
+  31:tp4_ex2.cpp   ****     {
+  32:tp4_ex2.cpp   ****         // Verification du bouton poussoir avec anti-rebond
+  33:tp4_ex2.cpp   ****         if(BOUTON_ENFONCE)
+  34:tp4_ex2.cpp   ****         {
+  35:tp4_ex2.cpp   **** 	    enfonce = true;
+  36:tp4_ex2.cpp   ****         }
+  37:tp4_ex2.cpp   ****         else
+  38:tp4_ex2.cpp   **** 	{
+  39:tp4_ex2.cpp   **** 	    if(enfonce)
+  40:tp4_ex2.cpp   **** 	    {
+  41:tp4_ex2.cpp   **** 		for(uint8_t l =0; l<2; l++)
+  42:tp4_ex2.cpp   **** 		{
+  43:tp4_ex2.cpp   **** 		    uint16_t dureeOperation = 16667; //en us
+  44:tp4_ex2.cpp   **** 		    uint16_t nbOperation = 60; //60 operations seconde
+  45:tp4_ex2.cpp   **** 		    
+  46:tp4_ex2.cpp   **** 		    if(l ==1)
+  47:tp4_ex2.cpp   **** 		    {
+  48:tp4_ex2.cpp   **** 			dureeOperation = 2500; //en us
+  49:tp4_ex2.cpp   **** 			nbOperation = 400; //60 operations seconde
+  50:tp4_ex2.cpp   **** 		    }
+  51:tp4_ex2.cpp   **** 		  
+  52:tp4_ex2.cpp   **** 		    for(uint8_t k = 0; k<5; k++)
+  53:tp4_ex2.cpp   **** 		    {
+  54:tp4_ex2.cpp   **** 			uint16_t attenteAllumee = k*(dureeOperation>>2);
+  55:tp4_ex2.cpp   **** 			uint16_t attenteEteint = dureeOperation - attenteAllumee;
+  56:tp4_ex2.cpp   **** 
+  57:tp4_ex2.cpp   **** 			PORTC = 0x0;
+  58:tp4_ex2.cpp   **** 			for(uint16_t j = 0; j< nbOperation; j++)
+  59:tp4_ex2.cpp   **** 			{
+  60:tp4_ex2.cpp   **** 			    for(uint8_t i =0; i< 2; i++)
+  61:tp4_ex2.cpp   **** 			    {
+  62:tp4_ex2.cpp   **** 				PORTC = _BV(PORTC0);
+ 107               		.stabn	68,0,62,.LM4-.LFBB1
+ 108               	.LM4:
+ 109 0008 DD24      		clr r13
+GAS LISTING /tmp/cc8p7KEO.s 			page 4
+
+
+ 110 000a D394      		inc r13
+ 111               	.L4:
+ 112               	.LBE25:
+ 113               	.LBE24:
+ 114               	.LBE23:
+ 115               	.LBE22:
+ 116               	.LBE21:
+ 117               	.LBE20:
+ 118               	.LBE19:
+ 119               	.LBE18:
+ 120               	.LBE17:
+ 121               	.LBE16:
+  20:tp4_ex2.cpp   **** {
+ 122               		.stabn	68,0,20,.LM5-.LFBB1
+ 123               	.LM5:
+ 124 000c 80E0      		ldi r24,0
+ 125 000e 00C0      		rjmp .L2
+ 126               	.L9:
+ 127               	.LBB44:
+ 128               	.LBB43:
+  35:tp4_ex2.cpp   **** 	    enfonce = true;
+ 129               		.stabn	68,0,35,.LM6-.LFBB1
+ 130               	.LM6:
+ 131 0010 81E0      		ldi r24,lo8(1)
+ 132               	.L2:
+  33:tp4_ex2.cpp   ****         if(BOUTON_ENFONCE)
+ 133               		.stabn	68,0,33,.LM7-.LFBB1
+ 134               	.LM7:
+ 135 0012 4A99      		sbic 0x9,2
+ 136 0014 00C0      		rjmp .L9
+ 137               	.LBB42:
+ 138               	.LBB40:
+  39:tp4_ex2.cpp   **** 	    if(enfonce)
+ 139               		.stabn	68,0,39,.LM8-.LFBB1
+ 140               	.LM8:
+ 141 0016 8111      		cpse r24,__zero_reg__
+ 142 0018 00C0      		rjmp .L10
+ 143               	.L8:
+ 144               	.LBE40:
+  63:tp4_ex2.cpp   **** 				_delay_loop_2((attenteAllumee<<1)+1);
+  64:tp4_ex2.cpp   **** 				
+  65:tp4_ex2.cpp   **** 				PORTC = 0x0;
+  66:tp4_ex2.cpp   **** 				_delay_loop_2((attenteEteint<<1)+1);
+  67:tp4_ex2.cpp   **** 			    }
+  68:tp4_ex2.cpp   **** 			}
+  69:tp4_ex2.cpp   **** 		    }
+  70:tp4_ex2.cpp   **** 		}
+  71:tp4_ex2.cpp   **** 	    }
+  72:tp4_ex2.cpp   **** 
+  73:tp4_ex2.cpp   **** 	  PORTC = 0x0;
+ 145               		.stabn	68,0,73,.LM9-.LFBB1
+ 146               	.LM9:
+ 147 001a 18B8      		out 0x8,__zero_reg__
+ 148 001c 00C0      		rjmp .L4
+ 149               	.L10:
+ 150               	.LBB41:
+  39:tp4_ex2.cpp   **** 	    if(enfonce)
+GAS LISTING /tmp/cc8p7KEO.s 			page 5
+
+
+ 151               		.stabn	68,0,39,.LM10-.LFBB1
+ 152               	.LM10:
+ 153 001e F12C      		mov r15,__zero_reg__
+ 154               	.L3:
+ 155               	.LBB39:
+ 156               	.LBB38:
+  46:tp4_ex2.cpp   **** 		    if(l ==1)
+ 157               		.stabn	68,0,46,.LM11-.LFBB1
+ 158               	.LM11:
+ 159 0020 81E0      		ldi r24,lo8(1)
+ 160 0022 F816      		cp r15,r24
+ 161 0024 01F0      		breq .L11
+  44:tp4_ex2.cpp   **** 		    uint16_t nbOperation = 60; //60 operations seconde
+ 162               		.stabn	68,0,44,.LM12-.LFBB1
+ 163               	.LM12:
+ 164 0026 CCE3      		ldi r28,lo8(60)
+ 165 0028 D0E0      		ldi r29,0
+  43:tp4_ex2.cpp   **** 		    uint16_t dureeOperation = 16667; //en us
+ 166               		.stabn	68,0,43,.LM13-.LFBB1
+ 167               	.LM13:
+ 168 002a 8BE1      		ldi r24,lo8(27)
+ 169 002c 91E4      		ldi r25,lo8(65)
+ 170 002e 00C0      		rjmp .L5
+ 171               	.L11:
+  49:tp4_ex2.cpp   **** 			nbOperation = 400; //60 operations seconde
+ 172               		.stabn	68,0,49,.LM14-.LFBB1
+ 173               	.LM14:
+ 174 0030 C0E9      		ldi r28,lo8(-112)
+ 175 0032 D1E0      		ldi r29,lo8(1)
+  48:tp4_ex2.cpp   **** 			dureeOperation = 2500; //en us
+ 176               		.stabn	68,0,48,.LM15-.LFBB1
+ 177               	.LM15:
+ 178 0034 84EC      		ldi r24,lo8(-60)
+ 179 0036 99E0      		ldi r25,lo8(9)
+ 180               	.L5:
+ 181               	.LBB37:
+ 182               	.LBB36:
+  54:tp4_ex2.cpp   **** 			uint16_t attenteAllumee = k*(dureeOperation>>2);
+ 183               		.stabn	68,0,54,.LM16-.LFBB1
+ 184               	.LM16:
+ 185 0038 5C01      		movw r10,r24
+ 186 003a B694      		lsr r11
+ 187 003c A794      		ror r10
+ 188 003e B694      		lsr r11
+ 189 0040 A794      		ror r10
+ 190 0042 60E0      		ldi r22,0
+ 191 0044 70E0      		ldi r23,0
+ 192 0046 A5E0      		ldi r26,lo8(5)
+ 193 0048 EA2E      		mov r14,r26
+ 194               	.L7:
+  57:tp4_ex2.cpp   **** 			PORTC = 0x0;
+ 195               		.stabn	68,0,57,.LM17-.LFBB1
+ 196               	.LM17:
+ 197 004a 18B8      		out 0x8,__zero_reg__
+ 198               	.LBB35:
+ 199               	.LBB34:
+  63:tp4_ex2.cpp   **** 				_delay_loop_2((attenteAllumee<<1)+1);
+GAS LISTING /tmp/cc8p7KEO.s 			page 6
+
+
+ 200               		.stabn	68,0,63,.LM18-.LFBB1
+ 201               	.LM18:
+ 202 004c AB01      		movw r20,r22
+ 203 004e 440F      		lsl r20
+ 204 0050 551F      		rol r21
+ 205 0052 4F5F      		subi r20,-1
+ 206 0054 5F4F      		sbci r21,-1
+  66:tp4_ex2.cpp   **** 				_delay_loop_2((attenteEteint<<1)+1);
+ 207               		.stabn	68,0,66,.LM19-.LFBB1
+ 208               	.LM19:
+ 209 0056 9C01      		movw r18,r24
+ 210 0058 220F      		lsl r18
+ 211 005a 331F      		rol r19
+ 212 005c 2F5F      		subi r18,-1
+ 213 005e 3F4F      		sbci r19,-1
+  58:tp4_ex2.cpp   **** 			for(uint16_t j = 0; j< nbOperation; j++)
+ 214               		.stabn	68,0,58,.LM20-.LFBB1
+ 215               	.LM20:
+ 216 0060 E0E0      		ldi r30,0
+ 217 0062 F0E0      		ldi r31,0
+ 218               	.L6:
+  62:tp4_ex2.cpp   **** 				PORTC = _BV(PORTC0);
+ 219               		.stabn	68,0,62,.LM21-.LFBB1
+ 220               	.LM21:
+ 221 0064 D8B8      		out 0x8,r13
+ 222               	.LBB26:
+ 223               	.LBB27:
+ 224               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext1
+ 225               	.Ltext1:
+   1:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   2:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****    Copyright (c) 2007 Joerg Wunsch
+   3:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****    All rights reserved.
+   4:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+   5:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****    Redistribution and use in source and binary forms, with or without
+   6:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****    modification, are permitted provided that the following conditions are met:
+   7:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+   8:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****    * Redistributions of source code must retain the above copyright
+   9:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****      notice, this list of conditions and the following disclaimer.
+  10:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  11:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****    * Redistributions in binary form must reproduce the above copyright
+  12:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****      notice, this list of conditions and the following disclaimer in
+  13:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****      the documentation and/or other materials provided with the
+  14:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****      distribution.
+  15:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  16:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****    * Neither the name of the copyright holders nor the names of
+  17:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****      contributors may be used to endorse or promote products derived
+  18:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****      from this software without specific prior written permission.
+  19:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  20:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  21:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  22:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  23:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  24:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  25:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  26:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  27:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  28:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+GAS LISTING /tmp/cc8p7KEO.s 			page 7
+
+
+  29:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  30:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  31:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  32:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** /* $Id: delay_basic.h 2143 2010-06-08 21:19:51Z joerg_wunsch $ */
+  33:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  34:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** #ifndef _UTIL_DELAY_BASIC_H_
+  35:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** #define _UTIL_DELAY_BASIC_H_ 1
+  36:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  37:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** #include <inttypes.h>
+  38:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  39:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** #if !defined(__DOXYGEN__)
+  40:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** static inline void _delay_loop_1(uint8_t __count) __attribute__((always_inline));
+  41:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** static inline void _delay_loop_2(uint16_t __count) __attribute__((always_inline));
+  42:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** #endif
+  43:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  44:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** /** \file */
+  45:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** /** \defgroup util_delay_basic <util/delay_basic.h>: Basic busy-wait delay loops
+  46:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     \code
+  47:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     #include <util/delay_basic.h>
+  48:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     \endcode
+  49:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  50:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     The functions in this header file implement simple delay loops
+  51:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     that perform a busy-waiting.  They are typically used to
+  52:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     facilitate short delays in the program execution.  They are
+  53:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     implemented as count-down loops with a well-known CPU cycle
+  54:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     count per loop iteration.  As such, no other processing can
+  55:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     occur simultaneously.  It should be kept in mind that the
+  56:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     functions described here do not disable interrupts.
+  57:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  58:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     In general, for long delays, the use of hardware timers is
+  59:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     much preferrable, as they free the CPU, and allow for
+  60:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     concurrent processing of other events while the timer is
+  61:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     running.  However, in particular for very short delays, the
+  62:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     overhead of setting up a hardware timer is too much compared
+  63:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     to the overall delay time.
+  64:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  65:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     Two inline functions are provided for the actual delay algorithms.
+  66:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  67:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** */
+  68:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  69:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** /** \ingroup util_delay_basic
+  70:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  71:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     Delay loop using an 8-bit counter \c __count, so up to 256
+  72:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     iterations are possible.  (The value 256 would have to be passed
+  73:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     as 0.)  The loop executes three CPU cycles per iteration, not
+  74:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     including the overhead the compiler needs to setup the counter
+  75:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     register.
+  76:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  77:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     Thus, at a CPU speed of 1 MHz, delays of up to 768 microseconds
+  78:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     can be achieved.
+  79:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** */
+  80:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** void
+  81:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** _delay_loop_1(uint8_t __count)
+  82:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** {
+  83:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 	__asm__ volatile (
+  84:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 		"1: dec %0" "\n\t"
+  85:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 		"brne 1b"
+GAS LISTING /tmp/cc8p7KEO.s 			page 8
+
+
+  86:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 		: "=r" (__count)
+  87:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 		: "0" (__count)
+  88:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 	);
+  89:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** }
+  90:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  91:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** /** \ingroup util_delay_basic
+  92:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  93:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     Delay loop using a 16-bit counter \c __count, so up to 65536
+  94:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     iterations are possible.  (The value 65536 would have to be
+  95:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     passed as 0.)  The loop executes four CPU cycles per iteration,
+  96:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     not including the overhead the compiler requires to setup the
+  97:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     counter register pair.
+  98:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  99:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     Thus, at a CPU speed of 1 MHz, delays of up to about 262.1
+ 100:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     milliseconds can be achieved.
+ 101:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****  */
+ 102:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** void
+ 103:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** _delay_loop_2(uint16_t __count)
+ 104:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** {
+ 105:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 	__asm__ volatile (
+ 106:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 		"1: sbiw %0,1" "\n\t"
+ 107:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 		"brne 1b"
+ 108:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 		: "=w" (__count)
+ 109:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 		: "0" (__count)
+ 110:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 	);
+ 226               		.stabn	68,0,110,.LM22-.LFBB1
+ 227               	.LM22:
+ 228 0066 DA01      		movw r26,r20
+ 229               	/* #APP */
+ 230               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 231 0068 1197      		1: sbiw r26,1
+ 232 006a 01F4      		brne 1b
+ 233               	 ;  0 "" 2
+ 234               	/* #NOAPP */
+ 235               	.LBE27:
+ 236               	.LBE26:
+ 237               		.stabs	"tp4_ex2.cpp",132,0,0,.Ltext2
+ 238               	.Ltext2:
+  65:tp4_ex2.cpp   **** 				PORTC = 0x0;
+ 239               		.stabn	68,0,65,.LM23-.LFBB1
+ 240               	.LM23:
+ 241 006c 18B8      		out 0x8,__zero_reg__
+ 242               	.LBB29:
+ 243               	.LBB30:
+ 244               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext3
+ 245               	.Ltext3:
+ 246               		.stabn	68,0,110,.LM24-.LFBB1
+ 247               	.LM24:
+ 248 006e D901      		movw r26,r18
+ 249               	/* #APP */
+ 250               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 251 0070 1197      		1: sbiw r26,1
+ 252 0072 01F4      		brne 1b
+ 253               	 ;  0 "" 2
+ 254               	/* #NOAPP */
+ 255               	.LBE30:
+ 256               	.LBE29:
+GAS LISTING /tmp/cc8p7KEO.s 			page 9
+
+
+ 257               		.stabs	"tp4_ex2.cpp",132,0,0,.Ltext4
+ 258               	.Ltext4:
+  62:tp4_ex2.cpp   **** 				PORTC = _BV(PORTC0);
+ 259               		.stabn	68,0,62,.LM25-.LFBB1
+ 260               	.LM25:
+ 261 0074 D8B8      		out 0x8,r13
+ 262               	.LBB32:
+ 263               	.LBB28:
+ 264               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext5
+ 265               	.Ltext5:
+ 266               		.stabn	68,0,110,.LM26-.LFBB1
+ 267               	.LM26:
+ 268 0076 DA01      		movw r26,r20
+ 269               	/* #APP */
+ 270               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 271 0078 1197      		1: sbiw r26,1
+ 272 007a 01F4      		brne 1b
+ 273               	 ;  0 "" 2
+ 274               	/* #NOAPP */
+ 275               	.LBE28:
+ 276               	.LBE32:
+ 277               		.stabs	"tp4_ex2.cpp",132,0,0,.Ltext6
+ 278               	.Ltext6:
+  65:tp4_ex2.cpp   **** 				PORTC = 0x0;
+ 279               		.stabn	68,0,65,.LM27-.LFBB1
+ 280               	.LM27:
+ 281 007c 18B8      		out 0x8,__zero_reg__
+ 282               	.LBB33:
+ 283               	.LBB31:
+ 284               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext7
+ 285               	.Ltext7:
+ 286               		.stabn	68,0,110,.LM28-.LFBB1
+ 287               	.LM28:
+ 288 007e D901      		movw r26,r18
+ 289               	/* #APP */
+ 290               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 291 0080 1197      		1: sbiw r26,1
+ 292 0082 01F4      		brne 1b
+ 293               	 ;  0 "" 2
+ 294               	/* #NOAPP */
+ 295               	.LBE31:
+ 296               	.LBE33:
+ 297               	.LBE34:
+ 298               		.stabs	"tp4_ex2.cpp",132,0,0,.Ltext8
+ 299               	.Ltext8:
+  58:tp4_ex2.cpp   **** 			for(uint16_t j = 0; j< nbOperation; j++)
+ 300               		.stabn	68,0,58,.LM29-.LFBB1
+ 301               	.LM29:
+ 302 0084 3196      		adiw r30,1
+ 303 0086 EC17      		cp r30,r28
+ 304 0088 FD07      		cpc r31,r29
+ 305 008a 00F0      		brlo .L6
+ 306 008c EA94      		dec r14
+ 307 008e 6A0D      		add r22,r10
+ 308 0090 7B1D      		adc r23,r11
+ 309 0092 8A19      		sub r24,r10
+ 310 0094 9B09      		sbc r25,r11
+GAS LISTING /tmp/cc8p7KEO.s 			page 10
+
+
+ 311               	.LBE35:
+ 312               	.LBE36:
+  52:tp4_ex2.cpp   **** 		    for(uint8_t k = 0; k<5; k++)
+ 313               		.stabn	68,0,52,.LM30-.LFBB1
+ 314               	.LM30:
+ 315 0096 E110      		cpse r14,__zero_reg__
+ 316 0098 00C0      		rjmp .L7
+ 317               	.LBE37:
+ 318               	.LBE38:
+  41:tp4_ex2.cpp   **** 		for(uint8_t l =0; l<2; l++)
+ 319               		.stabn	68,0,41,.LM31-.LFBB1
+ 320               	.LM31:
+ 321 009a F394      		inc r15
+ 322 009c B2E0      		ldi r27,lo8(2)
+ 323 009e FB12      		cpse r15,r27
+ 324 00a0 00C0      		rjmp .L3
+ 325 00a2 00C0      		rjmp .L8
+ 326               	.LBE39:
+ 327               	.LBE41:
+ 328               	.LBE42:
+ 329               	.LBE43:
+ 330               	.LBE44:
+ 331               		.size	main, .-main
+ 332               		.stabs	"l:r(0,29)",64,0,41,15
+ 333               		.stabn	192,0,0,.LBB20-.LFBB1
+ 334               		.stabs	"dureeOperation:r(0,31)",64,0,43,24
+ 335               		.stabs	"nbOperation:r(0,31)",64,0,44,28
+ 336               		.stabn	192,0,0,.LBB21-.LFBB1
+ 337               		.stabs	"j:r(0,31)",64,0,58,30
+ 338               		.stabn	192,0,0,.LBB24-.LFBB1
+ 339               		.stabn	224,0,0,.LBE24-.LFBB1
+ 340               		.stabs	"j:r(0,31)",64,0,58,30
+ 341               		.stabn	192,0,0,.LBB35-.LFBB1
+ 342               		.stabn	224,0,0,.LBE35-.LFBB1
+ 343               		.stabn	224,0,0,.LBE21-.LFBB1
+ 344               		.stabs	"dureeOperation:r(0,31)",64,0,43,24
+ 345               		.stabs	"nbOperation:r(0,31)",64,0,44,28
+ 346               		.stabn	192,0,0,.LBB38-.LFBB1
+ 347               		.stabn	224,0,0,.LBE38-.LFBB1
+ 348               		.stabn	224,0,0,.LBE20-.LFBB1
+ 349               		.stabs	"l:r(0,29)",64,0,41,15
+ 350               		.stabn	192,0,0,.LBB39-.LFBB1
+ 351               		.stabn	224,0,0,.LBE39-.LFBB1
+ 352               	.Lscope1:
+ 353               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 354               		.stabd	78,0,0
+ 355               		.text
+ 356               		.stabs	"",100,0,0,.Letext0
+ 357               	.Letext0:
+ 358               		.ident	"GCC: (Fedora 4.7.3-0.1.fc19) 4.7.3 20130216 (prerelease)"
+GAS LISTING /tmp/cc8p7KEO.s 			page 11
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 tp4_ex2.cpp
+     /tmp/cc8p7KEO.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cc8p7KEO.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cc8p7KEO.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cc8p7KEO.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cc8p7KEO.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/cc8p7KEO.s:78     .text.startup:0000000000000000 main
+
+NO UNDEFINED SYMBOLS

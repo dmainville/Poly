@@ -1,0 +1,192 @@
+//Peut-etre intéressant http://geonobotwiki.free.fr/doku.php?id=robotics:electronics:utiliser_un_capteur_ultrason_srf04
+//			http://enseignement.ensi-bourges.fr/claroline/backends/download.php?url=L0RvY19BVE1FR0E2NF9wb3VyX1REcy5wZGY%3D&cidReset=true&cidReq=II_2012
+
+
+// Il est conseillé que la division d'horloge du compteur soit nulle (Pas de prescale)
+
+
+#define F_CPU 8000000UL
+#include <avr/io.h>
+#include <util/delay.h>
+
+// La sortie de chaque capteur est connectée à une pin du port A. 
+// Ces sorties servent d'entrées au programme.
+// On obtient une sortie de 0 lorsqu'un capteur détecte une ligne noire.
+#define LEFT_SENSOR (PINA2 & _BV(2))
+#define CENTER_SENSOR (PINA4 & _BV(2))
+#define RIGHT_SENSOR (PINA6 & _BV(2))
+
+uint8_t ComportementAleatoire(uint8_t typeIntersection) //typeIntersection: croix = 0, baseT = 1, droiteT = 2, gaucheT = 3, coinD = 4, coinG = 5 
+{
+	enum comportemenent{avancer,tournegauche,tournedroite}; //avancer = 0, tournergauche = 1, tournerdroite = 2
+
+	uint8_t compteurTCNT1l = TCNT1l;	//On cree une variable qui contient le compteur TCNT1l pour eviter de modifier la valeur du compteur TCNT1l
+	
+	//Croix
+	if(intersection == 0)
+	{
+		compteurTCNT1l >> 6; 		//Garder les 2 derniers bits
+
+		if(vide_)			//Le robot vient de detecter du vide
+		{
+			if(compteurTCNT1L == 0X00)
+			{
+				return tournerdroite;	//Return 2
+			}
+
+	
+			else if(compteurTCNT1L == 0X01)
+			{
+				return tournergauche;	//Return 1
+			}
+
+			else
+			{
+				return avancer;		//Return 0
+			}
+
+			vide_ = false;
+
+		}
+
+		if(compteurTCNT1L == 0X00)
+		{
+			return tournerdroite;	//Return 2
+		}
+
+	
+		else if(compteurTCNT1L == 0X01)
+		{
+			return tournergauche;	//Return 1
+		}
+
+		else
+		{
+			return avancer;		//Return 0
+		}	
+	}
+
+	//baseT
+	if(intersection == 1)
+	{
+		compteurTCNT1l >> 7; 		//Garder le dernier bit
+
+		if(vide_)			//Le robot vient de detecter du vide
+		{
+			if(compteurTCNT1L == 0X00)
+			{
+				return tournerdroite;	//Return 2
+			}
+
+	
+			else
+			{
+				return tournergauche;	//Return 1
+			}
+
+			vide_ = false;
+		}
+
+		if(compteurTCNT1L == 0X00)
+		{
+			return tournerdroite;	//Return 2
+		}
+
+	
+		else
+		{
+			return tournergauche;	//Return 1
+		}	
+	}
+
+	//gaucheT
+	if(intersection == 2)
+	{
+		compteurTCNT1L >> 7; 		//Garder le dernier bit
+
+		if(vide_)			//Le robot vient de detecter du vide
+		{
+			return tournerdroite;	//Return 2
+			
+			vide_ = false;
+		}
+
+		if(compteurTCNT1L == 0X00)
+		{
+			return tournerdroite;	//Return 2
+		}
+
+		else
+		{
+			return avancer;		//Return 0
+		}
+	}
+
+
+	//DroiteT
+	if(intersection == 3)
+	{
+		compteurTCNT1L >> 7; 		//Garder le dernier bit
+
+		if(vide_)			//Le robot vient de detecter du vide
+		{
+			return tournergauche;	//Return 1
+			
+			vide_ = false;
+		}
+
+		if(compteurTCNT1L == 0X00)
+		{
+			return tournergauche;	//Return 1
+		}
+
+		else
+		{
+			return avancer;		//Return 0
+		}
+	}
+
+	//coinD
+	if(intersection == 4)
+	{
+		compteurTCNT1L >> 7; 		//Garder le dernier bit
+
+		if(vide_)			//Le robot vient de detecter du vide
+		{
+			return tournerdroite;	//Return 2
+			
+			vide_ = false;
+		}
+
+		if(compteurTCNT1L == 0X00)
+		{
+			return tournerdroite;	//Return 2
+		}
+	}
+
+	//coinG
+	if(intersection == 5)
+	{
+		compteurTCNT1L >> 7; 		//Garder le dernier bit
+
+		if(vide_)			//Le robot vient de detecter du vide
+		{
+			return tournergauche;	//Return 1
+			
+			vide_ = false;
+		}
+
+		if(compteurTCNT1L == 0X00)
+		{
+			return tournergauche;	//Return 1
+		}
+	}
+
+
+int main()
+{
+	// PORT A est en mode entrée. Les sorties des DEL du capteurs de lignes servent de valeurs d'entrée.
+	// La DEL de gauche est connectée à la pin2, la DEL du centre à la pin4 et celle de droite à la pin6.
+	DDRA = 0x00;
+
+}

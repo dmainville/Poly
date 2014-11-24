@@ -1,0 +1,995 @@
+/****************************************************************************
+ * Fichier: robot_chat.cpp
+ * Auteur: Mario Saliby(1668958) et Youssef Zemmahi(1665843) et Yannick Ouellet et David Mainville 
+ * DESCRIPTION : Chat
+ ****************************************************************************/
+
+/* Information sur branchements */
+
+/* Port A0 branché sur capteur distance*/
+
+/* Port B0 branché sur +        DEL*/
+/* Port B1 branché sur -        DEL*/
+/* Port B2 branché sur module de son*/
+
+/* Port C2 branché sur capteur ligne gauche*/
+/* Port C4 branché sur capteur ligne milieu*/
+/* Port C6 branché sur capteur ligne droit*/
+
+/* Port D4 branché sur enable moteur gauche*/
+/* Port D6 branché sur sens moteur gauche*/
+
+/* Port D5 branché sur enable moteur droit*/
+/* Port D7 branché sur sens moteur droit*/
+
+#define F_CPU 8000000UL
+#include<avr/io.h>
+#include<util/delay.h>
+#include "lib/libRobot.h"
+#include <avr/interrupt.h> 
+#include "can.h"
+
+#define VALEURANALOGIQUE (PINA & _BV(1))
+#define BOUTON_ENFONCE (PIND & _BV(2))
+
+//-----------------------------
+//Lib et utils
+//-----------------------------
+LibRobot r;
+volatile uint8_t& portDEL = PORTB;
+uint8_t pinCouleur  = _BV(PORTB0);
+uint8_t pinCouleur2  = _BV(PORTB1);
+
+//-----------------------------
+//Constantes et variables pour les décision du chat
+//-----------------------------
+
+	//-----------------------------
+	//Mode de déplacement, prise de décision
+	//-----------------------------
+	bool modeLigneDroite;
+	bool modeIntersection;
+	bool modeVirageGauche;
+	bool modeVirageDroite;
+	bool modeReculer;
+
+	uint8_t directionCourrante; //1 = nord, 2= est, 3 = sud, 4 = ouest
+	int8_t positionRalativeX; //Nombre de case en x de la position de la souris, ex: 1 -> 1 case a l'est
+	int8_t positionRalativeY; //Nombre de case en y de la position de la souris, ex: 1 -> 1 case au nord, -1 ->  case au sud
+	
+//-----------------------------
+//Constantes et variables pour le déplacement stable
+//-----------------------------
+
+	//-----------------------------
+	//Constante et variable pour virage
+	//-----------------------------
+	int8_t vitesseVirage;
+	bool virageForce; //Si le mode détection est provoquer par le temps
+	bool detecteurEnabled; 	//Est a vrai si le detecteur peut signuifier la fin d'un virage
+				//Pour etre valide le détecteur doit être éteint au moins une fois pendant un virage
+				//Permet d'éviter de concidèrer un ligne droite comme un tournant lors d'un virage
+
+	int8_t varianceVitesseVirage; 			//Utiliser pour faire varier la vitesse du virage pendant le virage même, permet une vitesse plus lente de virage
+	int8_t varianceVitesseVirageDeceleration; 	//Cependant étant donné que le moteur ne peut aller en dessous d'une certaine vitesse, il est important de remonter la
+	int8_t varianceVitesseVirageMax;		//vitesse au maximum par moment, la vitesse ocille donc, entre vitesseVirage+varianceVitesseVirageMax et
+	int8_t varianceVitesseVirageMin;		//vitesseVirage + varianceVitesseVirageMin
+
+
+	//-----------------------------
+	//Constante et variable pour determinerTypeIntersection
+	//-----------------------------
+	bool franchieGauche;
+	bool franchieMilieu;
+	bool franchieDroite;
+
+	bool gaucheExiste; //On peut tourner a gauche
+	bool droiteExiste;
+	bool milieuExiste;
+
+	uint16_t tempsIntersection;
+	uint16_t tempsIntersectionMax; //Temps maximum pour détecter le type d'intersection
+	uint16_t tempsActif;
+	uint16_t seuilTempsActifToutDroit; //Temps actif minimum pour pouvoir continuer tout droit
+
+	uint8_t dernierCapteurIntersection; //1 gauche, 2 milieu, 3 droite, 0 rien
+
+	//-----------------------------
+	//Constante et variable pour avancerLigneDroite
+	//-----------------------------
+	uint8_t dernierCapteur; //1 gauche, 2 milieu, 3 droite, 0 rien
+	uint8_t vitesseBase;
+	int8_t ajustementGauche;
+	int8_t ajustementDroit;
+	int8_t ajustementMax;
+	int8_t ajustementMin;
+	int8_t ajustementRetour; //Lorsque l'on revient au centre, aujustement pour remttre le robot droit dans le sens inverse duquel on vient
+	int8_t ajustementVirageLeger; //Ajustement de la vitesse lors d'une stabilisation
+	int8_t ajustementVirageMoyen;
+	uint16_t delaisLigneDroite;
+	uint16_t delaisMaxLigneDroite;
+
+	int16_t delaisAjustementTemporaire;
+	int8_t ajustementTemporaireG;
+	int8_t ajustementTemporaireD;
+	int8_t ajustementTournant;
+	int8_t ajustementLigneDroite;
+	uint8_t dureeAjustementTournant;
+	uint8_t dureeAjustementLigneDroite;
+
+	uint16_t tempsDepuisIntersection;
+	uint16_t tempsAttenteMaxIntersection; //Temps d'attente maximal, avant de déclancher un intersection
+
+	//-----------------------------
+	//Constante et variable pour reculer
+	//-----------------------------
+	uint8_t vitesseReculer;
+	int8_t tempsReculActif;
+	int8_t tempsReculActifMax;
+	bool finRecul; //Utiliser pour faire reculer un peu plus apres avoir retrouvé la ligne
+	int8_t tempsReculExtra;
+	int8_t tempsReculExtraMax;
+
+	//-----------------------------
+	//Constante et variable pour éviter de tomber
+	//-----------------------------
+	//Vérifier le % de temps actif dans un delai recent pour s'assurer qu'on n'est pas dans le vide
+	//La vérification de la limite sera faite lors des déclenchement de delai max atteint
+	uint16_t tempsLigneDroiteActive;
+	uint16_t tempsLigneDroiteDepuisIntersection;
+	uint16_t tempsLigneDroiteActiveMax;
+	uint16_t tempsLigneDroiteActiveSeuil;
+
+	//Vérification du temps sans capteur (qui est reset chaque fois qu'un capteur est atteint)
+	uint16_t tempsActifSansCapteur;
+	uint16_t tempsActifSansCapteurMax;
+
+bool debug = true;
+
+bool capteurDroit()
+{
+	return !(PINC & _BV(PORTC6));
+}
+bool capteurMilieu()
+{
+	return !(PINC & _BV(PORTC4));
+}
+bool capteurGauche()
+{
+	return !(PINC & _BV(PORTC2));
+}
+
+void ajusterPositionRelative(uint8_t axeCourrant)
+{
+	//axe courrant : 1 = nord, 2 = est, 3 = sud, 4 = ouest, 5 = nord-est, 6 = sud-est, 7 = sud-ouest, 8 = nord-ouest
+	uint8_t axe_x = 0;
+	uint8_t axe_y = 0;
+
+	uint8_t distance;
+	bool detecter;
+	can convertisseur=can();
+	uint16_t valeur;
+
+	valeur=convertisseur.lecture(VALEURANALOGIQUE);
+	//_delay_ms(100); 
+	// Decalage de 2 bits vers la droite pour ne garder que 8 bits.
+	valeur=valeur>>2;
+
+	if(valeur>7)   
+	{
+		detecter=true;
+		// 32 pouces (environ 80 cm) / 4 pouces (environ 10cm) plage de valeur ( (256-7)/8=31)
+
+		if(( valeur >=211)&&(valeur<=256))
+			distance= 4;
+
+		switch (axeCourrant) // cas 0,1,2  , axe des x , angle , axe des y
+		{
+			case 1 : //Nord
+			{
+				if(( valeur >110)&&(valeur<=250))
+				{
+					axe_x=1;	
+					axe_y=0;
+				}
+				if(( valeur >57)&&(valeur<=110))
+				{
+					axe_x=1;
+					axe_y=0;
+				}
+				if(( valeur >39)&&(valeur<=57))
+				{
+					axe_x=2;
+					axe_y=0;
+				}
+				if(( valeur <=39))
+				{
+					axe_x=3;
+					axe_y=0;
+				}
+				break;
+			}
+			case Angle45 :  // diagonale d'un carre de cote=10 pouces = 14 pouces
+			{
+				if(( valeur >66)&&(valeur<=250))
+				{
+					axe_x=1;
+					axe_y=1;
+				}
+				if(valeur<=66)
+				{
+					axe_x=2;
+					axe_y=2;
+				}
+				break;
+			}
+		}   
+	}
+	else
+	{
+		detecter=false;
+		axe_x=0;
+		axe_y=0;
+	}
+}
+
+
+
+void ajusterFranchie()//Ajuste les variables de franchissement
+{
+	if(capteurGauche())
+		franchieGauche = true;
+	if(capteurMilieu())
+		franchieMilieu = true;
+	if(capteurDroit())
+		franchieDroite = true;
+}
+
+void ajusterPossibiliteIntersection()//Ajuste les variables de tournant possible
+{
+	
+	//La gauche et la droite sont disponible si ils le sont en même temps que le milieu
+	//Sauf dans les cas ou l'on est décallé du côté inverse (autrement dit, si l'on est décallé a droite et qu'on
+	//	 a le capteur milieu et le capteur gauche, on ne peut rien conclure)
+	if(capteurMilieu() && dernierCapteurIntersection == 2)
+	{
+		if(capteurGauche())
+			gaucheExiste = true;
+		if(capteurDroit())
+			droiteExiste = true;
+	}
+
+
+	if(dernierCapteurIntersection == 1) //On est a droite de la ligne, puisque le dernier capteur est le gauche
+	{
+		//Lorsqu'on est déja décallé a droite, le simple fait d'activer le capteut droit signifie que l'on peut y tourner
+		if(capteurDroit())
+			droiteExiste = true;
+
+		//Pour pouvoir déterminer si le milieu existe, 
+	}
+	else if(dernierCapteurIntersection == 3)//On est a gauche de la ligne
+	{
+		//Lorsqu'on est déja décallé a gauche, le simple fait d'activer le capteut gauche signifie que l'on peut y tourner
+		if(capteurGauche())
+			gaucheExiste = true;
+	}
+}
+
+
+bool detecterIntersection() //Return true si une intersection est trouvé
+{
+	return (capteurMilieu() && (capteurGauche() || capteurDroit()));
+}
+
+bool perdue()
+{
+	return (!capteurDroit() && !capteurMilieu() && !capteurGauche());
+}
+
+void tomberEnModerDetecterTypeIntersection(bool force) //bool force, détermine si on est en détection d'intersection force par la minuterie
+{
+	virageForce = force;
+	tempsDepuisIntersection = 0;
+	tempsLigneDroiteActive = 0;
+	tempsLigneDroiteDepuisIntersection = 0;
+	tempsActifSansCapteur = 0;
+	varianceVitesseVirage = 0;
+	
+	//Changer en mode Trouver intersection
+	modeLigneDroite = false;
+	modeIntersection = true;
+
+	franchieGauche = false;
+	franchieMilieu = false;
+	franchieDroite = false;
+
+	gaucheExiste = false;
+	droiteExiste = false;
+	milieuExiste = false;
+
+	tempsIntersection = 0;
+	tempsActif = 0;
+	dernierCapteurIntersection = dernierCapteur;
+}
+
+bool determinerTypeIntersection() //return true si le type est trouvé, false sinon
+{
+	//Vérifier si on passe en mode detecter intersection normale
+	if(virageForce && detecterIntersection()) //Dans quel cas, on retourne en mode detecter intersection avec le delai remit a 0
+	{
+		//Reseter la détection d'intersection
+		tomberEnModerDetecterTypeIntersection(false);		
+	}
+
+	tempsIntersection += 10;
+	if(!perdue())	//Si au moins 1 capteurs actif augmenter le temps actif
+		tempsActif +=10;
+
+	if(tempsActif >= seuilTempsActifToutDroit)
+		milieuExiste = true;
+
+	//Si au moins la moitié du temps a été passé, qu'on est en virage forcé, qu'aucun capteur est allumé et que le temps actif est très faible, 
+	//prendre une décision tout de suite
+	if(perdue() && tempsActif < 120 && tempsIntersection > tempsIntersectionMax>>1 && virageForce)
+	{
+		//Ici on recule peu importe, étant donné qu'aucune intersection n'a été détecté, sans quoi on serait tomber en mode detecter non forcé
+		franchieDroite = false;
+		franchieGauche = false;
+		franchieMilieu = false;
+		return true;
+	}
+
+	if(tempsIntersection >= tempsIntersectionMax) //Le temps est écoulé, prendre une decision
+	{
+
+		if(!franchieDroite)
+		{	
+			droiteExiste = false;
+			gaucheExiste = true;
+		}
+		else if(!franchieGauche)
+		{	
+			droiteExiste = true;
+			gaucheExiste = false;
+		}
+
+		return true;
+	}
+
+	if(gaucheExiste && milieuExiste && droiteExiste)//Si tous le type d'intersection sont permis, arrêter de vérifier les types d'intersection
+	{
+		return true;
+	}
+
+	ajusterFranchie();
+	ajusterPossibiliteIntersection();
+
+	return false;
+}
+
+void ajusterDernierCapteur()
+{
+	if(capteurDroit())
+		dernierCapteur = 3;
+	if(capteurMilieu())
+		dernierCapteur = 2;
+	if(capteurGauche())
+		dernierCapteur = 1;	
+}
+
+void limiterAjustement()
+{
+	if(ajustementGauche > ajustementMax)
+		ajustementGauche = ajustementMax;
+	if(ajustementDroit > ajustementMax)
+		ajustementDroit = ajustementMax;
+
+	if(ajustementGauche < ajustementMin)
+		ajustementGauche = ajustementMin;
+	if(ajustementDroit < ajustementMin)
+		ajustementDroit = ajustementMin;
+}
+
+void ajustementVitesse(bool sens)
+{
+	delaisLigneDroite++;
+	if(delaisLigneDroite >= delaisMaxLigneDroite)
+	{
+		delaisLigneDroite = 0;
+		if(sens)
+		{
+			ajustementGauche++;
+			ajustementDroit--;
+			limiterAjustement();
+		}
+		else
+		{
+			ajustementGauche--;
+			ajustementDroit++;
+			limiterAjustement();
+		}
+	}
+}
+
+void avancerAvecAjustement(int16_t vG, int16_t vD)
+{
+	if(delaisAjustementTemporaire > 0)
+	{
+		r.avancer(vG,vD,ajustementGauche+ajustementTemporaireG, ajustementDroit+ajustementTemporaireD);
+	}
+	else
+	{
+		r.avancer(vG,vD,ajustementGauche, ajustementDroit);
+	}
+}
+
+void reculerAvecAjustement(int16_t vG, int16_t vD)
+{
+	if(dernierCapteur == 1) 					//gauche, donc on tourne vers la gauche en reculant
+		r.reculer(vG,0,ajustementGauche, ajustementDroit);
+	else if(dernierCapteur == 3) 					//droite
+		r.reculer(vG,0,ajustementGauche, ajustementDroit);
+	else								//milieu
+		r.reculer(vG,vD,ajustementGauche, ajustementDroit);
+}
+
+void viragePourLigneDroite(bool sens, int8_t ajustementVitesseVirage)//false gauche, true droite
+{
+	if(sens)//Droite
+	{
+		//Balancer la vitesse des moteurs pour le futur
+		ajustementVitesse(true);
+		avancerAvecAjustement(vitesseBase + ajustementVitesseVirage, vitesseBase - ajustementVitesseVirage);
+	}
+	else//Gauche
+	{
+		//Balancer la vitesse des moteurs pour le futur
+		ajustementVitesse(false);
+		avancerAvecAjustement(vitesseBase - ajustementVitesseVirage, vitesseBase + ajustementVitesseVirage);
+	}
+}
+
+void tomberEnModeReculer()
+{
+	tempsReculActif = 0;
+	finRecul = false;
+	tempsReculExtra = 0;
+	modeReculer = true;
+	r.decoincer(true, true, false);
+}
+
+void decisionVirage(bool gaucheForce, bool droiteForce) //Les propriétées détermine si la gauche ou la droite est forcée
+{
+	//Si rien n'existe, tomber en mode reculer
+	if(!droiteExiste && !milieuExiste && !gaucheExiste)
+	{
+		tomberEnModeReculer();
+		return;
+	}
+	
+	if()
+
+	if(droiteExiste && !milieuExiste && !gaucheExiste)
+	{
+		modeVirageDroite = true;
+		r.decoincer(true, false, true);
+	}
+
+}
+
+void ajusterVitesseVirage()
+{
+	varianceVitesseVirage -= varianceVitesseVirageDeceleration;
+	if(varianceVitesseVirage < varianceVitesseVirageMin)
+		varianceVitesseVirage = varianceVitesseVirageMax;
+}
+
+void ajusterDelaiAjustementTemporaire()
+{
+	if(delaisAjustementTemporaire > 0)
+		delaisAjustementTemporaire -=10;
+}
+
+bool virer(bool sens) //Retourne vrai si le virage est complet
+{
+	ajusterDelaiAjustementTemporaire();
+	ajusterVitesseVirage();
+	r.virer(vitesseVirage-varianceVitesseVirage,ajustementGauche, ajustementDroit, sens);
+
+	
+
+	if(sens) //droite
+	{	
+		if(!capteurDroit()) //Vérifier si le capteur droit est éteint; être certain qu'on a quitter la ligne droite du milieu
+			detecteurEnabled = true;
+
+		if(capteurDroit() && detecteurEnabled) //Si le capteur droit est atteint et qu'il est enabled, alors on a fini de virer a droite
+		{
+			delaisAjustementTemporaire = dureeAjustementTournant;
+			ajustementTemporaireG = -ajustementTournant;
+			ajustementTemporaireD = ajustementTournant;
+			return true;
+		}
+
+		return false;
+	}
+	else	//gauche
+	{
+		if(!capteurGauche()) //Vérifier si le capteur gauche est éteint; être certain qu'on a quitter la ligne droite du milieu
+			detecteurEnabled = true;
+
+		if(capteurGauche() && detecteurEnabled) //Si le capteur droit est atteint et qu'il est enabled, alors on a fini de virer a gauche
+		{
+			delaisAjustementTemporaire = dureeAjustementTournant;
+			ajustementTemporaireG = ajustementTournant;
+			ajustementTemporaireD = -ajustementTournant;
+			return true;
+		}
+
+		return false;
+	}
+}
+
+void avancerLigneDroite()
+{	
+	if(perdue())
+	{
+		 //On sait de quel coté on est partie, on essaie de retrouver la ligne
+		if(dernierCapteur == 2) //Dernier capteur atteint est le millieu, continuer tout droit
+			avancerAvecAjustement(vitesseBase,vitesseBase);
+		else if(dernierCapteur == 1)  //gauche
+			viragePourLigneDroite(false,ajustementVirageMoyen);
+		else if(dernierCapteur == 3) 
+			viragePourLigneDroite(true,ajustementVirageMoyen);
+
+		ajusterDernierCapteur();	
+
+	}
+	else	//Au moins 1 capteur est actif
+	{
+		//Recentrer le robot si nécessaire
+		if(capteurMilieu()) //Continuer tout droit
+		{
+			delaisLigneDroite = 0;
+			avancerAvecAjustement(vitesseBase,vitesseBase);
+
+			//On a retrouver le milieu, mais est-t-on droit?
+
+			//On vient de la droite, puisque le dernier capteur était a gauche
+			//On doit donc restabiliser le rebot, en tournant légerement vers la droite
+			if(dernierCapteur == 1)
+			{
+				delaisAjustementTemporaire = dureeAjustementLigneDroite;
+				ajustementTemporaireG = ajustementLigneDroite;
+				ajustementTemporaireD = -ajustementLigneDroite;
+			}
+			else if(dernierCapteur == 3) //On vient de la gauche
+			{
+				delaisAjustementTemporaire = dureeAjustementLigneDroite;
+				ajustementTemporaireG = -ajustementLigneDroite;
+				ajustementTemporaireD = ajustementLigneDroite;
+			}
+
+		}
+		else if(capteurGauche())//On doit avancer tout droit et le capteur Gauche est allumé, le rebot est donc trop a droite
+		{
+			//virer legerement a gauche
+			viragePourLigneDroite(false,ajustementVirageLeger);
+		}
+		else if(capteurDroit())
+		{
+			//virer legerement a droite
+			viragePourLigneDroite(true,ajustementVirageLeger);
+		}
+
+		ajusterDernierCapteur();//Se souvenir du dernier capteur actif
+	}
+}
+
+bool reculer()
+{
+	//Reculer jusqu'à ce qu'on détecte une intersection ou que le temps actif soit suffisaemment élevé	
+	ajusterDernierCapteur();//Se souvenir du dernier capteur actif
+	
+	if(finRecul)
+	{
+		tempsReculExtra +=10;
+		if(tempsReculExtra>= tempsReculExtraMax)
+			return true;
+	}
+	else
+	{
+		if(!perdue())
+			tempsReculActif +=10;
+		if(tempsReculActif >= tempsReculActifMax)
+			finRecul = true;
+	
+
+		if(detecterIntersection())
+			finRecul = true;
+	}
+	
+	reculerAvecAjustement(vitesseReculer,vitesseReculer);
+	return false;
+}
+
+void ajusterTempsActifRecent()
+{
+	if(tempsLigneDroiteDepuisIntersection < tempsLigneDroiteActiveMax)
+	{
+		if(!perdue())	
+			tempsLigneDroiteActive += 10;
+		tempsLigneDroiteDepuisIntersection += 10;
+	}
+	else
+	{	
+		if(!perdue())
+		{
+			tempsLigneDroiteActive += 10;
+			if(tempsLigneDroiteActive > tempsLigneDroiteActiveMax)
+				tempsLigneDroiteActive = tempsLigneDroiteActiveMax;
+		}
+		else
+		{
+			if(tempsLigneDroiteActive <= 20)
+				tempsLigneDroiteActive = 0;
+			else
+				tempsLigneDroiteActive -= 20;
+		}
+	}
+}
+
+void ajusterTempsActifSansCapteur()
+{
+	if(delaisAjustementTemporaire <= 0) //Ne pas ajuster le temps hors piste lors d'ajustements
+	{
+		if(perdue())
+		{
+			tempsActifSansCapteur += 10;
+			if(tempsActifSansCapteur >= tempsActifSansCapteurMax)
+			{
+				tempsActifSansCapteur = 0;
+				modeLigneDroite = false;
+				tomberEnModeReculer();
+			}
+		}
+		else
+		{
+			tempsActifSansCapteur = 0;
+		}
+	}
+}
+
+void gestionDeplacementChat()
+{
+	if(modeLigneDroite)
+	{
+		if(detecterIntersection())
+		{	
+			if(debug)
+				r.jouerSon(70);
+			tomberEnModerDetecterTypeIntersection(false);
+			determinerTypeIntersection();
+		}
+		else
+		{
+			ajusterTempsActifSansCapteur();
+			ajusterTempsActifRecent();
+			tempsDepuisIntersection+=10;
+			if(tempsDepuisIntersection >=tempsAttenteMaxIntersection) //Déclencher intersection manuelle
+			{
+				//Intersection manuelle, donc détecter si le temps actif recent est suffisaement élevé pour
+				//qu'on ait le droit de continuer tout droit
+				if(tempsLigneDroiteActive >= tempsLigneDroiteActiveSeuil)
+				{
+					tempsDepuisIntersection = 0;
+					tempsLigneDroiteActive = 0;
+					tempsLigneDroiteDepuisIntersection = 0;
+					avancerLigneDroite();
+				}
+				else
+				{
+					modeLigneDroite = false;
+					tomberEnModeReculer();
+				}
+				/*tomberEnModerDetecterTypeIntersection(true);
+				determinerTypeIntersection();*/
+			}
+			else
+			{
+				avancerLigneDroite();
+			}
+		}
+	}
+	else if(modeIntersection)
+	{
+		if(determinerTypeIntersection())
+		{
+			if(debug)
+				r.arreterSon();
+			modeIntersection = false;
+			decisionVirage(false, false);
+		}
+		else
+		{
+			avancerLigneDroite(); //Continuer d'ajuster le déplacement
+		}
+	}
+	else if(modeVirageDroite)
+	{
+		if(debug)
+		{
+			r.eteindreDEL(portDEL, pinCouleur, pinCouleur2);
+			r.allumerDEL(portDEL, pinCouleur);
+		}
+
+		if(virer(true))
+		{
+			if(debug)
+				r.eteindreDEL(portDEL, pinCouleur, pinCouleur2);
+			modeVirageDroite = false;
+			modeLigneDroite = true;
+			dernierCapteur = 3; //Mettre le dernier virage comme étant celui de droite
+		}
+	}
+	else if(modeVirageGauche)
+	{
+		if(debug)
+		{
+			r.eteindreDEL(portDEL, pinCouleur, pinCouleur2);		
+			r.allumerDEL(portDEL, pinCouleur2);
+		}
+
+		if(virer(false))
+		{
+			if(debug)
+				r.eteindreDEL(portDEL, pinCouleur, pinCouleur2);
+			modeVirageGauche = false;
+			modeLigneDroite = true;
+			dernierCapteur = 1; //Mettre le dernier virage comme étant celui de gauche
+		}
+	}
+	else if(modeReculer)
+	{
+		if(reculer())
+		{
+			/*tomberEnModerDetecterTypeIntersection(true); //detection forcée
+			determinerTypeIntersection();*/
+			
+			tempsDepuisIntersection = 0;
+			tempsLigneDroiteActive = 0;
+			tempsLigneDroiteDepuisIntersection = 0;
+			tempsActifSansCapteur = 0;
+			modeLigneDroite = true;
+		}
+	}
+}
+
+uint8_t BoutonEstEnfonce()
+{
+	if(BOUTON_ENFONCE)
+	{
+	  // l'operateur !! permet de transformer une valeur quelconque en 0 ou 1.
+	  // ie: BOUTON_ENFONCE renvoit 2, !!2 = 1.
+	  
+	  return !!BOUTON_ENFONCE;
+	}
+	// Le bouton n'est pas enfoncé
+	return 0;
+}
+
+	
+void modeTest()
+{
+    uint16_t valeur;
+     r.initialisation();
+      r.debut();
+      // Declaration d'un objet can.
+     can convertisseur=can();
+    
+      
+      // La valeur minimale ne peut pas etre egale a 0.
+      // La valeur 7 a ete designee comme la plus petite valeur retournee lorsque le capteur ne detecte aucun objet.
+     while (BoutonEstEnfonce())
+     {
+       // Variable locale qui recoit la valeur numerique apres la conversion de la valeur analogique. 
+       valeur=convertisseur.lecture(VALEURANALOGIQUE);
+      _delay_ms(10); 
+      // Decalage de 2 bits vers la droite pour ne garder que 8 bits.
+      valeur=valeur>>2;
+       
+      if(valeur>7) 
+	    {	
+		 // Intervalles qui definissent les differents sons emis dependamment de la force du signal de retour.                                                                                     
+		 if ((valeur>7) &&(valeur<=17))
+		     r.jouerSon(66);
+		  if ((valeur>17) &&(valeur<=33))
+		    r.jouerSon(67);
+		  
+		  if  ((valeur>33) &&(valeur<=49))
+		     r.jouerSon(68);
+	
+		  if( (valeur>49)&&(valeur<=65))
+		     r.jouerSon(69);
+	
+		   if ((valeur>65) &&(valeur<=81))
+		      r.jouerSon(70);
+	
+		   if  ((valeur>81) &&(valeur<=97))
+		     r.jouerSon(71);
+		 
+		   if( (valeur>97)&&(valeur<=113))
+		       r.jouerSon(72);
+			
+		   if ((valeur>113) &&(valeur<=129))
+		    r.jouerSon(73);
+		
+		   if ((valeur>129) &&(valeur<=145))
+		     r.jouerSon(74);
+		    
+		   if  ((valeur>145) &&(valeur<=161))
+		      r.jouerSon(75);
+		  
+		   if( (valeur>161)&&(valeur<=177))
+		     r.jouerSon(76);
+		   
+		   if ((valeur>177) &&(valeur<=193))
+		    r.jouerSon(77);
+		  
+		   if ((valeur>193) &&(valeur<=209))
+		     r.jouerSon(78);
+		  
+		   if  ((valeur>209) &&(valeur<=225))
+		     r.jouerSon(79);
+		  
+		   if( (valeur>225)&&(valeur<=241))
+		     r.jouerSon(80);
+		  
+		   if ((valeur>241) &&(valeur<256)) 
+		     r.jouerSon(81);
+	    }
+	   else
+	    {
+		 // Commande qui arrete le son.
+		 r.arreterSon();
+	    }
+	  if(!BoutonEstEnfonce())
+	  {
+	    _delay_ms(15);
+	     r.arreterSon();
+	  }
+	    
+     }
+     
+
+}
+
+void tomberEnEtatTransitoire()
+{
+	r.eteindreDEL(portDEL, pinCouleur, pinCouleur2);
+
+	for(uint8_t i = 0; i<3; i++) //La DEL clignote pendant 3 secondes
+	{
+		for(uint8_t j = 0; j<4; j++) //La DEL clignote 4 fois par seconde
+		{
+			r.allumerDEL(portDEL,pinCouleur);
+			_delay_ms(125);
+
+			r.eteindreDEL(portDEL, pinCouleur, pinCouleur2);
+			_delay_ms(125);
+		}
+	}
+
+	r.eteindreDEL(portDEL, pinCouleur, pinCouleur2);
+}
+
+int main ()
+{
+	//------------------------
+	//Initialisation des ports
+	//------------------------
+
+	DDRA = 0x00; // Capteur de distance sur A0
+
+	DDRB = 0xff; // sortie, del et son
+	
+	DDRC = 0x00; // Entree, capteur ligne	
+
+	DDRD = 0x00; // Entree bouton suivit de Sortie moteurs
+
+	//------------------------
+	//Initialisation variables globales
+	//------------------------
+
+	//var virage
+		vitesseVirage = 110; //120, 100, 95
+		detecteurEnabled = false;
+
+		varianceVitesseVirage = 0;
+		varianceVitesseVirageDeceleration = 2;
+		varianceVitesseVirageMax = 0;
+		varianceVitesseVirageMin = -50;
+
+	//Var intersection
+		modeLigneDroite = true;
+		modeIntersection = false;
+		modeVirageGauche = false;
+		modeVirageDroite = false;
+		modeReculer = false;
+
+		franchieGauche = false;
+		franchieMilieu = false;
+		franchieDroite = false;
+
+		tempsIntersection = 0;
+		tempsIntersectionMax = 350;
+		seuilTempsActifToutDroit = 300;
+
+		tempsDepuisIntersection = 0;
+		tempsAttenteMaxIntersection = 2500; //2250
+
+		virageForce = false;
+
+	//Var ligne droite
+		dernierCapteur = 2;
+		vitesseBase = 110; //130
+		ajustementGauche = 0;
+		ajustementDroit = 0;
+		ajustementVirageLeger = 20;
+		ajustementVirageMoyen = 35;
+		ajustementMax = 14;
+		ajustementMin = ajustementMax * -1;
+		ajustementRetour = 1;
+		delaisLigneDroite = 0;
+		delaisMaxLigneDroite = 50;
+
+	//Var ajustement
+		delaisAjustementTemporaire = 0;
+		ajustementTournant = 15;
+		ajustementLigneDroite = 2;
+		dureeAjustementTournant = 50;
+		dureeAjustementLigneDroite = 10;
+
+	//Var reculer
+		vitesseReculer = 140;//130, 170
+		tempsReculActif = 0;
+		tempsReculActifMax = 100;
+		tempsReculExtra = 0;
+		tempsReculExtraMax = 50;
+		
+	//Var tomber
+		tempsLigneDroiteActive = 0;
+		tempsLigneDroiteDepuisIntersection = 0;
+		tempsLigneDroiteActiveMax = 250; //On regarde le temps actif sur les dernieres 250 ms
+		tempsLigneDroiteActiveSeuil = 120; //Seuil a atteindre pour continuer tout droit, sans quoi on recule
+
+		tempsActifSansCapteur = 0;
+		tempsActifSansCapteurMax = 140;
+
+	//var prise de décision chat
+		directionCourrante = 1; //nord
+		positionRalativeX = 0;
+		positionRalativeY = 0;
+
+	//------------------------
+	//Mode test et attente
+	//------------------------
+	if( BoutonEstEnfonce())
+		modeTest();
+
+	DDRD = 0xff; //Sortie moteurs
+	tomberEnEtatTransitoire(); //Pendant 3 secondes
+
+	//------------------------
+	//Boucle de déplacement
+	//------------------------
+	while(true)
+	{	
+		gestionDeplacementChat();
+		_delay_ms(10);
+	}
+	
+
+	return 0;
+}

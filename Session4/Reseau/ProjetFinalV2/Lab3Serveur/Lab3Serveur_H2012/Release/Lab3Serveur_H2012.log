@@ -1,0 +1,54 @@
+﻿La génération a démarré 2014-04-01 17:12:55.
+     1>Projet "Z:\Lab3Serveur\Lab3Serveur_H2012\Lab3Serveur_H2012.vcxproj" sur le nœud 2 (build cible(s)).
+     1>InitializeBuildStatus:
+         Création de "Release\Lab3Serveur_A2012.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>main.cpp(302): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : voir la déclaration de 'sprintf'
+     1>main.cpp(303): warning C4172: retourne l'adresse d'une variable locale ou temporaire
+     1>main.cpp(306): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : voir la déclaration de 'sprintf'
+     1>main.cpp(307): warning C4172: retourne l'adresse d'une variable locale ou temporaire
+     1>main.cpp(310): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : voir la déclaration de 'sprintf'
+     1>main.cpp(311): warning C4172: retourne l'adresse d'une variable locale ou temporaire
+     1>main.cpp(316): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : voir la déclaration de 'sprintf'
+     1>main.cpp(319): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : voir la déclaration de 'sprintf'
+     1>main.cpp(321): warning C4172: retourne l'adresse d'une variable locale ou temporaire
+     1>main.cpp(326): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : voir la déclaration de 'sprintf'
+     1>main.cpp(329): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : voir la déclaration de 'sprintf'
+     1>main.cpp(331): warning C4172: retourne l'adresse d'une variable locale ou temporaire
+     1>main.cpp(336): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : voir la déclaration de 'sprintf'
+     1>main.cpp(339): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : voir la déclaration de 'sprintf'
+     1>main.cpp(341): warning C4172: retourne l'adresse d'une variable locale ou temporaire
+     1>main.cpp(346): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : voir la déclaration de 'sprintf'
+     1>main.cpp(349): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : voir la déclaration de 'sprintf'
+     1>main.cpp(351): warning C4172: retourne l'adresse d'une variable locale ou temporaire
+     1>main.cpp(353): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : voir la déclaration de 'sprintf'
+     1>main.cpp(354): warning C4172: retourne l'adresse d'une variable locale ou temporaire
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Z:\Lab3Serveur\Release\Lab3Serveur_A2012.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Lab3Serveur_A2012.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"Z:\Lab3Serveur\Release\Lab3Serveur_A2012.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Z:\Lab3Serveur\Release\Lab3Serveur_A2012.lib" /MACHINE:X86 Release\main.obj
+         Génération de code en cours
+         Fin de la génération du code
+         Lab3Serveur_H2012.vcxproj -> Z:\Lab3Serveur\Release\Lab3Serveur_A2012.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"Z:\Lab3Serveur\Release\Lab3Serveur_A2012.exe;#1" /manifest Release\Lab3Serveur_A2012.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Suppression du fichier "Release\Lab3Serveur_A2012.unsuccessfulbuild".
+         Mise à jour de l'horodatage "Release\Lab3Serveur_A2012.lastbuildstate".
+     1>Génération du projet "Z:\Lab3Serveur\Lab3Serveur_H2012\Lab3Serveur_H2012.vcxproj" terminée (build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:01.09

@@ -1,0 +1,296 @@
+GAS LISTING /tmp/ccIN9LSa.s 			page 1
+
+
+   1               		.file	"can.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/usagers/damaib/Documents/Session3/inf1995/inf1995-20/equipe/inf1995-1620/codeCommun/Tp/pr
+   8               		.stabs	"can.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"void:t(0,4)",128,0,0,0
+  38               		.stabs	"wchar_t:t(0,23)=r(0,23);-32768;32767;",128,0,0,0
+  39               		.stabs	"bool:t(0,24)=@s8;-16;",128,0,0,0
+  40               		.stabs	"__vtbl_ptr_type:t(0,25)=*(0,26)=f(0,9)",128,0,0,0
+  41               		.stabs	"decltype(nullptr):t(0,27)=(0,27)",128,0,0,0
+  42               		.stabs	"int8_t:t(0,28)=(0,16)",128,0,121,0
+  43               		.stabs	"uint8_t:t(0,29)=(0,13)",128,0,122,0
+  44               		.stabs	"int16_t:t(0,30)=(0,9)",128,0,123,0
+  45               		.stabs	"uint16_t:t(0,31)=(0,12)",128,0,124,0
+  46               		.stabs	"int32_t:t(0,32)=(0,15)",128,0,125,0
+  47               		.stabs	"uint32_t:t(0,33)=(0,11)",128,0,126,0
+  48               		.stabs	"int64_t:t(0,34)=(0,14)",128,0,128,0
+  49               		.stabs	"uint64_t:t(0,35)=(0,10)",128,0,129,0
+  50               		.stabs	"intptr_t:t(0,36)=(0,30)",128,0,142,0
+  51               		.stabs	"uintptr_t:t(0,37)=(0,31)",128,0,147,0
+  52               		.stabs	"int_least8_t:t(0,38)=(0,28)",128,0,159,0
+  53               		.stabs	"uint_least8_t:t(0,39)=(0,29)",128,0,164,0
+  54               		.stabs	"int_least16_t:t(0,40)=(0,30)",128,0,169,0
+  55               		.stabs	"uint_least16_t:t(0,41)=(0,31)",128,0,174,0
+  56               		.stabs	"int_least32_t:t(0,42)=(0,32)",128,0,179,0
+  57               		.stabs	"uint_least32_t:t(0,43)=(0,33)",128,0,184,0
+GAS LISTING /tmp/ccIN9LSa.s 			page 2
+
+
+  58               		.stabs	"int_least64_t:t(0,44)=(0,34)",128,0,192,0
+  59               		.stabs	"uint_least64_t:t(0,45)=(0,35)",128,0,199,0
+  60               		.stabs	"int_fast8_t:t(0,46)=(0,28)",128,0,213,0
+  61               		.stabs	"uint_fast8_t:t(0,47)=(0,29)",128,0,218,0
+  62               		.stabs	"int_fast16_t:t(0,48)=(0,30)",128,0,223,0
+  63               		.stabs	"uint_fast16_t:t(0,49)=(0,31)",128,0,228,0
+  64               		.stabs	"int_fast32_t:t(0,50)=(0,32)",128,0,233,0
+  65               		.stabs	"uint_fast32_t:t(0,51)=(0,33)",128,0,238,0
+  66               		.stabs	"int_fast64_t:t(0,52)=(0,34)",128,0,246,0
+  67               		.stabs	"uint_fast64_t:t(0,53)=(0,35)",128,0,253,0
+  68               		.stabs	"intmax_t:t(0,54)=(0,34)",128,0,273,0
+  69               		.stabs	"uintmax_t:t(0,55)=(0,35)",128,0,278,0
+  70               		.stabs	"int_farptr_t:t(0,56)=(0,32)",128,0,77,0
+  71               		.stabs	"uint_farptr_t:t(0,57)=(0,33)",128,0,81,0
+  72               		.stabs	"._0:Tt(0,58)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+  73               		.stabs	"__fuse_t:t(0,58)",128,0,244,0
+  74               		.stabs	"can:Tt(0,59)=s1__base_ctor ::(0,60)=#(0,59),(0,4),(0,61)=*(0,59),(0,4);:_ZN3canC2Ev;2A.;__
+  75               		.stabs	"_ZN3canC2Ev:F(0,4)",36,0,16,_ZN3canC2Ev
+  76               		.stabs	"this:P(0,63)=k(0,61)",64,0,16,24
+  77               	.global	_ZN3canC2Ev
+  78               		.type	_ZN3canC2Ev, @function
+  79               	_ZN3canC2Ev:
+  80               		.stabd	46,0,0
+   1:can.cpp       **** /*
+   2:can.cpp       ****  * Ecole Polytechnique de Montreal
+   3:can.cpp       ****  * Departement de genie informatique
+   4:can.cpp       ****  * Cours inf1995
+   5:can.cpp       ****  *
+   6:can.cpp       ****  * Matthew Khouzam et Jerome Collin
+   7:can.cpp       ****  * 2005-2006
+   8:can.cpp       ****  *
+   9:can.cpp       ****  * Code qui n'est sous aucune license.
+  10:can.cpp       ****  *
+  11:can.cpp       ****  */
+  12:can.cpp       **** 
+  13:can.cpp       **** #include "can.h"
+  14:can.cpp       **** 
+  15:can.cpp       **** // constructeur: initialisation du convertisseur
+  16:can.cpp       **** can::can()
+  81               		.stabn	68,0,16,.LM0-.LFBB1
+  82               	.LM0:
+  83               	.LFBB1:
+  84               	/* prologue: function */
+  85               	/* frame size = 0 */
+  86               	/* stack size = 0 */
+  87               	.L__stack_usage = 0
+  88               	.LBB2:
+  17:can.cpp       **** {
+  18:can.cpp       ****    // ADC mux : reference analogique externe
+  19:can.cpp       ****    //           ajuste a droite
+  20:can.cpp       ****    ADMUX  = ( 0 << REFS1 ) | ( 0 << REFS0 ) | ( 0 << ADLAR ) | ( 0 << MUX4 ) |
+  21:can.cpp       ****             ( 0 << MUX3 ) | ( 0 << MUX2 ) | ( 0 << MUX1) | ( 0 << MUX0 ) ;
+  89               		.stabn	68,0,21,.LM1-.LFBB1
+  90               	.LM1:
+  91 0000 1092 7C00 		sts 124,__zero_reg__
+  22:can.cpp       **** 
+  23:can.cpp       ****    // ADC Status and Control Register A : 
+GAS LISTING /tmp/ccIN9LSa.s 			page 3
+
+
+  24:can.cpp       ****    //  Active le convertisseur mais sans demarrer de conversion pour l'instant.
+  25:can.cpp       ****    //  Pas de declanchement automatique et aucune interruption suivant
+  26:can.cpp       ****    //  la fin d'une convertion. Division de l'horloge par 64 (il faudra
+  27:can.cpp       ****    //  donc 13 cycles du convertisseur * 64 pour terminer une conversion
+  28:can.cpp       ****    //  soit 832 cycles d'horloge soit 104 micro-secondes
+  29:can.cpp       ****    ADCSRA = ( 1 << ADEN ) | ( 0 << ADSC )  | ( 0 << ADATE ) | ( 0 << ADIF ) |
+  30:can.cpp       ****             ( 0 << ADIE ) | ( 1 << ADPS2 ) | ( 1 << ADPS1 ) | ( 0 << ADPS0 ) ;
+  92               		.stabn	68,0,30,.LM2-.LFBB1
+  93               	.LM2:
+  94 0004 86E8      		ldi r24,lo8(-122)
+  95 0006 8093 7A00 		sts 122,r24
+  96 000a 0895      		ret
+  97               	.LBE2:
+  98               		.size	_ZN3canC2Ev, .-_ZN3canC2Ev
+  99               	.Lscope1:
+ 100               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 101               		.stabd	78,0,0
+ 102               	.global	_ZN3canC1Ev
+ 103               		.set	_ZN3canC1Ev,_ZN3canC2Ev
+ 104               		.stabs	"_ZN3canD2Ev:F(0,4)",36,0,34,_ZN3canD2Ev
+ 105               		.stabs	"this:P(0,63)",64,0,34,24
+ 106               	.global	_ZN3canD2Ev
+ 107               		.type	_ZN3canD2Ev, @function
+ 108               	_ZN3canD2Ev:
+ 109               		.stabd	46,0,0
+  31:can.cpp       **** }
+  32:can.cpp       **** 
+  33:can.cpp       **** // Destructeur:  Arreter le convertisseur pour sauver sur la consommation.
+  34:can.cpp       **** can::~can()
+ 110               		.stabn	68,0,34,.LM3-.LFBB2
+ 111               	.LM3:
+ 112               	.LFBB2:
+ 113               	/* prologue: function */
+ 114               	/* frame size = 0 */
+ 115               	/* stack size = 0 */
+ 116               	.L__stack_usage = 0
+ 117               	.LBB3:
+  35:can.cpp       **** {
+  36:can.cpp       ****    // rendre le convertisseur inactif.
+  37:can.cpp       ****    ADCSRA = 0 << ADEN ;
+ 118               		.stabn	68,0,37,.LM4-.LFBB2
+ 119               	.LM4:
+ 120 000c 1092 7A00 		sts 122,__zero_reg__
+ 121 0010 0895      		ret
+ 122               	.LBE3:
+ 123               		.size	_ZN3canD2Ev, .-_ZN3canD2Ev
+ 124               	.Lscope2:
+ 125               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 126               		.stabd	78,0,0
+ 127               	.global	_ZN3canD1Ev
+ 128               		.set	_ZN3canD1Ev,_ZN3canD2Ev
+ 129               		.stabs	"_ZN3can7lectureEh:F(0,31)",36,0,43,_ZN3can7lectureEh
+ 130               		.stabs	"this:P(0,63)",64,0,43,24
+ 131               		.stabs	"pos:P(0,29)",64,0,43,22
+ 132               	.global	_ZN3can7lectureEh
+ 133               		.type	_ZN3can7lectureEh, @function
+ 134               	_ZN3can7lectureEh:
+GAS LISTING /tmp/ccIN9LSa.s 			page 4
+
+
+ 135               		.stabd	46,0,0
+  38:can.cpp       **** }
+  39:can.cpp       **** 
+  40:can.cpp       **** // Faire une conversion et aller retourner le resultat sur 16 bits
+  41:can.cpp       **** // dont seulement les 10 de poids faibles sont significatifs.
+  42:can.cpp       **** uint16_t
+  43:can.cpp       **** can::lecture( uint8_t pos)
+  44:can.cpp       **** {
+ 136               		.stabn	68,0,44,.LM5-.LFBB3
+ 137               	.LM5:
+ 138               	.LFBB3:
+ 139               	/* prologue: function */
+ 140               	/* frame size = 0 */
+ 141               	/* stack size = 0 */
+ 142               	.L__stack_usage = 0
+ 143               	.LBB4:
+  45:can.cpp       ****    uint16_t adcVal;
+  46:can.cpp       **** 
+  47:can.cpp       ****    // Garder les bits de ADMUX intacts, sauf les bit permettant 
+  48:can.cpp       ****    // la selection de l'entree
+  49:can.cpp       ****    ADMUX  &=  ~(( 1 << MUX4 ) | ( 1 << MUX3 ) | 
+  50:can.cpp       ****                 ( 1 << MUX2 ) | ( 1 << MUX1)  | ( 1 << MUX0 ));
+ 144               		.stabn	68,0,50,.LM6-.LFBB3
+ 145               	.LM6:
+ 146 0012 8091 7C00 		lds r24,124
+ 147 0016 807E      		andi r24,lo8(-32)
+ 148 0018 8093 7C00 		sts 124,r24
+  51:can.cpp       **** 
+  52:can.cpp       ****    // selectionner l'entree voulue
+  53:can.cpp       ****    ADMUX |= ((pos & 0x07) << MUX0) ;
+ 149               		.stabn	68,0,53,.LM7-.LFBB3
+ 150               	.LM7:
+ 151 001c 8091 7C00 		lds r24,124
+ 152 0020 6770      		andi r22,lo8(7)
+ 153 0022 682B      		or r22,r24
+ 154 0024 6093 7C00 		sts 124,r22
+  54:can.cpp       **** 
+  55:can.cpp       ****    // demarrer la conversion
+  56:can.cpp       ****    ADCSRA |= ( 1 << ADSC );
+ 155               		.stabn	68,0,56,.LM8-.LFBB3
+ 156               	.LM8:
+ 157 0028 8091 7A00 		lds r24,122
+ 158 002c 8064      		ori r24,lo8(64)
+ 159 002e 8093 7A00 		sts 122,r24
+ 160               	.L4:
+  57:can.cpp       **** 
+  58:can.cpp       ****    // Attendre la fin de la conversion soit 13 cycles du convertisseur.
+  59:can.cpp       ****    while( ! (ADCSRA & ( 1 << ADIF ) ) );
+ 161               		.stabn	68,0,59,.LM9-.LFBB3
+ 162               	.LM9:
+ 163 0032 8091 7A00 		lds r24,122
+ 164 0036 84FF      		sbrs r24,4
+ 165 0038 00C0      		rjmp .L4
+  60:can.cpp       **** 
+  61:can.cpp       ****    // important: remettre le bit d'indication de fin de cycle a zero 
+  62:can.cpp       ****    // pour la prochaine conversion ce qui se fait en l'ajustant a un.
+  63:can.cpp       ****    ADCSRA |= (1 << ADIF);
+GAS LISTING /tmp/ccIN9LSa.s 			page 5
+
+
+ 166               		.stabn	68,0,63,.LM10-.LFBB3
+ 167               	.LM10:
+ 168 003a 8091 7A00 		lds r24,122
+ 169 003e 8061      		ori r24,lo8(16)
+ 170 0040 8093 7A00 		sts 122,r24
+  64:can.cpp       **** 
+  65:can.cpp       ****    // Aller chercher le resultat sur 16 bits.
+  66:can.cpp       ****    adcVal =   ADCL ;
+ 171               		.stabn	68,0,66,.LM11-.LFBB3
+ 172               	.LM11:
+ 173 0044 2091 7800 		lds r18,120
+  67:can.cpp       ****    adcVal +=  ADCH << 8;
+ 174               		.stabn	68,0,67,.LM12-.LFBB3
+ 175               	.LM12:
+ 176 0048 3091 7900 		lds r19,121
+ 177 004c 932F      		mov r25,r19
+ 178 004e 80E0      		ldi r24,0
+ 179 0050 AC01      		movw r20,r24
+ 180 0052 420F      		add r20,r18
+ 181 0054 511D      		adc r21,__zero_reg__
+ 182               	.LBE4:
+  68:can.cpp       **** 
+  69:can.cpp       ****    // resultat sur 16 bits
+  70:can.cpp       ****    return adcVal;
+  71:can.cpp       **** }
+ 183               		.stabn	68,0,71,.LM13-.LFBB3
+ 184               	.LM13:
+ 185 0056 CA01      		movw r24,r20
+ 186 0058 0895      		ret
+ 187               		.size	_ZN3can7lectureEh, .-_ZN3can7lectureEh
+ 188               	.Lscope3:
+ 189               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 190               		.stabd	78,0,0
+ 191               		.stabs	"",100,0,0,.Letext0
+ 192               	.Letext0:
+ 193               		.ident	"GCC: (Fedora 4.7.3-0.1.fc19) 4.7.3 20130216 (prerelease)"
+GAS LISTING /tmp/ccIN9LSa.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 can.cpp
+     /tmp/ccIN9LSa.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccIN9LSa.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccIN9LSa.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccIN9LSa.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccIN9LSa.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccIN9LSa.s:79     .text:0000000000000000 _ZN3canC2Ev
+     /tmp/ccIN9LSa.s:79     .text:0000000000000000 _ZN3canC1Ev
+     /tmp/ccIN9LSa.s:108    .text:000000000000000c _ZN3canD2Ev
+     /tmp/ccIN9LSa.s:108    .text:000000000000000c _ZN3canD1Ev
+     /tmp/ccIN9LSa.s:134    .text:0000000000000012 _ZN3can7lectureEh
+
+NO UNDEFINED SYMBOLS

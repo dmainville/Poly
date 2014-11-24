@@ -1,0 +1,3435 @@
+GAS LISTING /tmp/ccVVS130.s 			page 1
+
+
+   1               		.file	"libRobot.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/usagers/damaib/Documents/Session3/inf1995/inf1995-20/equipe/inf1995-1620/codeCommun/Tp/tp
+   8               		.stabs	"libRobot.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"void:t(0,4)",128,0,0,0
+  38               		.stabs	"wchar_t:t(0,23)=r(0,23);-32768;32767;",128,0,0,0
+  39               		.stabs	"bool:t(0,24)=@s8;-16;",128,0,0,0
+  40               		.stabs	"__vtbl_ptr_type:t(0,25)=*(0,26)=f(0,9)",128,0,0,0
+  41               		.stabs	"decltype(nullptr):t(0,27)=(0,27)",128,0,0,0
+  42               		.stabs	"int8_t:t(0,28)=(0,16)",128,0,121,0
+  43               		.stabs	"uint8_t:t(0,29)=(0,13)",128,0,122,0
+  44               		.stabs	"int16_t:t(0,30)=(0,9)",128,0,123,0
+  45               		.stabs	"uint16_t:t(0,31)=(0,12)",128,0,124,0
+  46               		.stabs	"int32_t:t(0,32)=(0,15)",128,0,125,0
+  47               		.stabs	"uint32_t:t(0,33)=(0,11)",128,0,126,0
+  48               		.stabs	"int64_t:t(0,34)=(0,14)",128,0,128,0
+  49               		.stabs	"uint64_t:t(0,35)=(0,10)",128,0,129,0
+  50               		.stabs	"intptr_t:t(0,36)=(0,30)",128,0,142,0
+  51               		.stabs	"uintptr_t:t(0,37)=(0,31)",128,0,147,0
+  52               		.stabs	"int_least8_t:t(0,38)=(0,28)",128,0,159,0
+  53               		.stabs	"uint_least8_t:t(0,39)=(0,29)",128,0,164,0
+  54               		.stabs	"int_least16_t:t(0,40)=(0,30)",128,0,169,0
+  55               		.stabs	"uint_least16_t:t(0,41)=(0,31)",128,0,174,0
+  56               		.stabs	"int_least32_t:t(0,42)=(0,32)",128,0,179,0
+  57               		.stabs	"uint_least32_t:t(0,43)=(0,33)",128,0,184,0
+GAS LISTING /tmp/ccVVS130.s 			page 2
+
+
+  58               		.stabs	"int_least64_t:t(0,44)=(0,34)",128,0,192,0
+  59               		.stabs	"uint_least64_t:t(0,45)=(0,35)",128,0,199,0
+  60               		.stabs	"int_fast8_t:t(0,46)=(0,28)",128,0,213,0
+  61               		.stabs	"uint_fast8_t:t(0,47)=(0,29)",128,0,218,0
+  62               		.stabs	"int_fast16_t:t(0,48)=(0,30)",128,0,223,0
+  63               		.stabs	"uint_fast16_t:t(0,49)=(0,31)",128,0,228,0
+  64               		.stabs	"int_fast32_t:t(0,50)=(0,32)",128,0,233,0
+  65               		.stabs	"uint_fast32_t:t(0,51)=(0,33)",128,0,238,0
+  66               		.stabs	"int_fast64_t:t(0,52)=(0,34)",128,0,246,0
+  67               		.stabs	"uint_fast64_t:t(0,53)=(0,35)",128,0,253,0
+  68               		.stabs	"intmax_t:t(0,54)=(0,34)",128,0,273,0
+  69               		.stabs	"uintmax_t:t(0,55)=(0,35)",128,0,278,0
+  70               		.stabs	"int_farptr_t:t(0,56)=(0,32)",128,0,77,0
+  71               		.stabs	"uint_farptr_t:t(0,57)=(0,33)",128,0,81,0
+  72               		.stabs	"._0:Tt(0,58)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+  73               		.stabs	"__fuse_t:t(0,58)",128,0,244,0
+  74               		.stabs	"LibRobot:Tt(0,59)=s1debut_:/2(0,24):_ZN8LibRobot6debut_E;fin_:/2(0,24):_ZN8LibRobot4fin_E;
+  75               		.stabs	"_ZN8LibRobotC2Ev:F(0,4)",36,0,40,_ZN8LibRobotC2Ev
+  76               		.stabs	"this:P(0,78)=k(0,63)",64,0,40,24
+  77               	.global	_ZN8LibRobotC2Ev
+  78               		.type	_ZN8LibRobotC2Ev, @function
+  79               	_ZN8LibRobotC2Ev:
+  80               		.stabd	46,0,0
+   1:libRobot.cpp  **** /****************************************************************************
+   2:libRobot.cpp  ****  * Fichier: libRobot.cpp
+   3:libRobot.cpp  ****  * Auteur: Yannick Ouellet, David Mainville, Mario Saliby, Youssef ZEMMAHI
+   4:libRobot.cpp  ****  * Date: 24 Ocotbre 2013
+   5:libRobot.cpp  ****  * DESCRIPTION : Lib pour le robot
+   6:libRobot.cpp  ****  ****************************************************************************/
+   7:libRobot.cpp  **** 
+   8:libRobot.cpp  **** #define F_CPU 8000000UL
+   9:libRobot.cpp  **** #include <avr/io.h>
+  10:libRobot.cpp  **** #include <util/delay.h>
+  11:libRobot.cpp  **** #include <avr/interrupt.h>
+  12:libRobot.cpp  **** #include "libRobot.h"
+  13:libRobot.cpp  **** 
+  14:libRobot.cpp  **** #define BOUTON_ENFONCE (PIND & _BV(2))
+  15:libRobot.cpp  **** 
+  16:libRobot.cpp  **** bool LibRobot::debut_;
+  17:libRobot.cpp  **** bool LibRobot::fin_;
+  18:libRobot.cpp  **** 
+  19:libRobot.cpp  **** //Délais
+  20:libRobot.cpp  **** int16_t LibRobot::nb_attente;
+  21:libRobot.cpp  **** int16_t LibRobot::nb_delai;
+  22:libRobot.cpp  **** 
+  23:libRobot.cpp  **** //Moteurs
+  24:libRobot.cpp  **** uint16_t LibRobot::aD;
+  25:libRobot.cpp  **** uint16_t LibRobot::aG;
+  26:libRobot.cpp  **** bool LibRobot::sensD;
+  27:libRobot.cpp  **** bool LibRobot::sensG;
+  28:libRobot.cpp  **** bool LibRobot::enabledD;
+  29:libRobot.cpp  **** bool LibRobot::enabledG;
+  30:libRobot.cpp  **** uint8_t LibRobot::pinEnableD;
+  31:libRobot.cpp  **** uint8_t LibRobot::pinEnableG;
+  32:libRobot.cpp  **** uint8_t LibRobot::pinSensD;
+  33:libRobot.cpp  **** uint8_t LibRobot::pinSensG;
+  34:libRobot.cpp  **** 
+GAS LISTING /tmp/ccVVS130.s 			page 3
+
+
+  35:libRobot.cpp  **** //Son
+  36:libRobot.cpp  **** volatile bool LibRobot::a_son;
+  37:libRobot.cpp  **** volatile uint8_t LibRobot::valeur_son;
+  38:libRobot.cpp  **** volatile bool LibRobot::enabledSon;
+  39:libRobot.cpp  **** 
+  40:libRobot.cpp  **** LibRobot::LibRobot(){}
+  81               		.stabn	68,0,40,.LM0-.LFBB1
+  82               	.LM0:
+  83               	.LFBB1:
+  84               	/* prologue: function */
+  85               	/* frame size = 0 */
+  86               	/* stack size = 0 */
+  87               	.L__stack_usage = 0
+  88 0000 0895      		ret
+  89               		.size	_ZN8LibRobotC2Ev, .-_ZN8LibRobotC2Ev
+  90               	.Lscope1:
+  91               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+  92               		.stabd	78,0,0
+  93               	.global	_ZN8LibRobotC1Ev
+  94               		.set	_ZN8LibRobotC1Ev,_ZN8LibRobotC2Ev
+  95               		.stabs	"_ZN8LibRobotD2Ev:F(0,4)",36,0,41,_ZN8LibRobotD2Ev
+  96               		.stabs	"this:P(0,78)",64,0,41,24
+  97               	.global	_ZN8LibRobotD2Ev
+  98               		.type	_ZN8LibRobotD2Ev, @function
+  99               	_ZN8LibRobotD2Ev:
+ 100               		.stabd	46,0,0
+  41:libRobot.cpp  **** LibRobot::~LibRobot(){}
+ 101               		.stabn	68,0,41,.LM1-.LFBB2
+ 102               	.LM1:
+ 103               	.LFBB2:
+ 104               	/* prologue: function */
+ 105               	/* frame size = 0 */
+ 106               	/* stack size = 0 */
+ 107               	.L__stack_usage = 0
+ 108 0002 0895      		ret
+ 109               		.size	_ZN8LibRobotD2Ev, .-_ZN8LibRobotD2Ev
+ 110               	.Lscope2:
+ 111               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 112               		.stabd	78,0,0
+ 113               	.global	_ZN8LibRobotD1Ev
+ 114               		.set	_ZN8LibRobotD1Ev,_ZN8LibRobotD2Ev
+ 115               		.stabs	"_ZN8LibRobot16BoutonEstEnfonceEv:F(0,29)",36,0,44,_ZN8LibRobot16BoutonEstEnfonceEv
+ 116               	.global	_ZN8LibRobot16BoutonEstEnfonceEv
+ 117               		.type	_ZN8LibRobot16BoutonEstEnfonceEv, @function
+ 118               	_ZN8LibRobot16BoutonEstEnfonceEv:
+ 119               		.stabd	46,0,0
+  42:libRobot.cpp  **** 
+  43:libRobot.cpp  **** // Fonction pour vérifier l'état du bouton en prenant compte du rebond
+  44:libRobot.cpp  **** uint8_t LibRobot::BoutonEstEnfonce()
+  45:libRobot.cpp  **** { 
+ 120               		.stabn	68,0,45,.LM2-.LFBB3
+ 121               	.LM2:
+ 122               	.LFBB3:
+ 123               	/* prologue: function */
+ 124               	/* frame size = 0 */
+ 125               	/* stack size = 0 */
+ 126               	.L__stack_usage = 0
+GAS LISTING /tmp/ccVVS130.s 			page 4
+
+
+  46:libRobot.cpp  ****   //Require -- DDRB = 0xff; // PORT B est en mode sortie.
+  47:libRobot.cpp  ****   
+  48:libRobot.cpp  ****     if(BOUTON_ENFONCE)
+ 127               		.stabn	68,0,48,.LM3-.LFBB3
+ 128               	.LM3:
+ 129 0004 4A9B      		sbis 0x9,2
+ 130 0006 00C0      		rjmp .L6
+ 131               	.LBB50:
+ 132               	.LBB51:
+ 133               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h",132,0,0,.Ltext1
+ 134               	.Ltext1:
+   1:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   2:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
+   3:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
+   4:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    All rights reserved.
+   5:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+   6:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Redistribution and use in source and binary forms, with or without
+   7:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    modification, are permitted provided that the following conditions are met:
+   8:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+   9:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    * Redistributions of source code must retain the above copyright
+  10:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer.
+  11:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  12:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    * Redistributions in binary form must reproduce the above copyright
+  13:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer in
+  14:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      the documentation and/or other materials provided with the
+  15:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      distribution.
+  16:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  17:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    * Neither the name of the copyright holders nor the names of
+  18:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      contributors may be used to endorse or promote products derived
+  19:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      from this software without specific prior written permission.
+  20:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  21:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  22:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  23:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  24:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  25:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  26:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  27:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  28:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  29:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  30:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  31:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  32:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  33:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /* $Id: delay.h.in 2251 2011-09-14 08:20:33Z joerg_wunsch $ */
+  34:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  35:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #ifndef _UTIL_DELAY_H_
+  36:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #define _UTIL_DELAY_H_ 1
+  37:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  38:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #ifndef __HAS_DELAY_CYCLES
+  39:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #define __HAS_DELAY_CYCLES 1
+  40:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+  41:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  42:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #include <inttypes.h>
+  43:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #include <util/delay_basic.h>
+  44:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #include <math.h>
+  45:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  46:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /** \file */
+GAS LISTING /tmp/ccVVS130.s 			page 5
+
+
+  47:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /** \defgroup util_delay <util/delay.h>: Convenience functions for busy-wait delay loops
+  48:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     \code
+  49:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     #define F_CPU 1000000UL  // 1 MHz
+  50:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     //#define F_CPU 14.7456E6
+  51:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     #include <util/delay.h>
+  52:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     \endcode
+  53:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  54:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     \note As an alternative method, it is possible to pass the
+  55:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     F_CPU macro down to the compiler from the Makefile.
+  56:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     Obviously, in that case, no \c \#define statement should be
+  57:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     used.
+  58:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  59:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     The functions in this header file are wrappers around the basic
+  60:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     busy-wait functions from <util/delay_basic.h>.  They are meant as
+  61:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     convenience functions where actual time values can be specified
+  62:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     rather than a number of cycles to wait for.  The idea behind is
+  63:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     that compile-time constant expressions will be eliminated by
+  64:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     compiler optimization so floating-point expressions can be used
+  65:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     to calculate the number of delay cycles needed based on the CPU
+  66:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     frequency passed by the macro F_CPU.
+  67:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  68:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     \note In order for these functions to work as intended, compiler
+  69:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     optimizations <em>must</em> be enabled, and the delay time
+  70:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     <em>must</em> be an expression that is a known constant at
+  71:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     compile-time.  If these requirements are not met, the resulting
+  72:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     delay will be much longer (and basically unpredictable), and
+  73:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     applications that otherwise do not use floating-point calculations
+  74:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     will experience severe code bloat by the floating-point library
+  75:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     routines linked into the application.
+  76:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  77:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     The functions available allow the specification of microsecond, and
+  78:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     millisecond delays directly, using the application-supplied macro
+  79:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
+  80:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  81:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** */
+  82:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  83:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #if !defined(__DOXYGEN__)
+  84:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** static inline void _delay_us(double __us) __attribute__((always_inline));
+  85:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** static inline void _delay_ms(double __ms) __attribute__((always_inline));
+  86:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+  87:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  88:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #ifndef F_CPU
+  89:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /* prevent compiler error by supplying a default */
+  90:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** # warning "F_CPU not defined for <util/delay.h>"
+  91:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** # define F_CPU 1000000UL
+  92:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+  93:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  94:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #ifndef __OPTIMIZE__
+  95:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+  96:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+  97:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  98:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+  99:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 100:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   __STDC_HOSTED__
+ 101:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #  include <math.h>
+ 102:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+ 103:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+GAS LISTING /tmp/ccVVS130.s 			page 6
+
+
+ 104:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /**
+ 105:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    \ingroup util_delay
+ 106:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 107:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Perform a delay of \c __ms milliseconds, using _delay_loop_2().
+ 108:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 109:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    The macro F_CPU is supposed to be defined to a
+ 110:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    constant defining the CPU clock frequency (in Hertz).
+ 111:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 112:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
+ 113:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 114:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    When the user request delay which exceed the maximum possible one,
+ 115:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
+ 116:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
+ 117:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
+ 118:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    user will not be informed about decreased resolution.
+ 119:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 120:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles(unsigned long)
+ 121:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
+ 122:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    values greater than the maximal possible delay, overflows results in
+ 123:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    no delay i.e., 0ms.
+ 124:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 125:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Conversion of __us into clock cycles may not always result in integer.
+ 126:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    By default, the clock cycles rounded up to next integer. This ensures that
+ 127:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    the user gets atleast __us microseconds of delay.
+ 128:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 129:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Alternatively, user can define __DELAY_ROUND_DOWN__ and __DELAY_ROUND_CLOSEST__
+ 130:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    to round down and round to closest integer.
+ 131:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 132:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Note: The new implementation of _delay_ms(double __ms) with 
+ 133:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     __builtin_avr_delay_cycles(unsigned long) support is not backward compatible. 
+ 134:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    User can define __DELAY_BACKWARD_COMPATIBLE__ to get a backward compatible delay.
+ 135:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Also, the backward compatible
+ 136:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    algorithm will be chosen if the code is compiled in a <em>freestanding
+ 137:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    environment</em> (GCC option \c -ffreestanding), as the math functions
+ 138:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    required for rounding are not available to the compiler then.
+ 139:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 140:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****  */
+ 141:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** void
+ 142:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** _delay_ms(double __ms)
+ 143:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** {
+ 144:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	uint16_t __ticks;
+ 145:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	double __tmp ; 
+ 146:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 147:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 148:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   __STDC_HOSTED__
+ 149:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	uint32_t __ticks_dc;
+ 150:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+ 151:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
+ 152:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 153:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
+ 154:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
+ 155:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 156:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
+ 157:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
+ 158:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 159:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	#else
+ 160:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 		//round up by default
+GAS LISTING /tmp/ccVVS130.s 			page 7
+
+
+ 161:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+ 162:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	#endif
+ 163:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 164:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 135               		.stabn	68,0,164,.LM4-.LFBB3
+ 136               	.LM4:
+ 137 0008 8FE1      		ldi r24,lo8(19999)
+ 138 000a 9EE4      		ldi r25,hi8(19999)
+ 139 000c 0197      		1: sbiw r24,1
+ 140 000e 01F4      		brne 1b
+ 141 0010 00C0      		rjmp .
+ 142 0012 0000      		nop
+ 143               	.LBE51:
+ 144               	.LBE50:
+ 145               		.stabs	"libRobot.cpp",132,0,0,.Ltext2
+ 146               	.Ltext2:
+  49:libRobot.cpp  ****     {
+  50:libRobot.cpp  ****         // Anti-Rebond
+  51:libRobot.cpp  ****         _delay_ms(10);
+  52:libRobot.cpp  ****         // Revérification du bouton suite au delais pour s'assurer de sa valeur
+  53:libRobot.cpp  **** 
+  54:libRobot.cpp  ****         // l'operateur !! permet de transformer une valeur quelconque en 0 ou 1.
+  55:libRobot.cpp  ****         // ie: BOUTON_ENFONCE renvoit 2, !!2 = 1.
+  56:libRobot.cpp  ****         return !!BOUTON_ENFONCE;
+ 147               		.stabn	68,0,56,.LM5-.LFBB3
+ 148               	.LM5:
+ 149 0014 89B1      		in r24,0x9
+ 150 0016 82FB      		bst r24,2
+ 151 0018 8827      		clr r24
+ 152 001a 80F9      		bld r24,0
+ 153 001c 0895      		ret
+ 154               	.L6:
+  57:libRobot.cpp  ****     }
+  58:libRobot.cpp  ****     // Le bouton n'est pas enfoncé
+  59:libRobot.cpp  ****     return 0;
+ 155               		.stabn	68,0,59,.LM6-.LFBB3
+ 156               	.LM6:
+ 157 001e 80E0      		ldi r24,0
+  60:libRobot.cpp  **** }
+ 158               		.stabn	68,0,60,.LM7-.LFBB3
+ 159               	.LM7:
+ 160 0020 0895      		ret
+ 161               		.size	_ZN8LibRobot16BoutonEstEnfonceEv, .-_ZN8LibRobot16BoutonEstEnfonceEv
+ 162               	.Lscope3:
+ 163               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 164               		.stabd	78,0,0
+ 165               		.stabs	"_ZN8LibRobot14initialisationEv:F(0,4)",36,0,62,_ZN8LibRobot14initialisationEv
+ 166               	.global	_ZN8LibRobot14initialisationEv
+ 167               		.type	_ZN8LibRobot14initialisationEv, @function
+ 168               	_ZN8LibRobot14initialisationEv:
+ 169               		.stabd	46,0,0
+  61:libRobot.cpp  **** 
+  62:libRobot.cpp  **** void LibRobot::initialisation()
+  63:libRobot.cpp  **** {
+ 170               		.stabn	68,0,63,.LM8-.LFBB4
+ 171               	.LM8:
+ 172               	.LFBB4:
+GAS LISTING /tmp/ccVVS130.s 			page 8
+
+
+ 173               	/* prologue: function */
+ 174               	/* frame size = 0 */
+ 175               	/* stack size = 0 */
+ 176               	.L__stack_usage = 0
+  64:libRobot.cpp  **** 	debut_ = false;
+ 177               		.stabn	68,0,64,.LM9-.LFBB4
+ 178               	.LM9:
+ 179 0022 1092 0000 		sts _ZN8LibRobot6debut_E,__zero_reg__
+  65:libRobot.cpp  **** 	fin_ = false;
+ 180               		.stabn	68,0,65,.LM10-.LFBB4
+ 181               	.LM10:
+ 182 0026 1092 0000 		sts _ZN8LibRobot4fin_E,__zero_reg__
+  66:libRobot.cpp  **** 	nb_attente = 0;
+ 183               		.stabn	68,0,66,.LM11-.LFBB4
+ 184               	.LM11:
+ 185 002a 1092 0000 		sts _ZN8LibRobot10nb_attenteE+1,__zero_reg__
+ 186 002e 1092 0000 		sts _ZN8LibRobot10nb_attenteE,__zero_reg__
+  67:libRobot.cpp  **** 	nb_delai = 0;
+ 187               		.stabn	68,0,67,.LM12-.LFBB4
+ 188               	.LM12:
+ 189 0032 1092 0000 		sts _ZN8LibRobot8nb_delaiE+1,__zero_reg__
+ 190 0036 1092 0000 		sts _ZN8LibRobot8nb_delaiE,__zero_reg__
+  68:libRobot.cpp  **** 	aD = 0;
+ 191               		.stabn	68,0,68,.LM13-.LFBB4
+ 192               	.LM13:
+ 193 003a 1092 0000 		sts _ZN8LibRobot2aDE+1,__zero_reg__
+ 194 003e 1092 0000 		sts _ZN8LibRobot2aDE,__zero_reg__
+  69:libRobot.cpp  **** 	aG = 0;
+ 195               		.stabn	68,0,69,.LM14-.LFBB4
+ 196               	.LM14:
+ 197 0042 1092 0000 		sts _ZN8LibRobot2aGE+1,__zero_reg__
+ 198 0046 1092 0000 		sts _ZN8LibRobot2aGE,__zero_reg__
+  70:libRobot.cpp  **** 	sensD = true;
+ 199               		.stabn	68,0,70,.LM15-.LFBB4
+ 200               	.LM15:
+ 201 004a 81E0      		ldi r24,lo8(1)
+ 202 004c 8093 0000 		sts _ZN8LibRobot5sensDE,r24
+  71:libRobot.cpp  **** 	sensG = true;
+ 203               		.stabn	68,0,71,.LM16-.LFBB4
+ 204               	.LM16:
+ 205 0050 8093 0000 		sts _ZN8LibRobot5sensGE,r24
+  72:libRobot.cpp  **** 	enabledD = false;
+ 206               		.stabn	68,0,72,.LM17-.LFBB4
+ 207               	.LM17:
+ 208 0054 1092 0000 		sts _ZN8LibRobot8enabledDE,__zero_reg__
+  73:libRobot.cpp  **** 	enabledG = false;
+ 209               		.stabn	68,0,73,.LM18-.LFBB4
+ 210               	.LM18:
+ 211 0058 1092 0000 		sts _ZN8LibRobot8enabledGE,__zero_reg__
+  74:libRobot.cpp  **** 
+  75:libRobot.cpp  **** 	a_son = false;
+ 212               		.stabn	68,0,75,.LM19-.LFBB4
+ 213               	.LM19:
+ 214 005c 1092 0000 		sts _ZN8LibRobot5a_sonE,__zero_reg__
+  76:libRobot.cpp  **** 	valeur_son = 0;
+ 215               		.stabn	68,0,76,.LM20-.LFBB4
+ 216               	.LM20:
+GAS LISTING /tmp/ccVVS130.s 			page 9
+
+
+ 217 0060 1092 0000 		sts _ZN8LibRobot10valeur_sonE,__zero_reg__
+  77:libRobot.cpp  **** 	enabledSon = false;
+ 218               		.stabn	68,0,77,.LM21-.LFBB4
+ 219               	.LM21:
+ 220 0064 1092 0000 		sts _ZN8LibRobot10enabledSonE,__zero_reg__
+ 221 0068 0895      		ret
+ 222               		.size	_ZN8LibRobot14initialisationEv, .-_ZN8LibRobot14initialisationEv
+ 223               	.Lscope4:
+ 224               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 225               		.stabd	78,0,0
+ 226               		.stabs	"_ZN8LibRobot5debutEv:F(0,4)",36,0,83,_ZN8LibRobot5debutEv
+ 227               	.global	_ZN8LibRobot5debutEv
+ 228               		.type	_ZN8LibRobot5debutEv, @function
+ 229               	_ZN8LibRobot5debutEv:
+ 230               		.stabd	46,0,0
+  78:libRobot.cpp  **** }
+  79:libRobot.cpp  **** 
+  80:libRobot.cpp  **** //---------------
+  81:libRobot.cpp  **** //Commandes robot
+  82:libRobot.cpp  **** //---------------
+  83:libRobot.cpp  **** 	void LibRobot::debut()
+  84:libRobot.cpp  **** 	{
+ 231               		.stabn	68,0,84,.LM22-.LFBB5
+ 232               	.LM22:
+ 233               	.LFBB5:
+ 234               	/* prologue: function */
+ 235               	/* frame size = 0 */
+ 236               	/* stack size = 0 */
+ 237               	.L__stack_usage = 0
+  85:libRobot.cpp  **** 		debut_ = true;
+ 238               		.stabn	68,0,85,.LM23-.LFBB5
+ 239               	.LM23:
+ 240 006a 81E0      		ldi r24,lo8(1)
+ 241 006c 8093 0000 		sts _ZN8LibRobot6debut_E,r24
+ 242 0070 0895      		ret
+ 243               		.size	_ZN8LibRobot5debutEv, .-_ZN8LibRobot5debutEv
+ 244               	.Lscope5:
+ 245               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 246               		.stabd	78,0,0
+ 247               		.stabs	"_ZN8LibRobot8attendreEi:F(0,4)",36,0,88,_ZN8LibRobot8attendreEi
+ 248               		.stabs	"duree25:P(0,30)",64,0,88,24
+ 249               	.global	_ZN8LibRobot8attendreEi
+ 250               		.type	_ZN8LibRobot8attendreEi, @function
+ 251               	_ZN8LibRobot8attendreEi:
+ 252               		.stabd	46,0,0
+  86:libRobot.cpp  **** 	}
+  87:libRobot.cpp  **** 
+  88:libRobot.cpp  **** 	void LibRobot::attendre(int16_t duree25)
+  89:libRobot.cpp  **** 	{
+ 253               		.stabn	68,0,89,.LM24-.LFBB6
+ 254               	.LM24:
+ 255               	.LFBB6:
+ 256               	/* prologue: function */
+ 257               	/* frame size = 0 */
+ 258               	/* stack size = 0 */
+ 259               	.L__stack_usage = 0
+  90:libRobot.cpp  **** 		//Le calcul du temps d attente doit etre ajuste en fonction de b
+GAS LISTING /tmp/ccVVS130.s 			page 10
+
+
+  91:libRobot.cpp  **** 		nb_attente = duree25 + (duree25>>1); //1.5
+ 260               		.stabn	68,0,91,.LM25-.LFBB6
+ 261               	.LM25:
+ 262 0072 9C01      		movw r18,r24
+ 263 0074 3595      		asr r19
+ 264 0076 2795      		ror r18
+ 265 0078 280F      		add r18,r24
+ 266 007a 391F      		adc r19,r25
+ 267 007c 3093 0000 		sts _ZN8LibRobot10nb_attenteE+1,r19
+ 268 0080 2093 0000 		sts _ZN8LibRobot10nb_attenteE,r18
+ 269 0084 0895      		ret
+ 270               		.size	_ZN8LibRobot8attendreEi, .-_ZN8LibRobot8attendreEi
+ 271               	.Lscope6:
+ 272               		.stabs	"",36,0,0,.Lscope6-.LFBB6
+ 273               		.stabd	78,0,0
+ 274               		.stabs	"_ZN8LibRobot10allumerDELERVhh:F(0,4)",36,0,94,_ZN8LibRobot10allumerDELERVhh
+ 275               		.stabs	"port:P(0,79)=&(0,61)",64,0,94,24
+ 276               		.stabs	"pinCouleur:P(0,29)",64,0,94,22
+ 277               	.global	_ZN8LibRobot10allumerDELERVhh
+ 278               		.type	_ZN8LibRobot10allumerDELERVhh, @function
+ 279               	_ZN8LibRobot10allumerDELERVhh:
+ 280               		.stabd	46,0,0
+  92:libRobot.cpp  **** 	}
+  93:libRobot.cpp  **** 
+  94:libRobot.cpp  **** 	void LibRobot::allumerDEL(volatile uint8_t &port, uint8_t pinCouleur)
+  95:libRobot.cpp  **** 	{
+ 281               		.stabn	68,0,95,.LM26-.LFBB7
+ 282               	.LM26:
+ 283               	.LFBB7:
+ 284               	/* prologue: function */
+ 285               	/* frame size = 0 */
+ 286               	/* stack size = 0 */
+ 287               	.L__stack_usage = 0
+  96:libRobot.cpp  **** 		port |= pinCouleur;
+ 288               		.stabn	68,0,96,.LM27-.LFBB7
+ 289               	.LM27:
+ 290 0086 FC01      		movw r30,r24
+ 291 0088 2081      		ld r18,Z
+ 292 008a 622B      		or r22,r18
+ 293 008c 6083      		st Z,r22
+ 294 008e 0895      		ret
+ 295               		.size	_ZN8LibRobot10allumerDELERVhh, .-_ZN8LibRobot10allumerDELERVhh
+ 296               	.Lscope7:
+ 297               		.stabs	"",36,0,0,.Lscope7-.LFBB7
+ 298               		.stabd	78,0,0
+ 299               		.stabs	"_ZN8LibRobot11eteindreDELERVhhh:F(0,4)",36,0,99,_ZN8LibRobot11eteindreDELERVhhh
+ 300               		.stabs	"port:P(0,79)",64,0,99,30
+ 301               		.stabs	"pinCouleur:P(0,29)",64,0,99,22
+ 302               		.stabs	"pinCouleur2:P(0,29)",64,0,99,20
+ 303               	.global	_ZN8LibRobot11eteindreDELERVhhh
+ 304               		.type	_ZN8LibRobot11eteindreDELERVhhh, @function
+ 305               	_ZN8LibRobot11eteindreDELERVhhh:
+ 306               		.stabd	46,0,0
+  97:libRobot.cpp  **** 	}
+  98:libRobot.cpp  **** 
+  99:libRobot.cpp  **** 	void LibRobot::eteindreDEL(volatile uint8_t &port, uint8_t pinCouleur, uint8_t pinCouleur2)
+ 100:libRobot.cpp  **** 	{
+GAS LISTING /tmp/ccVVS130.s 			page 11
+
+
+ 307               		.stabn	68,0,100,.LM28-.LFBB8
+ 308               	.LM28:
+ 309               	.LFBB8:
+ 310               	/* prologue: function */
+ 311               	/* frame size = 0 */
+ 312               	/* stack size = 0 */
+ 313               	.L__stack_usage = 0
+ 314 0090 FC01      		movw r30,r24
+ 101:libRobot.cpp  **** 		port &= ~(pinCouleur);
+ 315               		.stabn	68,0,101,.LM29-.LFBB8
+ 316               	.LM29:
+ 317 0092 8081      		ld r24,Z
+ 318 0094 6095      		com r22
+ 319 0096 6823      		and r22,r24
+ 320 0098 6083      		st Z,r22
+ 102:libRobot.cpp  **** 		port &= ~(pinCouleur2);
+ 321               		.stabn	68,0,102,.LM30-.LFBB8
+ 322               	.LM30:
+ 323 009a 8081      		ld r24,Z
+ 324 009c 4095      		com r20
+ 325 009e 4823      		and r20,r24
+ 326 00a0 4083      		st Z,r20
+ 327 00a2 0895      		ret
+ 328               		.size	_ZN8LibRobot11eteindreDELERVhhh, .-_ZN8LibRobot11eteindreDELERVhhh
+ 329               	.Lscope8:
+ 330               		.stabs	"",36,0,0,.Lscope8-.LFBB8
+ 331               		.stabd	78,0,0
+ 332               		.stabs	"_ZN8LibRobot10arreterSonEv:F(0,4)",36,0,160,_ZN8LibRobot10arreterSonEv
+ 333               	.global	_ZN8LibRobot10arreterSonEv
+ 334               		.type	_ZN8LibRobot10arreterSonEv, @function
+ 335               	_ZN8LibRobot10arreterSonEv:
+ 336               		.stabd	46,0,0
+ 103:libRobot.cpp  **** 	}
+ 104:libRobot.cpp  **** 
+ 105:libRobot.cpp  **** 	void LibRobot::jouerSon(uint8_t son)
+ 106:libRobot.cpp  **** 	{
+ 107:libRobot.cpp  **** 		if(son == valeur_son) //Meme son que le son courrant
+ 108:libRobot.cpp  **** 			return;
+ 109:libRobot.cpp  **** 
+ 110:libRobot.cpp  **** 		if(son < 45 && son > 81)
+ 111:libRobot.cpp  **** 			return;
+ 112:libRobot.cpp  **** 
+ 113:libRobot.cpp  **** 		valeur_son = son;
+ 114:libRobot.cpp  **** 		enabledSon = true;
+ 115:libRobot.cpp  **** 		a_son = true;
+ 116:libRobot.cpp  **** 		
+ 117:libRobot.cpp  **** 		//8Mh --> 8 million operation seconde --> 0.000 000 125 seconde par operation * 256 prescaler = 0
+ 118:libRobot.cpp  **** 		switch (son)
+ 119:libRobot.cpp  **** 		{
+ 120:libRobot.cpp  **** 			case 45:{partirMinuterieSon(142);break;}
+ 121:libRobot.cpp  **** 			case 46:{partirMinuterieSon(134);break;}
+ 122:libRobot.cpp  **** 			case 47:{partirMinuterieSon(127);break;}
+ 123:libRobot.cpp  **** 			case 48:{partirMinuterieSon(119);break;}
+ 124:libRobot.cpp  **** 			case 49:{partirMinuterieSon(113);break;}
+ 125:libRobot.cpp  **** 			case 50:{partirMinuterieSon(106);break;}
+ 126:libRobot.cpp  **** 			case 51:{partirMinuterieSon(100);break;}
+ 127:libRobot.cpp  **** 			case 52:{partirMinuterieSon(95);break;}
+GAS LISTING /tmp/ccVVS130.s 			page 12
+
+
+ 128:libRobot.cpp  **** 			case 53:{partirMinuterieSon(89);break;}
+ 129:libRobot.cpp  **** 			case 54:{partirMinuterieSon(84);break;}
+ 130:libRobot.cpp  **** 			case 55:{partirMinuterieSon(80);break;}
+ 131:libRobot.cpp  **** 			case 56:{partirMinuterieSon(75);break;}
+ 132:libRobot.cpp  **** 			case 57:{partirMinuterieSon(71);break;}
+ 133:libRobot.cpp  **** 			case 58:{partirMinuterieSon(67);break;}
+ 134:libRobot.cpp  **** 			case 59:{partirMinuterieSon(63);break;}
+ 135:libRobot.cpp  **** 			case 60:{partirMinuterieSon(60);break;}
+ 136:libRobot.cpp  **** 			case 61:{partirMinuterieSon(56);break;}
+ 137:libRobot.cpp  **** 			case 62:{partirMinuterieSon(53);break;}
+ 138:libRobot.cpp  **** 			case 63:{partirMinuterieSon(50);break;}
+ 139:libRobot.cpp  **** 			case 64:{partirMinuterieSon(47);break;}
+ 140:libRobot.cpp  **** 			case 65:{partirMinuterieSon(45);break;}
+ 141:libRobot.cpp  **** 			case 66:{partirMinuterieSon(42);break;}
+ 142:libRobot.cpp  **** 			case 67:{partirMinuterieSon(40);break;}
+ 143:libRobot.cpp  **** 			case 68:{partirMinuterieSon(38);break;}
+ 144:libRobot.cpp  **** 			case 69:{partirMinuterieSon(36);break;}
+ 145:libRobot.cpp  **** 			case 70:{partirMinuterieSon(34);break;}
+ 146:libRobot.cpp  **** 			case 71:{partirMinuterieSon(32);break;}
+ 147:libRobot.cpp  **** 			case 72:{partirMinuterieSon(30);break;}
+ 148:libRobot.cpp  **** 			case 73:{partirMinuterieSon(28);break;}
+ 149:libRobot.cpp  **** 			case 74:{partirMinuterieSon(27);break;}
+ 150:libRobot.cpp  **** 			case 75:{partirMinuterieSon(25);break;}
+ 151:libRobot.cpp  **** 			case 76:{partirMinuterieSon(24);break;}
+ 152:libRobot.cpp  **** 			case 77:{partirMinuterieSon(22);break;}
+ 153:libRobot.cpp  **** 			case 78:{partirMinuterieSon(21);break;}
+ 154:libRobot.cpp  **** 			case 79:{partirMinuterieSon(20);break;}
+ 155:libRobot.cpp  **** 			case 80:{partirMinuterieSon(19);break;}
+ 156:libRobot.cpp  **** 			case 81:{partirMinuterieSon(18);break;}
+ 157:libRobot.cpp  **** 		}
+ 158:libRobot.cpp  **** 	}
+ 159:libRobot.cpp  **** 
+ 160:libRobot.cpp  **** 	void LibRobot::arreterSon()
+ 161:libRobot.cpp  **** 	{
+ 337               		.stabn	68,0,161,.LM31-.LFBB9
+ 338               	.LM31:
+ 339               	.LFBB9:
+ 340               	/* prologue: function */
+ 341               	/* frame size = 0 */
+ 342               	/* stack size = 0 */
+ 343               	.L__stack_usage = 0
+ 162:libRobot.cpp  **** 		enabledSon = false;
+ 344               		.stabn	68,0,162,.LM32-.LFBB9
+ 345               	.LM32:
+ 346 00a4 1092 0000 		sts _ZN8LibRobot10enabledSonE,__zero_reg__
+ 163:libRobot.cpp  **** 		valeur_son = 0;		
+ 347               		.stabn	68,0,163,.LM33-.LFBB9
+ 348               	.LM33:
+ 349 00a8 1092 0000 		sts _ZN8LibRobot10valeur_sonE,__zero_reg__
+ 350 00ac 0895      		ret
+ 351               		.size	_ZN8LibRobot10arreterSonEv, .-_ZN8LibRobot10arreterSonEv
+ 352               	.Lscope9:
+ 353               		.stabs	"",36,0,0,.Lscope9-.LFBB9
+ 354               		.stabd	78,0,0
+ 355               		.stabs	"_ZN8LibRobot14arreterMoteursEv:F(0,4)",36,0,166,_ZN8LibRobot14arreterMoteursEv
+ 356               	.global	_ZN8LibRobot14arreterMoteursEv
+ 357               		.type	_ZN8LibRobot14arreterMoteursEv, @function
+GAS LISTING /tmp/ccVVS130.s 			page 13
+
+
+ 358               	_ZN8LibRobot14arreterMoteursEv:
+ 359               		.stabd	46,0,0
+ 164:libRobot.cpp  **** 	}
+ 165:libRobot.cpp  **** 
+ 166:libRobot.cpp  **** 	void LibRobot::arreterMoteurs()
+ 167:libRobot.cpp  **** 	{
+ 360               		.stabn	68,0,167,.LM34-.LFBB10
+ 361               	.LM34:
+ 362               	.LFBB10:
+ 363               	/* prologue: function */
+ 364               	/* frame size = 0 */
+ 365               	/* stack size = 0 */
+ 366               	.L__stack_usage = 0
+ 168:libRobot.cpp  **** 		enabledD = false;
+ 367               		.stabn	68,0,168,.LM35-.LFBB10
+ 368               	.LM35:
+ 369 00ae 1092 0000 		sts _ZN8LibRobot8enabledDE,__zero_reg__
+ 169:libRobot.cpp  **** 		enabledG = false;
+ 370               		.stabn	68,0,169,.LM36-.LFBB10
+ 371               	.LM36:
+ 372 00b2 1092 0000 		sts _ZN8LibRobot8enabledGE,__zero_reg__
+ 373 00b6 0895      		ret
+ 374               		.size	_ZN8LibRobot14arreterMoteursEv, .-_ZN8LibRobot14arreterMoteursEv
+ 375               	.Lscope10:
+ 376               		.stabs	"",36,0,0,.Lscope10-.LFBB10
+ 377               		.stabd	78,0,0
+ 378               		.stabs	"_ZN8LibRobot15tournerDroite90Ej:F(0,4)",36,0,196,_ZN8LibRobot15tournerDroite90Ej
+ 379               		.stabs	"b:P(0,31)",64,0,196,24
+ 380               	.global	_ZN8LibRobot15tournerDroite90Ej
+ 381               		.type	_ZN8LibRobot15tournerDroite90Ej, @function
+ 382               	_ZN8LibRobot15tournerDroite90Ej:
+ 383               		.stabd	46,0,0
+ 170:libRobot.cpp  **** 	}
+ 171:libRobot.cpp  **** 
+ 172:libRobot.cpp  **** 	void LibRobot::avancer(uint16_t b, uint8_t frequence255)
+ 173:libRobot.cpp  **** 	{
+ 174:libRobot.cpp  **** 		ajusterA(b,frequence255, true);
+ 175:libRobot.cpp  **** 		ajusterA(b,frequence255, false);
+ 176:libRobot.cpp  **** 
+ 177:libRobot.cpp  **** 		sensD = true;
+ 178:libRobot.cpp  **** 		sensG = true;
+ 179:libRobot.cpp  **** 	
+ 180:libRobot.cpp  **** 		enabledD = true;
+ 181:libRobot.cpp  **** 		enabledG = true;
+ 182:libRobot.cpp  **** 	}
+ 183:libRobot.cpp  **** 
+ 184:libRobot.cpp  **** 	void LibRobot::reculer(uint16_t b, uint8_t frequence255)
+ 185:libRobot.cpp  **** 	{
+ 186:libRobot.cpp  **** 		ajusterA(b,frequence255, true);
+ 187:libRobot.cpp  **** 		ajusterA(b,frequence255, false);
+ 188:libRobot.cpp  **** 
+ 189:libRobot.cpp  **** 		sensD = false;
+ 190:libRobot.cpp  **** 		sensG = false;
+ 191:libRobot.cpp  **** 	
+ 192:libRobot.cpp  **** 		enabledD = true;
+ 193:libRobot.cpp  **** 		enabledG = true;
+ 194:libRobot.cpp  **** 	}
+GAS LISTING /tmp/ccVVS130.s 			page 14
+
+
+ 195:libRobot.cpp  **** 
+ 196:libRobot.cpp  **** 	void LibRobot::tournerDroite90(uint16_t b)
+ 197:libRobot.cpp  **** 	{		
+ 384               		.stabn	68,0,197,.LM37-.LFBB11
+ 385               	.LM37:
+ 386               	.LFBB11:
+ 387               	/* prologue: function */
+ 388               	/* frame size = 0 */
+ 389               	/* stack size = 0 */
+ 390               	.L__stack_usage = 0
+ 391               	.LBB60:
+ 392               	.LBB61:
+ 198:libRobot.cpp  **** 		ajusterA(b,255, true);
+ 199:libRobot.cpp  **** 		ajusterA(b,255, false);
+ 200:libRobot.cpp  **** 
+ 201:libRobot.cpp  **** 		sensD = false; //Droite recule
+ 202:libRobot.cpp  **** 		sensG = true;	//Gauche avance
+ 203:libRobot.cpp  **** 
+ 204:libRobot.cpp  **** 		enabledD = true;
+ 205:libRobot.cpp  **** 		enabledG = true;
+ 206:libRobot.cpp  **** 
+ 207:libRobot.cpp  **** 		
+ 208:libRobot.cpp  **** 		delaiArret(50); //attendre 1.25 seconde
+ 209:libRobot.cpp  **** 	}
+ 210:libRobot.cpp  **** 
+ 211:libRobot.cpp  **** 	void LibRobot::tournerGauche90(uint16_t b)
+ 212:libRobot.cpp  **** 	{
+ 213:libRobot.cpp  **** 		
+ 214:libRobot.cpp  **** 		ajusterA(b,255, true);
+ 215:libRobot.cpp  **** 		ajusterA(b,255, false);
+ 216:libRobot.cpp  **** 
+ 217:libRobot.cpp  **** 		sensD = true; //Droite avance
+ 218:libRobot.cpp  **** 		sensG = false;	//Gauche recule
+ 219:libRobot.cpp  **** 
+ 220:libRobot.cpp  **** 		enabledD = true;
+ 221:libRobot.cpp  **** 		enabledG = true;
+ 222:libRobot.cpp  **** 
+ 223:libRobot.cpp  **** 		delaiArret(50); //attendre 1.25 seconde
+ 224:libRobot.cpp  **** 	}
+ 225:libRobot.cpp  **** 
+ 226:libRobot.cpp  **** 	void LibRobot::debutBoucle(uint16_t nbRepetition)
+ 227:libRobot.cpp  **** 	{
+ 228:libRobot.cpp  **** 	}
+ 229:libRobot.cpp  **** 
+ 230:libRobot.cpp  **** 	void LibRobot::finDeBoucle()
+ 231:libRobot.cpp  **** 	{
+ 232:libRobot.cpp  **** 	}
+ 233:libRobot.cpp  **** 
+ 234:libRobot.cpp  **** 	void LibRobot::fin()
+ 235:libRobot.cpp  **** 	{
+ 236:libRobot.cpp  **** 		fin_ = true;
+ 237:libRobot.cpp  **** 	}
+ 238:libRobot.cpp  **** 
+ 239:libRobot.cpp  **** //---------------
+ 240:libRobot.cpp  **** //Gestion Attente
+ 241:libRobot.cpp  **** //---------------
+ 242:libRobot.cpp  **** 	void LibRobot::gestionAttente(uint16_t b)
+GAS LISTING /tmp/ccVVS130.s 			page 15
+
+
+ 243:libRobot.cpp  **** 	{
+ 244:libRobot.cpp  **** 		//Si on attend déja dans la méthode de gestion des moteurs, pas besoin d'attendre ici
+ 245:libRobot.cpp  **** 		if(nb_attente <= 0)
+ 246:libRobot.cpp  **** 			return;
+ 247:libRobot.cpp  **** 		
+ 248:libRobot.cpp  **** 		nb_attente --;
+ 249:libRobot.cpp  **** 		
+ 250:libRobot.cpp  **** 		if(enabledD || enabledG)
+ 251:libRobot.cpp  **** 			return;
+ 252:libRobot.cpp  **** 		
+ 253:libRobot.cpp  **** 
+ 254:libRobot.cpp  **** 		_delay_loop_2((b<<1)+1);
+ 255:libRobot.cpp  **** 		//_delay_ms(17);
+ 256:libRobot.cpp  **** 	}
+ 257:libRobot.cpp  **** 
+ 258:libRobot.cpp  **** 	void LibRobot::gestionDelaiArret(uint16_t b) //Doit etre appeller avant gestionAttente pour évite
+ 259:libRobot.cpp  **** 	{
+ 260:libRobot.cpp  **** 		//Si on attend déja dans la méthode de gestion des moteurs, pas besoin d'attendre ici
+ 261:libRobot.cpp  **** 		if(nb_delai <= 0)
+ 262:libRobot.cpp  **** 			return;
+ 263:libRobot.cpp  **** 		
+ 264:libRobot.cpp  **** 		nb_delai --;
+ 265:libRobot.cpp  **** 		
+ 266:libRobot.cpp  **** 		if((!(enabledD || enabledG)) && nb_attente <= 0) //Faire un delai seulement si il n'y a pas de mo
+ 267:libRobot.cpp  **** 			_delay_loop_2((b<<1)+1);
+ 268:libRobot.cpp  **** 		
+ 269:libRobot.cpp  **** 		if(nb_delai <= 0)
+ 270:libRobot.cpp  **** 			arreterMoteurs();
+ 271:libRobot.cpp  **** 	
+ 272:libRobot.cpp  **** 	}
+ 273:libRobot.cpp  **** 
+ 274:libRobot.cpp  **** 	void LibRobot::delaiArret(int16_t duree25)
+ 275:libRobot.cpp  **** 	{
+ 276:libRobot.cpp  **** 		//Le calcul du temps d attente doit etre ajuste en fonction de b
+ 277:libRobot.cpp  **** 		nb_delai = duree25 + (duree25>>1); //1.5
+ 278:libRobot.cpp  **** 	}
+ 279:libRobot.cpp  **** 
+ 280:libRobot.cpp  **** //---------------
+ 281:libRobot.cpp  **** //Gestion Moteurs
+ 282:libRobot.cpp  **** //---------------
+ 283:libRobot.cpp  **** 	void LibRobot::ajusterA(uint16_t b,uint8_t vitesse, bool droite)//periode = b, ex: pour une freque
+ 284:libRobot.cpp  **** 	{
+ 285:libRobot.cpp  **** 		uint16_t tempA;
+ 286:libRobot.cpp  **** 
+ 287:libRobot.cpp  **** 		if(vitesse == 255)//100%
+ 288:libRobot.cpp  **** 		{
+ 289:libRobot.cpp  **** 			tempA = b;
+ 290:libRobot.cpp  **** 		}
+ 291:libRobot.cpp  **** 		else if(vitesse == 0)//0%
+ 292:libRobot.cpp  **** 		{
+ 293:libRobot.cpp  **** 			tempA = 0;
+ 294:libRobot.cpp  **** 		}
+ 295:libRobot.cpp  **** 		else if(vitesse == 128)//50%
+ 296:libRobot.cpp  **** 		{
+ 297:libRobot.cpp  **** 			tempA = b >>1;
+ 298:libRobot.cpp  **** 		}
+ 299:libRobot.cpp  **** 		else if(vitesse == 192) //75%
+GAS LISTING /tmp/ccVVS130.s 			page 16
+
+
+ 300:libRobot.cpp  **** 		{
+ 301:libRobot.cpp  **** 			tempA = (b >>1)+(b >>2);
+ 302:libRobot.cpp  **** 		}
+ 303:libRobot.cpp  **** 		else if(vitesse == 64) //25%
+ 304:libRobot.cpp  **** 		{
+ 305:libRobot.cpp  **** 			tempA = b >>2;
+ 306:libRobot.cpp  **** 		}
+ 307:libRobot.cpp  **** 		else
+ 308:libRobot.cpp  **** 		{
+ 309:libRobot.cpp  **** 			tempA = (b * (vitesse+1)) >> 8;
+ 310:libRobot.cpp  **** 		}
+ 311:libRobot.cpp  **** 
+ 312:libRobot.cpp  **** 		if(droite)
+ 313:libRobot.cpp  **** 			aD = tempA;
+ 393               		.stabn	68,0,313,.LM38-.LFBB11
+ 394               	.LM38:
+ 395 00b8 9093 0000 		sts _ZN8LibRobot2aDE+1,r25
+ 396 00bc 8093 0000 		sts _ZN8LibRobot2aDE,r24
+ 397               	.LBE61:
+ 398               	.LBE60:
+ 399               	.LBB62:
+ 400               	.LBB63:
+ 314:libRobot.cpp  **** 		else
+ 315:libRobot.cpp  **** 			aG = tempA;
+ 401               		.stabn	68,0,315,.LM39-.LFBB11
+ 402               	.LM39:
+ 403 00c0 9093 0000 		sts _ZN8LibRobot2aGE+1,r25
+ 404 00c4 8093 0000 		sts _ZN8LibRobot2aGE,r24
+ 405               	.LBE63:
+ 406               	.LBE62:
+ 201:libRobot.cpp  **** 		sensD = false; //Droite recule
+ 407               		.stabn	68,0,201,.LM40-.LFBB11
+ 408               	.LM40:
+ 409 00c8 1092 0000 		sts _ZN8LibRobot5sensDE,__zero_reg__
+ 202:libRobot.cpp  **** 		sensG = true;	//Gauche avance
+ 410               		.stabn	68,0,202,.LM41-.LFBB11
+ 411               	.LM41:
+ 412 00cc 81E0      		ldi r24,lo8(1)
+ 413 00ce 8093 0000 		sts _ZN8LibRobot5sensGE,r24
+ 204:libRobot.cpp  **** 		enabledD = true;
+ 414               		.stabn	68,0,204,.LM42-.LFBB11
+ 415               	.LM42:
+ 416 00d2 8093 0000 		sts _ZN8LibRobot8enabledDE,r24
+ 205:libRobot.cpp  **** 		enabledG = true;
+ 417               		.stabn	68,0,205,.LM43-.LFBB11
+ 418               	.LM43:
+ 419 00d6 8093 0000 		sts _ZN8LibRobot8enabledGE,r24
+ 420               	.LBB64:
+ 421               	.LBB65:
+ 277:libRobot.cpp  **** 		nb_delai = duree25 + (duree25>>1); //1.5
+ 422               		.stabn	68,0,277,.LM44-.LFBB11
+ 423               	.LM44:
+ 424 00da 8BE4      		ldi r24,lo8(75)
+ 425 00dc 90E0      		ldi r25,0
+ 426 00de 9093 0000 		sts _ZN8LibRobot8nb_delaiE+1,r25
+ 427 00e2 8093 0000 		sts _ZN8LibRobot8nb_delaiE,r24
+ 428 00e6 0895      		ret
+GAS LISTING /tmp/ccVVS130.s 			page 17
+
+
+ 429               	.LBE65:
+ 430               	.LBE64:
+ 431               		.size	_ZN8LibRobot15tournerDroite90Ej, .-_ZN8LibRobot15tournerDroite90Ej
+ 432               	.Lscope11:
+ 433               		.stabs	"",36,0,0,.Lscope11-.LFBB11
+ 434               		.stabd	78,0,0
+ 435               		.stabs	"_ZN8LibRobot15tournerGauche90Ej:F(0,4)",36,0,211,_ZN8LibRobot15tournerGauche90Ej
+ 436               		.stabs	"b:P(0,31)",64,0,211,24
+ 437               	.global	_ZN8LibRobot15tournerGauche90Ej
+ 438               		.type	_ZN8LibRobot15tournerGauche90Ej, @function
+ 439               	_ZN8LibRobot15tournerGauche90Ej:
+ 440               		.stabd	46,0,0
+ 212:libRobot.cpp  **** 	{
+ 441               		.stabn	68,0,212,.LM45-.LFBB12
+ 442               	.LM45:
+ 443               	.LFBB12:
+ 444               	/* prologue: function */
+ 445               	/* frame size = 0 */
+ 446               	/* stack size = 0 */
+ 447               	.L__stack_usage = 0
+ 448               	.LBB74:
+ 449               	.LBB75:
+ 313:libRobot.cpp  **** 			aD = tempA;
+ 450               		.stabn	68,0,313,.LM46-.LFBB12
+ 451               	.LM46:
+ 452 00e8 9093 0000 		sts _ZN8LibRobot2aDE+1,r25
+ 453 00ec 8093 0000 		sts _ZN8LibRobot2aDE,r24
+ 454               	.LBE75:
+ 455               	.LBE74:
+ 456               	.LBB76:
+ 457               	.LBB77:
+ 458               		.stabn	68,0,315,.LM47-.LFBB12
+ 459               	.LM47:
+ 460 00f0 9093 0000 		sts _ZN8LibRobot2aGE+1,r25
+ 461 00f4 8093 0000 		sts _ZN8LibRobot2aGE,r24
+ 462               	.LBE77:
+ 463               	.LBE76:
+ 217:libRobot.cpp  **** 		sensD = true; //Droite avance
+ 464               		.stabn	68,0,217,.LM48-.LFBB12
+ 465               	.LM48:
+ 466 00f8 81E0      		ldi r24,lo8(1)
+ 467 00fa 8093 0000 		sts _ZN8LibRobot5sensDE,r24
+ 218:libRobot.cpp  **** 		sensG = false;	//Gauche recule
+ 468               		.stabn	68,0,218,.LM49-.LFBB12
+ 469               	.LM49:
+ 470 00fe 1092 0000 		sts _ZN8LibRobot5sensGE,__zero_reg__
+ 220:libRobot.cpp  **** 		enabledD = true;
+ 471               		.stabn	68,0,220,.LM50-.LFBB12
+ 472               	.LM50:
+ 473 0102 8093 0000 		sts _ZN8LibRobot8enabledDE,r24
+ 221:libRobot.cpp  **** 		enabledG = true;
+ 474               		.stabn	68,0,221,.LM51-.LFBB12
+ 475               	.LM51:
+ 476 0106 8093 0000 		sts _ZN8LibRobot8enabledGE,r24
+ 477               	.LBB78:
+ 478               	.LBB79:
+ 277:libRobot.cpp  **** 		nb_delai = duree25 + (duree25>>1); //1.5
+GAS LISTING /tmp/ccVVS130.s 			page 18
+
+
+ 479               		.stabn	68,0,277,.LM52-.LFBB12
+ 480               	.LM52:
+ 481 010a 8BE4      		ldi r24,lo8(75)
+ 482 010c 90E0      		ldi r25,0
+ 483 010e 9093 0000 		sts _ZN8LibRobot8nb_delaiE+1,r25
+ 484 0112 8093 0000 		sts _ZN8LibRobot8nb_delaiE,r24
+ 485 0116 0895      		ret
+ 486               	.LBE79:
+ 487               	.LBE78:
+ 488               		.size	_ZN8LibRobot15tournerGauche90Ej, .-_ZN8LibRobot15tournerGauche90Ej
+ 489               	.Lscope12:
+ 490               		.stabs	"",36,0,0,.Lscope12-.LFBB12
+ 491               		.stabd	78,0,0
+ 492               		.stabs	"_ZN8LibRobot11debutBoucleEj:F(0,4)",36,0,226,_ZN8LibRobot11debutBoucleEj
+ 493               		.stabs	"nbRepetition:P(0,31)",64,0,226,24
+ 494               	.global	_ZN8LibRobot11debutBoucleEj
+ 495               		.type	_ZN8LibRobot11debutBoucleEj, @function
+ 496               	_ZN8LibRobot11debutBoucleEj:
+ 497               		.stabd	46,0,0
+ 227:libRobot.cpp  **** 	{
+ 498               		.stabn	68,0,227,.LM53-.LFBB13
+ 499               	.LM53:
+ 500               	.LFBB13:
+ 501               	/* prologue: function */
+ 502               	/* frame size = 0 */
+ 503               	/* stack size = 0 */
+ 504               	.L__stack_usage = 0
+ 505 0118 0895      		ret
+ 506               		.size	_ZN8LibRobot11debutBoucleEj, .-_ZN8LibRobot11debutBoucleEj
+ 507               	.Lscope13:
+ 508               		.stabs	"",36,0,0,.Lscope13-.LFBB13
+ 509               		.stabd	78,0,0
+ 510               		.stabs	"_ZN8LibRobot11finDeBoucleEv:F(0,4)",36,0,230,_ZN8LibRobot11finDeBoucleEv
+ 511               	.global	_ZN8LibRobot11finDeBoucleEv
+ 512               		.type	_ZN8LibRobot11finDeBoucleEv, @function
+ 513               	_ZN8LibRobot11finDeBoucleEv:
+ 514               		.stabd	46,0,0
+ 231:libRobot.cpp  **** 	{
+ 515               		.stabn	68,0,231,.LM54-.LFBB14
+ 516               	.LM54:
+ 517               	.LFBB14:
+ 518               	/* prologue: function */
+ 519               	/* frame size = 0 */
+ 520               	/* stack size = 0 */
+ 521               	.L__stack_usage = 0
+ 522 011a 0895      		ret
+ 523               		.size	_ZN8LibRobot11finDeBoucleEv, .-_ZN8LibRobot11finDeBoucleEv
+ 524               	.Lscope14:
+ 525               		.stabs	"",36,0,0,.Lscope14-.LFBB14
+ 526               		.stabd	78,0,0
+ 527               		.stabs	"_ZN8LibRobot3finEv:F(0,4)",36,0,234,_ZN8LibRobot3finEv
+ 528               	.global	_ZN8LibRobot3finEv
+ 529               		.type	_ZN8LibRobot3finEv, @function
+ 530               	_ZN8LibRobot3finEv:
+ 531               		.stabd	46,0,0
+ 235:libRobot.cpp  **** 	{
+ 532               		.stabn	68,0,235,.LM55-.LFBB15
+GAS LISTING /tmp/ccVVS130.s 			page 19
+
+
+ 533               	.LM55:
+ 534               	.LFBB15:
+ 535               	/* prologue: function */
+ 536               	/* frame size = 0 */
+ 537               	/* stack size = 0 */
+ 538               	.L__stack_usage = 0
+ 236:libRobot.cpp  **** 		fin_ = true;
+ 539               		.stabn	68,0,236,.LM56-.LFBB15
+ 540               	.LM56:
+ 541 011c 81E0      		ldi r24,lo8(1)
+ 542 011e 8093 0000 		sts _ZN8LibRobot4fin_E,r24
+ 543 0122 0895      		ret
+ 544               		.size	_ZN8LibRobot3finEv, .-_ZN8LibRobot3finEv
+ 545               	.Lscope15:
+ 546               		.stabs	"",36,0,0,.Lscope15-.LFBB15
+ 547               		.stabd	78,0,0
+ 548               		.stabs	"_ZN8LibRobot14gestionAttenteEj:F(0,4)",36,0,242,_ZN8LibRobot14gestionAttenteEj
+ 549               		.stabs	"b:P(0,31)",64,0,242,24
+ 550               	.global	_ZN8LibRobot14gestionAttenteEj
+ 551               		.type	_ZN8LibRobot14gestionAttenteEj, @function
+ 552               	_ZN8LibRobot14gestionAttenteEj:
+ 553               		.stabd	46,0,0
+ 243:libRobot.cpp  **** 	{
+ 554               		.stabn	68,0,243,.LM57-.LFBB16
+ 555               	.LM57:
+ 556               	.LFBB16:
+ 557               	/* prologue: function */
+ 558               	/* frame size = 0 */
+ 559               	/* stack size = 0 */
+ 560               	.L__stack_usage = 0
+ 245:libRobot.cpp  **** 		if(nb_attente <= 0)
+ 561               		.stabn	68,0,245,.LM58-.LFBB16
+ 562               	.LM58:
+ 563 0124 2091 0000 		lds r18,_ZN8LibRobot10nb_attenteE
+ 564 0128 3091 0000 		lds r19,_ZN8LibRobot10nb_attenteE+1
+ 565 012c 1216      		cp __zero_reg__,r18
+ 566 012e 1306      		cpc __zero_reg__,r19
+ 567 0130 04F4      		brge .L19
+ 248:libRobot.cpp  **** 		nb_attente --;
+ 568               		.stabn	68,0,248,.LM59-.LFBB16
+ 569               	.LM59:
+ 570 0132 2150      		subi r18,1
+ 571 0134 3109      		sbc r19,__zero_reg__
+ 572 0136 3093 0000 		sts _ZN8LibRobot10nb_attenteE+1,r19
+ 573 013a 2093 0000 		sts _ZN8LibRobot10nb_attenteE,r18
+ 250:libRobot.cpp  **** 		if(enabledD || enabledG)
+ 574               		.stabn	68,0,250,.LM60-.LFBB16
+ 575               	.LM60:
+ 576 013e 2091 0000 		lds r18,_ZN8LibRobot8enabledDE
+ 577 0142 2111      		cpse r18,__zero_reg__
+ 578 0144 00C0      		rjmp .L19
+ 250:libRobot.cpp  **** 		if(enabledD || enabledG)
+ 579               		.stabn	68,0,250,.LM61-.LFBB16
+ 580               	.LM61:
+ 581 0146 2091 0000 		lds r18,_ZN8LibRobot8enabledGE
+ 582 014a 2111      		cpse r18,__zero_reg__
+ 583 014c 00C0      		rjmp .L19
+GAS LISTING /tmp/ccVVS130.s 			page 20
+
+
+ 254:libRobot.cpp  **** 		_delay_loop_2((b<<1)+1);
+ 584               		.stabn	68,0,254,.LM62-.LFBB16
+ 585               	.LM62:
+ 586 014e 880F      		lsl r24
+ 587 0150 991F      		rol r25
+ 588 0152 0196      		adiw r24,1
+ 589               	.LBB80:
+ 590               	.LBB81:
+ 591               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext3
+ 592               	.Ltext3:
+   1:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   2:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****    Copyright (c) 2007 Joerg Wunsch
+   3:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****    All rights reserved.
+   4:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+   5:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****    Redistribution and use in source and binary forms, with or without
+   6:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****    modification, are permitted provided that the following conditions are met:
+   7:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+   8:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****    * Redistributions of source code must retain the above copyright
+   9:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****      notice, this list of conditions and the following disclaimer.
+  10:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  11:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****    * Redistributions in binary form must reproduce the above copyright
+  12:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****      notice, this list of conditions and the following disclaimer in
+  13:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****      the documentation and/or other materials provided with the
+  14:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****      distribution.
+  15:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  16:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****    * Neither the name of the copyright holders nor the names of
+  17:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****      contributors may be used to endorse or promote products derived
+  18:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****      from this software without specific prior written permission.
+  19:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  20:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  21:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  22:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  23:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  24:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  25:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  26:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  27:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  28:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  29:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  30:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  31:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  32:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** /* $Id: delay_basic.h 2143 2010-06-08 21:19:51Z joerg_wunsch $ */
+  33:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  34:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** #ifndef _UTIL_DELAY_BASIC_H_
+  35:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** #define _UTIL_DELAY_BASIC_H_ 1
+  36:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  37:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** #include <inttypes.h>
+  38:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  39:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** #if !defined(__DOXYGEN__)
+  40:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** static inline void _delay_loop_1(uint8_t __count) __attribute__((always_inline));
+  41:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** static inline void _delay_loop_2(uint16_t __count) __attribute__((always_inline));
+  42:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** #endif
+  43:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  44:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** /** \file */
+  45:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** /** \defgroup util_delay_basic <util/delay_basic.h>: Basic busy-wait delay loops
+  46:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     \code
+  47:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     #include <util/delay_basic.h>
+GAS LISTING /tmp/ccVVS130.s 			page 21
+
+
+  48:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     \endcode
+  49:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  50:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     The functions in this header file implement simple delay loops
+  51:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     that perform a busy-waiting.  They are typically used to
+  52:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     facilitate short delays in the program execution.  They are
+  53:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     implemented as count-down loops with a well-known CPU cycle
+  54:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     count per loop iteration.  As such, no other processing can
+  55:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     occur simultaneously.  It should be kept in mind that the
+  56:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     functions described here do not disable interrupts.
+  57:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  58:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     In general, for long delays, the use of hardware timers is
+  59:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     much preferrable, as they free the CPU, and allow for
+  60:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     concurrent processing of other events while the timer is
+  61:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     running.  However, in particular for very short delays, the
+  62:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     overhead of setting up a hardware timer is too much compared
+  63:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     to the overall delay time.
+  64:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  65:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     Two inline functions are provided for the actual delay algorithms.
+  66:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  67:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** */
+  68:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  69:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** /** \ingroup util_delay_basic
+  70:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  71:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     Delay loop using an 8-bit counter \c __count, so up to 256
+  72:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     iterations are possible.  (The value 256 would have to be passed
+  73:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     as 0.)  The loop executes three CPU cycles per iteration, not
+  74:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     including the overhead the compiler needs to setup the counter
+  75:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     register.
+  76:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  77:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     Thus, at a CPU speed of 1 MHz, delays of up to 768 microseconds
+  78:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     can be achieved.
+  79:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** */
+  80:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** void
+  81:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** _delay_loop_1(uint8_t __count)
+  82:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** {
+  83:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 	__asm__ volatile (
+  84:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 		"1: dec %0" "\n\t"
+  85:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 		"brne 1b"
+  86:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 		: "=r" (__count)
+  87:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 		: "0" (__count)
+  88:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 	);
+  89:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** }
+  90:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  91:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** /** \ingroup util_delay_basic
+  92:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  93:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     Delay loop using a 16-bit counter \c __count, so up to 65536
+  94:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     iterations are possible.  (The value 65536 would have to be
+  95:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     passed as 0.)  The loop executes four CPU cycles per iteration,
+  96:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     not including the overhead the compiler requires to setup the
+  97:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     counter register pair.
+  98:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 
+  99:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     Thus, at a CPU speed of 1 MHz, delays of up to about 262.1
+ 100:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****     milliseconds can be achieved.
+ 101:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h ****  */
+ 102:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** void
+ 103:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** _delay_loop_2(uint16_t __count)
+ 104:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** {
+GAS LISTING /tmp/ccVVS130.s 			page 22
+
+
+ 105:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 	__asm__ volatile (
+ 106:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 		"1: sbiw %0,1" "\n\t"
+ 107:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 		"brne 1b"
+ 108:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 		: "=w" (__count)
+ 109:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 		: "0" (__count)
+ 110:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h **** 	);
+ 593               		.stabn	68,0,110,.LM63-.LFBB16
+ 594               	.LM63:
+ 595               	/* #APP */
+ 596               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 597 0154 0197      		1: sbiw r24,1
+ 598 0156 01F4      		brne 1b
+ 599               	 ;  0 "" 2
+ 600               	/* #NOAPP */
+ 601               	.L19:
+ 602 0158 0895      		ret
+ 603               	.LBE81:
+ 604               	.LBE80:
+ 605               		.size	_ZN8LibRobot14gestionAttenteEj, .-_ZN8LibRobot14gestionAttenteEj
+ 606               	.Lscope16:
+ 607               		.stabs	"",36,0,0,.Lscope16-.LFBB16
+ 608               		.stabd	78,0,0
+ 609               		.stabs	"_ZN8LibRobot17gestionDelaiArretEj:F(0,4)",36,0,258,_ZN8LibRobot17gestionDelaiArretEj
+ 610               		.stabs	"b:P(0,31)",64,0,258,24
+ 611               	.global	_ZN8LibRobot17gestionDelaiArretEj
+ 612               		.type	_ZN8LibRobot17gestionDelaiArretEj, @function
+ 613               	_ZN8LibRobot17gestionDelaiArretEj:
+ 614               		.stabd	46,0,0
+ 615               		.stabs	"libRobot.cpp",132,0,0,.Ltext4
+ 616               	.Ltext4:
+ 259:libRobot.cpp  **** 	{
+ 617               		.stabn	68,0,259,.LM64-.LFBB17
+ 618               	.LM64:
+ 619               	.LFBB17:
+ 620               	/* prologue: function */
+ 621               	/* frame size = 0 */
+ 622               	/* stack size = 0 */
+ 623               	.L__stack_usage = 0
+ 261:libRobot.cpp  **** 		if(nb_delai <= 0)
+ 624               		.stabn	68,0,261,.LM65-.LFBB17
+ 625               	.LM65:
+ 626 015a 2091 0000 		lds r18,_ZN8LibRobot8nb_delaiE
+ 627 015e 3091 0000 		lds r19,_ZN8LibRobot8nb_delaiE+1
+ 628 0162 1216      		cp __zero_reg__,r18
+ 629 0164 1306      		cpc __zero_reg__,r19
+ 630 0166 04F4      		brge .L23
+ 264:libRobot.cpp  **** 		nb_delai --;
+ 631               		.stabn	68,0,264,.LM66-.LFBB17
+ 632               	.LM66:
+ 633 0168 2150      		subi r18,1
+ 634 016a 3109      		sbc r19,__zero_reg__
+ 635 016c 3093 0000 		sts _ZN8LibRobot8nb_delaiE+1,r19
+ 636 0170 2093 0000 		sts _ZN8LibRobot8nb_delaiE,r18
+ 266:libRobot.cpp  **** 		if((!(enabledD || enabledG)) && nb_attente <= 0) //Faire un delai seulement si il n'y a pas de mo
+ 637               		.stabn	68,0,266,.LM67-.LFBB17
+ 638               	.LM67:
+ 639 0174 4091 0000 		lds r20,_ZN8LibRobot8enabledDE
+GAS LISTING /tmp/ccVVS130.s 			page 23
+
+
+ 640 0178 4111      		cpse r20,__zero_reg__
+ 641 017a 00C0      		rjmp .L26
+ 266:libRobot.cpp  **** 		if((!(enabledD || enabledG)) && nb_attente <= 0) //Faire un delai seulement si il n'y a pas de mo
+ 642               		.stabn	68,0,266,.LM68-.LFBB17
+ 643               	.LM68:
+ 644 017c 4091 0000 		lds r20,_ZN8LibRobot8enabledGE
+ 645 0180 4111      		cpse r20,__zero_reg__
+ 646 0182 00C0      		rjmp .L26
+ 647 0184 4091 0000 		lds r20,_ZN8LibRobot10nb_attenteE
+ 648 0188 5091 0000 		lds r21,_ZN8LibRobot10nb_attenteE+1
+ 649 018c 1416      		cp __zero_reg__,r20
+ 650 018e 1506      		cpc __zero_reg__,r21
+ 651 0190 04F0      		brlt .L26
+ 267:libRobot.cpp  **** 			_delay_loop_2((b<<1)+1);
+ 652               		.stabn	68,0,267,.LM69-.LFBB17
+ 653               	.LM69:
+ 654 0192 880F      		lsl r24
+ 655 0194 991F      		rol r25
+ 656 0196 0196      		adiw r24,1
+ 657               	.LBB82:
+ 658               	.LBB83:
+ 659               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext5
+ 660               	.Ltext5:
+ 661               		.stabn	68,0,110,.LM70-.LFBB17
+ 662               	.LM70:
+ 663               	/* #APP */
+ 664               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 665 0198 0197      		1: sbiw r24,1
+ 666 019a 01F4      		brne 1b
+ 667               	 ;  0 "" 2
+ 668               	/* #NOAPP */
+ 669               	.L26:
+ 670               	.LBE83:
+ 671               	.LBE82:
+ 672               		.stabs	"libRobot.cpp",132,0,0,.Ltext6
+ 673               	.Ltext6:
+ 269:libRobot.cpp  **** 		if(nb_delai <= 0)
+ 674               		.stabn	68,0,269,.LM71-.LFBB17
+ 675               	.LM71:
+ 676 019c 232B      		or r18,r19
+ 677 019e 01F4      		brne .L23
+ 270:libRobot.cpp  **** 			arreterMoteurs();
+ 678               		.stabn	68,0,270,.LM72-.LFBB17
+ 679               	.LM72:
+ 680 01a0 0C94 0000 		jmp _ZN8LibRobot14arreterMoteursEv
+ 681               	.L23:
+ 682 01a4 0895      		ret
+ 683               		.size	_ZN8LibRobot17gestionDelaiArretEj, .-_ZN8LibRobot17gestionDelaiArretEj
+ 684               	.Lscope17:
+ 685               		.stabs	"",36,0,0,.Lscope17-.LFBB17
+ 686               		.stabd	78,0,0
+ 687               		.stabs	"_ZN8LibRobot10delaiArretEi:F(0,4)",36,0,274,_ZN8LibRobot10delaiArretEi
+ 688               		.stabs	"duree25:P(0,30)",64,0,274,24
+ 689               	.global	_ZN8LibRobot10delaiArretEi
+ 690               		.type	_ZN8LibRobot10delaiArretEi, @function
+ 691               	_ZN8LibRobot10delaiArretEi:
+ 692               		.stabd	46,0,0
+GAS LISTING /tmp/ccVVS130.s 			page 24
+
+
+ 275:libRobot.cpp  **** 	{
+ 693               		.stabn	68,0,275,.LM73-.LFBB18
+ 694               	.LM73:
+ 695               	.LFBB18:
+ 696               	/* prologue: function */
+ 697               	/* frame size = 0 */
+ 698               	/* stack size = 0 */
+ 699               	.L__stack_usage = 0
+ 277:libRobot.cpp  **** 		nb_delai = duree25 + (duree25>>1); //1.5
+ 700               		.stabn	68,0,277,.LM74-.LFBB18
+ 701               	.LM74:
+ 702 01a6 9C01      		movw r18,r24
+ 703 01a8 3595      		asr r19
+ 704 01aa 2795      		ror r18
+ 705 01ac 280F      		add r18,r24
+ 706 01ae 391F      		adc r19,r25
+ 707 01b0 3093 0000 		sts _ZN8LibRobot8nb_delaiE+1,r19
+ 708 01b4 2093 0000 		sts _ZN8LibRobot8nb_delaiE,r18
+ 709 01b8 0895      		ret
+ 710               		.size	_ZN8LibRobot10delaiArretEi, .-_ZN8LibRobot10delaiArretEi
+ 711               	.Lscope18:
+ 712               		.stabs	"",36,0,0,.Lscope18-.LFBB18
+ 713               		.stabd	78,0,0
+ 714               		.stabs	"_ZN8LibRobot8ajusterAEjhb:F(0,4)",36,0,283,_ZN8LibRobot8ajusterAEjhb
+ 715               		.stabs	"b:P(0,31)",64,0,283,24
+ 716               		.stabs	"vitesse:P(0,29)",64,0,283,22
+ 717               		.stabs	"droite:P(0,24)",64,0,283,20
+ 718               	.global	_ZN8LibRobot8ajusterAEjhb
+ 719               		.type	_ZN8LibRobot8ajusterAEjhb, @function
+ 720               	_ZN8LibRobot8ajusterAEjhb:
+ 721               		.stabd	46,0,0
+ 284:libRobot.cpp  **** 	{
+ 722               		.stabn	68,0,284,.LM75-.LFBB19
+ 723               	.LM75:
+ 724               	.LFBB19:
+ 725               	/* prologue: function */
+ 726               	/* frame size = 0 */
+ 727               	/* stack size = 0 */
+ 728               	.L__stack_usage = 0
+ 729               	.LBB84:
+ 287:libRobot.cpp  **** 		if(vitesse == 255)//100%
+ 730               		.stabn	68,0,287,.LM76-.LFBB19
+ 731               	.LM76:
+ 732 01ba 6F3F      		cpi r22,lo8(-1)
+ 733 01bc 01F0      		breq .L36
+ 291:libRobot.cpp  **** 		else if(vitesse == 0)//0%
+ 734               		.stabn	68,0,291,.LM77-.LFBB19
+ 735               	.LM77:
+ 736 01be 6623      		tst r22
+ 737 01c0 01F0      		breq .L37
+ 295:libRobot.cpp  **** 		else if(vitesse == 128)//50%
+ 738               		.stabn	68,0,295,.LM78-.LFBB19
+ 739               	.LM78:
+ 740 01c2 6038      		cpi r22,lo8(-128)
+ 741 01c4 01F4      		brne .L31
+ 297:libRobot.cpp  **** 			tempA = b >>1;
+ 742               		.stabn	68,0,297,.LM79-.LFBB19
+GAS LISTING /tmp/ccVVS130.s 			page 25
+
+
+ 743               	.LM79:
+ 744 01c6 9C01      		movw r18,r24
+ 745 01c8 3695      		lsr r19
+ 746 01ca 2795      		ror r18
+ 747 01cc 00C0      		rjmp .L30
+ 748               	.L31:
+ 299:libRobot.cpp  **** 		else if(vitesse == 192) //75%
+ 749               		.stabn	68,0,299,.LM80-.LFBB19
+ 750               	.LM80:
+ 751 01ce 603C      		cpi r22,lo8(-64)
+ 752 01d0 01F4      		brne .L32
+ 301:libRobot.cpp  **** 			tempA = (b >>1)+(b >>2);
+ 753               		.stabn	68,0,301,.LM81-.LFBB19
+ 754               	.LM81:
+ 755 01d2 9C01      		movw r18,r24
+ 756 01d4 3695      		lsr r19
+ 757 01d6 2795      		ror r18
+ 758 01d8 3695      		lsr r19
+ 759 01da 2795      		ror r18
+ 760 01dc 9695      		lsr r25
+ 761 01de 8795      		ror r24
+ 762 01e0 280F      		add r18,r24
+ 763 01e2 391F      		adc r19,r25
+ 764 01e4 00C0      		rjmp .L30
+ 765               	.L32:
+ 303:libRobot.cpp  **** 		else if(vitesse == 64) //25%
+ 766               		.stabn	68,0,303,.LM82-.LFBB19
+ 767               	.LM82:
+ 768 01e6 6034      		cpi r22,lo8(64)
+ 769 01e8 01F4      		brne .L33
+ 305:libRobot.cpp  **** 			tempA = b >>2;
+ 770               		.stabn	68,0,305,.LM83-.LFBB19
+ 771               	.LM83:
+ 772 01ea 9C01      		movw r18,r24
+ 773 01ec 3695      		lsr r19
+ 774 01ee 2795      		ror r18
+ 775 01f0 3695      		lsr r19
+ 776 01f2 2795      		ror r18
+ 777 01f4 00C0      		rjmp .L30
+ 778               	.L33:
+ 309:libRobot.cpp  **** 			tempA = (b * (vitesse+1)) >> 8;
+ 779               		.stabn	68,0,309,.LM84-.LFBB19
+ 780               	.LM84:
+ 781 01f6 70E0      		ldi r23,0
+ 782 01f8 6F5F      		subi r22,-1
+ 783 01fa 7F4F      		sbci r23,-1
+ 784 01fc 689F      		mul r22,r24
+ 785 01fe 9001      		movw r18,r0
+ 786 0200 699F      		mul r22,r25
+ 787 0202 300D      		add r19,r0
+ 788 0204 789F      		mul r23,r24
+ 789 0206 300D      		add r19,r0
+ 790 0208 1124      		clr r1
+ 791 020a 232F      		mov r18,r19
+ 792 020c 3327      		clr r19
+ 793 020e 00C0      		rjmp .L30
+ 794               	.L36:
+GAS LISTING /tmp/ccVVS130.s 			page 26
+
+
+ 289:libRobot.cpp  **** 			tempA = b;
+ 795               		.stabn	68,0,289,.LM85-.LFBB19
+ 796               	.LM85:
+ 797 0210 9C01      		movw r18,r24
+ 798 0212 00C0      		rjmp .L30
+ 799               	.L37:
+ 293:libRobot.cpp  **** 			tempA = 0;
+ 800               		.stabn	68,0,293,.LM86-.LFBB19
+ 801               	.LM86:
+ 802 0214 20E0      		ldi r18,0
+ 803 0216 30E0      		ldi r19,0
+ 804               	.L30:
+ 312:libRobot.cpp  **** 		if(droite)
+ 805               		.stabn	68,0,312,.LM87-.LFBB19
+ 806               	.LM87:
+ 807 0218 4423      		tst r20
+ 808 021a 01F0      		breq .L34
+ 313:libRobot.cpp  **** 			aD = tempA;
+ 809               		.stabn	68,0,313,.LM88-.LFBB19
+ 810               	.LM88:
+ 811 021c 3093 0000 		sts _ZN8LibRobot2aDE+1,r19
+ 812 0220 2093 0000 		sts _ZN8LibRobot2aDE,r18
+ 813 0224 0895      		ret
+ 814               	.L34:
+ 815               		.stabn	68,0,315,.LM89-.LFBB19
+ 816               	.LM89:
+ 817 0226 3093 0000 		sts _ZN8LibRobot2aGE+1,r19
+ 818 022a 2093 0000 		sts _ZN8LibRobot2aGE,r18
+ 819 022e 0895      		ret
+ 820               	.LBE84:
+ 821               		.size	_ZN8LibRobot8ajusterAEjhb, .-_ZN8LibRobot8ajusterAEjhb
+ 822               		.stabs	"tempA:r(0,31)",64,0,285,18
+ 823               		.stabn	192,0,0,.LBB84-.LFBB19
+ 824               		.stabn	224,0,0,.LBE84-.LFBB19
+ 825               	.Lscope19:
+ 826               		.stabs	"",36,0,0,.Lscope19-.LFBB19
+ 827               		.stabd	78,0,0
+ 828               		.stabs	"_ZN8LibRobot7reculerEjh:F(0,4)",36,0,184,_ZN8LibRobot7reculerEjh
+ 829               		.stabs	"b:P(0,31)",64,0,184,28
+ 830               		.stabs	"frequence255:P(0,29)",64,0,184,17
+ 831               	.global	_ZN8LibRobot7reculerEjh
+ 832               		.type	_ZN8LibRobot7reculerEjh, @function
+ 833               	_ZN8LibRobot7reculerEjh:
+ 834               		.stabd	46,0,0
+ 185:libRobot.cpp  **** 	{
+ 835               		.stabn	68,0,185,.LM90-.LFBB20
+ 836               	.LM90:
+ 837               	.LFBB20:
+ 838 0230 1F93      		push r17
+ 839 0232 CF93      		push r28
+ 840 0234 DF93      		push r29
+ 841               	/* prologue: function */
+ 842               	/* frame size = 0 */
+ 843               	/* stack size = 3 */
+ 844               	.L__stack_usage = 3
+ 845 0236 EC01      		movw r28,r24
+ 846 0238 162F      		mov r17,r22
+GAS LISTING /tmp/ccVVS130.s 			page 27
+
+
+ 186:libRobot.cpp  **** 		ajusterA(b,frequence255, true);
+ 847               		.stabn	68,0,186,.LM91-.LFBB20
+ 848               	.LM91:
+ 849 023a 41E0      		ldi r20,lo8(1)
+ 850 023c 0E94 0000 		call _ZN8LibRobot8ajusterAEjhb
+ 187:libRobot.cpp  **** 		ajusterA(b,frequence255, false);
+ 851               		.stabn	68,0,187,.LM92-.LFBB20
+ 852               	.LM92:
+ 853 0240 40E0      		ldi r20,0
+ 854 0242 612F      		mov r22,r17
+ 855 0244 CE01      		movw r24,r28
+ 856 0246 0E94 0000 		call _ZN8LibRobot8ajusterAEjhb
+ 189:libRobot.cpp  **** 		sensD = false;
+ 857               		.stabn	68,0,189,.LM93-.LFBB20
+ 858               	.LM93:
+ 859 024a 1092 0000 		sts _ZN8LibRobot5sensDE,__zero_reg__
+ 190:libRobot.cpp  **** 		sensG = false;
+ 860               		.stabn	68,0,190,.LM94-.LFBB20
+ 861               	.LM94:
+ 862 024e 1092 0000 		sts _ZN8LibRobot5sensGE,__zero_reg__
+ 192:libRobot.cpp  **** 		enabledD = true;
+ 863               		.stabn	68,0,192,.LM95-.LFBB20
+ 864               	.LM95:
+ 865 0252 81E0      		ldi r24,lo8(1)
+ 866 0254 8093 0000 		sts _ZN8LibRobot8enabledDE,r24
+ 193:libRobot.cpp  **** 		enabledG = true;
+ 867               		.stabn	68,0,193,.LM96-.LFBB20
+ 868               	.LM96:
+ 869 0258 8093 0000 		sts _ZN8LibRobot8enabledGE,r24
+ 870               	/* epilogue start */
+ 194:libRobot.cpp  **** 	}
+ 871               		.stabn	68,0,194,.LM97-.LFBB20
+ 872               	.LM97:
+ 873 025c DF91      		pop r29
+ 874 025e CF91      		pop r28
+ 875 0260 1F91      		pop r17
+ 876 0262 0895      		ret
+ 877               		.size	_ZN8LibRobot7reculerEjh, .-_ZN8LibRobot7reculerEjh
+ 878               	.Lscope20:
+ 879               		.stabs	"",36,0,0,.Lscope20-.LFBB20
+ 880               		.stabd	78,0,0
+ 881               		.stabs	"_ZN8LibRobot7avancerEjh:F(0,4)",36,0,172,_ZN8LibRobot7avancerEjh
+ 882               		.stabs	"b:P(0,31)",64,0,172,28
+ 883               		.stabs	"frequence255:P(0,29)",64,0,172,17
+ 884               	.global	_ZN8LibRobot7avancerEjh
+ 885               		.type	_ZN8LibRobot7avancerEjh, @function
+ 886               	_ZN8LibRobot7avancerEjh:
+ 887               		.stabd	46,0,0
+ 173:libRobot.cpp  **** 	{
+ 888               		.stabn	68,0,173,.LM98-.LFBB21
+ 889               	.LM98:
+ 890               	.LFBB21:
+ 891 0264 1F93      		push r17
+ 892 0266 CF93      		push r28
+ 893 0268 DF93      		push r29
+ 894               	/* prologue: function */
+ 895               	/* frame size = 0 */
+GAS LISTING /tmp/ccVVS130.s 			page 28
+
+
+ 896               	/* stack size = 3 */
+ 897               	.L__stack_usage = 3
+ 898 026a EC01      		movw r28,r24
+ 899 026c 162F      		mov r17,r22
+ 174:libRobot.cpp  **** 		ajusterA(b,frequence255, true);
+ 900               		.stabn	68,0,174,.LM99-.LFBB21
+ 901               	.LM99:
+ 902 026e 41E0      		ldi r20,lo8(1)
+ 903 0270 0E94 0000 		call _ZN8LibRobot8ajusterAEjhb
+ 175:libRobot.cpp  **** 		ajusterA(b,frequence255, false);
+ 904               		.stabn	68,0,175,.LM100-.LFBB21
+ 905               	.LM100:
+ 906 0274 40E0      		ldi r20,0
+ 907 0276 612F      		mov r22,r17
+ 908 0278 CE01      		movw r24,r28
+ 909 027a 0E94 0000 		call _ZN8LibRobot8ajusterAEjhb
+ 177:libRobot.cpp  **** 		sensD = true;
+ 910               		.stabn	68,0,177,.LM101-.LFBB21
+ 911               	.LM101:
+ 912 027e 81E0      		ldi r24,lo8(1)
+ 913 0280 8093 0000 		sts _ZN8LibRobot5sensDE,r24
+ 178:libRobot.cpp  **** 		sensG = true;
+ 914               		.stabn	68,0,178,.LM102-.LFBB21
+ 915               	.LM102:
+ 916 0284 8093 0000 		sts _ZN8LibRobot5sensGE,r24
+ 180:libRobot.cpp  **** 		enabledD = true;
+ 917               		.stabn	68,0,180,.LM103-.LFBB21
+ 918               	.LM103:
+ 919 0288 8093 0000 		sts _ZN8LibRobot8enabledDE,r24
+ 181:libRobot.cpp  **** 		enabledG = true;
+ 920               		.stabn	68,0,181,.LM104-.LFBB21
+ 921               	.LM104:
+ 922 028c 8093 0000 		sts _ZN8LibRobot8enabledGE,r24
+ 923               	/* epilogue start */
+ 182:libRobot.cpp  **** 	}
+ 924               		.stabn	68,0,182,.LM105-.LFBB21
+ 925               	.LM105:
+ 926 0290 DF91      		pop r29
+ 927 0292 CF91      		pop r28
+ 928 0294 1F91      		pop r17
+ 929 0296 0895      		ret
+ 930               		.size	_ZN8LibRobot7avancerEjh, .-_ZN8LibRobot7avancerEjh
+ 931               	.Lscope21:
+ 932               		.stabs	"",36,0,0,.Lscope21-.LFBB21
+ 933               		.stabd	78,0,0
+ 934               		.stabs	"_ZN8LibRobot13allumerMoteurEbRVhhh:F(0,4)",36,0,378,_ZN8LibRobot13allumerMoteurEbRVhhh
+ 935               		.stabs	"sens:P(0,24)",64,0,378,24
+ 936               		.stabs	"port:P(0,79)",64,0,378,30
+ 937               		.stabs	"pinEnable:P(0,29)",64,0,378,20
+ 938               		.stabs	"pinSens:P(0,29)",64,0,378,18
+ 939               	.global	_ZN8LibRobot13allumerMoteurEbRVhhh
+ 940               		.type	_ZN8LibRobot13allumerMoteurEbRVhhh, @function
+ 941               	_ZN8LibRobot13allumerMoteurEbRVhhh:
+ 942               		.stabd	46,0,0
+ 316:libRobot.cpp  **** 	}
+ 317:libRobot.cpp  **** 
+ 318:libRobot.cpp  **** 	void LibRobot::gestionMoteurs(uint16_t b, volatile uint8_t& portMoteurD, volatile uint8_t& portMot
+GAS LISTING /tmp/ccVVS130.s 			page 29
+
+
+ 319:libRobot.cpp  **** 	{
+ 320:libRobot.cpp  **** 		if(!(enabledD || enabledG))
+ 321:libRobot.cpp  **** 			return;
+ 322:libRobot.cpp  **** 
+ 323:libRobot.cpp  **** 		if(enabledD && enabledG)
+ 324:libRobot.cpp  **** 		{
+ 325:libRobot.cpp  **** 			tournerDeuxRoues(b, portMoteurD, portMoteurG);
+ 326:libRobot.cpp  **** 		}
+ 327:libRobot.cpp  **** 		else if(enabledD)
+ 328:libRobot.cpp  **** 		{
+ 329:libRobot.cpp  **** 			tournerRoue(aD,b,sensD,portMoteurD,pinEnableD,pinSensD);
+ 330:libRobot.cpp  **** 		}
+ 331:libRobot.cpp  **** 		else
+ 332:libRobot.cpp  **** 		{
+ 333:libRobot.cpp  **** 			tournerRoue(aG,b,sensG,portMoteurG,pinEnableG,pinSensG);
+ 334:libRobot.cpp  **** 		}
+ 335:libRobot.cpp  **** 	}
+ 336:libRobot.cpp  **** 
+ 337:libRobot.cpp  **** 	void LibRobot::tournerDeuxRoues(uint16_t b, volatile uint8_t& portMoteurD, volatile uint8_t& portM
+ 338:libRobot.cpp  **** 	{
+ 339:libRobot.cpp  **** 		uint16_t attenteEteintD = b - aD;
+ 340:libRobot.cpp  **** 		uint16_t attenteEteintG = b - aG;
+ 341:libRobot.cpp  **** 	
+ 342:libRobot.cpp  **** 		//Pour droite
+ 343:libRobot.cpp  **** 		allumerMoteur(sensD,portMoteurD,pinEnableD,pinSensD);
+ 344:libRobot.cpp  **** 
+ 345:libRobot.cpp  **** 		//Pour gauche
+ 346:libRobot.cpp  **** 		allumerMoteur(sensG,portMoteurG,pinEnableG,pinSensG);
+ 347:libRobot.cpp  **** 
+ 348:libRobot.cpp  **** 		if(aD == aG)
+ 349:libRobot.cpp  **** 		{
+ 350:libRobot.cpp  **** 			_delay_loop_2((aD<<1)+1);
+ 351:libRobot.cpp  **** 			portMoteurD &= ~(pinEnableD); 			//PORTX = 0x0
+ 352:libRobot.cpp  **** 			portMoteurG &= ~(pinEnableG);
+ 353:libRobot.cpp  **** 			_delay_loop_2((attenteEteintD<<1)+1);
+ 354:libRobot.cpp  **** 			return;
+ 355:libRobot.cpp  **** 		}
+ 356:libRobot.cpp  **** 	
+ 357:libRobot.cpp  **** 		if(aD < aG)
+ 358:libRobot.cpp  **** 		{
+ 359:libRobot.cpp  **** 			_delay_loop_2((aD<<1)+1);
+ 360:libRobot.cpp  **** 			portMoteurD &= ~(pinEnableD); 			//eteindre moteur droit
+ 361:libRobot.cpp  **** 			_delay_loop_2(((aG-aD)<<1)+1);			//attendre le reste
+ 362:libRobot.cpp  **** 			portMoteurG &= ~(pinEnableG); 			//eteindre moteur gauche
+ 363:libRobot.cpp  **** 			_delay_loop_2((attenteEteintG<<1)+1);
+ 364:libRobot.cpp  **** 			return;
+ 365:libRobot.cpp  **** 		}
+ 366:libRobot.cpp  **** 
+ 367:libRobot.cpp  **** 		if(aG < aD)
+ 368:libRobot.cpp  **** 		{
+ 369:libRobot.cpp  **** 			_delay_loop_2((aG<<1)+1);
+ 370:libRobot.cpp  **** 			portMoteurG &= ~(pinEnableG); 			//eteindre moteur gauche
+ 371:libRobot.cpp  **** 			_delay_loop_2(((aD-aG)<<1)+1);			//attendre le reste
+ 372:libRobot.cpp  **** 			portMoteurD &= ~(pinEnableD); 			//eteindre moteur droit
+ 373:libRobot.cpp  **** 			_delay_loop_2((attenteEteintD<<1)+1);
+ 374:libRobot.cpp  **** 			return;
+ 375:libRobot.cpp  **** 		}		
+GAS LISTING /tmp/ccVVS130.s 			page 30
+
+
+ 376:libRobot.cpp  **** 	}
+ 377:libRobot.cpp  **** 
+ 378:libRobot.cpp  **** 	void LibRobot::allumerMoteur(bool sens, volatile uint8_t &port, uint8_t pinEnable, uint8_t pinSens
+ 379:libRobot.cpp  **** 	{
+ 943               		.stabn	68,0,379,.LM106-.LFBB22
+ 944               	.LM106:
+ 945               	.LFBB22:
+ 946               	/* prologue: function */
+ 947               	/* frame size = 0 */
+ 948               	/* stack size = 0 */
+ 949               	.L__stack_usage = 0
+ 950 0298 FB01      		movw r30,r22
+ 380:libRobot.cpp  **** 		if(sens)
+ 951               		.stabn	68,0,380,.LM107-.LFBB22
+ 952               	.LM107:
+ 953 029a 8823      		tst r24
+ 954 029c 01F0      		breq .L41
+ 381:libRobot.cpp  **** 			port |= pinSens;		//PORTX |= _BV(PORTX1), avancer
+ 955               		.stabn	68,0,381,.LM108-.LFBB22
+ 956               	.LM108:
+ 957 029e 8081      		ld r24,Z
+ 958 02a0 822B      		or r24,r18
+ 959 02a2 8083      		st Z,r24
+ 960 02a4 00C0      		rjmp .L42
+ 961               	.L41:
+ 382:libRobot.cpp  **** 		else
+ 383:libRobot.cpp  **** 			port &= ~(pinSens); 		//PORTX &= ~(_BV(PORTX1)), reculer
+ 962               		.stabn	68,0,383,.LM109-.LFBB22
+ 963               	.LM109:
+ 964 02a6 8081      		ld r24,Z
+ 965 02a8 2095      		com r18
+ 966 02aa 2823      		and r18,r24
+ 967 02ac 2083      		st Z,r18
+ 968               	.L42:
+ 384:libRobot.cpp  **** 
+ 385:libRobot.cpp  **** 		port |= pinEnable; 			//PORTX |= _BV(PORTX0)
+ 969               		.stabn	68,0,385,.LM110-.LFBB22
+ 970               	.LM110:
+ 971 02ae 8081      		ld r24,Z
+ 972 02b0 842B      		or r24,r20
+ 973 02b2 8083      		st Z,r24
+ 974 02b4 0895      		ret
+ 975               		.size	_ZN8LibRobot13allumerMoteurEbRVhhh, .-_ZN8LibRobot13allumerMoteurEbRVhhh
+ 976               	.Lscope22:
+ 977               		.stabs	"",36,0,0,.Lscope22-.LFBB22
+ 978               		.stabd	78,0,0
+ 979               		.stabs	"_ZN8LibRobot16tournerDeuxRouesEjRVhS1_:F(0,4)",36,0,337,_ZN8LibRobot16tournerDeuxRouesEjRV
+ 980               		.stabs	"b:P(0,31)",64,0,337,10
+ 981               		.stabs	"portMoteurD:P(0,79)",64,0,337,28
+ 982               		.stabs	"portMoteurG:P(0,79)",64,0,337,16
+ 983               	.global	_ZN8LibRobot16tournerDeuxRouesEjRVhS1_
+ 984               		.type	_ZN8LibRobot16tournerDeuxRouesEjRVhS1_, @function
+ 985               	_ZN8LibRobot16tournerDeuxRouesEjRVhS1_:
+ 986               		.stabd	46,0,0
+ 338:libRobot.cpp  **** 	{
+ 987               		.stabn	68,0,338,.LM111-.LFBB23
+ 988               	.LM111:
+GAS LISTING /tmp/ccVVS130.s 			page 31
+
+
+ 989               	.LFBB23:
+ 990 02b6 AF92      		push r10
+ 991 02b8 BF92      		push r11
+ 992 02ba CF92      		push r12
+ 993 02bc DF92      		push r13
+ 994 02be EF92      		push r14
+ 995 02c0 FF92      		push r15
+ 996 02c2 0F93      		push r16
+ 997 02c4 1F93      		push r17
+ 998 02c6 CF93      		push r28
+ 999 02c8 DF93      		push r29
+ 1000               	/* prologue: function */
+ 1001               	/* frame size = 0 */
+ 1002               	/* stack size = 10 */
+ 1003               	.L__stack_usage = 10
+ 1004 02ca 5C01      		movw r10,r24
+ 1005 02cc EB01      		movw r28,r22
+ 1006 02ce 8A01      		movw r16,r20
+ 1007               	.LBB85:
+ 339:libRobot.cpp  **** 		uint16_t attenteEteintD = b - aD;
+ 1008               		.stabn	68,0,339,.LM112-.LFBB23
+ 1009               	.LM112:
+ 1010 02d0 8091 0000 		lds r24,_ZN8LibRobot2aDE
+ 1011 02d4 9091 0000 		lds r25,_ZN8LibRobot2aDE+1
+ 1012 02d8 7501      		movw r14,r10
+ 1013 02da E81A      		sub r14,r24
+ 1014 02dc F90A      		sbc r15,r25
+ 340:libRobot.cpp  **** 		uint16_t attenteEteintG = b - aG;
+ 1015               		.stabn	68,0,340,.LM113-.LFBB23
+ 1016               	.LM113:
+ 1017 02de C090 0000 		lds r12,_ZN8LibRobot2aGE
+ 1018 02e2 D090 0000 		lds r13,_ZN8LibRobot2aGE+1
+ 343:libRobot.cpp  **** 		allumerMoteur(sensD,portMoteurD,pinEnableD,pinSensD);
+ 1019               		.stabn	68,0,343,.LM114-.LFBB23
+ 1020               	.LM114:
+ 1021 02e6 2091 0000 		lds r18,_ZN8LibRobot8pinSensDE
+ 1022 02ea 4091 0000 		lds r20,_ZN8LibRobot10pinEnableDE
+ 1023 02ee 8091 0000 		lds r24,_ZN8LibRobot5sensDE
+ 1024 02f2 0E94 0000 		call _ZN8LibRobot13allumerMoteurEbRVhhh
+ 346:libRobot.cpp  **** 		allumerMoteur(sensG,portMoteurG,pinEnableG,pinSensG);
+ 1025               		.stabn	68,0,346,.LM115-.LFBB23
+ 1026               	.LM115:
+ 1027 02f6 2091 0000 		lds r18,_ZN8LibRobot8pinSensGE
+ 1028 02fa 4091 0000 		lds r20,_ZN8LibRobot10pinEnableGE
+ 1029 02fe B801      		movw r22,r16
+ 1030 0300 8091 0000 		lds r24,_ZN8LibRobot5sensGE
+ 1031 0304 0E94 0000 		call _ZN8LibRobot13allumerMoteurEbRVhhh
+ 348:libRobot.cpp  **** 		if(aD == aG)
+ 1032               		.stabn	68,0,348,.LM116-.LFBB23
+ 1033               	.LM116:
+ 1034 0308 2091 0000 		lds r18,_ZN8LibRobot2aDE
+ 1035 030c 3091 0000 		lds r19,_ZN8LibRobot2aDE+1
+ 1036 0310 E091 0000 		lds r30,_ZN8LibRobot2aGE
+ 1037 0314 F091 0000 		lds r31,_ZN8LibRobot2aGE+1
+ 1038 0318 2E17      		cp r18,r30
+ 1039 031a 3F07      		cpc r19,r31
+ 1040 031c 01F4      		brne .L44
+GAS LISTING /tmp/ccVVS130.s 			page 32
+
+
+ 350:libRobot.cpp  **** 			_delay_loop_2((aD<<1)+1);
+ 1041               		.stabn	68,0,350,.LM117-.LFBB23
+ 1042               	.LM117:
+ 1043 031e C901      		movw r24,r18
+ 1044 0320 880F      		lsl r24
+ 1045 0322 991F      		rol r25
+ 1046 0324 0196      		adiw r24,1
+ 1047               	.LBB86:
+ 1048               	.LBB87:
+ 1049               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext7
+ 1050               	.Ltext7:
+ 1051               		.stabn	68,0,110,.LM118-.LFBB23
+ 1052               	.LM118:
+ 1053               	/* #APP */
+ 1054               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 1055 0326 0197      		1: sbiw r24,1
+ 1056 0328 01F4      		brne 1b
+ 1057               	 ;  0 "" 2
+ 1058               	/* #NOAPP */
+ 1059               	.LBE87:
+ 1060               	.LBE86:
+ 1061               		.stabs	"libRobot.cpp",132,0,0,.Ltext8
+ 1062               	.Ltext8:
+ 351:libRobot.cpp  **** 			portMoteurD &= ~(pinEnableD); 			//PORTX = 0x0
+ 1063               		.stabn	68,0,351,.LM119-.LFBB23
+ 1064               	.LM119:
+ 1065 032a 8881      		ld r24,Y
+ 1066 032c 9091 0000 		lds r25,_ZN8LibRobot10pinEnableDE
+ 1067 0330 9095      		com r25
+ 1068 0332 8923      		and r24,r25
+ 1069 0334 8883      		st Y,r24
+ 352:libRobot.cpp  **** 			portMoteurG &= ~(pinEnableG);
+ 1070               		.stabn	68,0,352,.LM120-.LFBB23
+ 1071               	.LM120:
+ 1072 0336 F801      		movw r30,r16
+ 1073 0338 8081      		ld r24,Z
+ 1074 033a 9091 0000 		lds r25,_ZN8LibRobot10pinEnableGE
+ 1075 033e 9095      		com r25
+ 1076 0340 8923      		and r24,r25
+ 1077 0342 8083      		st Z,r24
+ 1078 0344 00C0      		rjmp .L47
+ 1079               	.L44:
+ 357:libRobot.cpp  **** 		if(aD < aG)
+ 1080               		.stabn	68,0,357,.LM121-.LFBB23
+ 1081               	.LM121:
+ 1082 0346 2E17      		cp r18,r30
+ 1083 0348 3F07      		cpc r19,r31
+ 1084 034a 00F4      		brsh .L46
+ 359:libRobot.cpp  **** 			_delay_loop_2((aD<<1)+1);
+ 1085               		.stabn	68,0,359,.LM122-.LFBB23
+ 1086               	.LM122:
+ 1087 034c C901      		movw r24,r18
+ 1088 034e 880F      		lsl r24
+ 1089 0350 991F      		rol r25
+ 1090 0352 0196      		adiw r24,1
+ 1091               	.LBB88:
+ 1092               	.LBB89:
+GAS LISTING /tmp/ccVVS130.s 			page 33
+
+
+ 1093               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext9
+ 1094               	.Ltext9:
+ 1095               		.stabn	68,0,110,.LM123-.LFBB23
+ 1096               	.LM123:
+ 1097               	/* #APP */
+ 1098               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 1099 0354 0197      		1: sbiw r24,1
+ 1100 0356 01F4      		brne 1b
+ 1101               	 ;  0 "" 2
+ 1102               	/* #NOAPP */
+ 1103               	.LBE89:
+ 1104               	.LBE88:
+ 1105               		.stabs	"libRobot.cpp",132,0,0,.Ltext10
+ 1106               	.Ltext10:
+ 360:libRobot.cpp  **** 			portMoteurD &= ~(pinEnableD); 			//eteindre moteur droit
+ 1107               		.stabn	68,0,360,.LM124-.LFBB23
+ 1108               	.LM124:
+ 1109 0358 8881      		ld r24,Y
+ 1110 035a 9091 0000 		lds r25,_ZN8LibRobot10pinEnableDE
+ 1111 035e 9095      		com r25
+ 1112 0360 8923      		and r24,r25
+ 1113 0362 8883      		st Y,r24
+ 361:libRobot.cpp  **** 			_delay_loop_2(((aG-aD)<<1)+1);			//attendre le reste
+ 1114               		.stabn	68,0,361,.LM125-.LFBB23
+ 1115               	.LM125:
+ 1116 0364 E091 0000 		lds r30,_ZN8LibRobot2aGE
+ 1117 0368 F091 0000 		lds r31,_ZN8LibRobot2aGE+1
+ 1118 036c 8091 0000 		lds r24,_ZN8LibRobot2aDE
+ 1119 0370 9091 0000 		lds r25,_ZN8LibRobot2aDE+1
+ 1120 0374 E81B      		sub r30,r24
+ 1121 0376 F90B      		sbc r31,r25
+ 1122 0378 EE0F      		lsl r30
+ 1123 037a FF1F      		rol r31
+ 1124 037c 3196      		adiw r30,1
+ 1125               	.LBB90:
+ 1126               	.LBB91:
+ 1127               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext11
+ 1128               	.Ltext11:
+ 1129               		.stabn	68,0,110,.LM126-.LFBB23
+ 1130               	.LM126:
+ 1131               	/* #APP */
+ 1132               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 1133 037e 3197      		1: sbiw r30,1
+ 1134 0380 01F4      		brne 1b
+ 1135               	 ;  0 "" 2
+ 1136               	/* #NOAPP */
+ 1137               	.LBE91:
+ 1138               	.LBE90:
+ 1139               		.stabs	"libRobot.cpp",132,0,0,.Ltext12
+ 1140               	.Ltext12:
+ 362:libRobot.cpp  **** 			portMoteurG &= ~(pinEnableG); 			//eteindre moteur gauche
+ 1141               		.stabn	68,0,362,.LM127-.LFBB23
+ 1142               	.LM127:
+ 1143 0382 F801      		movw r30,r16
+ 1144 0384 8081      		ld r24,Z
+ 1145 0386 9091 0000 		lds r25,_ZN8LibRobot10pinEnableGE
+ 1146 038a 9095      		com r25
+GAS LISTING /tmp/ccVVS130.s 			page 34
+
+
+ 1147 038c 8923      		and r24,r25
+ 1148 038e 8083      		st Z,r24
+ 340:libRobot.cpp  **** 		uint16_t attenteEteintG = b - aG;
+ 1149               		.stabn	68,0,340,.LM128-.LFBB23
+ 1150               	.LM128:
+ 1151 0390 C501      		movw r24,r10
+ 1152 0392 8C19      		sub r24,r12
+ 1153 0394 9D09      		sbc r25,r13
+ 1154 0396 00C0      		rjmp .L48
+ 1155               	.L46:
+ 367:libRobot.cpp  **** 		if(aG < aD)
+ 1156               		.stabn	68,0,367,.LM129-.LFBB23
+ 1157               	.LM129:
+ 1158 0398 E217      		cp r30,r18
+ 1159 039a F307      		cpc r31,r19
+ 1160 039c 00F4      		brsh .L43
+ 369:libRobot.cpp  **** 			_delay_loop_2((aG<<1)+1);
+ 1161               		.stabn	68,0,369,.LM130-.LFBB23
+ 1162               	.LM130:
+ 1163 039e EE0F      		lsl r30
+ 1164 03a0 FF1F      		rol r31
+ 1165 03a2 3196      		adiw r30,1
+ 1166               	.LBB92:
+ 1167               	.LBB93:
+ 1168               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext13
+ 1169               	.Ltext13:
+ 1170               		.stabn	68,0,110,.LM131-.LFBB23
+ 1171               	.LM131:
+ 1172               	/* #APP */
+ 1173               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 1174 03a4 3197      		1: sbiw r30,1
+ 1175 03a6 01F4      		brne 1b
+ 1176               	 ;  0 "" 2
+ 1177               	/* #NOAPP */
+ 1178               	.LBE93:
+ 1179               	.LBE92:
+ 1180               		.stabs	"libRobot.cpp",132,0,0,.Ltext14
+ 1181               	.Ltext14:
+ 370:libRobot.cpp  **** 			portMoteurG &= ~(pinEnableG); 			//eteindre moteur gauche
+ 1182               		.stabn	68,0,370,.LM132-.LFBB23
+ 1183               	.LM132:
+ 1184 03a8 F801      		movw r30,r16
+ 1185 03aa 8081      		ld r24,Z
+ 1186 03ac 9091 0000 		lds r25,_ZN8LibRobot10pinEnableGE
+ 1187 03b0 9095      		com r25
+ 1188 03b2 8923      		and r24,r25
+ 1189 03b4 8083      		st Z,r24
+ 371:libRobot.cpp  **** 			_delay_loop_2(((aD-aG)<<1)+1);			//attendre le reste
+ 1190               		.stabn	68,0,371,.LM133-.LFBB23
+ 1191               	.LM133:
+ 1192 03b6 8091 0000 		lds r24,_ZN8LibRobot2aDE
+ 1193 03ba 9091 0000 		lds r25,_ZN8LibRobot2aDE+1
+ 1194 03be 2091 0000 		lds r18,_ZN8LibRobot2aGE
+ 1195 03c2 3091 0000 		lds r19,_ZN8LibRobot2aGE+1
+ 1196 03c6 821B      		sub r24,r18
+ 1197 03c8 930B      		sbc r25,r19
+ 1198 03ca 880F      		lsl r24
+GAS LISTING /tmp/ccVVS130.s 			page 35
+
+
+ 1199 03cc 991F      		rol r25
+ 1200 03ce 0196      		adiw r24,1
+ 1201               	.LBB94:
+ 1202               	.LBB95:
+ 1203               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext15
+ 1204               	.Ltext15:
+ 1205               		.stabn	68,0,110,.LM134-.LFBB23
+ 1206               	.LM134:
+ 1207               	/* #APP */
+ 1208               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 1209 03d0 0197      		1: sbiw r24,1
+ 1210 03d2 01F4      		brne 1b
+ 1211               	 ;  0 "" 2
+ 1212               	/* #NOAPP */
+ 1213               	.LBE95:
+ 1214               	.LBE94:
+ 1215               		.stabs	"libRobot.cpp",132,0,0,.Ltext16
+ 1216               	.Ltext16:
+ 372:libRobot.cpp  **** 			portMoteurD &= ~(pinEnableD); 			//eteindre moteur droit
+ 1217               		.stabn	68,0,372,.LM135-.LFBB23
+ 1218               	.LM135:
+ 1219 03d4 8881      		ld r24,Y
+ 1220 03d6 9091 0000 		lds r25,_ZN8LibRobot10pinEnableDE
+ 1221 03da 9095      		com r25
+ 1222 03dc 8923      		and r24,r25
+ 1223 03de 8883      		st Y,r24
+ 1224               	.L47:
+ 373:libRobot.cpp  **** 			_delay_loop_2((attenteEteintD<<1)+1);
+ 1225               		.stabn	68,0,373,.LM136-.LFBB23
+ 1226               	.LM136:
+ 1227 03e0 C701      		movw r24,r14
+ 1228               	.L48:
+ 1229 03e2 880F      		lsl r24
+ 1230 03e4 991F      		rol r25
+ 1231 03e6 0196      		adiw r24,1
+ 1232               	.LBB96:
+ 1233               	.LBB97:
+ 1234               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext17
+ 1235               	.Ltext17:
+ 1236               		.stabn	68,0,110,.LM137-.LFBB23
+ 1237               	.LM137:
+ 1238               	/* #APP */
+ 1239               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 1240 03e8 0197      		1: sbiw r24,1
+ 1241 03ea 01F4      		brne 1b
+ 1242               	 ;  0 "" 2
+ 1243               	/* #NOAPP */
+ 1244               	.L43:
+ 1245               	/* epilogue start */
+ 1246               	.LBE97:
+ 1247               	.LBE96:
+ 1248               	.LBE85:
+ 1249               		.stabs	"libRobot.cpp",132,0,0,.Ltext18
+ 1250               	.Ltext18:
+ 376:libRobot.cpp  **** 	}
+ 1251               		.stabn	68,0,376,.LM138-.LFBB23
+ 1252               	.LM138:
+GAS LISTING /tmp/ccVVS130.s 			page 36
+
+
+ 1253 03ec DF91      		pop r29
+ 1254 03ee CF91      		pop r28
+ 1255 03f0 1F91      		pop r17
+ 1256 03f2 0F91      		pop r16
+ 1257 03f4 FF90      		pop r15
+ 1258 03f6 EF90      		pop r14
+ 1259 03f8 DF90      		pop r13
+ 1260 03fa CF90      		pop r12
+ 1261 03fc BF90      		pop r11
+ 1262 03fe AF90      		pop r10
+ 1263 0400 0895      		ret
+ 1264               		.size	_ZN8LibRobot16tournerDeuxRouesEjRVhS1_, .-_ZN8LibRobot16tournerDeuxRouesEjRVhS1_
+ 1265               		.stabs	"attenteEteintD:r(0,31)",64,0,339,14
+ 1266               		.stabn	192,0,0,.LBB85-.LFBB23
+ 1267               		.stabn	224,0,0,.LBE85-.LFBB23
+ 1268               	.Lscope23:
+ 1269               		.stabs	"",36,0,0,.Lscope23-.LFBB23
+ 1270               		.stabd	78,0,0
+ 1271               		.stabs	"_ZN8LibRobot11tournerRoueEjjbRVhhh:F(0,4)",36,0,388,_ZN8LibRobot11tournerRoueEjjbRVhhh
+ 1272               		.stabs	"a:P(0,31)",64,0,388,10
+ 1273               		.stabs	"b:P(0,31)",64,0,388,22
+ 1274               		.stabs	"sens:P(0,24)",64,0,388,24
+ 1275               		.stabs	"port:P(0,79)",64,0,388,12
+ 1276               		.stabs	"pinEnable:P(0,29)",64,0,388,16
+ 1277               		.stabs	"pinSens:P(0,29)",64,0,388,18
+ 1278               	.global	_ZN8LibRobot11tournerRoueEjjbRVhhh
+ 1279               		.type	_ZN8LibRobot11tournerRoueEjjbRVhhh, @function
+ 1280               	_ZN8LibRobot11tournerRoueEjjbRVhhh:
+ 1281               		.stabd	46,0,0
+ 386:libRobot.cpp  **** 	}
+ 387:libRobot.cpp  **** 
+ 388:libRobot.cpp  **** 	void LibRobot::tournerRoue(uint16_t a, uint16_t b,bool sens, volatile uint8_t &port, uint8_t pinEn
+ 389:libRobot.cpp  **** 	{
+ 1282               		.stabn	68,0,389,.LM139-.LFBB24
+ 1283               	.LM139:
+ 1284               	.LFBB24:
+ 1285 0402 AF92      		push r10
+ 1286 0404 BF92      		push r11
+ 1287 0406 CF92      		push r12
+ 1288 0408 DF92      		push r13
+ 1289 040a EF92      		push r14
+ 1290 040c 0F93      		push r16
+ 1291 040e CF93      		push r28
+ 1292 0410 DF93      		push r29
+ 1293               	/* prologue: function */
+ 1294               	/* frame size = 0 */
+ 1295               	/* stack size = 8 */
+ 1296               	.L__stack_usage = 8
+ 1297 0412 5C01      		movw r10,r24
+ 1298 0414 EB01      		movw r28,r22
+ 1299 0416 842F      		mov r24,r20
+ 1300 0418 6901      		movw r12,r18
+ 1301 041a 2E2D      		mov r18,r14
+ 1302               	.LBB98:
+ 390:libRobot.cpp  **** 	    	//ex b = 16667, a = 16667 >> 1 --> un pwm 50% de 1/60 seconde de duree pour un 
+ 391:libRobot.cpp  **** 		//port = PORTB, pinEnable = _BV(PORTB0), pinSens = _BV(PORTB1)
+ 392:libRobot.cpp  **** 		//sens, if true -> avancer sinon reculer 
+GAS LISTING /tmp/ccVVS130.s 			page 37
+
+
+ 393:libRobot.cpp  **** 
+ 394:libRobot.cpp  **** 	    	uint16_t attenteEteint = b - a;
+ 1303               		.stabn	68,0,394,.LM140-.LFBB24
+ 1304               	.LM140:
+ 1305 041c CA19      		sub r28,r10
+ 1306 041e DB09      		sbc r29,r11
+ 395:libRobot.cpp  **** 	
+ 396:libRobot.cpp  **** 		allumerMoteur(sens,port,pinEnable, pinSens);
+ 1307               		.stabn	68,0,396,.LM141-.LFBB24
+ 1308               	.LM141:
+ 1309 0420 402F      		mov r20,r16
+ 1310 0422 B601      		movw r22,r12
+ 1311 0424 0E94 0000 		call _ZN8LibRobot13allumerMoteurEbRVhhh
+ 397:libRobot.cpp  **** 		_delay_loop_2((a<<1)+1);
+ 1312               		.stabn	68,0,397,.LM142-.LFBB24
+ 1313               	.LM142:
+ 1314 0428 F501      		movw r30,r10
+ 1315 042a EE0F      		lsl r30
+ 1316 042c FF1F      		rol r31
+ 1317 042e 3196      		adiw r30,1
+ 1318               	.LBB99:
+ 1319               	.LBB100:
+ 1320               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext19
+ 1321               	.Ltext19:
+ 1322               		.stabn	68,0,110,.LM143-.LFBB24
+ 1323               	.LM143:
+ 1324               	/* #APP */
+ 1325               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 1326 0430 3197      		1: sbiw r30,1
+ 1327 0432 01F4      		brne 1b
+ 1328               	 ;  0 "" 2
+ 1329               	/* #NOAPP */
+ 1330               	.LBE100:
+ 1331               	.LBE99:
+ 1332               		.stabs	"libRobot.cpp",132,0,0,.Ltext20
+ 1333               	.Ltext20:
+ 398:libRobot.cpp  **** 
+ 399:libRobot.cpp  **** 		port &= ~(pinEnable); 			//PORTX = 0x0
+ 1334               		.stabn	68,0,399,.LM144-.LFBB24
+ 1335               	.LM144:
+ 1336 0434 F601      		movw r30,r12
+ 1337 0436 8081      		ld r24,Z
+ 1338 0438 0095      		com r16
+ 1339 043a 0823      		and r16,r24
+ 1340 043c 0083      		st Z,r16
+ 400:libRobot.cpp  **** 		_delay_loop_2((attenteEteint<<1)+1);
+ 1341               		.stabn	68,0,400,.LM145-.LFBB24
+ 1342               	.LM145:
+ 1343 043e CE01      		movw r24,r28
+ 1344 0440 880F      		lsl r24
+ 1345 0442 991F      		rol r25
+ 1346 0444 0196      		adiw r24,1
+ 1347               	.LBB101:
+ 1348               	.LBB102:
+ 1349               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext21
+ 1350               	.Ltext21:
+ 1351               		.stabn	68,0,110,.LM146-.LFBB24
+GAS LISTING /tmp/ccVVS130.s 			page 38
+
+
+ 1352               	.LM146:
+ 1353               	/* #APP */
+ 1354               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 1355 0446 0197      		1: sbiw r24,1
+ 1356 0448 01F4      		brne 1b
+ 1357               	 ;  0 "" 2
+ 1358               	/* epilogue start */
+ 1359               	/* #NOAPP */
+ 1360               	.LBE102:
+ 1361               	.LBE101:
+ 1362               	.LBE98:
+ 1363               		.stabs	"libRobot.cpp",132,0,0,.Ltext22
+ 1364               	.Ltext22:
+ 401:libRobot.cpp  **** 	}
+ 1365               		.stabn	68,0,401,.LM147-.LFBB24
+ 1366               	.LM147:
+ 1367 044a DF91      		pop r29
+ 1368 044c CF91      		pop r28
+ 1369 044e 0F91      		pop r16
+ 1370 0450 EF90      		pop r14
+ 1371 0452 DF90      		pop r13
+ 1372 0454 CF90      		pop r12
+ 1373 0456 BF90      		pop r11
+ 1374 0458 AF90      		pop r10
+ 1375 045a 0895      		ret
+ 1376               		.size	_ZN8LibRobot11tournerRoueEjjbRVhhh, .-_ZN8LibRobot11tournerRoueEjjbRVhhh
+ 1377               		.stabs	"attenteEteint:r(0,31)",64,0,394,28
+ 1378               		.stabn	192,0,0,.LBB98-.LFBB24
+ 1379               		.stabn	224,0,0,.LBE98-.LFBB24
+ 1380               	.Lscope24:
+ 1381               		.stabs	"",36,0,0,.Lscope24-.LFBB24
+ 1382               		.stabd	78,0,0
+ 1383               		.stabs	"_ZN8LibRobot14gestionMoteursEjRVhS1_:F(0,4)",36,0,318,_ZN8LibRobot14gestionMoteursEjRVhS1_
+ 1384               		.stabs	"b:P(0,31)",64,0,318,24
+ 1385               		.stabs	"portMoteurD:P(0,79)",64,0,318,22
+ 1386               		.stabs	"portMoteurG:P(0,79)",64,0,318,20
+ 1387               	.global	_ZN8LibRobot14gestionMoteursEjRVhS1_
+ 1388               		.type	_ZN8LibRobot14gestionMoteursEjRVhS1_, @function
+ 1389               	_ZN8LibRobot14gestionMoteursEjRVhS1_:
+ 1390               		.stabd	46,0,0
+ 319:libRobot.cpp  **** 	{
+ 1391               		.stabn	68,0,319,.LM148-.LFBB25
+ 1392               	.LM148:
+ 1393               	.LFBB25:
+ 1394 045c EF92      		push r14
+ 1395 045e 0F93      		push r16
+ 1396               	/* prologue: function */
+ 1397               	/* frame size = 0 */
+ 1398               	/* stack size = 2 */
+ 1399               	.L__stack_usage = 2
+ 320:libRobot.cpp  **** 		if(!(enabledD || enabledG))
+ 1400               		.stabn	68,0,320,.LM149-.LFBB25
+ 1401               	.LM149:
+ 1402 0460 3091 0000 		lds r19,_ZN8LibRobot8enabledDE
+ 1403 0464 2091 0000 		lds r18,_ZN8LibRobot8enabledGE
+ 1404 0468 3111      		cpse r19,__zero_reg__
+ 1405 046a 00C0      		rjmp .L51
+GAS LISTING /tmp/ccVVS130.s 			page 39
+
+
+ 320:libRobot.cpp  **** 		if(!(enabledD || enabledG))
+ 1406               		.stabn	68,0,320,.LM150-.LFBB25
+ 1407               	.LM150:
+ 1408 046c 2111      		cpse r18,__zero_reg__
+ 1409 046e 00C0      		rjmp .L52
+ 1410 0470 00C0      		rjmp .L50
+ 1411               	.L51:
+ 323:libRobot.cpp  **** 		if(enabledD && enabledG)
+ 1412               		.stabn	68,0,323,.LM151-.LFBB25
+ 1413               	.LM151:
+ 1414 0472 2223      		tst r18
+ 1415 0474 01F0      		breq .L54
+ 1416               	/* epilogue start */
+ 335:libRobot.cpp  **** 	}
+ 1417               		.stabn	68,0,335,.LM152-.LFBB25
+ 1418               	.LM152:
+ 1419 0476 0F91      		pop r16
+ 1420 0478 EF90      		pop r14
+ 325:libRobot.cpp  **** 			tournerDeuxRoues(b, portMoteurD, portMoteurG);
+ 1421               		.stabn	68,0,325,.LM153-.LFBB25
+ 1422               	.LM153:
+ 1423 047a 0C94 0000 		jmp _ZN8LibRobot16tournerDeuxRouesEjRVhS1_
+ 1424               	.L54:
+ 329:libRobot.cpp  **** 			tournerRoue(aD,b,sensD,portMoteurD,pinEnableD,pinSensD);
+ 1425               		.stabn	68,0,329,.LM154-.LFBB25
+ 1426               	.LM154:
+ 1427 047e E090 0000 		lds r14,_ZN8LibRobot8pinSensDE
+ 1428 0482 0091 0000 		lds r16,_ZN8LibRobot10pinEnableDE
+ 1429 0486 9B01      		movw r18,r22
+ 1430 0488 4091 0000 		lds r20,_ZN8LibRobot5sensDE
+ 1431 048c BC01      		movw r22,r24
+ 1432 048e 8091 0000 		lds r24,_ZN8LibRobot2aDE
+ 1433 0492 9091 0000 		lds r25,_ZN8LibRobot2aDE+1
+ 1434 0496 00C0      		rjmp .L55
+ 1435               	.L52:
+ 333:libRobot.cpp  **** 			tournerRoue(aG,b,sensG,portMoteurG,pinEnableG,pinSensG);
+ 1436               		.stabn	68,0,333,.LM155-.LFBB25
+ 1437               	.LM155:
+ 1438 0498 E090 0000 		lds r14,_ZN8LibRobot8pinSensGE
+ 1439 049c 0091 0000 		lds r16,_ZN8LibRobot10pinEnableGE
+ 1440 04a0 9A01      		movw r18,r20
+ 1441 04a2 4091 0000 		lds r20,_ZN8LibRobot5sensGE
+ 1442 04a6 BC01      		movw r22,r24
+ 1443 04a8 8091 0000 		lds r24,_ZN8LibRobot2aGE
+ 1444 04ac 9091 0000 		lds r25,_ZN8LibRobot2aGE+1
+ 1445               	.L55:
+ 1446 04b0 0E94 0000 		call _ZN8LibRobot11tournerRoueEjjbRVhhh
+ 1447               	.L50:
+ 1448               	/* epilogue start */
+ 335:libRobot.cpp  **** 	}
+ 1449               		.stabn	68,0,335,.LM156-.LFBB25
+ 1450               	.LM156:
+ 1451 04b4 0F91      		pop r16
+ 1452 04b6 EF90      		pop r14
+ 1453 04b8 0895      		ret
+ 1454               		.size	_ZN8LibRobot14gestionMoteursEjRVhS1_, .-_ZN8LibRobot14gestionMoteursEjRVhS1_
+ 1455               	.Lscope25:
+GAS LISTING /tmp/ccVVS130.s 			page 40
+
+
+ 1456               		.stabs	"",36,0,0,.Lscope25-.LFBB25
+ 1457               		.stabd	78,0,0
+ 1458               		.stabs	"__vector_13:F(0,4)",36,0,409,__vector_13
+ 1459               	.global	__vector_13
+ 1460               		.type	__vector_13, @function
+ 1461               	__vector_13:
+ 1462               		.stabd	46,0,0
+ 402:libRobot.cpp  **** 
+ 403:libRobot.cpp  **** //---------------
+ 404:libRobot.cpp  **** //Gestion Sons
+ 405:libRobot.cpp  **** //---------------
+ 406:libRobot.cpp  **** 
+ 407:libRobot.cpp  **** 	//Interuption son
+ 408:libRobot.cpp  **** 	//PORTB2
+ 409:libRobot.cpp  **** 	ISR ( TIMER1_COMPA_vect )
+ 410:libRobot.cpp  **** 	{
+ 1463               		.stabn	68,0,410,.LM157-.LFBB26
+ 1464               	.LM157:
+ 1465               	.LFBB26:
+ 1466 04ba 1F92      		push r1
+ 1467 04bc 0F92      		push r0
+ 1468 04be 0FB6      		in r0,__SREG__
+ 1469 04c0 0F92      		push r0
+ 1470 04c2 1124      		clr __zero_reg__
+ 1471 04c4 8F93      		push r24
+ 1472 04c6 9F93      		push r25
+ 1473               	/* prologue: Signal */
+ 1474               	/* frame size = 0 */
+ 1475               	/* stack size = 5 */
+ 1476               	.L__stack_usage = 5
+ 1477               	.LBB103:
+ 411:libRobot.cpp  **** 	
+ 412:libRobot.cpp  **** 		LibRobot r;
+ 413:libRobot.cpp  **** 		if(r.enabledSon)
+ 1478               		.stabn	68,0,413,.LM158-.LFBB26
+ 1479               	.LM158:
+ 1480 04c8 8091 0000 		lds r24,_ZN8LibRobot10enabledSonE
+ 1481 04cc 8823      		tst r24
+ 1482 04ce 01F0      		breq .L57
+ 414:libRobot.cpp  **** 		{
+ 415:libRobot.cpp  **** 			if(r.a_son)
+ 1483               		.stabn	68,0,415,.LM159-.LFBB26
+ 1484               	.LM159:
+ 1485 04d0 8091 0000 		lds r24,_ZN8LibRobot5a_sonE
+ 1486 04d4 8823      		tst r24
+ 1487 04d6 01F0      		breq .L58
+ 416:libRobot.cpp  **** 				PORTB |= _BV(PORTB2);
+ 1488               		.stabn	68,0,416,.LM160-.LFBB26
+ 1489               	.LM160:
+ 1490 04d8 2A9A      		sbi 0x5,2
+ 1491 04da 00C0      		rjmp .L59
+ 1492               	.L58:
+ 417:libRobot.cpp  **** 			else
+ 418:libRobot.cpp  **** 				PORTB &= ~(_BV(PORTB2));
+ 1493               		.stabn	68,0,418,.LM161-.LFBB26
+ 1494               	.LM161:
+ 1495 04dc 2A98      		cbi 0x5,2
+GAS LISTING /tmp/ccVVS130.s 			page 41
+
+
+ 1496               	.L59:
+ 419:libRobot.cpp  **** 			r.a_son = !r.a_son;
+ 1497               		.stabn	68,0,419,.LM162-.LFBB26
+ 1498               	.LM162:
+ 1499 04de 8091 0000 		lds r24,_ZN8LibRobot5a_sonE
+ 1500 04e2 91E0      		ldi r25,lo8(1)
+ 1501 04e4 8927      		eor r24,r25
+ 1502 04e6 8093 0000 		sts _ZN8LibRobot5a_sonE,r24
+ 1503 04ea 00C0      		rjmp .L56
+ 1504               	.L57:
+ 420:libRobot.cpp  **** 		}
+ 421:libRobot.cpp  **** 		else
+ 422:libRobot.cpp  **** 		{
+ 423:libRobot.cpp  **** 			PORTB &= ~(_BV(PORTB2));
+ 1505               		.stabn	68,0,423,.LM163-.LFBB26
+ 1506               	.LM163:
+ 1507 04ec 2A98      		cbi 0x5,2
+ 1508               	.L56:
+ 1509               	/* epilogue start */
+ 1510               	.LBE103:
+ 424:libRobot.cpp  **** 		}
+ 425:libRobot.cpp  **** 	}
+ 1511               		.stabn	68,0,425,.LM164-.LFBB26
+ 1512               	.LM164:
+ 1513 04ee 9F91      		pop r25
+ 1514 04f0 8F91      		pop r24
+ 1515 04f2 0F90      		pop r0
+ 1516 04f4 0FBE      		out __SREG__,r0
+ 1517 04f6 0F90      		pop r0
+ 1518 04f8 1F90      		pop r1
+ 1519 04fa 1895      		reti
+ 1520               		.size	__vector_13, .-__vector_13
+ 1521               	.Lscope26:
+ 1522               		.stabs	"",36,0,0,.Lscope26-.LFBB26
+ 1523               		.stabd	78,0,0
+ 1524               		.stabs	"_ZN8LibRobot18partirMinuterieSonEj:F(0,4)",36,0,427,_ZN8LibRobot18partirMinuterieSonEj
+ 1525               		.stabs	"duree:P(0,31)",64,0,427,24
+ 1526               	.global	_ZN8LibRobot18partirMinuterieSonEj
+ 1527               		.type	_ZN8LibRobot18partirMinuterieSonEj, @function
+ 1528               	_ZN8LibRobot18partirMinuterieSonEj:
+ 1529               		.stabd	46,0,0
+ 426:libRobot.cpp  **** 
+ 427:libRobot.cpp  **** 	void LibRobot::partirMinuterieSon ( uint16_t duree ) {
+ 1530               		.stabn	68,0,427,.LM165-.LFBB27
+ 1531               	.LM165:
+ 1532               	.LFBB27:
+ 1533               	/* prologue: function */
+ 1534               	/* frame size = 0 */
+ 1535               	/* stack size = 0 */
+ 1536               	.L__stack_usage = 0
+ 428:libRobot.cpp  **** 	    	// mode CTC du timer 1 avec horloge divisee par 1024
+ 429:libRobot.cpp  **** 	    	// interruption après la duree specifiee
+ 430:libRobot.cpp  **** 		//8Mh --> 8 million operation seconde --> 0.000 000 125 seconde par operation * 1024 prescaler = 
+ 431:libRobot.cpp  **** 		//8Mh --> 8 million operation seconde --> 0.000 000 125 seconde par operation * 256 prescaler = 0
+ 432:libRobot.cpp  **** 
+ 433:libRobot.cpp  **** 	    	cli();           // disable all interrupts
+ 1537               		.stabn	68,0,433,.LM166-.LFBB27
+GAS LISTING /tmp/ccVVS130.s 			page 42
+
+
+ 1538               	.LM166:
+ 1539               	/* #APP */
+ 1540               	 ;  433 "libRobot.cpp" 1
+ 1541 04fc F894      		cli
+ 1542               	 ;  0 "" 2
+ 434:libRobot.cpp  **** 
+ 435:libRobot.cpp  **** 		TCCR1A = 0;
+ 1543               		.stabn	68,0,435,.LM167-.LFBB27
+ 1544               	.LM167:
+ 1545               	/* #NOAPP */
+ 1546 04fe 1092 8000 		sts 128,__zero_reg__
+ 436:libRobot.cpp  **** 		TCCR1B = 0;
+ 1547               		.stabn	68,0,436,.LM168-.LFBB27
+ 1548               	.LM168:
+ 1549 0502 E1E8      		ldi r30,lo8(-127)
+ 1550 0504 F0E0      		ldi r31,0
+ 1551 0506 1082      		st Z,__zero_reg__
+ 437:libRobot.cpp  **** 		TCNT1  = 0;// initialize counter
+ 1552               		.stabn	68,0,437,.LM169-.LFBB27
+ 1553               	.LM169:
+ 1554 0508 1092 8500 		sts 132+1,__zero_reg__
+ 1555 050c 1092 8400 		sts 132,__zero_reg__
+ 438:libRobot.cpp  **** 
+ 439:libRobot.cpp  **** 		OCR1A = duree;
+ 1556               		.stabn	68,0,439,.LM170-.LFBB27
+ 1557               	.LM170:
+ 1558 0510 9093 8900 		sts 136+1,r25
+ 1559 0514 8093 8800 		sts 136,r24
+ 440:libRobot.cpp  **** 		TCCR1B |= (1 << WGM12);   // CTC mode
+ 1560               		.stabn	68,0,440,.LM171-.LFBB27
+ 1561               	.LM171:
+ 1562 0518 8081      		ld r24,Z
+ 1563 051a 8860      		ori r24,lo8(8)
+ 1564 051c 8083      		st Z,r24
+ 441:libRobot.cpp  **** 		//TCCR1B |= (1 << CS10) | (1 << CS12);   // 1024 prescaler 
+ 442:libRobot.cpp  **** 		TCCR1B |= (1 << CS12);   // 256 prescaler 
+ 1565               		.stabn	68,0,442,.LM172-.LFBB27
+ 1566               	.LM172:
+ 1567 051e 8081      		ld r24,Z
+ 1568 0520 8460      		ori r24,lo8(4)
+ 1569 0522 8083      		st Z,r24
+ 443:libRobot.cpp  **** 		TIMSK1 |= (1 << OCIE1A);  // enable timer compare interrupt
+ 1570               		.stabn	68,0,443,.LM173-.LFBB27
+ 1571               	.LM173:
+ 1572 0524 EFE6      		ldi r30,lo8(111)
+ 1573 0526 F0E0      		ldi r31,0
+ 1574 0528 8081      		ld r24,Z
+ 1575 052a 8260      		ori r24,lo8(2)
+ 1576 052c 8083      		st Z,r24
+ 444:libRobot.cpp  **** 
+ 445:libRobot.cpp  **** 		sei();             // enable all interrupts   
+ 1577               		.stabn	68,0,445,.LM174-.LFBB27
+ 1578               	.LM174:
+ 1579               	/* #APP */
+ 1580               	 ;  445 "libRobot.cpp" 1
+ 1581 052e 7894      		sei
+ 1582               	 ;  0 "" 2
+GAS LISTING /tmp/ccVVS130.s 			page 43
+
+
+ 1583               	/* #NOAPP */
+ 1584 0530 0895      		ret
+ 1585               		.size	_ZN8LibRobot18partirMinuterieSonEj, .-_ZN8LibRobot18partirMinuterieSonEj
+ 1586               	.Lscope27:
+ 1587               		.stabs	"",36,0,0,.Lscope27-.LFBB27
+ 1588               		.stabd	78,0,0
+ 1589               		.stabs	"_ZN8LibRobot8jouerSonEh:F(0,4)",36,0,105,_ZN8LibRobot8jouerSonEh
+ 1590               		.stabs	"son:P(0,29)",64,0,105,24
+ 1591               	.global	_ZN8LibRobot8jouerSonEh
+ 1592               		.type	_ZN8LibRobot8jouerSonEh, @function
+ 1593               	_ZN8LibRobot8jouerSonEh:
+ 1594               		.stabd	46,0,0
+ 106:libRobot.cpp  **** 	{
+ 1595               		.stabn	68,0,106,.LM175-.LFBB28
+ 1596               	.LM175:
+ 1597               	.LFBB28:
+ 1598               	/* prologue: function */
+ 1599               	/* frame size = 0 */
+ 1600               	/* stack size = 0 */
+ 1601               	.L__stack_usage = 0
+ 107:libRobot.cpp  **** 		if(son == valeur_son) //Meme son que le son courrant
+ 1602               		.stabn	68,0,107,.LM176-.LFBB28
+ 1603               	.LM176:
+ 1604 0532 9091 0000 		lds r25,_ZN8LibRobot10valeur_sonE
+ 1605 0536 8917      		cp r24,r25
+ 1606 0538 01F4      		brne .+2
+ 1607 053a 00C0      		rjmp .L62
+ 113:libRobot.cpp  **** 		valeur_son = son;
+ 1608               		.stabn	68,0,113,.LM177-.LFBB28
+ 1609               	.LM177:
+ 1610 053c 8093 0000 		sts _ZN8LibRobot10valeur_sonE,r24
+ 114:libRobot.cpp  **** 		enabledSon = true;
+ 1611               		.stabn	68,0,114,.LM178-.LFBB28
+ 1612               	.LM178:
+ 1613 0540 91E0      		ldi r25,lo8(1)
+ 1614 0542 9093 0000 		sts _ZN8LibRobot10enabledSonE,r25
+ 115:libRobot.cpp  **** 		a_son = true;
+ 1615               		.stabn	68,0,115,.LM179-.LFBB28
+ 1616               	.LM179:
+ 1617 0546 9093 0000 		sts _ZN8LibRobot5a_sonE,r25
+ 118:libRobot.cpp  **** 		switch (son)
+ 1618               		.stabn	68,0,118,.LM180-.LFBB28
+ 1619               	.LM180:
+ 1620 054a 90E0      		ldi r25,0
+ 1621 054c FC01      		movw r30,r24
+ 1622 054e BD97      		sbiw r30,45
+ 1623 0550 E532      		cpi r30,37
+ 1624 0552 F105      		cpc r31,__zero_reg__
+ 1625 0554 00F0      		brlo .+2
+ 1626 0556 00C0      		rjmp .L62
+ 1627 0558 E050      		subi r30,lo8(-(gs(.L101)))
+ 1628 055a F040      		sbci r31,hi8(-(gs(.L101)))
+ 1629 055c 0C94 0000 		jmp __tablejump2__
+ 1630               		.section	.progmem.gcc_sw_table,"a",@progbits
+ 1631               		.p2align	1
+ 1632               	.L101:
+ 1633 0000 0000      		.word gs(.L64)
+GAS LISTING /tmp/ccVVS130.s 			page 44
+
+
+ 1634 0002 0000      		.word gs(.L65)
+ 1635 0004 0000      		.word gs(.L66)
+ 1636 0006 0000      		.word gs(.L67)
+ 1637 0008 0000      		.word gs(.L68)
+ 1638 000a 0000      		.word gs(.L69)
+ 1639 000c 0000      		.word gs(.L70)
+ 1640 000e 0000      		.word gs(.L71)
+ 1641 0010 0000      		.word gs(.L72)
+ 1642 0012 0000      		.word gs(.L73)
+ 1643 0014 0000      		.word gs(.L74)
+ 1644 0016 0000      		.word gs(.L75)
+ 1645 0018 0000      		.word gs(.L76)
+ 1646 001a 0000      		.word gs(.L77)
+ 1647 001c 0000      		.word gs(.L78)
+ 1648 001e 0000      		.word gs(.L79)
+ 1649 0020 0000      		.word gs(.L80)
+ 1650 0022 0000      		.word gs(.L81)
+ 1651 0024 0000      		.word gs(.L82)
+ 1652 0026 0000      		.word gs(.L83)
+ 1653 0028 0000      		.word gs(.L84)
+ 1654 002a 0000      		.word gs(.L85)
+ 1655 002c 0000      		.word gs(.L86)
+ 1656 002e 0000      		.word gs(.L87)
+ 1657 0030 0000      		.word gs(.L88)
+ 1658 0032 0000      		.word gs(.L89)
+ 1659 0034 0000      		.word gs(.L90)
+ 1660 0036 0000      		.word gs(.L91)
+ 1661 0038 0000      		.word gs(.L92)
+ 1662 003a 0000      		.word gs(.L93)
+ 1663 003c 0000      		.word gs(.L94)
+ 1664 003e 0000      		.word gs(.L95)
+ 1665 0040 0000      		.word gs(.L96)
+ 1666 0042 0000      		.word gs(.L97)
+ 1667 0044 0000      		.word gs(.L98)
+ 1668 0046 0000      		.word gs(.L99)
+ 1669 0048 0000      		.word gs(.L100)
+ 1670               		.text
+ 1671               	.L64:
+ 120:libRobot.cpp  **** 			case 45:{partirMinuterieSon(142);break;}
+ 1672               		.stabn	68,0,120,.LM181-.LFBB28
+ 1673               	.LM181:
+ 1674 0560 8EE8      		ldi r24,lo8(-114)
+ 1675 0562 90E0      		ldi r25,0
+ 1676 0564 00C0      		rjmp .L102
+ 1677               	.L65:
+ 121:libRobot.cpp  **** 			case 46:{partirMinuterieSon(134);break;}
+ 1678               		.stabn	68,0,121,.LM182-.LFBB28
+ 1679               	.LM182:
+ 1680 0566 86E8      		ldi r24,lo8(-122)
+ 1681 0568 90E0      		ldi r25,0
+ 1682 056a 00C0      		rjmp .L102
+ 1683               	.L66:
+ 122:libRobot.cpp  **** 			case 47:{partirMinuterieSon(127);break;}
+ 1684               		.stabn	68,0,122,.LM183-.LFBB28
+ 1685               	.LM183:
+ 1686 056c 8FE7      		ldi r24,lo8(127)
+ 1687 056e 90E0      		ldi r25,0
+GAS LISTING /tmp/ccVVS130.s 			page 45
+
+
+ 1688 0570 00C0      		rjmp .L102
+ 1689               	.L67:
+ 123:libRobot.cpp  **** 			case 48:{partirMinuterieSon(119);break;}
+ 1690               		.stabn	68,0,123,.LM184-.LFBB28
+ 1691               	.LM184:
+ 1692 0572 87E7      		ldi r24,lo8(119)
+ 1693 0574 90E0      		ldi r25,0
+ 1694 0576 00C0      		rjmp .L102
+ 1695               	.L68:
+ 124:libRobot.cpp  **** 			case 49:{partirMinuterieSon(113);break;}
+ 1696               		.stabn	68,0,124,.LM185-.LFBB28
+ 1697               	.LM185:
+ 1698 0578 81E7      		ldi r24,lo8(113)
+ 1699 057a 90E0      		ldi r25,0
+ 1700 057c 00C0      		rjmp .L102
+ 1701               	.L69:
+ 125:libRobot.cpp  **** 			case 50:{partirMinuterieSon(106);break;}
+ 1702               		.stabn	68,0,125,.LM186-.LFBB28
+ 1703               	.LM186:
+ 1704 057e 8AE6      		ldi r24,lo8(106)
+ 1705 0580 90E0      		ldi r25,0
+ 1706 0582 00C0      		rjmp .L102
+ 1707               	.L70:
+ 126:libRobot.cpp  **** 			case 51:{partirMinuterieSon(100);break;}
+ 1708               		.stabn	68,0,126,.LM187-.LFBB28
+ 1709               	.LM187:
+ 1710 0584 84E6      		ldi r24,lo8(100)
+ 1711 0586 90E0      		ldi r25,0
+ 1712 0588 00C0      		rjmp .L102
+ 1713               	.L71:
+ 127:libRobot.cpp  **** 			case 52:{partirMinuterieSon(95);break;}
+ 1714               		.stabn	68,0,127,.LM188-.LFBB28
+ 1715               	.LM188:
+ 1716 058a 8FE5      		ldi r24,lo8(95)
+ 1717 058c 90E0      		ldi r25,0
+ 1718 058e 00C0      		rjmp .L102
+ 1719               	.L72:
+ 128:libRobot.cpp  **** 			case 53:{partirMinuterieSon(89);break;}
+ 1720               		.stabn	68,0,128,.LM189-.LFBB28
+ 1721               	.LM189:
+ 1722 0590 89E5      		ldi r24,lo8(89)
+ 1723 0592 90E0      		ldi r25,0
+ 1724 0594 00C0      		rjmp .L102
+ 1725               	.L73:
+ 129:libRobot.cpp  **** 			case 54:{partirMinuterieSon(84);break;}
+ 1726               		.stabn	68,0,129,.LM190-.LFBB28
+ 1727               	.LM190:
+ 1728 0596 84E5      		ldi r24,lo8(84)
+ 1729 0598 90E0      		ldi r25,0
+ 1730 059a 00C0      		rjmp .L102
+ 1731               	.L74:
+ 130:libRobot.cpp  **** 			case 55:{partirMinuterieSon(80);break;}
+ 1732               		.stabn	68,0,130,.LM191-.LFBB28
+ 1733               	.LM191:
+ 1734 059c 80E5      		ldi r24,lo8(80)
+ 1735 059e 90E0      		ldi r25,0
+ 1736 05a0 00C0      		rjmp .L102
+GAS LISTING /tmp/ccVVS130.s 			page 46
+
+
+ 1737               	.L75:
+ 131:libRobot.cpp  **** 			case 56:{partirMinuterieSon(75);break;}
+ 1738               		.stabn	68,0,131,.LM192-.LFBB28
+ 1739               	.LM192:
+ 1740 05a2 8BE4      		ldi r24,lo8(75)
+ 1741 05a4 90E0      		ldi r25,0
+ 1742 05a6 00C0      		rjmp .L102
+ 1743               	.L76:
+ 132:libRobot.cpp  **** 			case 57:{partirMinuterieSon(71);break;}
+ 1744               		.stabn	68,0,132,.LM193-.LFBB28
+ 1745               	.LM193:
+ 1746 05a8 87E4      		ldi r24,lo8(71)
+ 1747 05aa 90E0      		ldi r25,0
+ 1748 05ac 00C0      		rjmp .L102
+ 1749               	.L77:
+ 133:libRobot.cpp  **** 			case 58:{partirMinuterieSon(67);break;}
+ 1750               		.stabn	68,0,133,.LM194-.LFBB28
+ 1751               	.LM194:
+ 1752 05ae 83E4      		ldi r24,lo8(67)
+ 1753 05b0 90E0      		ldi r25,0
+ 1754 05b2 00C0      		rjmp .L102
+ 1755               	.L78:
+ 134:libRobot.cpp  **** 			case 59:{partirMinuterieSon(63);break;}
+ 1756               		.stabn	68,0,134,.LM195-.LFBB28
+ 1757               	.LM195:
+ 1758 05b4 8FE3      		ldi r24,lo8(63)
+ 1759 05b6 90E0      		ldi r25,0
+ 1760 05b8 00C0      		rjmp .L102
+ 1761               	.L79:
+ 135:libRobot.cpp  **** 			case 60:{partirMinuterieSon(60);break;}
+ 1762               		.stabn	68,0,135,.LM196-.LFBB28
+ 1763               	.LM196:
+ 1764 05ba 8CE3      		ldi r24,lo8(60)
+ 1765 05bc 90E0      		ldi r25,0
+ 1766 05be 00C0      		rjmp .L102
+ 1767               	.L80:
+ 136:libRobot.cpp  **** 			case 61:{partirMinuterieSon(56);break;}
+ 1768               		.stabn	68,0,136,.LM197-.LFBB28
+ 1769               	.LM197:
+ 1770 05c0 88E3      		ldi r24,lo8(56)
+ 1771 05c2 90E0      		ldi r25,0
+ 1772 05c4 00C0      		rjmp .L102
+ 1773               	.L81:
+ 137:libRobot.cpp  **** 			case 62:{partirMinuterieSon(53);break;}
+ 1774               		.stabn	68,0,137,.LM198-.LFBB28
+ 1775               	.LM198:
+ 1776 05c6 85E3      		ldi r24,lo8(53)
+ 1777 05c8 90E0      		ldi r25,0
+ 1778 05ca 00C0      		rjmp .L102
+ 1779               	.L82:
+ 138:libRobot.cpp  **** 			case 63:{partirMinuterieSon(50);break;}
+ 1780               		.stabn	68,0,138,.LM199-.LFBB28
+ 1781               	.LM199:
+ 1782 05cc 82E3      		ldi r24,lo8(50)
+ 1783 05ce 90E0      		ldi r25,0
+ 1784 05d0 00C0      		rjmp .L102
+ 1785               	.L83:
+GAS LISTING /tmp/ccVVS130.s 			page 47
+
+
+ 139:libRobot.cpp  **** 			case 64:{partirMinuterieSon(47);break;}
+ 1786               		.stabn	68,0,139,.LM200-.LFBB28
+ 1787               	.LM200:
+ 1788 05d2 8FE2      		ldi r24,lo8(47)
+ 1789 05d4 90E0      		ldi r25,0
+ 1790 05d6 00C0      		rjmp .L102
+ 1791               	.L84:
+ 140:libRobot.cpp  **** 			case 65:{partirMinuterieSon(45);break;}
+ 1792               		.stabn	68,0,140,.LM201-.LFBB28
+ 1793               	.LM201:
+ 1794 05d8 8DE2      		ldi r24,lo8(45)
+ 1795 05da 90E0      		ldi r25,0
+ 1796 05dc 00C0      		rjmp .L102
+ 1797               	.L85:
+ 141:libRobot.cpp  **** 			case 66:{partirMinuterieSon(42);break;}
+ 1798               		.stabn	68,0,141,.LM202-.LFBB28
+ 1799               	.LM202:
+ 1800 05de 8AE2      		ldi r24,lo8(42)
+ 1801 05e0 90E0      		ldi r25,0
+ 1802 05e2 00C0      		rjmp .L102
+ 1803               	.L86:
+ 142:libRobot.cpp  **** 			case 67:{partirMinuterieSon(40);break;}
+ 1804               		.stabn	68,0,142,.LM203-.LFBB28
+ 1805               	.LM203:
+ 1806 05e4 88E2      		ldi r24,lo8(40)
+ 1807 05e6 90E0      		ldi r25,0
+ 1808 05e8 00C0      		rjmp .L102
+ 1809               	.L87:
+ 143:libRobot.cpp  **** 			case 68:{partirMinuterieSon(38);break;}
+ 1810               		.stabn	68,0,143,.LM204-.LFBB28
+ 1811               	.LM204:
+ 1812 05ea 86E2      		ldi r24,lo8(38)
+ 1813 05ec 90E0      		ldi r25,0
+ 1814 05ee 00C0      		rjmp .L102
+ 1815               	.L88:
+ 144:libRobot.cpp  **** 			case 69:{partirMinuterieSon(36);break;}
+ 1816               		.stabn	68,0,144,.LM205-.LFBB28
+ 1817               	.LM205:
+ 1818 05f0 84E2      		ldi r24,lo8(36)
+ 1819 05f2 90E0      		ldi r25,0
+ 1820 05f4 00C0      		rjmp .L102
+ 1821               	.L89:
+ 145:libRobot.cpp  **** 			case 70:{partirMinuterieSon(34);break;}
+ 1822               		.stabn	68,0,145,.LM206-.LFBB28
+ 1823               	.LM206:
+ 1824 05f6 82E2      		ldi r24,lo8(34)
+ 1825 05f8 90E0      		ldi r25,0
+ 1826 05fa 00C0      		rjmp .L102
+ 1827               	.L90:
+ 146:libRobot.cpp  **** 			case 71:{partirMinuterieSon(32);break;}
+ 1828               		.stabn	68,0,146,.LM207-.LFBB28
+ 1829               	.LM207:
+ 1830 05fc 80E2      		ldi r24,lo8(32)
+ 1831 05fe 90E0      		ldi r25,0
+ 1832 0600 00C0      		rjmp .L102
+ 1833               	.L91:
+ 147:libRobot.cpp  **** 			case 72:{partirMinuterieSon(30);break;}
+GAS LISTING /tmp/ccVVS130.s 			page 48
+
+
+ 1834               		.stabn	68,0,147,.LM208-.LFBB28
+ 1835               	.LM208:
+ 1836 0602 8EE1      		ldi r24,lo8(30)
+ 1837 0604 90E0      		ldi r25,0
+ 1838 0606 00C0      		rjmp .L102
+ 1839               	.L92:
+ 148:libRobot.cpp  **** 			case 73:{partirMinuterieSon(28);break;}
+ 1840               		.stabn	68,0,148,.LM209-.LFBB28
+ 1841               	.LM209:
+ 1842 0608 8CE1      		ldi r24,lo8(28)
+ 1843 060a 90E0      		ldi r25,0
+ 1844 060c 00C0      		rjmp .L102
+ 1845               	.L93:
+ 149:libRobot.cpp  **** 			case 74:{partirMinuterieSon(27);break;}
+ 1846               		.stabn	68,0,149,.LM210-.LFBB28
+ 1847               	.LM210:
+ 1848 060e 8BE1      		ldi r24,lo8(27)
+ 1849 0610 90E0      		ldi r25,0
+ 1850 0612 00C0      		rjmp .L102
+ 1851               	.L94:
+ 150:libRobot.cpp  **** 			case 75:{partirMinuterieSon(25);break;}
+ 1852               		.stabn	68,0,150,.LM211-.LFBB28
+ 1853               	.LM211:
+ 1854 0614 89E1      		ldi r24,lo8(25)
+ 1855 0616 90E0      		ldi r25,0
+ 1856 0618 00C0      		rjmp .L102
+ 1857               	.L95:
+ 151:libRobot.cpp  **** 			case 76:{partirMinuterieSon(24);break;}
+ 1858               		.stabn	68,0,151,.LM212-.LFBB28
+ 1859               	.LM212:
+ 1860 061a 88E1      		ldi r24,lo8(24)
+ 1861 061c 90E0      		ldi r25,0
+ 1862 061e 00C0      		rjmp .L102
+ 1863               	.L96:
+ 152:libRobot.cpp  **** 			case 77:{partirMinuterieSon(22);break;}
+ 1864               		.stabn	68,0,152,.LM213-.LFBB28
+ 1865               	.LM213:
+ 1866 0620 86E1      		ldi r24,lo8(22)
+ 1867 0622 90E0      		ldi r25,0
+ 1868 0624 00C0      		rjmp .L102
+ 1869               	.L97:
+ 153:libRobot.cpp  **** 			case 78:{partirMinuterieSon(21);break;}
+ 1870               		.stabn	68,0,153,.LM214-.LFBB28
+ 1871               	.LM214:
+ 1872 0626 85E1      		ldi r24,lo8(21)
+ 1873 0628 90E0      		ldi r25,0
+ 1874 062a 00C0      		rjmp .L102
+ 1875               	.L98:
+ 154:libRobot.cpp  **** 			case 79:{partirMinuterieSon(20);break;}
+ 1876               		.stabn	68,0,154,.LM215-.LFBB28
+ 1877               	.LM215:
+ 1878 062c 84E1      		ldi r24,lo8(20)
+ 1879 062e 90E0      		ldi r25,0
+ 1880 0630 00C0      		rjmp .L102
+ 1881               	.L99:
+ 155:libRobot.cpp  **** 			case 80:{partirMinuterieSon(19);break;}
+ 1882               		.stabn	68,0,155,.LM216-.LFBB28
+GAS LISTING /tmp/ccVVS130.s 			page 49
+
+
+ 1883               	.LM216:
+ 1884 0632 83E1      		ldi r24,lo8(19)
+ 1885 0634 90E0      		ldi r25,0
+ 1886 0636 00C0      		rjmp .L102
+ 1887               	.L100:
+ 156:libRobot.cpp  **** 			case 81:{partirMinuterieSon(18);break;}
+ 1888               		.stabn	68,0,156,.LM217-.LFBB28
+ 1889               	.LM217:
+ 1890 0638 82E1      		ldi r24,lo8(18)
+ 1891 063a 90E0      		ldi r25,0
+ 1892               	.L102:
+ 1893 063c 0C94 0000 		jmp _ZN8LibRobot18partirMinuterieSonEj
+ 1894               	.L62:
+ 1895 0640 0895      		ret
+ 1896               		.size	_ZN8LibRobot8jouerSonEh, .-_ZN8LibRobot8jouerSonEh
+ 1897               	.Lscope28:
+ 1898               		.stabs	"",36,0,0,.Lscope28-.LFBB28
+ 1899               		.stabd	78,0,0
+ 1900               		.stabs	"_ZN8LibRobot11attenuerDELEb:F(0,4)",36,0,449,_ZN8LibRobot11attenuerDELEb
+ 1901               		.stabs	"rouge:P(0,24)",64,0,449,24
+ 1902               	.global	_ZN8LibRobot11attenuerDELEb
+ 1903               		.type	_ZN8LibRobot11attenuerDELEb, @function
+ 1904               	_ZN8LibRobot11attenuerDELEb:
+ 1905               		.stabd	46,0,0
+ 446:libRobot.cpp  **** 	}
+ 447:libRobot.cpp  **** 
+ 448:libRobot.cpp  **** 
+ 449:libRobot.cpp  **** void LibRobot::attenuerDEL(bool rouge){
+ 1906               		.stabn	68,0,449,.LM218-.LFBB29
+ 1907               	.LM218:
+ 1908               	.LFBB29:
+ 1909               	/* prologue: function */
+ 1910               	/* frame size = 0 */
+ 1911               	/* stack size = 0 */
+ 1912               	.L__stack_usage = 0
+ 1913               	.LBB104:
+ 1914               	.LBB105:
+ 1915               	.LBB106:
+ 1916               	.LBB107:
+ 450:libRobot.cpp  ****   
+ 451:libRobot.cpp  ****   /* Information sur branchements */
+ 452:libRobot.cpp  ****   /* Port B0 branché sur +        */
+ 453:libRobot.cpp  ****   /* Port B1 branché sur -        */
+ 454:libRobot.cpp  ****   
+ 455:libRobot.cpp  ****   //Require -- DDRB = 0xff; // PORT B est en mode sortie.
+ 456:libRobot.cpp  ****   
+ 457:libRobot.cpp  ****   const uint16_t dureeOperation = 1000; //en us
+ 458:libRobot.cpp  ****   const uint16_t nbOperation = 1000; //1000 operations seconde
+ 459:libRobot.cpp  ****   
+ 460:libRobot.cpp  ****   for(uint16_t j = 0; j< nbOperation; j++)
+ 461:libRobot.cpp  ****   {
+ 462:libRobot.cpp  ****       for(uint8_t i =0; i< 3; i++)
+ 463:libRobot.cpp  ****       {
+ 464:libRobot.cpp  **** 	  uint16_t attenteAllumee = dureeOperation-j; //en micro seconde
+ 465:libRobot.cpp  **** 	  uint16_t attenteEteint = dureeOperation-attenteAllumee;    
+ 466:libRobot.cpp  **** 
+ 467:libRobot.cpp  **** 	  if(rouge)
+GAS LISTING /tmp/ccVVS130.s 			page 50
+
+
+ 468:libRobot.cpp  **** 	      PORTB = _BV(PORTB0); //Rouge
+ 469:libRobot.cpp  **** 	  else
+ 470:libRobot.cpp  **** 	      PORTB = _BV(PORTB1); //Vert
+ 471:libRobot.cpp  **** 	      
+ 472:libRobot.cpp  **** 	  _delay_loop_2(attenteAllumee*2+1);
+ 473:libRobot.cpp  **** 	  
+ 474:libRobot.cpp  **** 	  PORTB = 0x0;
+ 475:libRobot.cpp  **** 	  _delay_loop_2(attenteEteint*2+1);
+ 1917               		.stabn	68,0,475,.LM219-.LFBB29
+ 1918               	.LM219:
+ 1919 0642 21ED      		ldi r18,lo8(-47)
+ 1920 0644 37E0      		ldi r19,lo8(7)
+ 1921 0646 62ED      		ldi r22,lo8(-46)
+ 1922 0648 77E0      		ldi r23,lo8(7)
+ 470:libRobot.cpp  **** 	      PORTB = _BV(PORTB1); //Vert
+ 1923               		.stabn	68,0,470,.LM220-.LFBB29
+ 1924               	.LM220:
+ 1925 064a A2E0      		ldi r26,lo8(2)
+ 468:libRobot.cpp  **** 	      PORTB = _BV(PORTB0); //Rouge
+ 1926               		.stabn	68,0,468,.LM221-.LFBB29
+ 1927               	.LM221:
+ 1928 064c B1E0      		ldi r27,lo8(1)
+ 1929 064e 00C0      		rjmp .L104
+ 1930               	.L107:
+ 467:libRobot.cpp  **** 	  if(rouge)
+ 1931               		.stabn	68,0,467,.LM222-.LFBB29
+ 1932               	.LM222:
+ 1933 0650 8823      		tst r24
+ 1934 0652 01F0      		breq .L105
+ 468:libRobot.cpp  **** 	      PORTB = _BV(PORTB0); //Rouge
+ 1935               		.stabn	68,0,468,.LM223-.LFBB29
+ 1936               	.LM223:
+ 1937 0654 B5B9      		out 0x5,r27
+ 1938 0656 00C0      		rjmp .L106
+ 1939               	.L105:
+ 470:libRobot.cpp  **** 	      PORTB = _BV(PORTB1); //Vert
+ 1940               		.stabn	68,0,470,.LM224-.LFBB29
+ 1941               	.LM224:
+ 1942 0658 A5B9      		out 0x5,r26
+ 1943               	.L106:
+ 1944               	.LBB108:
+ 1945               	.LBB109:
+ 1946               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext23
+ 1947               	.Ltext23:
+ 1948               		.stabn	68,0,110,.LM225-.LFBB29
+ 1949               	.LM225:
+ 1950 065a F901      		movw r30,r18
+ 1951               	/* #APP */
+ 1952               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 1953 065c 3197      		1: sbiw r30,1
+ 1954 065e 01F4      		brne 1b
+ 1955               	 ;  0 "" 2
+ 1956               	/* #NOAPP */
+ 1957               	.LBE109:
+ 1958               	.LBE108:
+ 1959               		.stabs	"libRobot.cpp",132,0,0,.Ltext24
+ 1960               	.Ltext24:
+GAS LISTING /tmp/ccVVS130.s 			page 51
+
+
+ 474:libRobot.cpp  **** 	  PORTB = 0x0;
+ 1961               		.stabn	68,0,474,.LM226-.LFBB29
+ 1962               	.LM226:
+ 1963 0660 15B8      		out 0x5,__zero_reg__
+ 1964               	.LBB110:
+ 1965               	.LBB111:
+ 1966               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext25
+ 1967               	.Ltext25:
+ 1968               		.stabn	68,0,110,.LM227-.LFBB29
+ 1969               	.LM227:
+ 1970 0662 FA01      		movw r30,r20
+ 1971               	/* #APP */
+ 1972               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 1973 0664 3197      		1: sbiw r30,1
+ 1974 0666 01F4      		brne 1b
+ 1975               	 ;  0 "" 2
+ 1976               	/* #NOAPP */
+ 1977 0668 9150      		subi r25,lo8(-(-1))
+ 1978               	.LBE111:
+ 1979               	.LBE110:
+ 1980               	.LBE107:
+ 1981               		.stabs	"libRobot.cpp",132,0,0,.Ltext26
+ 1982               	.Ltext26:
+ 462:libRobot.cpp  ****       for(uint8_t i =0; i< 3; i++)
+ 1983               		.stabn	68,0,462,.LM228-.LFBB29
+ 1984               	.LM228:
+ 1985 066a 01F4      		brne .L107
+ 1986 066c 2250      		subi r18,2
+ 1987 066e 3109      		sbc r19,__zero_reg__
+ 1988               	.LBE106:
+ 460:libRobot.cpp  ****   for(uint16_t j = 0; j< nbOperation; j++)
+ 1989               		.stabn	68,0,460,.LM229-.LFBB29
+ 1990               	.LM229:
+ 1991 0670 2130      		cpi r18,1
+ 1992 0672 3105      		cpc r19,__zero_reg__
+ 1993 0674 01F0      		breq .L103
+ 1994               	.L104:
+ 1995               	.LBB113:
+ 1996               	.LBB112:
+ 1997               		.stabn	68,0,475,.LM230-.LFBB29
+ 1998               	.LM230:
+ 1999 0676 AB01      		movw r20,r22
+ 2000 0678 421B      		sub r20,r18
+ 2001 067a 530B      		sbc r21,r19
+ 2002 067c 93E0      		ldi r25,lo8(3)
+ 2003 067e 00C0      		rjmp .L107
+ 2004               	.L103:
+ 2005 0680 0895      		ret
+ 2006               	.LBE112:
+ 2007               	.LBE113:
+ 2008               	.LBE105:
+ 2009               	.LBE104:
+ 2010               		.size	_ZN8LibRobot11attenuerDELEb, .-_ZN8LibRobot11attenuerDELEb
+ 2011               	.Lscope29:
+ 2012               		.stabs	"",36,0,0,.Lscope29-.LFBB29
+ 2013               		.stabd	78,0,0
+ 2014               		.stabs	"_ZN8LibRobot8testRoueEjjh:F(0,4)",36,0,482,_ZN8LibRobot8testRoueEjjh
+GAS LISTING /tmp/ccVVS130.s 			page 52
+
+
+ 2015               		.stabs	"a:P(0,31)",64,0,482,24
+ 2016               		.stabs	"b:P(0,31)",64,0,482,22
+ 2017               		.stabs	"port:P(0,29)",64,0,482,20
+ 2018               	.global	_ZN8LibRobot8testRoueEjjh
+ 2019               		.type	_ZN8LibRobot8testRoueEjjh, @function
+ 2020               	_ZN8LibRobot8testRoueEjjh:
+ 2021               		.stabd	46,0,0
+ 476:libRobot.cpp  ****       }
+ 477:libRobot.cpp  ****     
+ 478:libRobot.cpp  ****   }
+ 479:libRobot.cpp  ****   
+ 480:libRobot.cpp  **** }
+ 481:libRobot.cpp  **** 
+ 482:libRobot.cpp  **** void LibRobot::testRoue(uint16_t a, uint16_t b, uint8_t port)
+ 483:libRobot.cpp  **** {
+ 2022               		.stabn	68,0,483,.LM231-.LFBB30
+ 2023               	.LM231:
+ 2024               	.LFBB30:
+ 2025               	/* prologue: function */
+ 2026               	/* frame size = 0 */
+ 2027               	/* stack size = 0 */
+ 2028               	.L__stack_usage = 0
+ 2029               	.LBB114:
+ 484:libRobot.cpp  ****     //ex b = 16667, a = 16667 >> 1 --> un pwm 50% de 1/60 seconde de duree
+ 485:libRobot.cpp  ****  
+ 486:libRobot.cpp  ****     uint16_t attenteEteint = b - a;
+ 487:libRobot.cpp  **** 
+ 488:libRobot.cpp  ****     PORTC = 0x0;
+ 2030               		.stabn	68,0,488,.LM232-.LFBB30
+ 2031               	.LM232:
+ 2032 0682 18B8      		out 0x8,__zero_reg__
+ 2033               	.LBB115:
+ 489:libRobot.cpp  ****     for(uint8_t i =0; i< 2; i++)
+ 490:libRobot.cpp  ****     {
+ 491:libRobot.cpp  **** 	PORTC = _BV(PORTC0);
+ 2034               		.stabn	68,0,491,.LM233-.LFBB30
+ 2035               	.LM233:
+ 2036 0684 41E0      		ldi r20,lo8(1)
+ 2037 0686 48B9      		out 0x8,r20
+ 492:libRobot.cpp  **** 	_delay_loop_2((a<<1)+1);
+ 2038               		.stabn	68,0,492,.LM234-.LFBB30
+ 2039               	.LM234:
+ 2040 0688 9C01      		movw r18,r24
+ 2041 068a 220F      		lsl r18
+ 2042 068c 331F      		rol r19
+ 2043 068e 2F5F      		subi r18,-1
+ 2044 0690 3F4F      		sbci r19,-1
+ 2045               	.LBB116:
+ 2046               	.LBB117:
+ 2047               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext27
+ 2048               	.Ltext27:
+ 2049               		.stabn	68,0,110,.LM235-.LFBB30
+ 2050               	.LM235:
+ 2051 0692 F901      		movw r30,r18
+ 2052               	/* #APP */
+ 2053               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 2054 0694 3197      		1: sbiw r30,1
+GAS LISTING /tmp/ccVVS130.s 			page 53
+
+
+ 2055 0696 01F4      		brne 1b
+ 2056               	 ;  0 "" 2
+ 2057               	/* #NOAPP */
+ 2058               	.LBE117:
+ 2059               	.LBE116:
+ 2060               		.stabs	"libRobot.cpp",132,0,0,.Ltext28
+ 2061               	.Ltext28:
+ 493:libRobot.cpp  **** 	
+ 494:libRobot.cpp  **** 	PORTC = 0x0;
+ 2062               		.stabn	68,0,494,.LM236-.LFBB30
+ 2063               	.LM236:
+ 2064 0698 18B8      		out 0x8,__zero_reg__
+ 2065               	.LBE115:
+ 486:libRobot.cpp  ****     uint16_t attenteEteint = b - a;
+ 2066               		.stabn	68,0,486,.LM237-.LFBB30
+ 2067               	.LM237:
+ 2068 069a 681B      		sub r22,r24
+ 2069 069c 790B      		sbc r23,r25
+ 2070               	.LBB124:
+ 495:libRobot.cpp  **** 	_delay_loop_2((attenteEteint<<1)+1);
+ 2071               		.stabn	68,0,495,.LM238-.LFBB30
+ 2072               	.LM238:
+ 2073 069e 660F      		lsl r22
+ 2074 06a0 771F      		rol r23
+ 2075 06a2 6F5F      		subi r22,-1
+ 2076 06a4 7F4F      		sbci r23,-1
+ 2077               	.LBB119:
+ 2078               	.LBB120:
+ 2079               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext29
+ 2080               	.Ltext29:
+ 2081               		.stabn	68,0,110,.LM239-.LFBB30
+ 2082               	.LM239:
+ 2083 06a6 CB01      		movw r24,r22
+ 2084               	/* #APP */
+ 2085               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 2086 06a8 0197      		1: sbiw r24,1
+ 2087 06aa 01F4      		brne 1b
+ 2088               	 ;  0 "" 2
+ 2089               	/* #NOAPP */
+ 2090               	.LBE120:
+ 2091               	.LBE119:
+ 2092               		.stabs	"libRobot.cpp",132,0,0,.Ltext30
+ 2093               	.Ltext30:
+ 491:libRobot.cpp  **** 	PORTC = _BV(PORTC0);
+ 2094               		.stabn	68,0,491,.LM240-.LFBB30
+ 2095               	.LM240:
+ 2096 06ac 48B9      		out 0x8,r20
+ 2097               	.LBB122:
+ 2098               	.LBB118:
+ 2099               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext31
+ 2100               	.Ltext31:
+ 2101               		.stabn	68,0,110,.LM241-.LFBB30
+ 2102               	.LM241:
+ 2103 06ae C901      		movw r24,r18
+ 2104               	/* #APP */
+ 2105               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 2106 06b0 0197      		1: sbiw r24,1
+GAS LISTING /tmp/ccVVS130.s 			page 54
+
+
+ 2107 06b2 01F4      		brne 1b
+ 2108               	 ;  0 "" 2
+ 2109               	/* #NOAPP */
+ 2110               	.LBE118:
+ 2111               	.LBE122:
+ 2112               		.stabs	"libRobot.cpp",132,0,0,.Ltext32
+ 2113               	.Ltext32:
+ 494:libRobot.cpp  **** 	PORTC = 0x0;
+ 2114               		.stabn	68,0,494,.LM242-.LFBB30
+ 2115               	.LM242:
+ 2116 06b4 18B8      		out 0x8,__zero_reg__
+ 2117               	.LBB123:
+ 2118               	.LBB121:
+ 2119               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext33
+ 2120               	.Ltext33:
+ 2121               		.stabn	68,0,110,.LM243-.LFBB30
+ 2122               	.LM243:
+ 2123 06b6 CB01      		movw r24,r22
+ 2124               	/* #APP */
+ 2125               	 ;  110 "/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay_basic.h" 1
+ 2126 06b8 0197      		1: sbiw r24,1
+ 2127 06ba 01F4      		brne 1b
+ 2128               	 ;  0 "" 2
+ 2129               	/* #NOAPP */
+ 2130               	.LBE121:
+ 2131               	.LBE123:
+ 2132               	.LBE124:
+ 2133               		.stabs	"libRobot.cpp",132,0,0,.Ltext34
+ 2134               	.Ltext34:
+ 496:libRobot.cpp  ****     }
+ 497:libRobot.cpp  ****     PORTC = 0x0;
+ 2135               		.stabn	68,0,497,.LM244-.LFBB30
+ 2136               	.LM244:
+ 2137 06bc 18B8      		out 0x8,__zero_reg__
+ 2138 06be 0895      		ret
+ 2139               	.LBE114:
+ 2140               		.size	_ZN8LibRobot8testRoueEjjh, .-_ZN8LibRobot8testRoueEjjh
+ 2141               	.Lscope30:
+ 2142               		.stabs	"",36,0,0,.Lscope30-.LFBB30
+ 2143               		.stabd	78,0,0
+ 2144               		.stabs	"_ZN8LibRobot8testPortERVhh:F(0,4)",36,0,500,_ZN8LibRobot8testPortERVhh
+ 2145               		.stabs	"port:P(0,79)",64,0,500,24
+ 2146               		.stabs	"valeur:P(0,29)",64,0,500,22
+ 2147               	.global	_ZN8LibRobot8testPortERVhh
+ 2148               		.type	_ZN8LibRobot8testPortERVhh, @function
+ 2149               	_ZN8LibRobot8testPortERVhh:
+ 2150               		.stabd	46,0,0
+ 498:libRobot.cpp  **** }
+ 499:libRobot.cpp  **** 
+ 500:libRobot.cpp  **** void LibRobot::testPort(volatile uint8_t &port, uint8_t valeur)
+ 501:libRobot.cpp  **** {
+ 2151               		.stabn	68,0,501,.LM245-.LFBB31
+ 2152               	.LM245:
+ 2153               	.LFBB31:
+ 2154               	/* prologue: function */
+ 2155               	/* frame size = 0 */
+ 2156               	/* stack size = 0 */
+GAS LISTING /tmp/ccVVS130.s 			page 55
+
+
+ 2157               	.L__stack_usage = 0
+ 502:libRobot.cpp  **** 	port = valeur;
+ 2158               		.stabn	68,0,502,.LM246-.LFBB31
+ 2159               	.LM246:
+ 2160 06c0 FC01      		movw r30,r24
+ 2161 06c2 6083      		st Z,r22
+ 2162 06c4 0895      		ret
+ 2163               		.size	_ZN8LibRobot8testPortERVhh, .-_ZN8LibRobot8testPortERVhh
+ 2164               	.Lscope31:
+ 2165               		.stabs	"",36,0,0,.Lscope31-.LFBB31
+ 2166               		.stabd	78,0,0
+ 2167               	.global	_ZN8LibRobot10enabledSonE
+ 2168               		.section .bss
+ 2169               		.type	_ZN8LibRobot10enabledSonE, @object
+ 2170               		.size	_ZN8LibRobot10enabledSonE, 1
+ 2171               	_ZN8LibRobot10enabledSonE:
+ 2172 0000 00        		.zero	1
+ 2173               	.global	_ZN8LibRobot10valeur_sonE
+ 2174               		.type	_ZN8LibRobot10valeur_sonE, @object
+ 2175               		.size	_ZN8LibRobot10valeur_sonE, 1
+ 2176               	_ZN8LibRobot10valeur_sonE:
+ 2177 0001 00        		.zero	1
+ 2178               	.global	_ZN8LibRobot5a_sonE
+ 2179               		.type	_ZN8LibRobot5a_sonE, @object
+ 2180               		.size	_ZN8LibRobot5a_sonE, 1
+ 2181               	_ZN8LibRobot5a_sonE:
+ 2182 0002 00        		.zero	1
+ 2183               	.global	_ZN8LibRobot8pinSensGE
+ 2184               		.type	_ZN8LibRobot8pinSensGE, @object
+ 2185               		.size	_ZN8LibRobot8pinSensGE, 1
+ 2186               	_ZN8LibRobot8pinSensGE:
+ 2187 0003 00        		.zero	1
+ 2188               	.global	_ZN8LibRobot8pinSensDE
+ 2189               		.type	_ZN8LibRobot8pinSensDE, @object
+ 2190               		.size	_ZN8LibRobot8pinSensDE, 1
+ 2191               	_ZN8LibRobot8pinSensDE:
+ 2192 0004 00        		.zero	1
+ 2193               	.global	_ZN8LibRobot10pinEnableGE
+ 2194               		.type	_ZN8LibRobot10pinEnableGE, @object
+ 2195               		.size	_ZN8LibRobot10pinEnableGE, 1
+ 2196               	_ZN8LibRobot10pinEnableGE:
+ 2197 0005 00        		.zero	1
+ 2198               	.global	_ZN8LibRobot10pinEnableDE
+ 2199               		.type	_ZN8LibRobot10pinEnableDE, @object
+ 2200               		.size	_ZN8LibRobot10pinEnableDE, 1
+ 2201               	_ZN8LibRobot10pinEnableDE:
+ 2202 0006 00        		.zero	1
+ 2203               	.global	_ZN8LibRobot8enabledGE
+ 2204               		.type	_ZN8LibRobot8enabledGE, @object
+ 2205               		.size	_ZN8LibRobot8enabledGE, 1
+ 2206               	_ZN8LibRobot8enabledGE:
+ 2207 0007 00        		.zero	1
+ 2208               	.global	_ZN8LibRobot8enabledDE
+ 2209               		.type	_ZN8LibRobot8enabledDE, @object
+ 2210               		.size	_ZN8LibRobot8enabledDE, 1
+ 2211               	_ZN8LibRobot8enabledDE:
+ 2212 0008 00        		.zero	1
+GAS LISTING /tmp/ccVVS130.s 			page 56
+
+
+ 2213               	.global	_ZN8LibRobot5sensGE
+ 2214               		.type	_ZN8LibRobot5sensGE, @object
+ 2215               		.size	_ZN8LibRobot5sensGE, 1
+ 2216               	_ZN8LibRobot5sensGE:
+ 2217 0009 00        		.zero	1
+ 2218               	.global	_ZN8LibRobot5sensDE
+ 2219               		.type	_ZN8LibRobot5sensDE, @object
+ 2220               		.size	_ZN8LibRobot5sensDE, 1
+ 2221               	_ZN8LibRobot5sensDE:
+ 2222 000a 00        		.zero	1
+ 2223               	.global	_ZN8LibRobot2aGE
+ 2224               		.type	_ZN8LibRobot2aGE, @object
+ 2225               		.size	_ZN8LibRobot2aGE, 2
+ 2226               	_ZN8LibRobot2aGE:
+ 2227 000b 0000      		.zero	2
+ 2228               	.global	_ZN8LibRobot2aDE
+ 2229               		.type	_ZN8LibRobot2aDE, @object
+ 2230               		.size	_ZN8LibRobot2aDE, 2
+ 2231               	_ZN8LibRobot2aDE:
+ 2232 000d 0000      		.zero	2
+ 2233               	.global	_ZN8LibRobot8nb_delaiE
+ 2234               		.type	_ZN8LibRobot8nb_delaiE, @object
+ 2235               		.size	_ZN8LibRobot8nb_delaiE, 2
+ 2236               	_ZN8LibRobot8nb_delaiE:
+ 2237 000f 0000      		.zero	2
+ 2238               	.global	_ZN8LibRobot10nb_attenteE
+ 2239               		.type	_ZN8LibRobot10nb_attenteE, @object
+ 2240               		.size	_ZN8LibRobot10nb_attenteE, 2
+ 2241               	_ZN8LibRobot10nb_attenteE:
+ 2242 0011 0000      		.zero	2
+ 2243               	.global	_ZN8LibRobot4fin_E
+ 2244               		.type	_ZN8LibRobot4fin_E, @object
+ 2245               		.size	_ZN8LibRobot4fin_E, 1
+ 2246               	_ZN8LibRobot4fin_E:
+ 2247 0013 00        		.zero	1
+ 2248               	.global	_ZN8LibRobot6debut_E
+ 2249               		.type	_ZN8LibRobot6debut_E, @object
+ 2250               		.size	_ZN8LibRobot6debut_E, 1
+ 2251               	_ZN8LibRobot6debut_E:
+ 2252 0014 00        		.zero	1
+ 2253               		.stabs	"_ZN8LibRobot6debut_E:G(0,24)",32,0,16,0
+ 2254               		.stabs	"_ZN8LibRobot4fin_E:G(0,24)",32,0,17,0
+ 2255               		.stabs	"_ZN8LibRobot10nb_attenteE:G(0,30)",32,0,20,0
+ 2256               		.stabs	"_ZN8LibRobot8nb_delaiE:G(0,30)",32,0,21,0
+ 2257               		.stabs	"_ZN8LibRobot2aDE:G(0,31)",32,0,24,0
+ 2258               		.stabs	"_ZN8LibRobot2aGE:G(0,31)",32,0,25,0
+ 2259               		.stabs	"_ZN8LibRobot5sensDE:G(0,24)",32,0,26,0
+ 2260               		.stabs	"_ZN8LibRobot5sensGE:G(0,24)",32,0,27,0
+ 2261               		.stabs	"_ZN8LibRobot8enabledDE:G(0,24)",32,0,28,0
+ 2262               		.stabs	"_ZN8LibRobot8enabledGE:G(0,24)",32,0,29,0
+ 2263               		.stabs	"_ZN8LibRobot10pinEnableDE:G(0,29)",32,0,30,0
+ 2264               		.stabs	"_ZN8LibRobot10pinEnableGE:G(0,29)",32,0,31,0
+ 2265               		.stabs	"_ZN8LibRobot8pinSensDE:G(0,29)",32,0,32,0
+ 2266               		.stabs	"_ZN8LibRobot8pinSensGE:G(0,29)",32,0,33,0
+ 2267               		.stabs	"_ZN8LibRobot5a_sonE:G(0,60)",32,0,36,0
+ 2268               		.stabs	"_ZN8LibRobot10valeur_sonE:G(0,61)",32,0,37,0
+ 2269               		.stabs	"_ZN8LibRobot10enabledSonE:G(0,60)",32,0,38,0
+GAS LISTING /tmp/ccVVS130.s 			page 57
+
+
+ 2270               		.text
+ 2271               		.stabs	"",100,0,0,.Letext0
+ 2272               	.Letext0:
+ 2273               		.ident	"GCC: (Fedora 4.7.3-0.1.fc19) 4.7.3 20130216 (prerelease)"
+ 2274               	.global __do_clear_bss
+GAS LISTING /tmp/ccVVS130.s 			page 58
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 libRobot.cpp
+     /tmp/ccVVS130.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccVVS130.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccVVS130.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccVVS130.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccVVS130.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccVVS130.s:79     .text:0000000000000000 _ZN8LibRobotC2Ev
+     /tmp/ccVVS130.s:79     .text:0000000000000000 _ZN8LibRobotC1Ev
+     /tmp/ccVVS130.s:99     .text:0000000000000002 _ZN8LibRobotD2Ev
+     /tmp/ccVVS130.s:99     .text:0000000000000002 _ZN8LibRobotD1Ev
+     /tmp/ccVVS130.s:118    .text:0000000000000004 _ZN8LibRobot16BoutonEstEnfonceEv
+     /tmp/ccVVS130.s:168    .text:0000000000000022 _ZN8LibRobot14initialisationEv
+     /tmp/ccVVS130.s:2251   .bss:0000000000000014 _ZN8LibRobot6debut_E
+     /tmp/ccVVS130.s:2246   .bss:0000000000000013 _ZN8LibRobot4fin_E
+     /tmp/ccVVS130.s:2241   .bss:0000000000000011 _ZN8LibRobot10nb_attenteE
+     /tmp/ccVVS130.s:2236   .bss:000000000000000f _ZN8LibRobot8nb_delaiE
+     /tmp/ccVVS130.s:2231   .bss:000000000000000d _ZN8LibRobot2aDE
+     /tmp/ccVVS130.s:2226   .bss:000000000000000b _ZN8LibRobot2aGE
+     /tmp/ccVVS130.s:2221   .bss:000000000000000a _ZN8LibRobot5sensDE
+     /tmp/ccVVS130.s:2216   .bss:0000000000000009 _ZN8LibRobot5sensGE
+     /tmp/ccVVS130.s:2211   .bss:0000000000000008 _ZN8LibRobot8enabledDE
+     /tmp/ccVVS130.s:2206   .bss:0000000000000007 _ZN8LibRobot8enabledGE
+     /tmp/ccVVS130.s:2181   .bss:0000000000000002 _ZN8LibRobot5a_sonE
+     /tmp/ccVVS130.s:2176   .bss:0000000000000001 _ZN8LibRobot10valeur_sonE
+     /tmp/ccVVS130.s:2171   .bss:0000000000000000 _ZN8LibRobot10enabledSonE
+     /tmp/ccVVS130.s:229    .text:000000000000006a _ZN8LibRobot5debutEv
+     /tmp/ccVVS130.s:251    .text:0000000000000072 _ZN8LibRobot8attendreEi
+     /tmp/ccVVS130.s:279    .text:0000000000000086 _ZN8LibRobot10allumerDELERVhh
+     /tmp/ccVVS130.s:305    .text:0000000000000090 _ZN8LibRobot11eteindreDELERVhhh
+     /tmp/ccVVS130.s:335    .text:00000000000000a4 _ZN8LibRobot10arreterSonEv
+     /tmp/ccVVS130.s:358    .text:00000000000000ae _ZN8LibRobot14arreterMoteursEv
+     /tmp/ccVVS130.s:382    .text:00000000000000b8 _ZN8LibRobot15tournerDroite90Ej
+     /tmp/ccVVS130.s:439    .text:00000000000000e8 _ZN8LibRobot15tournerGauche90Ej
+     /tmp/ccVVS130.s:496    .text:0000000000000118 _ZN8LibRobot11debutBoucleEj
+     /tmp/ccVVS130.s:513    .text:000000000000011a _ZN8LibRobot11finDeBoucleEv
+     /tmp/ccVVS130.s:530    .text:000000000000011c _ZN8LibRobot3finEv
+     /tmp/ccVVS130.s:552    .text:0000000000000124 _ZN8LibRobot14gestionAttenteEj
+     /tmp/ccVVS130.s:613    .text:000000000000015a _ZN8LibRobot17gestionDelaiArretEj
+     /tmp/ccVVS130.s:691    .text:00000000000001a6 _ZN8LibRobot10delaiArretEi
+     /tmp/ccVVS130.s:720    .text:00000000000001ba _ZN8LibRobot8ajusterAEjhb
+     /tmp/ccVVS130.s:833    .text:0000000000000230 _ZN8LibRobot7reculerEjh
+     /tmp/ccVVS130.s:886    .text:0000000000000264 _ZN8LibRobot7avancerEjh
+     /tmp/ccVVS130.s:941    .text:0000000000000298 _ZN8LibRobot13allumerMoteurEbRVhhh
+     /tmp/ccVVS130.s:985    .text:00000000000002b6 _ZN8LibRobot16tournerDeuxRouesEjRVhS1_
+     /tmp/ccVVS130.s:2191   .bss:0000000000000004 _ZN8LibRobot8pinSensDE
+     /tmp/ccVVS130.s:2201   .bss:0000000000000006 _ZN8LibRobot10pinEnableDE
+     /tmp/ccVVS130.s:2186   .bss:0000000000000003 _ZN8LibRobot8pinSensGE
+     /tmp/ccVVS130.s:2196   .bss:0000000000000005 _ZN8LibRobot10pinEnableGE
+     /tmp/ccVVS130.s:1280   .text:0000000000000402 _ZN8LibRobot11tournerRoueEjjbRVhhh
+     /tmp/ccVVS130.s:1389   .text:000000000000045c _ZN8LibRobot14gestionMoteursEjRVhS1_
+     /tmp/ccVVS130.s:1461   .text:00000000000004ba __vector_13
+     /tmp/ccVVS130.s:1528   .text:00000000000004fc _ZN8LibRobot18partirMinuterieSonEj
+     /tmp/ccVVS130.s:1593   .text:0000000000000532 _ZN8LibRobot8jouerSonEh
+     /tmp/ccVVS130.s:1904   .text:0000000000000642 _ZN8LibRobot11attenuerDELEb
+     /tmp/ccVVS130.s:2020   .text:0000000000000682 _ZN8LibRobot8testRoueEjjh
+     /tmp/ccVVS130.s:2149   .text:00000000000006c0 _ZN8LibRobot8testPortERVhh
+GAS LISTING /tmp/ccVVS130.s 			page 59
+
+
+
+UNDEFINED SYMBOLS
+__tablejump2__
+__do_clear_bss

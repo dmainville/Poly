@@ -1,0 +1,647 @@
+GAS LISTING /tmp/cckRnWZv.s 			page 1
+
+
+   1               		.file	"ecriture_mem_tp9.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/usagers/damaib/Documents/Session3/inf1995/inf1995-20/equipe/inf1995-1620/codeCommun/Tp/tp
+   8               		.stabs	"ecriture_mem_tp9.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"void:t(0,4)",128,0,0,0
+  38               		.stabs	"wchar_t:t(0,23)=r(0,23);-32768;32767;",128,0,0,0
+  39               		.stabs	"bool:t(0,24)=@s8;-16;",128,0,0,0
+  40               		.stabs	"__vtbl_ptr_type:t(0,25)=*(0,26)=f(0,9)",128,0,0,0
+  41               		.stabs	"decltype(nullptr):t(0,27)=(0,27)",128,0,0,0
+  42               		.stabs	"int8_t:t(0,28)=(0,16)",128,0,121,0
+  43               		.stabs	"uint8_t:t(0,29)=(0,13)",128,0,122,0
+  44               		.stabs	"int16_t:t(0,30)=(0,9)",128,0,123,0
+  45               		.stabs	"uint16_t:t(0,31)=(0,12)",128,0,124,0
+  46               		.stabs	"int32_t:t(0,32)=(0,15)",128,0,125,0
+  47               		.stabs	"uint32_t:t(0,33)=(0,11)",128,0,126,0
+  48               		.stabs	"int64_t:t(0,34)=(0,14)",128,0,128,0
+  49               		.stabs	"uint64_t:t(0,35)=(0,10)",128,0,129,0
+  50               		.stabs	"intptr_t:t(0,36)=(0,30)",128,0,142,0
+  51               		.stabs	"uintptr_t:t(0,37)=(0,31)",128,0,147,0
+  52               		.stabs	"int_least8_t:t(0,38)=(0,28)",128,0,159,0
+  53               		.stabs	"uint_least8_t:t(0,39)=(0,29)",128,0,164,0
+  54               		.stabs	"int_least16_t:t(0,40)=(0,30)",128,0,169,0
+  55               		.stabs	"uint_least16_t:t(0,41)=(0,31)",128,0,174,0
+  56               		.stabs	"int_least32_t:t(0,42)=(0,32)",128,0,179,0
+  57               		.stabs	"uint_least32_t:t(0,43)=(0,33)",128,0,184,0
+GAS LISTING /tmp/cckRnWZv.s 			page 2
+
+
+  58               		.stabs	"int_least64_t:t(0,44)=(0,34)",128,0,192,0
+  59               		.stabs	"uint_least64_t:t(0,45)=(0,35)",128,0,199,0
+  60               		.stabs	"int_fast8_t:t(0,46)=(0,28)",128,0,213,0
+  61               		.stabs	"uint_fast8_t:t(0,47)=(0,29)",128,0,218,0
+  62               		.stabs	"int_fast16_t:t(0,48)=(0,30)",128,0,223,0
+  63               		.stabs	"uint_fast16_t:t(0,49)=(0,31)",128,0,228,0
+  64               		.stabs	"int_fast32_t:t(0,50)=(0,32)",128,0,233,0
+  65               		.stabs	"uint_fast32_t:t(0,51)=(0,33)",128,0,238,0
+  66               		.stabs	"int_fast64_t:t(0,52)=(0,34)",128,0,246,0
+  67               		.stabs	"uint_fast64_t:t(0,53)=(0,35)",128,0,253,0
+  68               		.stabs	"intmax_t:t(0,54)=(0,34)",128,0,273,0
+  69               		.stabs	"uintmax_t:t(0,55)=(0,35)",128,0,278,0
+  70               		.stabs	"int_farptr_t:t(0,56)=(0,32)",128,0,77,0
+  71               		.stabs	"uint_farptr_t:t(0,57)=(0,33)",128,0,81,0
+  72               		.stabs	"._0:Tt(0,58)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+  73               		.stabs	"__fuse_t:t(0,58)",128,0,244,0
+  74               		.stabs	"Memoire24CXXX:Tt(0,59)=s1m_adresse_peripherique:/0(0,29):_ZN13Memoire24CXXX22m_adresse_per
+  75               		.stabs	"_Z18initialisationUARTv:F(0,4)",36,0,20,_Z18initialisationUARTv
+  76               	.global	_Z18initialisationUARTv
+  77               		.type	_Z18initialisationUARTv, @function
+  78               	_Z18initialisationUARTv:
+  79               		.stabd	46,0,0
+   1:ecriture_mem_tp9.cpp **** /****************************************************************************
+   2:ecriture_mem_tp9.cpp ****  * Fichier: ecriture_mem_tp9.cpp
+   3:ecriture_mem_tp9.cpp ****  * Auteur: Youssef ZEMMAHI ,Mario SALIBY , Yannick OUellet, David Mainville
+   4:ecriture_mem_tp9.cpp ****  * Date: 31 Octobre 2013
+   5:ecriture_mem_tp9.cpp ****  * DESCRIPTION :   Ecriture du pseudo-code binaire dans la memoire externe du robot 
+   6:ecriture_mem_tp9.cpp ****  ****************************************************************************/
+   7:ecriture_mem_tp9.cpp **** 
+   8:ecriture_mem_tp9.cpp **** /* Information sur branchements */
+   9:ecriture_mem_tp9.cpp **** /* Port D5 branché sur Enable JM1*/
+  10:ecriture_mem_tp9.cpp **** /* Port D6 branché sur Enable JM2*/
+  11:ecriture_mem_tp9.cpp **** 
+  12:ecriture_mem_tp9.cpp **** // F_CPU permet de définir la vitesse du micro-controleur soit 8MHz
+  13:ecriture_mem_tp9.cpp **** #define F_CPU 8000000UL
+  14:ecriture_mem_tp9.cpp **** #include <avr/io.h>
+  15:ecriture_mem_tp9.cpp **** #include <util/delay.h>
+  16:ecriture_mem_tp9.cpp **** #include "memoire_24.h"
+  17:ecriture_mem_tp9.cpp **** 
+  18:ecriture_mem_tp9.cpp **** 
+  19:ecriture_mem_tp9.cpp **** 
+  20:ecriture_mem_tp9.cpp **** void initialisationUART ( void ) 
+  21:ecriture_mem_tp9.cpp **** {
+  80               		.stabn	68,0,21,.LM0-.LFBB1
+  81               	.LM0:
+  82               	.LFBB1:
+  83               	/* prologue: function */
+  84               	/* frame size = 0 */
+  85               	/* stack size = 0 */
+  86               	.L__stack_usage = 0
+  22:ecriture_mem_tp9.cpp **** 
+  23:ecriture_mem_tp9.cpp ****     // 2400 bauds. Nous vous donnons la valeur des deux
+  24:ecriture_mem_tp9.cpp ****     // premier registres pour vous éviter des complications
+  25:ecriture_mem_tp9.cpp ****     UBRR0H = 0;
+  87               		.stabn	68,0,25,.LM1-.LFBB1
+  88               	.LM1:
+  89 0000 1092 C500 		sts 197,__zero_reg__
+GAS LISTING /tmp/cckRnWZv.s 			page 3
+
+
+  26:ecriture_mem_tp9.cpp ****     UBRR0L = 0xCF;
+  90               		.stabn	68,0,26,.LM2-.LFBB1
+  91               	.LM2:
+  92 0004 8FEC      		ldi r24,lo8(-49)
+  93 0006 8093 C400 		sts 196,r24
+  27:ecriture_mem_tp9.cpp ****     
+  28:ecriture_mem_tp9.cpp ****     
+  29:ecriture_mem_tp9.cpp ****     
+  30:ecriture_mem_tp9.cpp ****     // permettre la reception et la transmission par le UART0
+  31:ecriture_mem_tp9.cpp ****     UCSR0A |= 0; //Flags
+  94               		.stabn	68,0,31,.LM3-.LFBB1
+  95               	.LM3:
+  96 000a E0EC      		ldi r30,lo8(-64)
+  97 000c F0E0      		ldi r31,0
+  98 000e 8081      		ld r24,Z
+  99 0010 8083      		st Z,r24
+  32:ecriture_mem_tp9.cpp ****     
+  33:ecriture_mem_tp9.cpp ****     UCSR0B |= 1 <<RXEN0 | 1<<TXEN0 ;//Activer reception et transmission
+ 100               		.stabn	68,0,33,.LM4-.LFBB1
+ 101               	.LM4:
+ 102 0012 E1EC      		ldi r30,lo8(-63)
+ 103 0014 F0E0      		ldi r31,0
+ 104 0016 8081      		ld r24,Z
+ 105 0018 8861      		ori r24,lo8(24)
+ 106 001a 8083      		st Z,r24
+  34:ecriture_mem_tp9.cpp ****     /*UCSR0B |= 1 <<RXCIE0 //RXCIEn: RX Complete Interrupt Enable n
+  35:ecriture_mem_tp9.cpp ****     UCSR0B |= 1 <<TXCIE0 //TXCIEn: TX Complete Interrupt Enable n
+  36:ecriture_mem_tp9.cpp ****     UCSR0B |= 1 <<UDRIE0 //UDRIEn: USART Data Register Empty Interrupt Enable n*/
+  37:ecriture_mem_tp9.cpp ****     
+  38:ecriture_mem_tp9.cpp ****     // Format des trames: 8 bits, 1 stop bits, none parity
+  39:ecriture_mem_tp9.cpp ****     UCSR0C = 0; //UPM01 et UPM00 a 0 pour la non parite, USBS0 a 0 pour 1 stop bit
+ 107               		.stabn	68,0,39,.LM5-.LFBB1
+ 108               	.LM5:
+ 109 001c E2EC      		ldi r30,lo8(-62)
+ 110 001e F0E0      		ldi r31,0
+ 111 0020 1082      		st Z,__zero_reg__
+  40:ecriture_mem_tp9.cpp ****     UCSR0C |= 1 <<UCSZ01 | 1<<UCSZ00 |_BV(7) ;
+ 112               		.stabn	68,0,40,.LM6-.LFBB1
+ 113               	.LM6:
+ 114 0022 8081      		ld r24,Z
+ 115 0024 8668      		ori r24,lo8(-122)
+ 116 0026 8083      		st Z,r24
+ 117 0028 0895      		ret
+ 118               		.size	_Z18initialisationUARTv, .-_Z18initialisationUARTv
+ 119               	.Lscope1:
+ 120               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 121               		.stabd	78,0,0
+ 122               		.stabs	"_Z14receptionUSARTv:F(0,13)",36,0,48,_Z14receptionUSARTv
+ 123               	.global	_Z14receptionUSARTv
+ 124               		.type	_Z14receptionUSARTv, @function
+ 125               	_Z14receptionUSARTv:
+ 126               		.stabd	46,0,0
+  41:ecriture_mem_tp9.cpp ****     //UCSROC |= 1<<UMSEL00 //Synchrone
+  42:ecriture_mem_tp9.cpp **** }
+  43:ecriture_mem_tp9.cpp **** 
+  44:ecriture_mem_tp9.cpp **** 
+  45:ecriture_mem_tp9.cpp **** 
+GAS LISTING /tmp/cckRnWZv.s 			page 4
+
+
+  46:ecriture_mem_tp9.cpp **** 
+  47:ecriture_mem_tp9.cpp **** // Du PC vers l'USART
+  48:ecriture_mem_tp9.cpp **** unsigned char receptionUSART ()
+  49:ecriture_mem_tp9.cpp **** {
+ 127               		.stabn	68,0,49,.LM7-.LFBB2
+ 128               	.LM7:
+ 129               	.LFBB2:
+ 130               	/* prologue: function */
+ 131               	/* frame size = 0 */
+ 132               	/* stack size = 0 */
+ 133               	.L__stack_usage = 0
+ 134               	.L3:
+  50:ecriture_mem_tp9.cpp ****   while(! (UCSR0A & (1<<RXC0)) )
+ 135               		.stabn	68,0,50,.LM8-.LFBB2
+ 136               	.LM8:
+ 137 002a 8091 C000 		lds r24,192
+ 138 002e 87FF      		sbrs r24,7
+ 139 0030 00C0      		rjmp .L3
+  51:ecriture_mem_tp9.cpp ****   {
+  52:ecriture_mem_tp9.cpp ****    ; 
+  53:ecriture_mem_tp9.cpp ****   }
+  54:ecriture_mem_tp9.cpp ****   
+  55:ecriture_mem_tp9.cpp ****   return UDR0;
+ 140               		.stabn	68,0,55,.LM9-.LFBB2
+ 141               	.LM9:
+ 142 0032 8091 C600 		lds r24,198
+  56:ecriture_mem_tp9.cpp **** }
+ 143               		.stabn	68,0,56,.LM10-.LFBB2
+ 144               	.LM10:
+ 145 0036 0895      		ret
+ 146               		.size	_Z14receptionUSARTv, .-_Z14receptionUSARTv
+ 147               	.Lscope2:
+ 148               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 149               		.stabd	78,0,0
+ 150               		.stabs	"_Z12ecritureUARTv:F(0,4)",36,0,61,_Z12ecritureUARTv
+ 151               	.global	_Z12ecritureUARTv
+ 152               		.type	_Z12ecritureUARTv, @function
+ 153               	_Z12ecritureUARTv:
+ 154               		.stabd	46,0,0
+  57:ecriture_mem_tp9.cpp **** 
+  58:ecriture_mem_tp9.cpp **** 
+  59:ecriture_mem_tp9.cpp **** 
+  60:ecriture_mem_tp9.cpp **** // Ecrire dans la memoire externe
+  61:ecriture_mem_tp9.cpp **** void ecritureUART ()
+  62:ecriture_mem_tp9.cpp **** {
+ 155               		.stabn	68,0,62,.LM11-.LFBB3
+ 156               	.LM11:
+ 157               	.LFBB3:
+ 158 0038 CF92      		push r12
+ 159 003a DF92      		push r13
+ 160 003c EF92      		push r14
+ 161 003e FF92      		push r15
+ 162 0040 0F93      		push r16
+ 163 0042 1F93      		push r17
+ 164 0044 CF93      		push r28
+ 165 0046 DF93      		push r29
+ 166 0048 1F92      		push __zero_reg__
+GAS LISTING /tmp/cckRnWZv.s 			page 5
+
+
+ 167 004a CDB7      		in r28,__SP_L__
+ 168 004c DEB7      		in r29,__SP_H__
+ 169               	/* prologue: function */
+ 170               	/* frame size = 1 */
+ 171               	/* stack size = 9 */
+ 172               	.L__stack_usage = 9
+ 173               	.LBB7:
+  63:ecriture_mem_tp9.cpp ****   // Creation d'un objet Memoire24CXXX.
+  64:ecriture_mem_tp9.cpp ****   Memoire24CXXX mem = Memoire24CXXX();
+ 174               		.stabn	68,0,64,.LM12-.LFBB3
+ 175               	.LM12:
+ 176 004e CC24      		clr r12
+ 177 0050 C394      		inc r12
+ 178 0052 D12C      		mov r13,__zero_reg__
+ 179 0054 CC0E      		add r12,r28
+ 180 0056 DD1E      		adc r13,r29
+ 181 0058 C601      		movw r24,r12
+ 182 005a 0E94 0000 		call _ZN13Memoire24CXXXC1Ev
+  65:ecriture_mem_tp9.cpp ****   // Adresse de depart dans la memoire.
+  66:ecriture_mem_tp9.cpp ****    uint16_t adresse = 0x00;
+  67:ecriture_mem_tp9.cpp ****   // Variable a laquelle sera affecte le premier octet du bytecode.
+  68:ecriture_mem_tp9.cpp ****    uint16_t nbrOctets1;
+  69:ecriture_mem_tp9.cpp ****   // Variable a laquelle sera affecte le deuxieme octet du bytecode.
+  70:ecriture_mem_tp9.cpp ****   uint8_t nbrOctets2;
+  71:ecriture_mem_tp9.cpp ****   // Variable a laquelle sera affectee chaque instruction ou operande lors de
+  72:ecriture_mem_tp9.cpp ****   // la lecture du bytecode.
+  73:ecriture_mem_tp9.cpp ****   uint8_t donnee;
+  74:ecriture_mem_tp9.cpp ****  
+  75:ecriture_mem_tp9.cpp ****   // Lecture du premier octet du bytecode.
+  76:ecriture_mem_tp9.cpp ****   nbrOctets1 = receptionUSART();
+ 183               		.stabn	68,0,76,.LM13-.LFBB3
+ 184               	.LM13:
+ 185 005e 0E94 0000 		call _Z14receptionUSARTv
+  77:ecriture_mem_tp9.cpp ****   // Decalage de 8 bits vers la gauche.
+  78:ecriture_mem_tp9.cpp ****   nbrOctets1 = nbrOctets1 << 8;
+ 186               		.stabn	68,0,78,.LM14-.LFBB3
+ 187               	.LM14:
+ 188 0062 F82E      		mov r15,r24
+ 189 0064 E12C      		mov r14,__zero_reg__
+  79:ecriture_mem_tp9.cpp ****   
+  80:ecriture_mem_tp9.cpp ****   // Lecture du deuxieme octet du bytecode.
+  81:ecriture_mem_tp9.cpp ****   nbrOctets2 = receptionUSART();
+ 190               		.stabn	68,0,81,.LM15-.LFBB3
+ 191               	.LM15:
+ 192 0066 0E94 0000 		call _Z14receptionUSARTv
+  82:ecriture_mem_tp9.cpp ****   
+  83:ecriture_mem_tp9.cpp ****   // Obtention du nombre d'octets total dans le bytecode.
+  84:ecriture_mem_tp9.cpp ****   nbrOctets1 += nbrOctets2;
+ 193               		.stabn	68,0,84,.LM16-.LFBB3
+ 194               	.LM16:
+ 195 006a E80E      		add r14,r24
+ 196 006c F11C      		adc r15,__zero_reg__
+ 197               	.LBB8:
+  85:ecriture_mem_tp9.cpp ****   
+  86:ecriture_mem_tp9.cpp ****   // Boucle pour lire tous les octets du bytecode. Le nombre d'octets calcule
+  87:ecriture_mem_tp9.cpp ****   // plus haut est diminue de 2. Ce resultat represente le nombre reel d'octets
+  88:ecriture_mem_tp9.cpp ****   // designant les instructions ou leur operande. 
+GAS LISTING /tmp/cckRnWZv.s 			page 6
+
+
+  89:ecriture_mem_tp9.cpp ****   for(uint16_t i = 0; i<nbrOctets1-2; i++)
+ 198               		.stabn	68,0,89,.LM17-.LFBB3
+ 199               	.LM17:
+ 200 006e 00E0      		ldi r16,0
+ 201 0070 10E0      		ldi r17,0
+ 202 0072 82E0      		ldi r24,2
+ 203 0074 E81A      		sub r14,r24
+ 204 0076 F108      		sbc r15,__zero_reg__
+ 205 0078 00C0      		rjmp .L6
+ 206               	.L7:
+  90:ecriture_mem_tp9.cpp ****   {
+  91:ecriture_mem_tp9.cpp ****     // Lecture du prochain octet dans le bytecode.
+  92:ecriture_mem_tp9.cpp ****     donnee = receptionUSART();
+ 207               		.stabn	68,0,92,.LM18-.LFBB3
+ 208               	.LM18:
+ 209 007a 0E94 0000 		call _Z14receptionUSARTv
+  93:ecriture_mem_tp9.cpp ****     
+  94:ecriture_mem_tp9.cpp ****     // Ecriture de l'octet a l'adresse memoire designee.
+  95:ecriture_mem_tp9.cpp ****     mem.ecriture(adresse+i,donnee);
+ 210               		.stabn	68,0,95,.LM19-.LFBB3
+ 211               	.LM19:
+ 212 007e 482F      		mov r20,r24
+ 213 0080 B801      		movw r22,r16
+ 214 0082 C601      		movw r24,r12
+ 215 0084 0E94 0000 		call _ZN13Memoire24CXXX8ecritureEjh
+ 216               	.LBB9:
+ 217               	.LBB10:
+ 218               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h",132,0,0,.Ltext1
+ 219               	.Ltext1:
+   1:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   2:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
+   3:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
+   4:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    All rights reserved.
+   5:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+   6:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Redistribution and use in source and binary forms, with or without
+   7:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    modification, are permitted provided that the following conditions are met:
+   8:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+   9:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    * Redistributions of source code must retain the above copyright
+  10:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer.
+  11:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  12:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    * Redistributions in binary form must reproduce the above copyright
+  13:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer in
+  14:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      the documentation and/or other materials provided with the
+  15:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      distribution.
+  16:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  17:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    * Neither the name of the copyright holders nor the names of
+  18:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      contributors may be used to endorse or promote products derived
+  19:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      from this software without specific prior written permission.
+  20:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  21:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  22:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  23:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  24:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  25:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  26:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  27:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  28:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+GAS LISTING /tmp/cckRnWZv.s 			page 7
+
+
+  29:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  30:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  31:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  32:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  33:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /* $Id: delay.h.in 2251 2011-09-14 08:20:33Z joerg_wunsch $ */
+  34:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  35:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #ifndef _UTIL_DELAY_H_
+  36:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #define _UTIL_DELAY_H_ 1
+  37:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  38:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #ifndef __HAS_DELAY_CYCLES
+  39:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #define __HAS_DELAY_CYCLES 1
+  40:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+  41:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  42:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #include <inttypes.h>
+  43:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #include <util/delay_basic.h>
+  44:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #include <math.h>
+  45:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  46:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /** \file */
+  47:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /** \defgroup util_delay <util/delay.h>: Convenience functions for busy-wait delay loops
+  48:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     \code
+  49:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     #define F_CPU 1000000UL  // 1 MHz
+  50:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     //#define F_CPU 14.7456E6
+  51:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     #include <util/delay.h>
+  52:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     \endcode
+  53:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  54:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     \note As an alternative method, it is possible to pass the
+  55:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     F_CPU macro down to the compiler from the Makefile.
+  56:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     Obviously, in that case, no \c \#define statement should be
+  57:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     used.
+  58:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  59:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     The functions in this header file are wrappers around the basic
+  60:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     busy-wait functions from <util/delay_basic.h>.  They are meant as
+  61:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     convenience functions where actual time values can be specified
+  62:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     rather than a number of cycles to wait for.  The idea behind is
+  63:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     that compile-time constant expressions will be eliminated by
+  64:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     compiler optimization so floating-point expressions can be used
+  65:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     to calculate the number of delay cycles needed based on the CPU
+  66:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     frequency passed by the macro F_CPU.
+  67:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  68:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     \note In order for these functions to work as intended, compiler
+  69:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     optimizations <em>must</em> be enabled, and the delay time
+  70:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     <em>must</em> be an expression that is a known constant at
+  71:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     compile-time.  If these requirements are not met, the resulting
+  72:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     delay will be much longer (and basically unpredictable), and
+  73:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     applications that otherwise do not use floating-point calculations
+  74:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     will experience severe code bloat by the floating-point library
+  75:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     routines linked into the application.
+  76:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  77:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     The functions available allow the specification of microsecond, and
+  78:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     millisecond delays directly, using the application-supplied macro
+  79:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
+  80:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  81:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** */
+  82:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  83:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #if !defined(__DOXYGEN__)
+  84:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** static inline void _delay_us(double __us) __attribute__((always_inline));
+  85:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** static inline void _delay_ms(double __ms) __attribute__((always_inline));
+GAS LISTING /tmp/cckRnWZv.s 			page 8
+
+
+  86:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+  87:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  88:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #ifndef F_CPU
+  89:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /* prevent compiler error by supplying a default */
+  90:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** # warning "F_CPU not defined for <util/delay.h>"
+  91:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** # define F_CPU 1000000UL
+  92:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+  93:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  94:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #ifndef __OPTIMIZE__
+  95:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+  96:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+  97:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  98:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+  99:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 100:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   __STDC_HOSTED__
+ 101:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #  include <math.h>
+ 102:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+ 103:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 104:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /**
+ 105:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    \ingroup util_delay
+ 106:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 107:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Perform a delay of \c __ms milliseconds, using _delay_loop_2().
+ 108:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 109:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    The macro F_CPU is supposed to be defined to a
+ 110:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    constant defining the CPU clock frequency (in Hertz).
+ 111:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 112:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
+ 113:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 114:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    When the user request delay which exceed the maximum possible one,
+ 115:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
+ 116:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
+ 117:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
+ 118:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    user will not be informed about decreased resolution.
+ 119:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 120:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles(unsigned long)
+ 121:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
+ 122:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    values greater than the maximal possible delay, overflows results in
+ 123:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    no delay i.e., 0ms.
+ 124:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 125:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Conversion of __us into clock cycles may not always result in integer.
+ 126:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    By default, the clock cycles rounded up to next integer. This ensures that
+ 127:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    the user gets atleast __us microseconds of delay.
+ 128:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 129:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Alternatively, user can define __DELAY_ROUND_DOWN__ and __DELAY_ROUND_CLOSEST__
+ 130:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    to round down and round to closest integer.
+ 131:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 132:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Note: The new implementation of _delay_ms(double __ms) with 
+ 133:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     __builtin_avr_delay_cycles(unsigned long) support is not backward compatible. 
+ 134:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    User can define __DELAY_BACKWARD_COMPATIBLE__ to get a backward compatible delay.
+ 135:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Also, the backward compatible
+ 136:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    algorithm will be chosen if the code is compiled in a <em>freestanding
+ 137:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    environment</em> (GCC option \c -ffreestanding), as the math functions
+ 138:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    required for rounding are not available to the compiler then.
+ 139:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 140:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****  */
+ 141:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** void
+ 142:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** _delay_ms(double __ms)
+GAS LISTING /tmp/cckRnWZv.s 			page 9
+
+
+ 143:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** {
+ 144:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	uint16_t __ticks;
+ 145:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	double __tmp ; 
+ 146:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 147:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 148:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   __STDC_HOSTED__
+ 149:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	uint32_t __ticks_dc;
+ 150:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+ 151:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
+ 152:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 153:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
+ 154:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
+ 155:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 156:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
+ 157:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
+ 158:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 159:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	#else
+ 160:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 		//round up by default
+ 161:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+ 162:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	#endif
+ 163:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 164:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 220               		.stabn	68,0,164,.LM20-.LFBB3
+ 221               	.LM20:
+ 222 0088 8FE0      		ldi r24,lo8(9999)
+ 223 008a 97E2      		ldi r25,hi8(9999)
+ 224 008c 0197      		1: sbiw r24,1
+ 225 008e 01F4      		brne 1b
+ 226 0090 00C0      		rjmp .
+ 227 0092 0000      		nop
+ 228               	.LBE10:
+ 229               	.LBE9:
+ 230               		.stabs	"ecriture_mem_tp9.cpp",132,0,0,.Ltext2
+ 231               	.Ltext2:
+  89:ecriture_mem_tp9.cpp ****   for(uint16_t i = 0; i<nbrOctets1-2; i++)
+ 232               		.stabn	68,0,89,.LM21-.LFBB3
+ 233               	.LM21:
+ 234 0094 0F5F      		subi r16,-1
+ 235 0096 1F4F      		sbci r17,-1
+ 236               	.L6:
+  89:ecriture_mem_tp9.cpp ****   for(uint16_t i = 0; i<nbrOctets1-2; i++)
+ 237               		.stabn	68,0,89,.LM22-.LFBB3
+ 238               	.LM22:
+ 239 0098 0E15      		cp r16,r14
+ 240 009a 1F05      		cpc r17,r15
+ 241 009c 00F0      		brlo .L7
+ 242               	.LBE8:
+  96:ecriture_mem_tp9.cpp ****     _delay_ms(5);
+  97:ecriture_mem_tp9.cpp ****   }
+ 243               		.stabn	68,0,97,.LM23-.LFBB3
+ 244               	.LM23:
+ 245 009e CE01      		movw r24,r28
+ 246 00a0 0196      		adiw r24,1
+ 247 00a2 0E94 0000 		call _ZN13Memoire24CXXXD1Ev
+ 248               	/* epilogue start */
+ 249               	.LBE7:
+  98:ecriture_mem_tp9.cpp ****     
+GAS LISTING /tmp/cckRnWZv.s 			page 10
+
+
+  99:ecriture_mem_tp9.cpp **** }
+ 250               		.stabn	68,0,99,.LM24-.LFBB3
+ 251               	.LM24:
+ 252 00a6 0F90      		pop __tmp_reg__
+ 253 00a8 DF91      		pop r29
+ 254 00aa CF91      		pop r28
+ 255 00ac 1F91      		pop r17
+ 256 00ae 0F91      		pop r16
+ 257 00b0 FF90      		pop r15
+ 258 00b2 EF90      		pop r14
+ 259 00b4 DF90      		pop r13
+ 260 00b6 CF90      		pop r12
+ 261 00b8 0895      		ret
+ 262               		.size	_Z12ecritureUARTv, .-_Z12ecritureUARTv
+ 263               		.stabs	"mem:(0,59)",128,0,64,1
+ 264               		.stabs	"donnee:r(0,29)",64,0,73,24
+ 265               		.stabn	192,0,0,.LBB7-.LFBB3
+ 266               		.stabs	"i:r(0,31)",64,0,89,16
+ 267               		.stabn	192,0,0,.LBB8-.LFBB3
+ 268               		.stabn	224,0,0,.LBE8-.LFBB3
+ 269               		.stabn	224,0,0,.LBE7-.LFBB3
+ 270               	.Lscope3:
+ 271               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 272               		.stabd	78,0,0
+ 273               		.section	.text.startup,"ax",@progbits
+ 274               		.stabs	"main:F(0,9)",36,0,107,main
+ 275               	.global	main
+ 276               		.type	main, @function
+ 277               	main:
+ 278               		.stabd	46,0,0
+ 100:ecriture_mem_tp9.cpp **** 
+ 101:ecriture_mem_tp9.cpp **** 
+ 102:ecriture_mem_tp9.cpp **** 
+ 103:ecriture_mem_tp9.cpp **** 
+ 104:ecriture_mem_tp9.cpp **** 
+ 105:ecriture_mem_tp9.cpp **** 
+ 106:ecriture_mem_tp9.cpp **** 
+ 107:ecriture_mem_tp9.cpp **** int main()
+ 108:ecriture_mem_tp9.cpp **** {    
+ 279               		.stabn	68,0,108,.LM25-.LFBB4
+ 280               	.LM25:
+ 281               	.LFBB4:
+ 282               	/* prologue: function */
+ 283               	/* frame size = 0 */
+ 284               	/* stack size = 0 */
+ 285               	.L__stack_usage = 0
+ 109:ecriture_mem_tp9.cpp ****   DDRB=0xff;
+ 286               		.stabn	68,0,109,.LM26-.LFBB4
+ 287               	.LM26:
+ 288 0000 8FEF      		ldi r24,lo8(-1)
+ 289 0002 84B9      		out 0x4,r24
+ 110:ecriture_mem_tp9.cpp ****  
+ 111:ecriture_mem_tp9.cpp ****     initialisationUART();
+ 290               		.stabn	68,0,111,.LM27-.LFBB4
+ 291               	.LM27:
+ 292 0004 0E94 0000 		call _Z18initialisationUARTv
+ 112:ecriture_mem_tp9.cpp ****     
+GAS LISTING /tmp/cckRnWZv.s 			page 11
+
+
+ 113:ecriture_mem_tp9.cpp ****     ecritureUART();
+ 293               		.stabn	68,0,113,.LM28-.LFBB4
+ 294               	.LM28:
+ 295 0008 0E94 0000 		call _Z12ecritureUARTv
+ 114:ecriture_mem_tp9.cpp ****     PORTB=_BV(PORTB3);
+ 296               		.stabn	68,0,114,.LM29-.LFBB4
+ 297               	.LM29:
+ 298 000c 88E0      		ldi r24,lo8(8)
+ 299 000e 85B9      		out 0x5,r24
+ 115:ecriture_mem_tp9.cpp **** 
+ 116:ecriture_mem_tp9.cpp ****     return 0;
+ 117:ecriture_mem_tp9.cpp **** }...
+ 300               		.stabn	68,0,117,.LM30-.LFBB4
+ 301               	.LM30:
+ 302 0010 80E0      		ldi r24,0
+ 303 0012 90E0      		ldi r25,0
+ 304 0014 0895      		ret
+ 305               		.size	main, .-main
+ 306               	.Lscope4:
+ 307               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 308               		.stabd	78,0,0
+ 309               		.text
+ 310               		.stabs	"",100,0,0,.Letext0
+ 311               	.Letext0:
+ 312               		.ident	"GCC: (Fedora 4.7.3-0.1.fc19) 4.7.3 20130216 (prerelease)"
+GAS LISTING /tmp/cckRnWZv.s 			page 12
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 ecriture_mem_tp9.cpp
+     /tmp/cckRnWZv.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cckRnWZv.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cckRnWZv.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cckRnWZv.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cckRnWZv.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/cckRnWZv.s:78     .text:0000000000000000 _Z18initialisationUARTv
+     /tmp/cckRnWZv.s:125    .text:000000000000002a _Z14receptionUSARTv
+     /tmp/cckRnWZv.s:153    .text:0000000000000038 _Z12ecritureUARTv
+     /tmp/cckRnWZv.s:277    .text.startup:0000000000000000 main
+
+UNDEFINED SYMBOLS
+_ZN13Memoire24CXXXC1Ev
+_ZN13Memoire24CXXX8ecritureEjh
+_ZN13Memoire24CXXXD1Ev

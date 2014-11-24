@@ -1,0 +1,158 @@
+/****************************************************************************
+ * Fichier: TP3_ex1.cpp
+ * Auteur: Yannick OUellet et David Mainville
+ * Date: 16 Septembre 2013
+ * DESCRIPTION : Activation de LED ambrée avec bouton.
+ ****************************************************************************/
+
+/* Information sur branchements */
+/* Port B0 branché sur +        */
+/* Port B1 branché sur -        */
+
+// F_CPU permet de définir la vitesse du micro-controleur soit 8MHz
+#define F_CPU 8000000UL
+#include <avr/io.h>
+#include <util/delay.h>
+#include "lib/libRobot.h"
+
+
+int main()
+{
+	LibRobot r;
+	r.initialisation();
+
+	//LED sur le A
+	DDRA = 0xff; // sortie	
+	volatile uint8_t& portDEL = PORTA;
+	uint8_t pinCouleur = _BV(PORTA0);
+
+	//Moteur droit sur le B
+	DDRB = 0xff; // sortie
+	volatile uint8_t& portMoteurD = PORTB;
+	r.pinEnableD = _BV(PORTB0);
+	r.pinSensD = _BV(PORTB1);
+
+	//Moteur gauche sur le C
+	DDRC = 0xff; // sortie
+	volatile uint8_t& portMoteurG = PORTC;
+	r.pinEnableG = _BV(PORTC0);
+	r.pinSensG = _BV(PORTC1);
+
+	//Bouton Poussoir
+	DDRD = 0x00; // entree
+	
+	//Periode
+	uint16_t b = 16667;
+	
+	//Test
+	uint16_t operation = 0;
+
+	while(true)
+	{
+		//Lecture de la mémoire
+		
+
+		//r.debut();
+		//r.allumerDEL(portDEL, pinCouleur);
+		//r.attendre(100); //attendre 2.5 sec
+
+		PORTA = _BV(PORTA1);
+		_delay_ms(1000);
+		r.attendre(100); //attendre 2.5 sec
+
+		while(r.attente_us > 0)
+		{
+			PORTA = _BV(PORTA0);
+			//_delay_loop_2((b<<1)+1);
+			r.gestionAttente(b);
+		}
+
+		//r.allumerDEL(portDEL, pinCouleur);
+		
+		/*if(r.attente_us <= 0)
+		{
+			PORTA = 0x0;
+
+			if(operation < 4)
+				operation++;
+
+			if(operation == 1)
+			{
+				r.debut();
+			}
+			else if(operation == 2)
+			{
+				r.allumerDEL(portDEL, pinCouleur);
+				r.attendre(100); //attendre 2.5 sec
+			}
+			else if(operation == 3)
+			{
+				r.eteindreDEL(portDEL, pinCouleur);
+				
+			}
+			else
+			{
+
+			}
+		}
+		else
+		{
+			PORTA = _BV(PORTA1);
+		}*/
+
+		/*if(r.fin_)
+			return 0;
+		
+		if(r.debut_)
+		{
+			r.gestionMoteurs(b,portMoteurD,portMoteurG);
+			r.gestionAttente(b);
+		}*/
+	}
+
+	return 0;
+
+/*
+		if(r.BoutonEstEnfonce())
+		{
+			PORTD = _BV(PORTD0);
+			  //r.tournerRoueDroite(5,10,3000,true,3); //frequence 50% pendant 1 seconde
+			for(uint8_t i = 0; i<60; i++)
+			{
+			    	//r.testRoue(8334, 16667, 2); //portC a 50% pour 1/60 seconde
+				r.tournerRoue(8334,16667,false,PORTC,_BV(PORTC0),_BV(PORTC1));
+				//r.tournerRoue(8334,16667,true,PORTD,_BV(PORTD0),_BV(PORTD1));
+			}
+
+			//r.testPort(PORTB, _BV(PORTB0));
+
+		}
+		else
+		{
+			PORTD = 0x00;
+		}
+
+	While(true) //boucle de lecture
+	{
+		switch(itemLu)
+		{
+
+		}
+
+		if(fin)
+			return 0;
+
+		if(debut)
+		{
+			//Gerer moteur en fonction des propriete (elles sont affectee par les operation lues)
+			if(moteurDroit)
+			
+			if(moteurGauche)
+
+			//Gerer lumieres
+
+			//Gerer sons
+		}
+	}
+*/
+}

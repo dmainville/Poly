@@ -1,0 +1,72 @@
+//Notez que si l'intersection qui suit est une intersection en L, où le robot à l'obligation de poursuivre sur le seul segment possible, le virage imposé est alors ignoré et le robot retourne à son comportement aléatoire une fois l'intersection franchie. 
+
+
+// F_CPU permet de définir la vitesse du micro-controleur soit 8MHz
+#define F_CPU 8000000UL
+#include <avr/io.h>
+#include <util/delay.h>
+#include "can.h"
+
+void initialisation() {
+
+	DDRB = 0xFF; //PORT B est en mode sortie
+    	DDRA = 0x00; // PORT A est en mode entrée.
+  
+}
+
+uint8_t capteurLumiere()
+{
+	enum tourner{tournerDroite, tournerGauche} //tournerDroite = 0, tournerGauche = 1
+	
+	initialisation();
+    
+	can capteurDroit; //Instanciation de lobjet de lecture de la cellule photo voltaique droite
+	can capteurGauche; //Instanciation de lobjet de lecture de la cellule photo voltaique gauche
+    
+    	while(LEFT_SENSOR && CENTER_SENSOR && RIGHT_SENSOR || LEFT_SENSOR && CENTER_SENSOR || CENTER_SENSOR && RIGHT_SENSOR) //Si il arrive a une intersection
+    	{
+		uint16_t valeurD = capteurDroit.lecture(0); //Lire le portA0
+		valeurD = valeurD >> 2; //decaller vers la gauche perdre les 2 bits de poids faible et eventuellement garder les 9 et 10 bits
+		uint8_t valeur8D = (valeur & 0x00FF); //garder seulement les 8 bits de poids faible
+
+		uint16_t valeurG = capteurGauche.lecture(1); //Lire le portA1
+		valeurG = valeurG >> 2; //decaller vers la gauche perdre les 2 bits de poids faible et eventuellement garder les 9 et 10 bits
+		uint8_t valeur8G = (valeur & 0x00FF); //garder seulement les 8 bits de poids faible
+	
+		if(valeur8D > valeur8G) 
+		{   
+			PORTB &= ~(_BV(PORTB1); //PORT B1 à 0;
+			PORTB |= _BV(PORTB0); //Rouge
+		}
+
+		else if(valeur8D < valeur8G)
+		{   
+			PORTB &= ~(_BV(PORTB0); //PORT B0 à 0;
+			PORTB |= _BV(PORTB1); //Vert
+		}
+
+		if(!LEFT_SENSOR && !CENTER_SENSOR && !RIGHT_SENSOR || !LEFT_SENSOR && !CENTER_SENSOR || !CENTER_SENSOR && !RIGHT_SENSOR)
+		{
+			//Eteindre la DEL
+			PORTB &= ~(_BV(PORTB0); 
+			PORTB &= ~(_BV(PORTB1); 
+			
+			if(valeur8D > valeur8G) 
+			{   
+			    	return tournerGauche;
+			}
+
+			else if(valeur8D < valeur8G)
+			{   
+			    	return tournerDroite90;
+			}
+
+			else
+			{   
+			    	return;
+			}
+		}
+    	}
+    
+    return;
+}

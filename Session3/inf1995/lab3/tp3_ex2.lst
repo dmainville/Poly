@@ -1,0 +1,602 @@
+GAS LISTING /tmp/ccXeAt2T.s 			page 1
+
+
+   1               		.file	"tp3_ex2.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/usagers/damaib/Documents/Session3/inf1995/lab3/",100,0,4,.Ltext0
+   8               		.stabs	"tp3_ex2.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"void:t(0,4)",128,0,0,0
+  38               		.stabs	"wchar_t:t(0,23)=r(0,23);-32768;32767;",128,0,0,0
+  39               		.stabs	"bool:t(0,24)=@s8;-16;",128,0,0,0
+  40               		.stabs	"__vtbl_ptr_type:t(0,25)=*(0,26)=f(0,9)",128,0,0,0
+  41               		.stabs	"decltype(nullptr):t(0,27)=(0,27)",128,0,0,0
+  42               		.stabs	"int8_t:t(0,28)=(0,16)",128,0,121,0
+  43               		.stabs	"uint8_t:t(0,29)=(0,13)",128,0,122,0
+  44               		.stabs	"int16_t:t(0,30)=(0,9)",128,0,123,0
+  45               		.stabs	"uint16_t:t(0,31)=(0,12)",128,0,124,0
+  46               		.stabs	"int32_t:t(0,32)=(0,15)",128,0,125,0
+  47               		.stabs	"uint32_t:t(0,33)=(0,11)",128,0,126,0
+  48               		.stabs	"int64_t:t(0,34)=(0,14)",128,0,128,0
+  49               		.stabs	"uint64_t:t(0,35)=(0,10)",128,0,129,0
+  50               		.stabs	"intptr_t:t(0,36)=(0,30)",128,0,142,0
+  51               		.stabs	"uintptr_t:t(0,37)=(0,31)",128,0,147,0
+  52               		.stabs	"int_least8_t:t(0,38)=(0,28)",128,0,159,0
+  53               		.stabs	"uint_least8_t:t(0,39)=(0,29)",128,0,164,0
+  54               		.stabs	"int_least16_t:t(0,40)=(0,30)",128,0,169,0
+  55               		.stabs	"uint_least16_t:t(0,41)=(0,31)",128,0,174,0
+  56               		.stabs	"int_least32_t:t(0,42)=(0,32)",128,0,179,0
+  57               		.stabs	"uint_least32_t:t(0,43)=(0,33)",128,0,184,0
+GAS LISTING /tmp/ccXeAt2T.s 			page 2
+
+
+  58               		.stabs	"int_least64_t:t(0,44)=(0,34)",128,0,192,0
+  59               		.stabs	"uint_least64_t:t(0,45)=(0,35)",128,0,199,0
+  60               		.stabs	"int_fast8_t:t(0,46)=(0,28)",128,0,213,0
+  61               		.stabs	"uint_fast8_t:t(0,47)=(0,29)",128,0,218,0
+  62               		.stabs	"int_fast16_t:t(0,48)=(0,30)",128,0,223,0
+  63               		.stabs	"uint_fast16_t:t(0,49)=(0,31)",128,0,228,0
+  64               		.stabs	"int_fast32_t:t(0,50)=(0,32)",128,0,233,0
+  65               		.stabs	"uint_fast32_t:t(0,51)=(0,33)",128,0,238,0
+  66               		.stabs	"int_fast64_t:t(0,52)=(0,34)",128,0,246,0
+  67               		.stabs	"uint_fast64_t:t(0,53)=(0,35)",128,0,253,0
+  68               		.stabs	"intmax_t:t(0,54)=(0,34)",128,0,273,0
+  69               		.stabs	"uintmax_t:t(0,55)=(0,35)",128,0,278,0
+  70               		.stabs	"int_farptr_t:t(0,56)=(0,32)",128,0,77,0
+  71               		.stabs	"uint_farptr_t:t(0,57)=(0,33)",128,0,81,0
+  72               		.stabs	"._0:Tt(0,58)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+  73               		.stabs	"__fuse_t:t(0,58)",128,0,244,0
+  74               		.section	.text.startup,"ax",@progbits
+  75               		.stabs	"main:F(0,9)",36,0,20,main
+  76               	.global	main
+  77               		.type	main, @function
+  78               	main:
+  79               		.stabd	46,0,0
+   1:tp3_ex2.cpp   **** /****************************************************************************
+   2:tp3_ex2.cpp   ****  * Fichier: TP2_ex2.cpp
+   3:tp3_ex2.cpp   ****  * Auteur: Michael Ferris
+   4:tp3_ex2.cpp   ****  * Date: 11 Septembre 2013
+   5:tp3_ex2.cpp   ****  * DESCRIPTION : Activation de LED ambrée avec bouton.
+   6:tp3_ex2.cpp   ****  ****************************************************************************/
+   7:tp3_ex2.cpp   **** 
+   8:tp3_ex2.cpp   **** /* Information sur branchements */
+   9:tp3_ex2.cpp   **** /* Port B0 branché sur +        */
+  10:tp3_ex2.cpp   **** /* Port B1 branché sur -        */
+  11:tp3_ex2.cpp   **** 
+  12:tp3_ex2.cpp   **** // F_CPU permet de définir la vitesse du micro-controleur soit 8MHz
+  13:tp3_ex2.cpp   **** #define F_CPU 8000000UL
+  14:tp3_ex2.cpp   **** #include <avr/io.h>
+  15:tp3_ex2.cpp   **** #include <util/delay.h>
+  16:tp3_ex2.cpp   **** 
+  17:tp3_ex2.cpp   **** #define BOUTON_ENFONCE (PIND & _BV(2))
+  18:tp3_ex2.cpp   **** 
+  19:tp3_ex2.cpp   **** 
+  20:tp3_ex2.cpp   **** int main()
+  21:tp3_ex2.cpp   **** {
+  80               		.stabn	68,0,21,.LM0-.LFBB1
+  81               	.LM0:
+  82               	.LFBB1:
+  83               	/* prologue: function */
+  84               	/* frame size = 0 */
+  85               	/* stack size = 0 */
+  86               	.L__stack_usage = 0
+  87               	.LBB15:
+  22:tp3_ex2.cpp   ****     DDRB = 0xff; // PORT B est en mode sortie.
+  88               		.stabn	68,0,22,.LM1-.LFBB1
+  89               	.LM1:
+  90 0000 8FEF      		ldi r24,lo8(-1)
+  91 0002 84B9      		out 0x4,r24
+  23:tp3_ex2.cpp   ****     DDRD = 0x0; // PORT D est en mode entrée.
+GAS LISTING /tmp/ccXeAt2T.s 			page 3
+
+
+  92               		.stabn	68,0,23,.LM2-.LFBB1
+  93               	.LM2:
+  94 0004 1AB8      		out 0xa,__zero_reg__
+  24:tp3_ex2.cpp   **** 
+  25:tp3_ex2.cpp   ****     unsigned long etat = 0;
+  26:tp3_ex2.cpp   ****     bool enfonce = false;
+  95               		.stabn	68,0,26,.LM3-.LFBB1
+  96               	.LM3:
+  97 0006 20E0      		ldi r18,0
+  25:tp3_ex2.cpp   ****     unsigned long etat = 0;
+  98               		.stabn	68,0,25,.LM4-.LFBB1
+  99               	.LM4:
+ 100 0008 80E0      		ldi r24,0
+ 101 000a 90E0      		ldi r25,0
+ 102 000c DC01      		movw r26,r24
+  27:tp3_ex2.cpp   ****     
+  28:tp3_ex2.cpp   ****     // Boucle infinie
+  29:tp3_ex2.cpp   ****     for(;;)
+  30:tp3_ex2.cpp   ****     {
+  31:tp3_ex2.cpp   ****       if(!enfonce)
+  32:tp3_ex2.cpp   ****       {
+  33:tp3_ex2.cpp   **** 	switch (etat)
+  34:tp3_ex2.cpp   **** 	{
+  35:tp3_ex2.cpp   **** 	    case 0:
+  36:tp3_ex2.cpp   **** 	    {
+  37:tp3_ex2.cpp   **** 	      PORTB = _BV(PORTB1); //rouge
+  38:tp3_ex2.cpp   **** 	      break;
+  39:tp3_ex2.cpp   **** 	    }
+  40:tp3_ex2.cpp   **** 	    case 1:
+  41:tp3_ex2.cpp   **** 	    {
+  42:tp3_ex2.cpp   **** 	      PORTB = _BV(PORTB0); //vert
+ 103               		.stabn	68,0,42,.LM5-.LFBB1
+ 104               	.LM5:
+ 105 000e 41E0      		ldi r20,lo8(1)
+  37:tp3_ex2.cpp   **** 	      PORTB = _BV(PORTB1); //rouge
+ 106               		.stabn	68,0,37,.LM6-.LFBB1
+ 107               	.LM6:
+ 108 0010 32E0      		ldi r19,lo8(2)
+ 109 0012 00C0      		rjmp .L18
+ 110               	.L20:
+  43:tp3_ex2.cpp   **** 	      break;
+  44:tp3_ex2.cpp   **** 	    }
+  45:tp3_ex2.cpp   **** 	    case 2:
+  46:tp3_ex2.cpp   **** 	    {
+  47:tp3_ex2.cpp   **** 	      PORTB = 0x0; //eteinte
+  48:tp3_ex2.cpp   **** 	      break;
+  49:tp3_ex2.cpp   **** 	    }
+  50:tp3_ex2.cpp   **** 	}
+  51:tp3_ex2.cpp   ****       }
+  52:tp3_ex2.cpp   **** 
+  53:tp3_ex2.cpp   ****       // Verification du bouton poussoir avec anti-rebond
+  54:tp3_ex2.cpp   ****       if(BOUTON_ENFONCE)
+  55:tp3_ex2.cpp   ****       {
+  56:tp3_ex2.cpp   **** 	if(!enfonce)
+  57:tp3_ex2.cpp   **** 	{
+  58:tp3_ex2.cpp   **** 	  enfonce = true;
+ 111               		.stabn	68,0,58,.LM7-.LFBB1
+GAS LISTING /tmp/ccXeAt2T.s 			page 4
+
+
+ 112               	.LM7:
+ 113 0014 21E0      		ldi r18,lo8(1)
+ 114 0016 00C0      		rjmp .L17
+ 115               	.L13:
+  59:tp3_ex2.cpp   **** 	  etat++;
+  60:tp3_ex2.cpp   **** 	  
+  61:tp3_ex2.cpp   **** 	  if(etat >2)
+  62:tp3_ex2.cpp   **** 	    etat = 0;
+  63:tp3_ex2.cpp   **** 	}
+  64:tp3_ex2.cpp   **** 	else
+  65:tp3_ex2.cpp   **** 	{
+  66:tp3_ex2.cpp   **** 	  switch (etat)
+  67:tp3_ex2.cpp   **** 	  {
+  68:tp3_ex2.cpp   **** 	      case 0:
+  69:tp3_ex2.cpp   **** 	      {
+  70:tp3_ex2.cpp   **** 		PORTB = _BV(PORTB0); //vert
+  71:tp3_ex2.cpp   **** 		_delay_ms(20);
+  72:tp3_ex2.cpp   **** 		break;
+  73:tp3_ex2.cpp   **** 	      }
+  74:tp3_ex2.cpp   **** 	      case 1:
+  75:tp3_ex2.cpp   **** 	      {
+  76:tp3_ex2.cpp   **** 		PORTB = _BV(PORTB1); //rouge
+  77:tp3_ex2.cpp   **** 		_delay_ms(8);
+  78:tp3_ex2.cpp   **** 		PORTB = _BV(PORTB0); //vert
+  79:tp3_ex2.cpp   **** 		_delay_ms(12);
+  80:tp3_ex2.cpp   **** 		break;
+  81:tp3_ex2.cpp   **** 	      }
+  82:tp3_ex2.cpp   **** 	      case 2:
+  83:tp3_ex2.cpp   **** 	      {
+  84:tp3_ex2.cpp   **** 		PORTB = _BV(PORTB1); //rouge
+  85:tp3_ex2.cpp   **** 		_delay_ms(20);
+  86:tp3_ex2.cpp   **** 		break;
+  87:tp3_ex2.cpp   **** 	      }
+  88:tp3_ex2.cpp   **** 	  }
+  89:tp3_ex2.cpp   **** 	}
+  90:tp3_ex2.cpp   **** 	
+  91:tp3_ex2.cpp   ****       }
+  92:tp3_ex2.cpp   ****       else
+  93:tp3_ex2.cpp   ****       {
+  94:tp3_ex2.cpp   **** 	enfonce = false;
+ 116               		.stabn	68,0,94,.LM8-.LFBB1
+ 117               	.LM8:
+ 118 0018 20E0      		ldi r18,0
+ 119 001a 00C0      		rjmp .L19
+ 120               	.L14:
+  58:tp3_ex2.cpp   **** 	  enfonce = true;
+ 121               		.stabn	68,0,58,.LM9-.LFBB1
+ 122               	.LM9:
+ 123 001c 21E0      		ldi r18,lo8(1)
+  62:tp3_ex2.cpp   **** 	    etat = 0;
+ 124               		.stabn	68,0,62,.LM10-.LFBB1
+ 125               	.LM10:
+ 126 001e 80E0      		ldi r24,0
+ 127 0020 90E0      		ldi r25,0
+ 128 0022 DC01      		movw r26,r24
+ 129 0024 00C0      		rjmp .L17
+ 130               	.L18:
+GAS LISTING /tmp/ccXeAt2T.s 			page 5
+
+
+  31:tp3_ex2.cpp   ****       if(!enfonce)
+ 131               		.stabn	68,0,31,.LM11-.LFBB1
+ 132               	.LM11:
+ 133 0026 2111      		cpse r18,__zero_reg__
+ 134 0028 00C0      		rjmp .L17
+ 135               	.L19:
+  33:tp3_ex2.cpp   **** 	switch (etat)
+ 136               		.stabn	68,0,33,.LM12-.LFBB1
+ 137               	.LM12:
+ 138 002a 8130      		cpi r24,1
+ 139 002c 9105      		cpc r25,__zero_reg__
+ 140 002e A105      		cpc r26,__zero_reg__
+ 141 0030 B105      		cpc r27,__zero_reg__
+ 142 0032 01F0      		breq .L6
+ 143 0034 00F0      		brlo .L5
+ 144 0036 8230      		cpi r24,2
+ 145 0038 9105      		cpc r25,__zero_reg__
+ 146 003a A105      		cpc r26,__zero_reg__
+ 147 003c B105      		cpc r27,__zero_reg__
+ 148 003e 01F4      		brne .L17
+ 149 0040 00C0      		rjmp .L7
+ 150               	.L5:
+  37:tp3_ex2.cpp   **** 	      PORTB = _BV(PORTB1); //rouge
+ 151               		.stabn	68,0,37,.LM13-.LFBB1
+ 152               	.LM13:
+ 153 0042 35B9      		out 0x5,r19
+  38:tp3_ex2.cpp   **** 	      break;
+ 154               		.stabn	68,0,38,.LM14-.LFBB1
+ 155               	.LM14:
+ 156 0044 00C0      		rjmp .L17
+ 157               	.L6:
+  42:tp3_ex2.cpp   **** 	      PORTB = _BV(PORTB0); //vert
+ 158               		.stabn	68,0,42,.LM15-.LFBB1
+ 159               	.LM15:
+ 160 0046 45B9      		out 0x5,r20
+  43:tp3_ex2.cpp   **** 	      break;
+ 161               		.stabn	68,0,43,.LM16-.LFBB1
+ 162               	.LM16:
+ 163 0048 00C0      		rjmp .L17
+ 164               	.L7:
+  47:tp3_ex2.cpp   **** 	      PORTB = 0x0; //eteinte
+ 165               		.stabn	68,0,47,.LM17-.LFBB1
+ 166               	.LM17:
+ 167 004a 15B8      		out 0x5,__zero_reg__
+ 168               	.L17:
+  54:tp3_ex2.cpp   ****       if(BOUTON_ENFONCE)
+ 169               		.stabn	68,0,54,.LM18-.LFBB1
+ 170               	.LM18:
+ 171 004c 4A9B      		sbis 0x9,2
+ 172 004e 00C0      		rjmp .L13
+  56:tp3_ex2.cpp   **** 	if(!enfonce)
+ 173               		.stabn	68,0,56,.LM19-.LFBB1
+ 174               	.LM19:
+ 175 0050 2111      		cpse r18,__zero_reg__
+ 176 0052 00C0      		rjmp .L8
+  59:tp3_ex2.cpp   **** 	  etat++;
+ 177               		.stabn	68,0,59,.LM20-.LFBB1
+GAS LISTING /tmp/ccXeAt2T.s 			page 6
+
+
+ 178               	.LM20:
+ 179 0054 0196      		adiw r24,1
+ 180 0056 A11D      		adc r26,__zero_reg__
+ 181 0058 B11D      		adc r27,__zero_reg__
+  61:tp3_ex2.cpp   **** 	  if(etat >2)
+ 182               		.stabn	68,0,61,.LM21-.LFBB1
+ 183               	.LM21:
+ 184 005a 8330      		cpi r24,3
+ 185 005c 9105      		cpc r25,__zero_reg__
+ 186 005e A105      		cpc r26,__zero_reg__
+ 187 0060 B105      		cpc r27,__zero_reg__
+ 188 0062 00F4      		brsh .L14
+ 189 0064 00C0      		rjmp .L20
+ 190               	.L8:
+  66:tp3_ex2.cpp   **** 	  switch (etat)
+ 191               		.stabn	68,0,66,.LM22-.LFBB1
+ 192               	.LM22:
+ 193 0066 8130      		cpi r24,1
+ 194 0068 9105      		cpc r25,__zero_reg__
+ 195 006a A105      		cpc r26,__zero_reg__
+ 196 006c B105      		cpc r27,__zero_reg__
+ 197 006e 01F0      		breq .L11
+ 198 0070 00F0      		brlo .L10
+ 199 0072 8230      		cpi r24,2
+ 200 0074 9105      		cpc r25,__zero_reg__
+ 201 0076 A105      		cpc r26,__zero_reg__
+ 202 0078 B105      		cpc r27,__zero_reg__
+ 203 007a 01F4      		brne .L18
+ 204 007c 00C0      		rjmp .L12
+ 205               	.L10:
+  70:tp3_ex2.cpp   **** 		PORTB = _BV(PORTB0); //vert
+ 206               		.stabn	68,0,70,.LM23-.LFBB1
+ 207               	.LM23:
+ 208 007e 45B9      		out 0x5,r20
+ 209 0080 00C0      		rjmp .L22
+ 210               	.L11:
+  76:tp3_ex2.cpp   **** 		PORTB = _BV(PORTB1); //rouge
+ 211               		.stabn	68,0,76,.LM24-.LFBB1
+ 212               	.LM24:
+ 213 0082 35B9      		out 0x5,r19
+ 214               	.LBB16:
+ 215               	.LBB17:
+ 216               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h",132,0,0,.Ltext1
+ 217               	.Ltext1:
+   1:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   2:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
+   3:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
+   4:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    All rights reserved.
+   5:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+   6:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Redistribution and use in source and binary forms, with or without
+   7:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    modification, are permitted provided that the following conditions are met:
+   8:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+   9:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    * Redistributions of source code must retain the above copyright
+  10:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer.
+  11:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  12:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    * Redistributions in binary form must reproduce the above copyright
+  13:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer in
+GAS LISTING /tmp/ccXeAt2T.s 			page 7
+
+
+  14:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      the documentation and/or other materials provided with the
+  15:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      distribution.
+  16:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  17:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    * Neither the name of the copyright holders nor the names of
+  18:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      contributors may be used to endorse or promote products derived
+  19:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****      from this software without specific prior written permission.
+  20:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  21:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  22:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  23:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  24:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  25:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  26:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  27:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  28:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  29:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  30:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  31:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  32:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  33:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /* $Id: delay.h.in 2251 2011-09-14 08:20:33Z joerg_wunsch $ */
+  34:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  35:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #ifndef _UTIL_DELAY_H_
+  36:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #define _UTIL_DELAY_H_ 1
+  37:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  38:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #ifndef __HAS_DELAY_CYCLES
+  39:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #define __HAS_DELAY_CYCLES 1
+  40:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+  41:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  42:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #include <inttypes.h>
+  43:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #include <util/delay_basic.h>
+  44:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #include <math.h>
+  45:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  46:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /** \file */
+  47:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /** \defgroup util_delay <util/delay.h>: Convenience functions for busy-wait delay loops
+  48:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     \code
+  49:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     #define F_CPU 1000000UL  // 1 MHz
+  50:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     //#define F_CPU 14.7456E6
+  51:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     #include <util/delay.h>
+  52:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     \endcode
+  53:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  54:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     \note As an alternative method, it is possible to pass the
+  55:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     F_CPU macro down to the compiler from the Makefile.
+  56:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     Obviously, in that case, no \c \#define statement should be
+  57:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     used.
+  58:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  59:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     The functions in this header file are wrappers around the basic
+  60:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     busy-wait functions from <util/delay_basic.h>.  They are meant as
+  61:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     convenience functions where actual time values can be specified
+  62:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     rather than a number of cycles to wait for.  The idea behind is
+  63:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     that compile-time constant expressions will be eliminated by
+  64:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     compiler optimization so floating-point expressions can be used
+  65:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     to calculate the number of delay cycles needed based on the CPU
+  66:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     frequency passed by the macro F_CPU.
+  67:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  68:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     \note In order for these functions to work as intended, compiler
+  69:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     optimizations <em>must</em> be enabled, and the delay time
+  70:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     <em>must</em> be an expression that is a known constant at
+GAS LISTING /tmp/ccXeAt2T.s 			page 8
+
+
+  71:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     compile-time.  If these requirements are not met, the resulting
+  72:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     delay will be much longer (and basically unpredictable), and
+  73:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     applications that otherwise do not use floating-point calculations
+  74:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     will experience severe code bloat by the floating-point library
+  75:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     routines linked into the application.
+  76:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  77:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     The functions available allow the specification of microsecond, and
+  78:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     millisecond delays directly, using the application-supplied macro
+  79:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
+  80:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  81:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** */
+  82:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  83:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #if !defined(__DOXYGEN__)
+  84:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** static inline void _delay_us(double __us) __attribute__((always_inline));
+  85:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** static inline void _delay_ms(double __ms) __attribute__((always_inline));
+  86:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+  87:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  88:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #ifndef F_CPU
+  89:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /* prevent compiler error by supplying a default */
+  90:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** # warning "F_CPU not defined for <util/delay.h>"
+  91:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** # define F_CPU 1000000UL
+  92:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+  93:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  94:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #ifndef __OPTIMIZE__
+  95:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+  96:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+  97:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+  98:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+  99:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 100:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   __STDC_HOSTED__
+ 101:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #  include <math.h>
+ 102:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #endif
+ 103:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 104:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** /**
+ 105:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    \ingroup util_delay
+ 106:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 107:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Perform a delay of \c __ms milliseconds, using _delay_loop_2().
+ 108:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 109:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    The macro F_CPU is supposed to be defined to a
+ 110:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    constant defining the CPU clock frequency (in Hertz).
+ 111:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 112:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
+ 113:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 114:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    When the user request delay which exceed the maximum possible one,
+ 115:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
+ 116:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
+ 117:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
+ 118:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    user will not be informed about decreased resolution.
+ 119:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 120:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles(unsigned long)
+ 121:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
+ 122:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    values greater than the maximal possible delay, overflows results in
+ 123:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    no delay i.e., 0ms.
+ 124:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 125:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Conversion of __us into clock cycles may not always result in integer.
+ 126:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    By default, the clock cycles rounded up to next integer. This ensures that
+ 127:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    the user gets atleast __us microseconds of delay.
+GAS LISTING /tmp/ccXeAt2T.s 			page 9
+
+
+ 128:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 129:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Alternatively, user can define __DELAY_ROUND_DOWN__ and __DELAY_ROUND_CLOSEST__
+ 130:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    to round down and round to closest integer.
+ 131:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 132:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Note: The new implementation of _delay_ms(double __ms) with 
+ 133:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****     __builtin_avr_delay_cycles(unsigned long) support is not backward compatible. 
+ 134:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    User can define __DELAY_BACKWARD_COMPATIBLE__ to get a backward compatible delay.
+ 135:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    Also, the backward compatible
+ 136:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    algorithm will be chosen if the code is compiled in a <em>freestanding
+ 137:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    environment</em> (GCC option \c -ffreestanding), as the math functions
+ 138:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****    required for rounding are not available to the compiler then.
+ 139:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 140:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****  */
+ 141:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** void
+ 142:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** _delay_ms(double __ms)
+ 143:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** {
+ 144:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	uint16_t __ticks;
+ 145:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	double __tmp ; 
+ 146:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 147:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 148:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h ****   __STDC_HOSTED__
+ 149:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	uint32_t __ticks_dc;
+ 150:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+ 151:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
+ 152:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 153:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
+ 154:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
+ 155:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 156:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
+ 157:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
+ 158:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 159:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	#else
+ 160:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 		//round up by default
+ 161:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+ 162:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	#endif
+ 163:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 
+ 164:/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 218               		.stabn	68,0,164,.LM25-.LFBB1
+ 219               	.LM25:
+ 220 0084 EFE7      		ldi r30,lo8(15999)
+ 221 0086 FEE3      		ldi r31,hi8(15999)
+ 222 0088 3197      		1: sbiw r30,1
+ 223 008a 01F4      		brne 1b
+ 224 008c 00C0      		rjmp .
+ 225 008e 0000      		nop
+ 226               	.LBE17:
+ 227               	.LBE16:
+ 228               		.stabs	"tp3_ex2.cpp",132,0,0,.Ltext2
+ 229               	.Ltext2:
+  78:tp3_ex2.cpp   **** 		PORTB = _BV(PORTB0); //vert
+ 230               		.stabn	68,0,78,.LM26-.LFBB1
+ 231               	.LM26:
+ 232 0090 45B9      		out 0x5,r20
+ 233               	.LBB18:
+ 234               	.LBB19:
+ 235               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h",132,0,0,.Ltext3
+ 236               	.Ltext3:
+GAS LISTING /tmp/ccXeAt2T.s 			page 10
+
+
+ 237               		.stabn	68,0,164,.LM27-.LFBB1
+ 238               	.LM27:
+ 239 0092 EFEB      		ldi r30,lo8(23999)
+ 240 0094 FDE5      		ldi r31,hi8(23999)
+ 241 0096 3197      		1: sbiw r30,1
+ 242 0098 01F4      		brne 1b
+ 243 009a 00C0      		rjmp .L21
+ 244               	.L12:
+ 245               	.LBE19:
+ 246               	.LBE18:
+ 247               		.stabs	"tp3_ex2.cpp",132,0,0,.Ltext4
+ 248               	.Ltext4:
+  84:tp3_ex2.cpp   **** 		PORTB = _BV(PORTB1); //rouge
+ 249               		.stabn	68,0,84,.LM28-.LFBB1
+ 250               	.LM28:
+ 251 009c 35B9      		out 0x5,r19
+ 252               	.L22:
+ 253               	.LBB20:
+ 254               	.LBB21:
+ 255               		.stabs	"/usr/lib/gcc/avr/4.7.3/../../../../avr/include/util/delay.h",132,0,0,.Ltext5
+ 256               	.Ltext5:
+ 257               		.stabn	68,0,164,.LM29-.LFBB1
+ 258               	.LM29:
+ 259 009e EFE3      		ldi r30,lo8(-25537)
+ 260 00a0 FCE9      		ldi r31,hi8(-25537)
+ 261 00a2 3197      		1: sbiw r30,1
+ 262 00a4 01F4      		brne 1b
+ 263               	.L21:
+ 264 00a6 00C0      		rjmp .
+ 265 00a8 0000      		nop
+ 266 00aa 00C0      		rjmp .L18
+ 267               	.LBE21:
+ 268               	.LBE20:
+ 269               	.LBE15:
+ 270               		.size	main, .-main
+ 271               		.stabs	"etat:r(0,11)",64,0,25,24
+ 272               		.stabs	"enfonce:r(0,24)",64,0,26,18
+ 273               		.stabn	192,0,0,.LBB15-.LFBB1
+ 274               		.stabn	224,0,0,.LBE15-.LFBB1
+ 275               	.Lscope1:
+ 276               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 277               		.stabd	78,0,0
+ 278               		.text
+ 279               		.stabs	"",100,0,0,.Letext0
+ 280               	.Letext0:
+ 281               		.ident	"GCC: (Fedora 4.7.3-0.1.fc19) 4.7.3 20130216 (prerelease)"
+GAS LISTING /tmp/ccXeAt2T.s 			page 11
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 tp3_ex2.cpp
+     /tmp/ccXeAt2T.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccXeAt2T.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccXeAt2T.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccXeAt2T.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccXeAt2T.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccXeAt2T.s:78     .text.startup:0000000000000000 main
+
+NO UNDEFINED SYMBOLS

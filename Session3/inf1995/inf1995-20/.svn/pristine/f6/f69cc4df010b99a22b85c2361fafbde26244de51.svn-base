@@ -1,0 +1,61 @@
+/****************************************************************************
+ * Fichier: TP7_ex2.cpp
+ * Auteur: Yannick Ouellet et David Mainville
+ * Date: 10 Octobre 2013
+ * DESCRIPTION : Jeu de limiere avec cellule photo voltaique
+ ****************************************************************************/
+
+/* Information sur branchements */
+/* Port B0 branché sur +        */
+/* Port B1 branché sur -        */
+/* Sortie breadboard sur A0     */
+
+
+// F_CPU permet de définir la vitesse du micro-controleur soit 8MHz
+#define F_CPU 8000000UL
+#include <avr/io.h>
+#include <util/delay.h>
+#include "can.h"
+
+void initialisation() {
+
+    DDRB = 0xff; // PORT B est en mode sortie.
+    DDRA = 0x00; // PORT A est en mode entrée.
+  
+}
+
+int main()
+{
+    initialisation();
+    
+    can c = can(); //Instanciation de lobjet de lecture de la cellule photo voltaique
+    
+    while(1)
+    {
+	uint16_t valeur = c.lecture(0); //Lire le portA0
+	valeur = valeur >> 2; //decaller vers la gauche perdre les 2 bits de poids faible et eventuellement garder les 9 et 10 bits
+	uint8_t valeur8 = (valeur & 0x00FF); //garder seulement les 8 bits de poids faible
+	
+	if(valeur8 <= 85) //85 etant le tier de 255
+	{
+	    
+	    PORTB = _BV(PORTB1); //vert
+	    _delay_ms(10);
+	}
+	else if(valeur8 >= 190 )
+	{
+	    PORTB = _BV(PORTB0); //rouge
+	    _delay_ms(10);
+	}
+	else
+	{
+	    //ambree
+	    PORTB = _BV(PORTB1);
+	    _delay_ms(5);
+	    PORTB = _BV(PORTB0);
+	    _delay_ms(5);  
+	}
+    }
+    
+    return 0;
+}

@@ -1,0 +1,147 @@
+/****************************************************************************
+ * Fichier: Test_Proximite.cpp
+ * Auteur: Mario Saliby(1668958) et Youssef Zemmahi(1665843) et Yannick Ouellet et David Mainville 
+ * Date: 13 Novembre 2013
+ * DESCRIPTION : Test du capteur de distance, le robot emet un son lorsqu'un objet s'approche ou s'eloigne 
+ * de lui.
+ ****************************************************************************/
+
+#define F_CPU 8000000UL
+#include<avr/io.h>
+#include<util/delay.h>
+#include "lib/libRobot.h"
+#include <avr/interrupt.h> 
+#include "can.h"
+
+
+#define VALEURANALOGIQUE (PINA & _BV(1))
+#define BOUTON_ENFONCE (PIND & _BV(2))
+// Declaration et initialisation d'un objet LibRobot.
+LibRobot r;
+bool Test=true;
+uint8_t BoutonEstEnfonce()
+	{
+		if(BOUTON_ENFONCE)
+		{
+		  // l'operateur !! permet de transformer une valeur quelconque en 0 ou 1.
+       		  // ie: BOUTON_ENFONCE renvoit 2, !!2 = 1.
+		  
+		  return !!BOUTON_ENFONCE;
+		}
+		// Le bouton n'est pas enfoncé
+		return 0;
+	}
+
+	
+void modeTest()
+{
+    uint16_t valeur;
+     r.initialisation();
+      r.debut();
+      // Declaration d'un objet can.
+     can convertisseur=can();
+    
+      
+      // La valeur minimale ne peut pas etre egale a 0.
+      // La valeur 7 a ete designee comme la plus petite valeur retournee lorsque le capteur ne detecte aucun objet.
+     while (BoutonEstEnfonce())
+     {
+       // Variable locale qui recoit la valeur numerique apres la conversion de la valeur analogique. 
+       valeur=convertisseur.lecture(VALEURANALOGIQUE);
+      _delay_ms(100); 
+      // Decalage de 2 bits vers la droite pour ne garder que 8 bits.
+      valeur=valeur>>2;
+       
+      if(valeur>7) 
+	    {	
+		 // Intervalles qui definissent les differents sons emis dependamment de la force du signal de retour.                                                                                     
+		 if ((valeur>7) &&(valeur<=17))
+		     r.jouerSon(66);
+		  if ((valeur>17) &&(valeur<=33))
+		    r.jouerSon(67);
+		  
+		  if  ((valeur>33) &&(valeur<=49))
+		     r.jouerSon(68);
+	
+		  if( (valeur>49)&&(valeur<=65))
+		     r.jouerSon(69);
+	
+		   if ((valeur>65) &&(valeur<=81))
+		      r.jouerSon(70);
+	
+		   if  ((valeur>81) &&(valeur<=97))
+		     r.jouerSon(71);
+		 
+		   if( (valeur>97)&&(valeur<=113))
+		       r.jouerSon(72);
+			
+		   if ((valeur>113) &&(valeur<=129))
+		    r.jouerSon(73);
+		
+		   if ((valeur>129) &&(valeur<=145))
+		     r.jouerSon(74);
+		    
+		   if  ((valeur>145) &&(valeur<=161))
+		      r.jouerSon(75);
+		  
+		   if( (valeur>161)&&(valeur<=177))
+		     r.jouerSon(76);
+		   
+		   if ((valeur>177) &&(valeur<=193))
+		    r.jouerSon(77);
+		  
+		   if ((valeur>193) &&(valeur<=209))
+		     r.jouerSon(78);
+		  
+		   if  ((valeur>209) &&(valeur<=225))
+		     r.jouerSon(79);
+		  
+		   if( (valeur>225)&&(valeur<=241))
+		     r.jouerSon(80);
+		  
+		   if ((valeur>241) &&(valeur<256)) 
+		     r.jouerSon(81);
+	    }
+	   else
+	    {
+		 // Commande qui arrete le son.
+		 r.arreterSon();
+	    }
+	  if(!BoutonEstEnfonce())
+	  {
+	    _delay_ms(15);
+	     r.arreterSon();
+	  }
+	    
+     }
+     
+     PORTB &= ~(_BV(PORTB0)); //Del eteinte
+
+    for(uint8_t i = 0; i<3; i++) //La DEL clignote pendant 3 secondes
+    {
+	for(uint8_t j = 0; j<4; j++) //La DEL clignote 4 fois par seconde
+    	{
+		PORTB = _BV(PORTB0); //rouge
+		_delay_ms(125);
+
+		PORTB &= ~(_BV(PORTB0)); //eteinte
+		_delay_ms(125);
+    	}
+    }
+
+    PORTB &= ~(_BV(PORTB0)); ////Del eteinte
+
+}
+
+int main ()
+{	
+  // PORT A en entree pour recevoir la valeur analogique 
+  DDRA =0x0;
+  // PORT B en sortie 
+  DDRB=0xff;
+
+   if( BoutonEstEnfonce())
+    modeTest();
+ 
+    return 0;
+}

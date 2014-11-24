@@ -1,0 +1,160 @@
+=====================================================================================
+Fichier Lisezmoi de Yannick Ouellet, David Mainville, Mario Saliby et Youssef Zemmahi 
+               		Pour le cours INF1995
+	                        
+                            Décembre 2013                   
+=====================================================================================
+(C) Copyright Yannick Ouellet, David Mainville, Mario Saliby et Youssef Zemmahi 
+
+Ce document contient des informations importantes et de dernière minute 
+sur le robot Heisenberg. Avant d'installer les programmes dans les robots,
+relisez l'ensemble du document. Il contient des informations
+essentielles sur l'installation et l'utilisation conforme des deux robots.
+
+------------------------------------------------
+UTILISATION DE CE DOCUMENT
+------------------------------------------------
+      
+Vous pouvez afficher le fichier LISEZMOI à l'écran dans le Bloc-notes Windows,
+dans gedit avec Linus ou encore tout autre programme de traitement de texte.
+Pour l'imprimer, ouvrez-le dans le Bloc-notes ou un autre programme de 
+traitement de texte, puis cliquez sur Imprimer dans le menu Fichier.
+
+-------------------
+TABLE DES MATIÈRES
+-------------------
+
+1. OÙ TROUVER LES PROGRAMMES
+
+2. INSTALLATION DES PROGRAMMES
+
+    1.1 Robot-souris
+    1.2 Robot-chat
+
+3. FONCTIONNEMENT DU CODE
+
+    3.1 .h
+    3.2 .cpp
+    3.3 main.cpp
+
+4. COMPORTEMENT DES ROBOTS
+	
+    4.1 Robot-souris
+    4.2 Robot-chat
+
+---------------------------------------------------------
+1. OÙ TROUVER LES PROGRAMMES
+---------------------------------------------------------
+
+Tous nos fichiers pour les robots se trouvent dans le fichier inf1995-1620.
+Ensuite, allez dans le répertoire codeCommun/Tp/projet. C'est dans le ficheir projet 
+que vous retrouverez tous nos fichiers et documents qui nous ont été nécessaire à
+la réalisation du projet final.
+
+---------------------------------------------------------
+2. INSTALLATION DES PROGRAMMES
+---------------------------------------------------------
+
+2.1 Robot-souris
+----------------------------------
+Avant d'installer le programme, assurez-vous d'avoir branché le fil USB de l'ordinateur
+vers le robot-souris. Par la suite, suivez les instructions qui suivent.
+Pour installer le programme du robot-souris, allez dans le fichier projet(voir le point 1.).
+Lorsque vous êtes dans projet, dirigez-vous vers le fichier Lib pour compiler la librairie de
+nos robots. Pour ce faire, faites un clic droit dans le fenêtre de Lib et ouvrez le terminal.
+Dans le terminal, écrivez la commande make et faites entrée. Maintenant, la librairie est 
+compilée. Fermez le terminal et revenez dans le fichier projet. Ouvrez un nouveau terminal dans
+le fichier projet et écrivez make. Faites ensuite entrée et maintenant écrivez la commande make
+install dans le terminal. Faites à nouveau entrée et voilà, vous avez maintenant le programme
+d'installer sur le robot-souris. Vous pouvez aussi écrire la commande make clean dans le terminal,
+si vous modifiez le code des fichiers sources et recommencer les étapes dans l'ordre par la suite
+Vous pouvez fermer le terminal, enlevez le fil USB et allez vous amusez avec le robot-souris.
+
+2.2 Robot-chat
+-------------------------------------------------
+Avant d'installer le programme, assurez-vous d'avoir branché le fil USB de l'ordinateur
+vers le robot-chat. Par la suite, suivez les instructions qui suivent.
+Pour installer le programme du robot-chat, allez dans le fichier projet(voir le point 1.).
+Lorsque vous êtes dans projet, dirigez-vous vers le fichier Lib pour compiler la librairie de
+nos robots(si vous commencez par installer le programme du robot-chat avant le robot-souris,
+sinon passez cette étape). Pour ce faire, faites un clic droit dans le fenêtre de Lib et ouvrez le terminal.
+Dans le terminal, écrivez la commande make et faites entrée. Maintenant, la librairie est 
+compilée. Fermez le terminal et revenez dans le fichier projet. Ouvrez un nouveau terminal dans
+le fichier projet et écrivez make. Faites ensuite entrée et maintenant écrivez la commande make
+install dans le terminal. Faites à nouveau entrée et voilà, vous avez maintenant le programme
+d'installer sur le robot-chat. Vous pouvez aussi écrire la commande make clean dans le terminal,
+si vous modifiez le code des fichiers sources et recommencer les étapes dans l'ordre par la suite
+Vous pouvez fermer le terminal, enlevez le fil USB et allez vous amusez à attraper le robot-souris.
+
+
+---------------------------------------------------------------------- 
+3. FONCTIONNEMENT DU CODE
+---------------------------------------------------------------------- 
+
+3.1 .h
+----------------------------------
+Notre code est divisé en trois grandes parties. Nous avons un fichier .h(libRobot.h) qui
+est notre classe principale qui regroupe nos constructeurs, destructeur, méthodes et attributs.
+Nous utilisons aussi les fichiers memoire_24.h et can.h qui sont des classes qui nous ont été
+donné au début du cours INF1995.
+
+3.2 .cpp
+----------------------------------
+La deuxième partie de notre code est l'implémentation de notre classe libRobot. Ce .cpp
+s'appelle libRobot.cpp et il regroupe l'implémentation de les constructeurs, destructeur
+et de toutes les méthodes qui sont dans libRobot.h . On doit aussi utiliser memoire_24.cpp 
+et can.cpp qui sont les implémentations des classes memoire_24 et can. Ces deux classes nous
+permettent d'utiliser la mémoire de nos robots ainsi que les capteurs(de lignes, de distance
+et de lumière). memoire_24.cpp et can nous ont été donné au début du cours INF1995.
+
+3.3 main.cpp
+----------------------------------
+Pour cette troisième partie, nous retrouvons ce qui est le plus important. Notre main qui est
+dans notre cas projet.cpp et qui se trouve dans le fichier projet va nous permettre d'utiliser
+nos .h et .cpp énoncés prédédemment. 
+
+---------------------------------------------------------
+4. COMPORTEMENT DES ROBOTS
+---------------------------------------------------------
+
+4.1 Robot-souris
+----------------------------------
+Une fois le programme mis dans le robot, le robot pourra avancer. Alors, assurez-vous que le
+robot-souris est sur une surface plane et droite. Maintenant, pour que le robot commence à
+bouger, mettez le sous tension. Si tout c'est bien déroulé, le robot-souris se mettra à se
+déplacer. Le robot-souris possède un comportement aléatoire, c'est-à-dire qu'à chaque intersection
+rencontré, le robot-souris va choisir une direction au hasard. Bien entendu, il ne devra pas tourner
+d'un coté où il y a du vide. Cependant, il est possède de changer ce comportement aléatoire. Le robot-
+souris possède deux photorésistances en avant de celui-ci. Si on éclaire la photorésistance de gauche,
+la DEL s'allumera en rouge et le robot-souris devra tourner à gauche à la prochaine intersection. On
+peut faire la même chose pour la photorésistance de droite, mais la DEL s'allumera en vert au lieu de 
+rouge et le robot-souris tournera vers la droite à la prochaine intersection. Rendu à l'intersection, 
+la DEL s'éteint et le robot retourne en mode aléatoire. Si on décide d'éclairer la photorésistance
+de gauche et avant que le robot rencontre une intersection on décide d'éclairer celle de droite, le
+robot-souris tournera du coté droit. Par contre, si on dit de tourner à gauche et qu'à la prochaine
+intersection, il est impossible de tourner à gauche, car c'est du vide, le robot va ignorer l'instruction
+et retourner en mode aléatoire. Maintenant, grace à tout cela, le robot-souris est capable de se déplacer 
+sur la table sans tomber et sans tomber dans le vide.
+ 
+
+4.2 Robot-chat
+-------------------------------------------------
+Une fois le programme mis dans le robot, le robot pourra avancer. Alors, assurez-vous que le
+robot-chat est sur une surface plane et droite. Le robot-chat possède trois mode. Le mode test,
+l'état transitoire et le mode normal. Tout d'abord, mettez le robot-chat sous tension pour débuter.
+Il va vérifier si le bouton poussoir de sa carte mère est enfoncé. Si c'est le cas, il allume sa seul
+DEL en rouge et ensuite il passe en mode test. Sinon, il passe en mode normal. Donc, le mode test est
+utilisé seulement pour vérifier le fonctionnement du capteur de distance. Dans le mode test, le robot 
+ne bouge pas. Il fait juste émettre du son lorsqu'il détecte un objet. Plus l'objet est proche du capteur
+de distance et plus le son sera aigu et plus l'objet est loin du capteur de distance et plus le son sera 
+grave. Si il ne détecte pas d'objet, il émet aucun son. Le son est lisse et non saccadé. Lorsque le
+bouton poussoir est relâché, le robot-chat arrête immédiatement d'émettre du son et entre dans l'état
+transitoire. L'état transitoire sert seulement à donner le temps aux juges de s'éloigner du robot-chat et
+éviter que fausser les résultats. Pendant l'état transitoire, la DEL clignote en rouge à 4 Hz pendant
+trois secondes et il ne fait rien pendant ce temps. Après ces trois secondes, le robot-chat passe en
+mode normal. Maintenant, le robot commence à bouger. Si tout c'est bien déroulé, le robot-chat se mettra 
+à se déplacer. En mode normal, le robot-chat dois trouver le robot-souris et le capturer. Le robot-chat 
+émet du son lorsqu'il se rapproche du robot-souris et comme dans le mode test le son deviens plus aigu
+lorsque le robot-chat se rapproche de celle-ci. Si le robot-chat réussi à se trouver à moins de dix pouces
+de robot-souris, il dout allumer sa DEL en vert et on considère que le robot-chat à attrapé le robot-souris
+et qu'il a gagné. La chasse est donc terminé.
